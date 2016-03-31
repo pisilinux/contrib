@@ -1,6 +1,107 @@
 <PISI>
     <SpecFile>
         <Source>
+            <Name>steam</Name>
+            <Homepage>http://store.steampowered.com/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>Valve Corporation</License>
+            <IsA>app</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Steam for linux</Summary>
+            <Summary xml:lang="tr">Linux için steam</Summary>
+            <Description xml:lang="en">Steam Digital Platform Runner</Description>
+            <Description xml:lang="tr">Steam dijital platform çalıştırıcısı</Description>
+            <Icon>steam</Icon>
+            <Archive type="targz" sha1sum="cc625b72104dd14a7d400b7aeb67e9cf358e0910">http://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.52.tar.gz</Archive>
+            <Patches>
+                <Patch level="1">alsa_sdl_audiodriver.patch</Patch>
+            </Patches>
+            <SourceURI>steam/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>steam</Name>
+            <RuntimeDependencies>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mesa-32bit</Dependency>
+                <Dependency>eudev-32bit</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="8">
+                <Date>2016-03-31</Date>
+                <Version>1.0.0.52</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="7">
+                <Date>2015-07-15</Date>
+                <Version>1.0.0.50</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2014-09-01</Date>
+                <Version>1.0.0.49</Version>
+                <Comment>Version bump</Comment>
+                <Name>Nikolay Semenov</Name>
+                <Email>tribunal@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-08-23</Date>
+                <Version>1.0.0.48</Version>
+                <Comment>Version bump</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-29</Date>
+                <Version>1.0.0.47</Version>
+                <Comment>Dep fix</Comment>
+                <Name>Nikolay Semenov</Name>
+                <Email>tribunal@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-15</Date>
+                <Version>1.0.0.47</Version>
+                <Comment>Remove unnecessary deps</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-03-21</Date>
+                <Version>1.0.0.47</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-09-07</Date>
+                <Version>1.0.0.41</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>draftsight</Name>
             <Homepage>http://www.3ds.com/products-services/draftsight</Homepage>
             <Packager>
@@ -94,87 +195,113 @@
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>draftsight</Name>
-        <Summary xml:lang="de">DraftSight®: Kostenlose Profi-CAD-Software.</Summary>
-        <Summary xml:lang="tr">DraftSight ® - DWG dosyaları için CAD ​​yazılımı.</Summary>
-        <Summary xml:lang="es">DraftSight®: Programa CAD gratuito* de nivel profesional.</Summary>
-        <Summary xml:lang="en">DraftSight® - Free CAD software for your DWG files</Summary>
-        <Description xml:lang="de">Mit DraftSight können professionelle CAD-Anwender, Studenten und Ausbilder DWG-Dateien erstellen, bearbeiten und ansehen.</Description>
-        <Description xml:lang="tr">DraftSight profesyonel CAD kullanıcılarının, öğrencilerin ve eğitimcilerin DWG dosyalarını oluşturmasını, düzenlemesini ve görüntülemesini sağlar.</Description>
-        <Description xml:lang="es">Con DraftSight, los usuarios CAD profesionales, estudiantes y educadores pueden crear, editar y visualizar ficheros DWG.</Description>
-        <Description xml:lang="en">DraftSight lets professional CAD users, students and educators create, edit and view DWG files.</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>unknown</PartOf>
-        <License>AS IS</License>
-        <License>EULA</License>
-        <Icon>draftsight</Icon>
-        <RuntimeDependencies>
-            <Dependency>cups</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>zlib</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libSM</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>jasper</Dependency>
-            <Dependency>libICE</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libxcb</Dependency>
-            <Dependency>calibre</Dependency>
-            <Dependency>libxml2</Dependency>
-            <Dependency>gstreamer</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>glibc-32bit</Dependency>
-            <Dependency>mariadb-lib</Dependency>
-            <Dependency>libXau-32bit</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>libutil-linux</Dependency>
-            <Dependency>postgresql-lib</Dependency>
-            <Dependency>gst-plugins-base</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="3">
-                <Date>2016-03-31</Date>
-                <Version>6.5</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-10-17</Date>
-                <Version>6.0</Version>
-                <Comment>Version bump</Comment>
-                <Name>Kamil Atlı</Name>
-                <Email>suvari@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2014-04-01</Date>
-                <Version>5.1</Version>
-                <Comment>First Release</Comment>
-                <Name>Erdinç Gültekin</Name>
-                <Email>erdincgultekin@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>1.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>750051101</InstalledSize>
-        <PackageSize>100131745</PackageSize>
-        <PackageHash>dfdca6fa71c9bf5f5de3025cf9b0bf972c0bff6f</PackageHash>
-        <InstallTarHash>5b73ef561672d40c57bf855a3d4111dafee920af</InstallTarHash>
-        <PackageURI>draftsight/draftsight-6.5-3-p01-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
+    <SpecFile>
         <Source>
-            <Name>draftsight</Name>
-            <Homepage>http://www.3ds.com/products-services/draftsight</Homepage>
+            <Name>teamviewer</Name>
+            <Homepage>http://www.teamviewer.com/</Homepage>
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
             </Packager>
+            <License>as-is</License>
+            <License>TeamViewer GmbH</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">User friendly remote control application</Summary>
+            <Summary xml:lang="tr">Kullanıcı dostu masaüstü paylaşım uygulaması</Summary>
+            <Description xml:lang="en">TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com</Description>
+            <Description xml:lang="tr">Teamviewer uzaktan bakım,online sunum ,dosya transferi yapmaya olanak sağlayan bir masaüstü paylaşım yazılımıdır.</Description>
+            <Archive type="binary" sha1sum="b6b0b07a92d975e33ed97b5a453ed7a738ceb387">http://download.teamviewer.com/download/teamviewer.i686.rpm</Archive>
+            <BuildDependencies>
+                <Dependency>rpm2targz</Dependency>
+            </BuildDependencies>
+            <SourceURI>teamviewer/pspec.xml</SourceURI>
         </Source>
-    </Package>
+        <Package>
+            <Name>teamviewer</Name>
+            <RuntimeDependencies>
+                <Dependency>libXtst-32bit</Dependency>
+                <Dependency>alsa-lib-32bit</Dependency>
+                <Dependency>libXdamage-32bit</Dependency>
+                <Dependency>zlib-32bit</Dependency>
+                <Dependency>freetype-32bit</Dependency>
+                <Dependency>libSM-32bit</Dependency>
+                <Dependency>libX11-32bit</Dependency>
+                <Dependency>libXau-32bit</Dependency>
+                <Dependency>libXext-32bit</Dependency>
+                <Dependency>libXrandr-32bit</Dependency>
+                <Dependency>libXfixes-32bit</Dependency>
+                <Dependency>libXrender-32bit</Dependency>
+                <Dependency>harfbuzz-32bit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/opt/teamviewer*</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="config">/etc/init.d</Path>
+                <Path fileType="config">/etc/teamviewer</Path>
+                <Path fileType="data">/var/log</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <Provides>
+                <COMAR script="service.py">System.Service</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/teamviewer.desktop" permission="0644" owner="root">teamviewer.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/teamviewer.png" permission="0644" owner="root">teamviewer.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="7">
+                <Date>2016-03-31</Date>
+                <Version>11.0.57095</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2015-08-21</Date>
+                <Version>10.0.46203</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2015-01-20</Date>
+                <Version>10.0.37742</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-12-09</Date>
+                <Version>10.0.36281</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-12-03</Date>
+                <Version>10.0.35002</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-05-10</Date>
+                <Version>9.0.24147</Version>
+                <Comment>*Version bump to 9 series
+                     *Add comar script</Comment>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-08-03</Date>
+                <Version>7.0.9377</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
 </PISI>
