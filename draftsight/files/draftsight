@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /opt/dassault-systemes/DraftSight/Linux/
+
+./DraftSight &
+
+
+ 
