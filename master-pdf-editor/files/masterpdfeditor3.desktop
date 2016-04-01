@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Master PDF Editor 3
+Comment=Edit PDF files
+Exec=/opt/master-pdf-editor-3/masterpdfeditor3 %f
+Path=/opt/master-pdf-editor-3
+Terminal=false
+Icon=/opt/master-pdf-editor-3/masterpdfeditor3.png
+Type=Application
+Categories=Office;Graphics
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;
