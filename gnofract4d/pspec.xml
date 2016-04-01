@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnofract4d</Name>
+        <Homepage>https://github.com/edyoung/gnofract4d</Homepage>
+        <Packager>
+            <Name>Pisi Linux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:gui</IsA>
+        <Summary>Gnofract 4D is a free, open source program which allows anyone to create beautiful images called fractals.</Summary>
+        <Description>The images are automatically created by the computer based on mathematical principles. These include the Mandelbrot and Julia sets and many more.</Description>
+        <Archive sha1sum="4b96723e87b76243c15646da5624841db0a85bc7" type="targz">https://github.com/edyoung/gnofract4d/archive/V_3_14_1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>python-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnofract4d</Name>
+        <RuntimeDependencies>                        
+            <Dependency>libpng</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libgcc</Dependency>            
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="pixmaps">/usr/share/pixmaps</Path>
+            <Path fileType="mime">/usr/share/mime</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>        
+        <Update release="1">
+            <Date>2016-04-01</Date>
+            <Version>3.14.1</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
