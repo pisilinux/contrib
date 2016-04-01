@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>easypaint</Name>
+        <Summary xml:lang="tr">EasyPaint is a simple graphics painting program</Summary>
+        <Description xml:lang="tr">EasyPaint is a part of Razor-qt</Description>
+    </Source>
+</PISI>

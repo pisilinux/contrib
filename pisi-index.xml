@@ -351,6 +351,51 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>easypaint</Name>
+            <Homepage>http://qt-apps.org/content/show.php/EasyPaint?content=140877</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">EasyPaint is a simple graphics painting program</Summary>
+            <Summary xml:lang="tr">EasyPaint is a simple graphics painting program</Summary>
+            <Description xml:lang="en">EasyPaint is a part of Razor-qt</Description>
+            <Description xml:lang="tr">EasyPaint is a part of Razor-qt</Description>
+            <Archive type="targz" sha1sum="e59aeaf3c9776071c0750b130eafe196d2bee555">https://github.com/Gr1N/EasyPaint/archive/v0.1.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>easypaint/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>easypaint</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-01</Date>
+                <Version>0.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>webcamoid-ffmpeg</Name>
             <Homepage>https://github.com/webcamoid/webcamoid</Homepage>
             <Packager>
