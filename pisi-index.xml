@@ -349,4 +349,58 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>webcamoid-ffmpeg</Name>
+            <Homepage>https://github.com/webcamoid/webcamoid</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPL</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Webcamoid, webcam capture application,with ffmpeg,for working with the Gstreamer use the Gstreamer version</Summary>
+            <Description xml:lang="en">Webcamoid is a full featured webcam capture application.</Description>
+            <Archive type="targz" sha1sum="1aace93174f11994daa03993d5003a28f5a02d55">https://github.com/hipersayanX/webcamoid/archive/7.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-designer-devel</Dependency>
+                <Dependency>qt5-svg-devel</Dependency>
+                <Dependency>libdbusmenu-qt-devel</Dependency>
+                <Dependency>qt5-assistant-devel</Dependency>
+                <Dependency>qt5-quickcontrols</Dependency>
+                <Dependency>ffmpeg-devel</Dependency>
+                <Dependency>libv4l-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>webcamoid-ffmpeg/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>webcamoid-ffmpeg</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-declarative</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/qt5</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-02-28</Date>
+                <Version>7.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
 </PISI>
