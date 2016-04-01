@@ -1,6 +1,67 @@
 <PISI>
     <SpecFile>
         <Source>
+            <Name>kronometer</Name>
+            <Homepage>http://kde-apps.org/content/show.php/Kronometer?content=162829</Homepage>
+            <Packager>
+                <Name>Pisi Linux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Kronometer is a simple chronometer application built for KDE</Summary>
+            <Summary xml:lang="tr">Kronometer is a simple chronometer application built for KDE</Summary>
+            <Description xml:lang="en">Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
+            <Description xml:lang="tr">Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
+            <Archive type="tarxz" sha1sum="2b4be09d605003dc39650934cd98b5701205443c">http://download.kde.org/stable/kronometer/2.0.1/src/kronometer-2.0.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>kconfig-devel</Dependency>
+                <Dependency>kdoctools-devel</Dependency>
+                <Dependency>ki18n-devel</Dependency>
+                <Dependency>kwidgetsaddons-devel</Dependency>
+                <Dependency>kxmlgui-devel</Dependency>
+                <Dependency>kcoreaddons-devel</Dependency>
+                <Dependency>kconfigwidgets-devel</Dependency>
+                <Dependency>extra-cmake-modules</Dependency>
+            </BuildDependencies>
+            <SourceURI>kronometer/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>kronometer</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>kconfig</Dependency>
+                <Dependency>kdoctools</Dependency>
+                <Dependency>ki18n</Dependency>
+                <Dependency>kwidgetsaddons</Dependency>
+                <Dependency>kxmlgui</Dependency>
+                <Dependency>kcoreaddons</Dependency>
+                <Dependency>kconfigwidgets</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+                <Path fileType="icon">/usr/share/icons</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-01</Date>
+                <Version>2.0.1</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>steam</Name>
             <Homepage>http://store.steampowered.com/</Homepage>
             <Packager>

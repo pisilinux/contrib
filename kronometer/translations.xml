@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>kronometer</Name>
+        <Summary xml:lang="tr">Kronometer is a simple chronometer application built for KDE</Summary>
+        <Description xml:lang="tr">Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
+    </Source>
+</PISI>
