@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mp</Name>
+        <Homepage>http://triptico.com/software/mp.html</Homepage>
+        <Packager>
+            <Name>Pisi Linux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>editor</PartOf>
+        <Summary>A text editor for programmers</Summary>
+        <Description> A text editor for programmers including the following features:Fully scriptable using a C-like scripting language. Unlimited undo levels.Complete Unicode support. Multiple files can be edited at the same time and blocks copied and pasted among them. Syntax highlighting for many popular languages / file formats: C, C++, Perl, Shell Scripts, Ruby, Php, Python, HTML and much more</Description>
+        <Archive sha1sum="f7fcc501c03568d65f0f6663e462cc77ab5aa5f0" type="targz">http://triptico.com/download/mp/mp-5.2.10.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mp</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/*</Path>
+            <Path fileType="data">/usr/share/applications/*</Path>
+            <Path fileType="doc">/usr/share/doc/*</Path>
+            <Path fileType="localedata">/usr/share/locale/*</Path>
+            <Path fileType="man">/usr/share/man/*</Path>
+            <Path fileType="data">/usr/share/mp-5/*</Path>
+            <Path fileType="data">/usr/share/pixmaps/*</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/mp.desktop" permission="0755" group="root" owner="root">mp.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/mp.png" permission="0644" group="root" owner="root">mp.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-11</Date>
+            <Version>5.2.10</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>

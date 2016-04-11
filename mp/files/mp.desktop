@@ -1,0 +1,22 @@
+[Desktop Entry]
+Comment[de]=Text Editor für Programmierer
+Comment=Programmers Text editor
+Exec=/usr/bin/mp-5
+GenericName[de]=Text Editor für Programmierer
+GenericName=Programmers Text editor
+Icon=/usr/share/pixmaps/mp.png
+MimeType=
+Name[tr]=Minimum Profit
+Name=Minimum Profit
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+Categories=Qt;KDE;Development;
+
+

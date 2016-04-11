@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mp</Name>
+        <Summary xml:lang="tr">A text editor for programmers</Summary>
+        <Description xml:lang="tr"> A text editor for programmers including the following features:
+ Fully scriptable using a C-like scripting language. Unlimited undo levels.
+ Complete Unicode support. Multiple files can be edited at the same time and blocks copied and pasted among them. Syntax highlighting for many popular languages / file formats: C, C++, Perl, Shell Scripts, Ruby, Php, Python, HTML and much more</Description>
+    </Source>
+</PISI>

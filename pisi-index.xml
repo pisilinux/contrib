@@ -163,6 +163,113 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>dcp135ccupswrapper-1.0.1</Name>
+            <Homepage>http://solutions.brother.com/linux</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>data</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">CUPS drivers for Brother DCP-135C printer</Summary>
+            <Description xml:lang="en">CUPS drivers for Brother DCP-135C printer.</Description>
+            <Archive sha1sum="57812fb70c7835286ac9294c3cb9337b99e24c03">http://www.brother.com/pub/bsc/linux/dlf/dcp135ccupswrapper-1.0.1-1.i386.rpm</Archive>
+            <BuildDependencies>
+                <Dependency>rpm2targz</Dependency>
+                <Dependency>tar</Dependency>
+            </BuildDependencies>
+            <SourceURI>Brother-DCP135c-cupswrapper/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dcp135ccupswrapper-1.0.1</Name>
+            <RuntimeDependencies>
+                <Dependency>cups</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/local/Brother/Printer/dcp135c/cupswrapper</Path>
+                <Path fileType="executable">/usr/local/Brother/printer/dcp135c/cupswrapper</Path>
+            </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-11</Date>
+                <Version>1.0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mp</Name>
+            <Homepage>http://triptico.com/software/mp.html</Homepage>
+            <Packager>
+                <Name>Pisi Linux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>editor</PartOf>
+            <Summary xml:lang="en">A text editor for programmers</Summary>
+            <Summary xml:lang="tr">A text editor for programmers</Summary>
+            <Description xml:lang="en">A text editor for programmers including the following features:Fully scriptable using a C-like scripting language. Unlimited undo levels.Complete Unicode support. Multiple files can be edited at the same time and blocks copied and pasted among them. Syntax highlighting for many popular languages / file formats: C, C++, Perl, Shell Scripts, Ruby, Php, Python, HTML and much more</Description>
+            <Description xml:lang="tr"> A text editor for programmers including the following features:
+ Fully scriptable using a C-like scripting language. Unlimited undo levels.
+ Complete Unicode support. Multiple files can be edited at the same time and blocks copied and pasted among them. Syntax highlighting for many popular languages / file formats: C, C++, Perl, Shell Scripts, Ruby, Php, Python, HTML and much more</Description>
+            <Archive type="targz" sha1sum="f7fcc501c03568d65f0f6663e462cc77ab5aa5f0">http://triptico.com/download/mp/mp-5.2.10.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>mp/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mp</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/*</Path>
+                <Path fileType="data">/usr/share/applications/*</Path>
+                <Path fileType="doc">/usr/share/doc/*</Path>
+                <Path fileType="localedata">/usr/share/locale/*</Path>
+                <Path fileType="man">/usr/share/man/*</Path>
+                <Path fileType="data">/usr/share/mp-5/*</Path>
+                <Path fileType="data">/usr/share/pixmaps/*</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/mp.desktop" permission="0755" owner="root" group="root">mp.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/mp.png" permission="0644" owner="root" group="root">mp.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-11</Date>
+                <Version>5.2.10</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>master-pdf-editor</Name>
             <Homepage>http://code-industry.net/free-pdf-editor.php</Homepage>
             <Packager>
@@ -465,6 +572,45 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>brscan2</Name>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Sane scanner drivers for Brother DCP and MFC multifunction printers.</Summary>
+            <Description xml:lang="en">brscan2 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+            <Archive type="binary" sha1sum="5ff7ec01fb8a43ba0e27aa9f8cad929903587558">https://github.com/groni/Sources/raw/master/brscan2-0.2.5-1.x86_64.tar.gz</Archive>
+            <SourceURI>Brother-brscan2/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>brscan2</Name>
+            <RuntimeDependencies>
+                <Dependency>sane-backends</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/local/Brother/sane/GrayCmData</Path>
+                <Path fileType="data">/usr/local/Brother/sane/models2</Path>
+                <Path fileType="data">/usr/local/Brother/sane</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="library">/usr/lib/sane</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-11</Date>
+                <Version>0.2.5</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>easypaint</Name>
             <Homepage>http://qt-apps.org/content/show.php/EasyPaint?content=140877</Homepage>
             <Packager>
@@ -562,4 +708,86 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>dcp135clpr-1.0.1</Name>
+            <Homepage>http://solutions.brother.com/linux</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>as-is+</License>
+            <IsA>data</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">lpr Driver for Brother dcp135c</Summary>
+            <Description xml:lang="en">LPR Driver for Brother DCP135c</Description>
+            <Archive sha1sum="48ff8b594f2bae70094dff883ec4e8153408eeae">http://www.brother.com/pub/bsc/linux/dlf/dcp135clpr-1.0.1-1.i386.rpm</Archive>
+            <BuildDependencies>
+                <Dependency>rpm2targz</Dependency>
+                <Dependency>tar</Dependency>
+            </BuildDependencies>
+            <SourceURI>Brother-DCP135c-lpr/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>dcp135clpr-1.0.1</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/local/Brother/Printer/dcp135c/inf</Path>
+                <Path fileType="executable">/usr/local/Brother/Printer/dcp135c/lpd</Path>
+                <Path fileType="data">/var/spool/lpd/brother-dcp7030</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-11</Date>
+                <Version>1.0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <Package>
+        <Name>dcp135ccupswrapper-1.0.1</Name>
+        <Summary xml:lang="en">CUPS drivers for Brother DCP-135C printer</Summary>
+        <Description xml:lang="en">CUPS drivers for Brother DCP-135C printer.</Description>
+        <IsA>data</IsA>
+        <IsA>app:console</IsA>
+        <PartOf>unknown</PartOf>
+        <License>as-is</License>
+        <RuntimeDependencies>
+            <Dependency>cups</Dependency>
+        </RuntimeDependencies>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+        <History>
+            <Update release="1">
+                <Date>11-04-2013</Date>
+                <Version>1</Version>
+                <Comment>Add dcp135ccupswrapper-1.0.1 to repositories</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>41220</InstalledSize>
+        <PackageSize>11743</PackageSize>
+        <PackageHash>cb7fc6b4acc1ee9604beb5f72eb18493287b1d28</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>Brother-DCP135c-cupswrapper/dcp135ccupswrapper-1.0.1-1-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>dcp135ccupswrapper-1.0.1</Name>
+            <Homepage>http://solutions.brother.com/linux</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
 </PISI>
