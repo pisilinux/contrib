@@ -1,0 +1,46 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dcp135ccupswrapper-1.0.1</Name>
+        <Homepage>http://solutions.brother.com/linux</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>CUPS drivers for Brother DCP-135C printer</Summary>
+        <Description>CUPS drivers for Brother DCP-135C printer.</Description>
+        <License>as-is</License>
+        <IsA>data</IsA>
+        <IsA>app:console</IsA>
+        <Archive sha1sum="57812fb70c7835286ac9294c3cb9337b99e24c03">http://www.brother.com/pub/bsc/linux/dlf/dcp135ccupswrapper-1.0.1-1.i386.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dcp135ccupswrapper-1.0.1</Name>
+        <RuntimeDependencies>
+            <Dependency>cups</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/local/Brother/Printer/dcp135c/cupswrapper</Path>
+            <Path fileType="executable">/usr/local/Brother/printer/dcp135c/cupswrapper</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-11</Date>
+            <Version>1.0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>	
+</PISI>
