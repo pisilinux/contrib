@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>google-chrome</Name>
+        <Homepage>http://chrome.google.com/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>EULA</License>
+        <Icon>google-chrome</Icon>
+        <PartOf>network.web</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Google Chrome for Linux</Summary>
+        <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
+        <Archive sha1sum="697214eeb39b2a2064d3207df7907413ef007b13" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+	<BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>google-chrome</Name>
+        <RuntimeDependencies>
+	   <Dependency>nspr</Dependency>
+	    <Dependency>bzip2</Dependency>
+	    <Dependency>libpng</Dependency>
+	    <Dependency>freetype</Dependency>
+	    <Dependency>libgcrypt</Dependency>
+	    <Dependency>dbus</Dependency>
+	    <Dependency>expat</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>libX11</Dependency>
+	    <Dependency>libgcc</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libXext</Dependency>
+	    <Dependency>libXrandr</Dependency>
+	    <Dependency>libXcursor</Dependency>
+            <Dependency>minizip</Dependency>            
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libxslt</Dependency> 
+            <Dependency>libjpeg-turbo</Dependency> 
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>flac</Dependency>  
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/opt/google/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-04-14</Date>
+            <Version>50.0.2661.75</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>
