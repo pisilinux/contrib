@@ -61,7 +61,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/spotify.desktop">spotify.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0755" target="/usr/share/icons">spotify-linux-256.png</AdditionalFile>            
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/icons/spotify-linux-256.png">spotify-linux-256.png</AdditionalFile>            
         </AdditionalFiles>
     </Package>
     <History>
