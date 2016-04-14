@@ -5,8 +5,8 @@
         <Name>spotify</Name> 
         <Homepage>http://spotify.com</Homepage> 
         <Packager>
-	    <Name>Ekin Dursun</Name>
-            <Email>ekin.dursun@pisilinux.org</Email>
+	    <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
         </Packager>
         <License>Spotify</License> 
         <IsA>app:gui</IsA> 
