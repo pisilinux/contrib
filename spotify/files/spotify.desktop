@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Spotify
+GenericName=Music Player
+Comment=Spotify streaming music client
+Icon=/usr/share/icons/spotify-linux-256.png
+Exec=/usr/bin/spotify
+TryExec=spotify
+Terminal=false
+Categories=Multimedia;Audio;Music;Player;AudioVideo;
+MimeType=x-scheme-handler/spotify;

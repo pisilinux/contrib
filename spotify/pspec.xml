@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>spotify</Name> 
+        <Homepage>http://spotify.com</Homepage> 
+        <Packager>
+	    <Name>Ekin Dursun</Name>
+            <Email>ekin.dursun@pisilinux.org</Email>
+        </Packager>
+        <License>Spotify</License> 
+        <IsA>app:gui</IsA> 
+        <Summary>Music Player</Summary>
+        <Description>Listen to music using Spotify</Description>
+        <Archive sha1sum="d5b6b6bf978554ec1ebfff05b6a9048c8d2b0747" type="binary">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.27.71.g0a26e3b2-9_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>spotify</Name>
+        <RuntimeDependencies>
+	  <Dependency>atk</Dependency>
+	  <Dependency>nss</Dependency>
+	  <Dependency>cups</Dependency>
+	  <Dependency>curl</Dependency> 
+	  <Dependency>dbus</Dependency>
+	  <Dependency>gtk2</Dependency>
+	  <Dependency>nspr</Dependency>
+	  <Dependency>zlib</Dependency>
+          <Dependency>cairo</Dependency>
+          <Dependency>expat</Dependency>
+          <Dependency>gconf</Dependency>
+          <Dependency>glib2</Dependency>
+          <Dependency>libXi</Dependency>
+          <Dependency>pango</Dependency>
+          <Dependency>libX11</Dependency>
+          <Dependency>libgcc</Dependency>
+          <Dependency>libXext</Dependency>
+          <Dependency>libXtst</Dependency>
+          <Dependency>openssl</Dependency>
+          <Dependency>alsa-lib</Dependency>
+          <Dependency>freetype</Dependency>
+          <Dependency>libXfixes</Dependency>
+          <Dependency>libXrandr</Dependency>
+          <Dependency>fontconfig</Dependency>
+          <Dependency>gdk-pixbuf</Dependency>
+          <Dependency>libXcursor</Dependency>
+          <Dependency>libXdamage</Dependency>
+          <Dependency>libXrender</Dependency>
+          <Dependency>libXScrnSaver</Dependency>
+          <Dependency>libXcomposite</Dependency>          
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/spotify</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/spotify.desktop">spotify.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/icons">spotify-linux-256.png</AdditionalFile>            
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="3">
+            <Date>2016-01-28</Date>
+            <Version>1.0.27.71</Version>
+            <Comment>First Release.</Comment>
+	    <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>	
+    </History>
+</PISI>
