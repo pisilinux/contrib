@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dropbox-client</Name>
+        <Homepage>http://www.dropbox.com</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>as-is</License>
+        <License>MIT</License>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>        
+        <Icon>dropbox</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Dropbox client</Summary>
+        <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
+        <Archive sha1sum="9276070da344413b300d5e009abe7d7802bb9486" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-3.18.1.tar.gz</Archive>
+        <Archive sha1sum="a76f7afa55d80b693e1f246740bfa3d00c940ead" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-3.18.1.tar.gz</Archive>
+        <Archive sha1sum="2d8868de60c696c7aa3663750c388a96c4622ebc" type="targz" target="hede">http://kde-look.org/CONTENT/content-files/141519-dropbox-icons.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>dropbox-client</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>librsync</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+	    <Dependency>libXxf86vm</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>ncurses</Dependency>
+            <Dependency>freetype</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="executable">/opt/dropbox</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/dropbox/POLICIES">POLICIES</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/dropbox.png">dropbox.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/dropbox.desktop">dropbox.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="10">
+            <Date>2016-04-22</Date>
+            <Version>3.18.1</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>
