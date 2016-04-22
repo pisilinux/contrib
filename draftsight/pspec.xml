@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA> 
         <Summary>DraftSight® - Free CAD software for your DWG files</Summary>
         <Description>DraftSight lets professional CAD users, students and educators create, edit and view DWG files.</Description>
-        <Archive sha1sum="85c17d5576977dea7dfb85668c3f678b70255acf" type="binary">http://www.draftsight.com/download-linux-fedora</Archive>
+        <Archive sha1sum="75c2f2a437bd10893e0e9820c01ad2b12818adbd" type="binary">http://www.draftsight.com/download-linux-fedora</Archive>
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
         </BuildDependencies>

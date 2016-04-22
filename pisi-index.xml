@@ -334,7 +334,7 @@
             <Description xml:lang="en">DraftSight lets professional CAD users, students and educators create, edit and view DWG files.</Description>
             <Description xml:lang="es">Con DraftSight, los usuarios CAD profesionales, estudiantes y educadores pueden crear, editar y visualizar ficheros DWG.</Description>
             <Icon>draftsight</Icon>
-            <Archive type="binary" sha1sum="85c17d5576977dea7dfb85668c3f678b70255acf">http://www.draftsight.com/download-linux-fedora</Archive>
+            <Archive type="binary" sha1sum="75c2f2a437bd10893e0e9820c01ad2b12818adbd">http://www.draftsight.com/download-linux-fedora</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -572,6 +572,64 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>otter-browser</Name>
+            <Homepage>http://otter-browser.org/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Otter-Browser Controlled by the user, not vice versa</Summary>
+            <Description xml:lang="en">Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5.</Description>
+            <Archive type="tarbz2" sha1sum="a3b9ca975769d11fd2d72853d2b68c41f805345e">https://sourceforge.net/projects/otter-browser/files/otter-browser-beta9/otter-browser-0.9.09.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-webkit-devel</Dependency>
+                <Dependency>openssl-devel</Dependency>
+                <Dependency>qt5-multimedia-devel</Dependency>
+                <Dependency>qt5-script-devel</Dependency>
+                <Dependency>qt5-sql-sqlite</Dependency>
+                <Dependency>qt5-xmlpatterns-devel</Dependency>
+                <Dependency>qt5-location-devel</Dependency>
+                <Dependency>libxml2-devel</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>jre7-openjdk</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>autogen</Dependency>
+            </BuildDependencies>
+            <SourceURI>otter-browser/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>otter-browser</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-webkit</Dependency>
+                <Dependency>qt5-multimedia</Dependency>
+                <Dependency>qt5-script</Dependency>
+                <Dependency>qt5-xmlpatterns</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share</Path>
+                <Path fileType="man">/usr/share/man/man1</Path>
+                <Path fileType="executable">/usr/bin</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-15</Date>
+                <Version>0.9.09</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>brscan2</Name>
             <Packager>
                 <Name>Stefan Gronewold(groni)</Name>
@@ -589,6 +647,7 @@
             <Name>brscan2</Name>
             <RuntimeDependencies>
                 <Dependency>sane-backends</Dependency>
+                <Dependency>libusb-compat</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/local/Brother/sane/GrayCmData</Path>
@@ -605,6 +664,84 @@
                 <Version>0.2.5</Version>
                 <Comment>First Release</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>spotify</Name>
+            <Homepage>http://spotify.com</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Spotify</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Music Player</Summary>
+            <Summary xml:lang="tr">Müzik Çalar</Summary>
+            <Description xml:lang="en">Listen to music using Spotify</Description>
+            <Description xml:lang="tr">Spotify&apos;ı kullanarak müzik dinleyin.</Description>
+            <Archive type="binary" sha1sum="d5b6b6bf978554ec1ebfff05b6a9048c8d2b0747">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.27.71.g0a26e3b2-9_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+            </BuildDependencies>
+            <SourceURI>spotify/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>spotify</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/spotify</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/spotify.desktop" permission="0755" owner="root">spotify.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/spotify-linux-256.png" permission="0755" owner="root">spotify-linux-256.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2016-01-28</Date>
+                <Version>1.0.27.71</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
@@ -650,6 +787,68 @@
                 <Version>0.1.1</Version>
                 <Comment>First release</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>viber</Name>
+            <Homepage>http://www.viber.com/products/linux/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Free calls, text and picture sharing with anyone, anywhere!</Summary>
+            <Summary xml:lang="tr">Konuşma ve yazışma uygulaması</Summary>
+            <Description xml:lang="en">Free calls, text and picture sharing with anyone, anywhere!</Description>
+            <Description xml:lang="tr">Ücretsiz arama, mesajlaşma ve konuşma yazılımı</Description>
+            <Icon>viber</Icon>
+            <Archive type="tarxz" sha1sum="3c079075518d5481083b6798c248fde9e57b124a">https://github.com/groni/Sources/raw/master/viber-4.2.2.6.tar.xz</Archive>
+            <SourceURI>viber/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>viber</Name>
+            <RuntimeDependencies>
+                <Dependency>mesa</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libx11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/viber</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-12</Date>
+                <Version>4.2.2.6</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
@@ -748,46 +947,98 @@
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>dcp135ccupswrapper-1.0.1</Name>
-        <Summary xml:lang="en">CUPS drivers for Brother DCP-135C printer</Summary>
-        <Description xml:lang="en">CUPS drivers for Brother DCP-135C printer.</Description>
-        <IsA>data</IsA>
-        <IsA>app:console</IsA>
-        <PartOf>unknown</PartOf>
-        <License>as-is</License>
-        <RuntimeDependencies>
-            <Dependency>cups</Dependency>
-        </RuntimeDependencies>
-        <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+    <SpecFile>
+        <Source>
+            <Name>google-chrome</Name>
+            <Homepage>http://chrome.google.com/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>EULA</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network.web</PartOf>
+            <Summary xml:lang="de">Google Chrome für Linux</Summary>
+            <Summary xml:lang="en">Google Chrome for Linux</Summary>
+            <Summary xml:lang="es">Google Chrome para Linux</Summary>
+            <Description xml:lang="de">Google Chrome ist ein Web-Browser der von Google Inc. entwickelt wird. Wichtige Bestandteile sind die Rendering-Engine Webkit, sowie die JavaScript Engine. Beliebt macht den Browser seine einfach zu bedienende Oberfläche und die hohe Geschwindigkeit.</Description>
+            <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
+            <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
+            <Icon>google-chrome</Icon>
+            <Archive type="binary" sha1sum="b8a2ab0023e130caafbff65112804612f70ce0f9">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <BuildDependencies>
+                <Dependency>rpm2targz</Dependency>
+            </BuildDependencies>
+            <SourceURI>google-chrome/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>google-chrome</Name>
+            <RuntimeDependencies>
+                <Dependency>nspr</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>minizip</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libvpx</Dependency>
+                <Dependency>flac</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/opt/google/</Path>
+                <Path fileType="data">/usr/share/pixmaps/</Path>
+                <Path fileType="data">/usr/share/applications/</Path>
+            </Files>
+        </Package>
         <History>
+            <Update release="2">
+                <Date>2016-04-22</Date>
+                <Version>50.0.2661.86</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
-                <Date>11-04-2013</Date>
-                <Version>1</Version>
-                <Comment>Add dcp135ccupswrapper-1.0.1 to repositories</Comment>
+                <Date>2016-04-14</Date>
+                <Version>50.0.2661.75</Version>
+                <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>41220</InstalledSize>
-        <PackageSize>11743</PackageSize>
-        <PackageHash>cb7fc6b4acc1ee9604beb5f72eb18493287b1d28</PackageHash>
-        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
-        <PackageURI>Brother-DCP135c-cupswrapper/dcp135ccupswrapper-1.0.1-1-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>dcp135ccupswrapper-1.0.1</Name>
-            <Homepage>http://solutions.brother.com/linux</Homepage>
-            <Packager>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
+    </SpecFile>
 </PISI>
