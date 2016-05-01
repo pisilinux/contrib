@@ -304,6 +304,50 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>brscan3</Name>
+            <Homepage>http://support.brother.com/g/s/id/linux/en</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPL, custom:brother</License>
+            <IsA>library</IsA>
+            <PartOf>applications.printing</PartOf>
+            <Summary xml:lang="en">Brother SANE drivers for brscan3-compatible models.</Summary>
+            <Description xml:lang="en">brscan3 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+            <Archive type="targz" sha1sum="cb58bc1ea1c1f279b75c68f42722fc178fda79a6">https://github.com/groni/Sources/raw/master/brscan3-0.2.13-1.tar.gz</Archive>
+            <SourceURI>printer and scanner/Brother-brscan3/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>brscan3</Name>
+            <RuntimeDependencies>
+                <Dependency>libusb-compat</Dependency>
+                <Dependency>sed</Dependency>
+                <Dependency>sane-backends</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/local</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="library">/usr/lib/sane</Path>
+                <Path fileType="data">/lib/udev/rules.d</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/lib/udev/rules.d/brscan3.rules" permission="0644" owner="root">brscan3.rules</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-04-28</Date>
+                <Version>0.2.11</Version>
+                <Comment>First release.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>brscan2</Name>
             <Packager>
                 <Name>Stefan Gronewold(groni)</Name>
@@ -1119,4 +1163,44 @@
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>brscan3</Name>
+        <Summary xml:lang="en">Brother SANE drivers for brscan3-compatible models.</Summary>
+        <Description xml:lang="en">brscan3 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+        <IsA>library</IsA>
+        <PartOf>applications.printing</PartOf>
+        <License>GPL, custom:brother</License>
+        <RuntimeDependencies>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>sane-backends</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2016-04-28</Date>
+                <Version>0.2.11</Version>
+                <Comment>First release.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>347570</InstalledSize>
+        <PackageSize>52941</PackageSize>
+        <PackageHash>89b36b3d07d6f83a893f7d4a5fb7cfe28dd9cfe4</PackageHash>
+        <InstallTarHash>da39a3ee5e6b4b0d3255bfef95601890afd80709</InstallTarHash>
+        <PackageURI>printer and scanner/Brother-brscan3/brscan3-0.2.11-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>brscan3</Name>
+            <Homepage>http://support.brother.com/g/s/id/linux/en</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
 </PISI>

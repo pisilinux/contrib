@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd"'>
+<PISI>
+    <Source>
+        <Name>brscan3</Name>
+        <Homepage>http://support.brother.com/g/s/id/linux/en</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPL, custom:brother</License>
+        <IsA>library</IsA>
+        <PartOf>applications.printing</PartOf>
+        <Summary>Brother SANE drivers for brscan3-compatible models.</Summary>
+        <Description>brscan3 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+        <Archive sha1sum="cb58bc1ea1c1f279b75c68f42722fc178fda79a6" type="targz">https://github.com/groni/Sources/raw/master/brscan3-0.2.13-1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>brscan3</Name>
+        <RuntimeDependencies>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>sane-backends</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/local</Path>            
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/</Path>            
+            <Path fileType="library">/usr/lib/sane</Path>
+            <Path fileType="data">/lib/udev/rules.d</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan3.rules">brscan3.rules</AdditionalFile>            
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-28</Date>
+            <Version>0.2.11</Version>
+            <Comment>First release.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
