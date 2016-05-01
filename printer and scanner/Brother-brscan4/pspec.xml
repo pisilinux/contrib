@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brscan4</Name>
+        <Homepage>http://solutions.brother.com/linux/sol/printer/linux/sane_drivers.html</Homepage>
+        <Packager>
+            <Name>Pisi Linux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <PartOf>applications.printing</PartOf>
+        <Summary>Sane scanner drivers for Brother DCP and MFC multifunction printers.</Summary>
+        <Description>brscan4 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+        <Archive sha1sum="07e6eb15cc56f0496255a7879497f05d419881b4" type="targz">https://github.com/groni/Sources/raw/master/brscan4-0.4.2-1.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>brscan4</Name>
+        <RuntimeDependencies>
+            <Dependency>sane-backends</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/local/brother/scanner/brscan4</Path>
+            <!--<Path fileType="data">/usr/local/Brother/sane/models4</Path>-->
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/sane</Path>
+           <Path fileType="data">/lib/udev/rules.d</Path>            
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan4.rules">brscan4.rules</AdditionalFile>            
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2014-08-03</Date>
+            <Version>0.4.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI> 
