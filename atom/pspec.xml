@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>atom-beta</Name>
+        <Homepage>https://atom.io/</Homepage>
+        <Packager>
+            <Name>Pisi Linux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>gui</IsA>
+        <PartOf>applications.development</PartOf>
+        <Summary>A hackable text editor.</Summary>
+        <Description>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
+        <Archive sha1sum="e53934307e3fd9d64ef1895add170d0c18fcd874" type="targz">https://github.com/groni/Sources/raw/master/atom-1.8.0_beta3.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>atom-beta</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>glibc-32bit</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>google-chrome</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </RuntimeDependencies>
+        <Files>            
+            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="data">/usr/share/atom-beta</Path>
+            <Path fileType="doc">/usr/share/doc/atom-beta</Path>
+           <Path fileType="icon">/usr/share/pixmaps</Path>
+           <Path fileType="application">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/atom-beta.png">atom-beta.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/atom-beta.desktop">atom-beta.desktop</AdditionalFile>            
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-05-6</Date>
+            <Version>1.8.0_beta3</Version>
+            <Comment>First release.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI> 
