@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=JEdit
+Name[tr]=JEdit
+GenericName=JEdit
+GenericName[tr]=JEdit
+Comment=Text editor for programmers, written in Java.
+Comment[tr]=Programcılar için text editörü
+Icon=jedit
+Exec=/usr/bin/jedit
+Jarfile=/usr/share/jedit/jedit.jar
+Terminal=false
+Type=Application
+Categories=Java;Utility;TextEditor;
