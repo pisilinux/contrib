@@ -16,8 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="9276070da344413b300d5e009abe7d7802bb9486" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-3.18.1.tar.gz</Archive>
-        <Archive sha1sum="a76f7afa55d80b693e1f246740bfa3d00c940ead" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-3.18.1.tar.gz</Archive>
+        <Archive sha1sum="b0e6eba68f161ee863a43d6a0f57fe077fd8198d" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-4.4.29.tar.gz</Archive>
+        <Archive sha1sum="460cb5604b353b7694093f8c633ff03bb493d50f" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-4.4.29.tar.gz</Archive>
         <Archive sha1sum="2d8868de60c696c7aa3663750c388a96c4622ebc" type="targz" target="hede">http://kde-look.org/CONTENT/content-files/141519-dropbox-icons.tar.gz</Archive>
     </Source>
 
@@ -62,7 +62,14 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="2">
+            <Date>2016-06-09</Date>
+            <Version>4.4.29</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
             <Date>2016-04-22</Date>
             <Version>3.18.1</Version>
             <Comment>First Release.</Comment>
