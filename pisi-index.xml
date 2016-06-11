@@ -110,6 +110,47 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>python-enchant</Name>
+            <Homepage>http://www.rfk.id.au/software/pyenchant</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>LGPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Spellchecking library for Python</Summary>
+            <Summary xml:lang="tr">Python için yazım denetimi kütüphanesi</Summary>
+            <Description xml:lang="en">python-enchant is an efficient Python module for Enchant spellchecker.</Description>
+            <Description xml:lang="tr">python-enchant, Enchant yazım denetleyicisi için hızlı bir Python modulüdür.</Description>
+            <Archive type="targz" sha1sum="353b0b06cb29deef46298337afdd96ec71f01625">https://pypi.python.org/packages/4a/2c/355274f41cafa938cf7d41752469a0316efb360506558cc4890abf4c5dae/pyenchant-1.6.6.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>enchant-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>python-enchant/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-enchant</Name>
+            <RuntimeDependencies>
+                <Dependency>enchant</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-11</Date>
+                <Version>1.6.6</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>easypaint</Name>
             <Homepage>http://qt-apps.org/content/show.php/EasyPaint?content=140877</Homepage>
             <Packager>
