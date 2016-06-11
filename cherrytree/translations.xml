@@ -1,0 +1,33 @@
+<PISI>
+    <Source>
+        <Name>cherrytree</Name>
+        <Summary xml:lang="tr">Uygulama alarak hiyerarşik not</Summary>
+        <Description xml:lang="tr">Özellikler :
+
+- Zengin metin ( ön plan rengi , arka plan rengi , kalın , italik , üstü çizili , altı çizili , küçük , h1 , h2 , h3, simge , üst simge , monospace )
+- Sözdizimi (zengin metingeçerli düğüm devre dışı olduğunda ) vurgulama
+- Taşıma görüntüler : eklememetin , edit ( döndürmek / yeniden boyutlandırma ) , png dosyayı kaydedin
+- Taşıma listeleri ( madde işaretli , numaralı , yapılacaklar aralarında ve anahtarı , vardiya ile çok satırlı + enter )
+- (Düz metin olan hücreler ) işleme basit tablolar , kes / kopyala / yapıştır sıra , ithalat / ihracat csv dosyası olarak
+- Taşıma codeboxes : otomatik kutuları normal bir zengin metin metin vurgulanır
+- Metin, resim , tablo ve codeboxes hizalama ( sol / merkez / sağ)
+- Köprüler ( web sayfalarına bağlantılar , bağlantılar düğümler / düğümleri + çapalar , dosyalara bağlantılar , klasörlere bağlantılar )
+- Yazım denetimi ( pygtkspellcheck ve pyenchant kullanarak)
+- Içi uygulama copy / paste : Tek görüntü , tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+- Çapraz başvuru copy / paste ( OpenOffice ve gmail ile test ) : Tek görüntü, tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+-Dosya yöneticisi ve cherrytree yapıştırarak dosyaların bir listesini kopyalama dosyaların bağlantıları bir liste oluşturmak , görüntülerimetin tanınan ve eklenen
+- Seçim / düğüm / düğüm ve alt düğümler pdf dosyası olarak baskı ve kaydetmek /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler html ihracat /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler düz metin ihracat /tüm ağaç
+- Başlıkları H1, H2 ve H3 dayalı bir düğüm / düğüm ve alt düğümler / bütün ağaç için TOC üretimi
+- Tüm düğümler bulmak , geçerli düğüm bulmak , bir düğümü bulmak
+- , Düğüm adları yerine geçerli düğüm yerine , tüm düğümleri değiştirin
+- En sonen son bulmak , yineleme yineleme , yerineson uygulamalı metin biçimlendirme yineleme
+- Sepet ithalat , Cherrytree , gnote , KeepNote , açış , biliyordun , MemPad , notecase , fatma treepad lite , TuxCards , Zim
+- Seçim / düğüm / düğüm ve alt düğümler /bütün ağacın dosyayı Cherrytree ihracat
+- ( Http://www.7-zip.org/ kullanarak) şifre koruması
+- Ağaç düğümleri sürükle ve bırak</Description>
+    </Source>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

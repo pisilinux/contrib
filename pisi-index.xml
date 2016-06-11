@@ -686,7 +686,7 @@
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="fc1d185cdea819b337d4ce6264279153617f4134">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="99b36fc719ddbe5485c237c2255587fc0174075c">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -746,6 +746,20 @@
             </Files>
         </Package>
         <History>
+            <Update release="7">
+                <Date>2016-06-09</Date>
+                <Version>51.0.2704.84</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2016-06-02</Date>
+                <Version>51.0.2704.79</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="5">
                 <Date>2016-05-26</Date>
                 <Version>51.0.2704.63</Version>
@@ -777,6 +791,81 @@
             <Update release="1">
                 <Date>2016-04-14</Date>
                 <Version>50.0.2661.75</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cherrytree</Name>
+            <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>office</PartOf>
+            <Summary xml:lang="en">Cherrytree A hierarchical note taking application</Summary>
+            <Summary xml:lang="tr">Uygulama alarak hiyerarşik not</Summary>
+            <Description xml:lang="en">A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.</Description>
+            <Description xml:lang="tr">Özellikler :
+
+- Zengin metin ( ön plan rengi , arka plan rengi , kalın , italik , üstü çizili , altı çizili , küçük , h1 , h2 , h3, simge , üst simge , monospace )
+- Sözdizimi (zengin metingeçerli düğüm devre dışı olduğunda ) vurgulama
+- Taşıma görüntüler : eklememetin , edit ( döndürmek / yeniden boyutlandırma ) , png dosyayı kaydedin
+- Taşıma listeleri ( madde işaretli , numaralı , yapılacaklar aralarında ve anahtarı , vardiya ile çok satırlı + enter )
+- (Düz metin olan hücreler ) işleme basit tablolar , kes / kopyala / yapıştır sıra , ithalat / ihracat csv dosyası olarak
+- Taşıma codeboxes : otomatik kutuları normal bir zengin metin metin vurgulanır
+- Metin, resim , tablo ve codeboxes hizalama ( sol / merkez / sağ)
+- Köprüler ( web sayfalarına bağlantılar , bağlantılar düğümler / düğümleri + çapalar , dosyalara bağlantılar , klasörlere bağlantılar )
+- Yazım denetimi ( pygtkspellcheck ve pyenchant kullanarak)
+- Içi uygulama copy / paste : Tek görüntü , tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+- Çapraz başvuru copy / paste ( OpenOffice ve gmail ile test ) : Tek görüntü, tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+-Dosya yöneticisi ve cherrytree yapıştırarak dosyaların bir listesini kopyalama dosyaların bağlantıları bir liste oluşturmak , görüntülerimetin tanınan ve eklenen
+- Seçim / düğüm / düğüm ve alt düğümler pdf dosyası olarak baskı ve kaydetmek /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler html ihracat /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler düz metin ihracat /tüm ağaç
+- Başlıkları H1, H2 ve H3 dayalı bir düğüm / düğüm ve alt düğümler / bütün ağaç için TOC üretimi
+- Tüm düğümler bulmak , geçerli düğüm bulmak , bir düğümü bulmak
+- , Düğüm adları yerine geçerli düğüm yerine , tüm düğümleri değiştirin
+- En sonen son bulmak , yineleme yineleme , yerineson uygulamalı metin biçimlendirme yineleme
+- Sepet ithalat , Cherrytree , gnote , KeepNote , açış , biliyordun , MemPad , notecase , fatma treepad lite , TuxCards , Zim
+- Seçim / düğüm / düğüm ve alt düğümler /bütün ağacın dosyayı Cherrytree ihracat
+- ( Http://www.7-zip.org/ kullanarak) şifre koruması
+- Ağaç düğümleri sürükle ve bırak</Description>
+            <Archive type="tarxz" sha1sum="c0e118fd1020a7ac207bb9c1bcab05c095f80d54">http://www.giuspen.com/software/cherrytree-0.37.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>desktop-file-utils</Dependency>
+            </BuildDependencies>
+            <SourceURI>cherrytree/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cherrytree</Name>
+            <RuntimeDependencies>
+                <Dependency>python-enchant</Dependency>
+                <Dependency>python-gtk</Dependency>
+                <Dependency>python-gtksourceview</Dependency>
+                <Dependency>python-pygobject</Dependency>
+                <Dependency>python3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/cherrytree/cherrytree.desktop" permission="0644" owner="root" group="root">cherrytree.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/cherrytree/cherrytree.svg" permission="0644" owner="root" group="root">cherrytree.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-11</Date>
+                <Version>0.37.0</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -1088,8 +1177,8 @@
             <Summary xml:lang="en">A Dropbox client</Summary>
             <Description xml:lang="en">Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
             <Icon>dropbox</Icon>
-            <Archive type="targz" sha1sum="9276070da344413b300d5e009abe7d7802bb9486" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-3.18.1.tar.gz</Archive>
-            <Archive type="targz" sha1sum="a76f7afa55d80b693e1f246740bfa3d00c940ead" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-3.18.1.tar.gz</Archive>
+            <Archive type="targz" sha1sum="b0e6eba68f161ee863a43d6a0f57fe077fd8198d" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-4.4.29.tar.gz</Archive>
+            <Archive type="targz" sha1sum="460cb5604b353b7694093f8c633ff03bb493d50f" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-4.4.29.tar.gz</Archive>
             <Archive type="targz" sha1sum="2d8868de60c696c7aa3663750c388a96c4622ebc" target="hede">http://kde-look.org/CONTENT/content-files/141519-dropbox-icons.tar.gz</Archive>
             <SourceURI>dropbox-client/pspec.xml</SourceURI>
         </Source>
@@ -1133,7 +1222,14 @@
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="10">
+            <Update release="2">
+                <Date>2016-06-09</Date>
+                <Version>4.4.29</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
                 <Date>2016-04-22</Date>
                 <Version>3.18.1</Version>
                 <Comment>First Release.</Comment>
@@ -1531,4 +1627,72 @@
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>cherrytree</Name>
+        <Summary xml:lang="en">Cherrytree A hierarchical note taking application</Summary>
+        <Summary xml:lang="tr">Uygulama alarak hiyerarşik not</Summary>
+        <Description xml:lang="en">A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.</Description>
+        <Description xml:lang="tr">Özellikler :
+
+- Zengin metin ( ön plan rengi , arka plan rengi , kalın , italik , üstü çizili , altı çizili , küçük , h1 , h2 , h3, simge , üst simge , monospace )
+- Sözdizimi (zengin metingeçerli düğüm devre dışı olduğunda ) vurgulama
+- Taşıma görüntüler : eklememetin , edit ( döndürmek / yeniden boyutlandırma ) , png dosyayı kaydedin
+- Taşıma listeleri ( madde işaretli , numaralı , yapılacaklar aralarında ve anahtarı , vardiya ile çok satırlı + enter )
+- (Düz metin olan hücreler ) işleme basit tablolar , kes / kopyala / yapıştır sıra , ithalat / ihracat csv dosyası olarak
+- Taşıma codeboxes : otomatik kutuları normal bir zengin metin metin vurgulanır
+- Metin, resim , tablo ve codeboxes hizalama ( sol / merkez / sağ)
+- Köprüler ( web sayfalarına bağlantılar , bağlantılar düğümler / düğümleri + çapalar , dosyalara bağlantılar , klasörlere bağlantılar )
+- Yazım denetimi ( pygtkspellcheck ve pyenchant kullanarak)
+- Içi uygulama copy / paste : Tek görüntü , tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+- Çapraz başvuru copy / paste ( OpenOffice ve gmail ile test ) : Tek görüntü, tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
+-Dosya yöneticisi ve cherrytree yapıştırarak dosyaların bir listesini kopyalama dosyaların bağlantıları bir liste oluşturmak , görüntülerimetin tanınan ve eklenen
+- Seçim / düğüm / düğüm ve alt düğümler pdf dosyası olarak baskı ve kaydetmek /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler html ihracat /tüm ağaç
+- Seçim / düğüm / düğüm ve alt düğümler düz metin ihracat /tüm ağaç
+- Başlıkları H1, H2 ve H3 dayalı bir düğüm / düğüm ve alt düğümler / bütün ağaç için TOC üretimi
+- Tüm düğümler bulmak , geçerli düğüm bulmak , bir düğümü bulmak
+- , Düğüm adları yerine geçerli düğüm yerine , tüm düğümleri değiştirin
+- En sonen son bulmak , yineleme yineleme , yerineson uygulamalı metin biçimlendirme yineleme
+- Sepet ithalat , Cherrytree , gnote , KeepNote , açış , biliyordun , MemPad , notecase , fatma treepad lite , TuxCards , Zim
+- Seçim / düğüm / düğüm ve alt düğümler /bütün ağacın dosyayı Cherrytree ihracat
+- ( Http://www.7-zip.org/ kullanarak) şifre koruması
+- Ağaç düğümleri sürükle ve bırak</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>office</PartOf>
+        <License>GPLv3+</License>
+        <RuntimeDependencies>
+            <Dependency>python-enchant</Dependency>
+            <Dependency>python-gtk</Dependency>
+            <Dependency>python-gtksourceview</Dependency>
+            <Dependency>python-pygobject</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2016-06-11</Date>
+                <Version>0.37.0</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>2505023</InstalledSize>
+        <PackageSize>643849</PackageSize>
+        <PackageHash>949d1f133997e0737225cf1b2d4199be56b3f42c</PackageHash>
+        <InstallTarHash>d79b4432fd9429a60c4f9b4db55074ad705f84a5</InstallTarHash>
+        <PackageURI>cherrytree/cherrytree-0.37.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>cherrytree</Name>
+            <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
+            <Packager>
+                <Name>Pisi Linux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
 </PISI>
