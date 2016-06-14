@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=PisiLinux-ImageWriter
+GenericName=ISO => USB Flash
+Comment=Tool for creating Live USB Flash
+Exec=/usr/bin/PisiImageWriter
+Terminal=false
+Categories=System;Utility;
+Icon=/usr/share/pixmaps/icon-pisi.png
+Type=Application

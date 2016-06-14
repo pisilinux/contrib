@@ -968,6 +968,54 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>pisi-linux-imagewriter</Name>
+            <Homepage>http://wiki.rosalab.ru/ru/index.php/ROSA_ImageWriter</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Pisi Linux Image Writer is a program for writing installation images to a flash disk.</Summary>
+            <Description xml:lang="en">Pisi Linux Image Writer is a fork based on the ROSA ImageWriter</Description>
+            <Archive type="targz" sha1sum="bf4bdcff85d0e1a8074679d1a19b4e5cffa4dc44">https://github.com/groni/Sources/raw/master/pisi-linux-imagewriter.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>eudev-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>mesa-glu-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>pisi-linux-imagewriter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pisi-linux-imagewriter</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc/pisi-linux-imagewriter</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pisilinux-imagewriter.desktop" permission="0644" owner="root">pisilinux-imagewriter.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/icon-pisi.png" permission="0644" owner="root">icon-pisi.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-14</Date>
+                <Version>2.6.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>viber</Name>
             <Homepage>http://www.viber.com/products/linux/</Homepage>
             <Packager>
@@ -1760,72 +1808,4 @@
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>cherrytree</Name>
-        <Summary xml:lang="en">Cherrytree A hierarchical note taking application</Summary>
-        <Summary xml:lang="tr">Uygulama alarak hiyerarşik not</Summary>
-        <Description xml:lang="en">A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.</Description>
-        <Description xml:lang="tr">Özellikler :
-
-- Zengin metin ( ön plan rengi , arka plan rengi , kalın , italik , üstü çizili , altı çizili , küçük , h1 , h2 , h3, simge , üst simge , monospace )
-- Sözdizimi (zengin metingeçerli düğüm devre dışı olduğunda ) vurgulama
-- Taşıma görüntüler : eklememetin , edit ( döndürmek / yeniden boyutlandırma ) , png dosyayı kaydedin
-- Taşıma listeleri ( madde işaretli , numaralı , yapılacaklar aralarında ve anahtarı , vardiya ile çok satırlı + enter )
-- (Düz metin olan hücreler ) işleme basit tablolar , kes / kopyala / yapıştır sıra , ithalat / ihracat csv dosyası olarak
-- Taşıma codeboxes : otomatik kutuları normal bir zengin metin metin vurgulanır
-- Metin, resim , tablo ve codeboxes hizalama ( sol / merkez / sağ)
-- Köprüler ( web sayfalarına bağlantılar , bağlantılar düğümler / düğümleri + çapalar , dosyalara bağlantılar , klasörlere bağlantılar )
-- Yazım denetimi ( pygtkspellcheck ve pyenchant kullanarak)
-- Içi uygulama copy / paste : Tek görüntü , tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
-- Çapraz başvuru copy / paste ( OpenOffice ve gmail ile test ) : Tek görüntü, tek codeboxes , tek tablolar ve zengin metin , görüntü , codeboxes ve tablolar bir bileşik seçim desteklenen
--Dosya yöneticisi ve cherrytree yapıştırarak dosyaların bir listesini kopyalama dosyaların bağlantıları bir liste oluşturmak , görüntülerimetin tanınan ve eklenen
-- Seçim / düğüm / düğüm ve alt düğümler pdf dosyası olarak baskı ve kaydetmek /tüm ağaç
-- Seçim / düğüm / düğüm ve alt düğümler html ihracat /tüm ağaç
-- Seçim / düğüm / düğüm ve alt düğümler düz metin ihracat /tüm ağaç
-- Başlıkları H1, H2 ve H3 dayalı bir düğüm / düğüm ve alt düğümler / bütün ağaç için TOC üretimi
-- Tüm düğümler bulmak , geçerli düğüm bulmak , bir düğümü bulmak
-- , Düğüm adları yerine geçerli düğüm yerine , tüm düğümleri değiştirin
-- En sonen son bulmak , yineleme yineleme , yerineson uygulamalı metin biçimlendirme yineleme
-- Sepet ithalat , Cherrytree , gnote , KeepNote , açış , biliyordun , MemPad , notecase , fatma treepad lite , TuxCards , Zim
-- Seçim / düğüm / düğüm ve alt düğümler /bütün ağacın dosyayı Cherrytree ihracat
-- ( Http://www.7-zip.org/ kullanarak) şifre koruması
-- Ağaç düğümleri sürükle ve bırak</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>office</PartOf>
-        <License>GPLv3+</License>
-        <RuntimeDependencies>
-            <Dependency>python-enchant</Dependency>
-            <Dependency>python-gtk</Dependency>
-            <Dependency>python-gtksourceview</Dependency>
-            <Dependency>python-pygobject</Dependency>
-            <Dependency>python3</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2016-06-11</Date>
-                <Version>0.37.0</Version>
-                <Comment>First Release.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>2505023</InstalledSize>
-        <PackageSize>643849</PackageSize>
-        <PackageHash>949d1f133997e0737225cf1b2d4199be56b3f42c</PackageHash>
-        <InstallTarHash>d79b4432fd9429a60c4f9b4db55074ad705f84a5</InstallTarHash>
-        <PackageURI>cherrytree/cherrytree-0.37.0-1-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>cherrytree</Name>
-            <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
-            <Packager>
-                <Name>Pisi Linux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
 </PISI>
