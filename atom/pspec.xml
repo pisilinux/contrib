@@ -51,7 +51,7 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
-        <Files>            
+        <Files>            agbim gelmis hos gelmis
             <Path fileType="executable">/usr/bin</Path>            
             <Path fileType="data">/usr/share/atom-beta</Path>
             <Path fileType="doc">/usr/share/doc/atom-beta</Path>

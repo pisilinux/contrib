@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ProjectLibre</Name>
+        <Homepage>http://www.projectlibre.org/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>CPL-1.0</License>
+        <PartOf>office</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Open source Project Management Tool</Summary>
+        <Description>- Microsoft Project replacement,Gantt Chart,Earned Value Costing,PERT Charts,Project Management software
+          RBS Chart, New version of OpenProj</Description>
+        <Archive sha1sum="990d88e7f433b6218fdcdef5c2ff4e931efb5486" type="targz">https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.6.2/projectlibre-1.6.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>ProjectLibre</Name>
+        <RuntimeDependencies>
+            <Dependency>jre7-openjdk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>            
+            <Path fileType="data">/usr</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/ProjectLibre.desktop" permission="0644" group="root" owner="root">ProjectLibre.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/Libre.png" permission="0644" group="root" owner="root">Libre.png</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-06-24</Date>
+            <Version>1.6.2</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>

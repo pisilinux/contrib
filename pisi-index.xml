@@ -727,7 +727,7 @@
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="99b36fc719ddbe5485c237c2255587fc0174075c">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="7a1bf0a0dc13dbc47263b425ffaf219ac15185f9">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -787,6 +787,20 @@
             </Files>
         </Package>
         <History>
+            <Update release="9">
+                <Date>2016-06-24</Date>
+                <Version>51.0.2704.106</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="8">
+                <Date>2016-06-17</Date>
+                <Version>51.0.2704.103</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="7">
                 <Date>2016-06-09</Date>
                 <Version>51.0.2704.84</Version>
@@ -1652,6 +1666,56 @@
             <Update release="1">
                 <Date>2016-05-26</Date>
                 <Version>5.3.0</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ProjectLibre</Name>
+            <Homepage>http://www.projectlibre.org/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>CPL-1.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>office</PartOf>
+            <Summary xml:lang="en">Open source Project Management Tool</Summary>
+            <Summary xml:lang="tr">Açık kaynak Proje Yönetimi Aracı</Summary>
+            <Description xml:lang="en">- Microsoft Project replacement,Gantt Chart,Earned Value Costing,PERT Charts,Project Management software
+          RBS Chart, New version of OpenProj</Description>
+            <Description xml:lang="tr">- Microsoft Project yedek
+- Gantt Chart
+- Güncellemeleri / hata düzeltmeleri yüzlerce OpenProj yeni ve güncellenmiş versiyonu
+- Maliyet Kazanılan Değer
+- PERT Grafikler
+- Proje Yönetimi yazılımı
+- RBS Grafik
+- OpenProj yeni versiyonu</Description>
+            <Archive type="targz" sha1sum="990d88e7f433b6218fdcdef5c2ff4e931efb5486">https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.6.2/projectlibre-1.6.2.tar.gz</Archive>
+            <SourceURI>ProjectLibre/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ProjectLibre</Name>
+            <RuntimeDependencies>
+                <Dependency>jre7-openjdk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt</Path>
+                <Path fileType="data">/usr</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/ProjectLibre.desktop" permission="0644" owner="root" group="root">ProjectLibre.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/Libre.png" permission="0644" owner="root" group="root">Libre.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-06-24</Date>
+                <Version>1.6.2</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
