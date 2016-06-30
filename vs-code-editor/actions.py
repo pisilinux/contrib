@@ -1,6 +1,5 @@
 #!/usr/bin/python
-
-# Created For Solus Operating System
+# -*- coding: utf-8 -*-
 
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
