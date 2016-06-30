@@ -1948,4 +1948,82 @@
             </Update>
         </History>
     </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gitkraken</Name>
+            <Homepage>http://www.gitkraken.com/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">The intuitive, fast, and beautiful cross-platform Git client.</Summary>
+            <Description xml:lang="en">GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
+            <Archive type="targz" sha1sum="d03db8dad7cc50d814bdc775ad8f133c1b83322c">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
+            <SourceURI>gitkraken/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gitkraken</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libgpg-error</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/gitkraken.png" permission="0644" owner="root">gitkraken.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/gitkraken.desktop" permission="0644" owner="root">gitkraken.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2016-06-30</Date>
+                <Version>1.4.1</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-05-10</Date>
+                <Version>1.30</Version>
+                <Comment>First release.</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
 </PISI>
