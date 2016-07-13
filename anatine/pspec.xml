@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>anatine</Name>
+        <Homepage>https://github.com/sindresorhus/anatine</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>MIT</License>
+        <Icon>anatine</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Pristine Twitter app.</Summary>
+        <Description>Twitter Application for the Desktop.</Description>
+        <Archive sha1sum="0a4e4af1a39684175ca19259d33a10d8a4b96844" type="targz">https://github.com/groni/Sources/raw/master/anatine.tar.gz</Archive>        
+    </Source>
+
+    <Package>
+        <Name>anatine</Name>        
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXScrnSaver</Dependency>            
+        </RuntimeDependencies>       
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path>            
+        </Files>
+
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/anatine.desktop">anatine.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/anatine.png">anatine.png</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-11</Date>
+            <Version>0.5.1</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

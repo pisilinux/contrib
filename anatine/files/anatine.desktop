@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Anatine
+GenericName=Twitter Desktop App
+GenericName[tr]=Anatine
+Comment=A simple & beautiful app for Twitter.
+Comment[tr]=A simple & beautiful app for Twitter.
+Icon=/usr/share/pixmaps/anatine.png
+Exec=/usr/share/anatine/Anatine
+Terminal=false
+StartupNotify=false
+Categories=Internet;Network;Chat

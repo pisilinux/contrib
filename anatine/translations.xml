@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>Facebook Desktop Messenger</Name>
+        <Summary xml:lang="tr">A simple and beautiful app for Facebook Messenger.</Summary>
+        <Description xml:lang="tr">Not an official app. No affiliation with Facebook.</Description>
+    </Source>
+</PISI>
