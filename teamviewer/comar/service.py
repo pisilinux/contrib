@@ -8,25 +8,25 @@ serviceDesc = _({
 
 serviceDefault = "on"
 
-pidFile = "/run/teamviewerd.pid"
-
+PIDFILE="/run/teamviewerd.pid"
+DAEMON ="/opt/teamviewer/tv_bin/teamviewerd"
 
 @synchronized
 def start():
-    loadEnvironment()
-    startService(command="/opt/teamviewer/tv_bin/teamviewerd",
-                 args="-d",
-                 pidfile=pidFile,
-                 makepid=True,
+    startService(command=DAEMON,
+                 args=" -d",
                  donotify=True)
-        
+    os.system("pidof -o %PPID " + "%s > %s" % (DAEMON, PIDFILE))
 
 @synchronized
 def stop():
-    stopService(pidfile=pidFile,
+    stopService(pidfile=PIDFILE,
                 donotify=True)
-    os.unlink(pidFile)
-             
+
+    try:
+        os.unlink(PIDFILE)
+    except:
+        pass
 
 def status():
-    return isServiceRunning(pidFile)
+    return isServiceRunning(pidfile=PIDFILE)
