@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Caprine
+GenericName=Facebook Messenger
+GenericName[tr]=Caprine
+Comment=A simple & beautiful app for Facebook Messenger.
+Comment[tr]=A simple & beautiful app for Facebook Messenger.
+Icon=/usr/share/pixmaps/caprine.png
+Exec=/usr/share/caprine/Caprine
+Terminal=false
+StartupNotify=false
+Categories=Internet;Network;Chat
