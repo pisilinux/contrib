@@ -23,8 +23,8 @@
             <Path fileType="application">/usr/share/applications</Path> 
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" target="/usr/share/applications/Visual Studio Code.desktop" group="root" permission="0644">Visual Studio Code.desktop</AdditionalFile>
-            <AdditionalFile owner="root" target="/usr/share/pixmaps/code.png" group="root" permission="0644">code.png</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/applications/Visual-Studio-Code.desktop" group="root" permission="0744">Visual-Studio-Code.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/pixmaps/code.png" group="root" permission="0744">code.png</AdditionalFile>
         </AdditionalFiles>
         <Summary>Visual Studio Code</Summary>
     </Package>
