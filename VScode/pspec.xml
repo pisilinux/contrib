@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>Visual Studio Code</Name>
+        <Name>VSCode</Name>
         <Homepage>http://code.visualstudio.com</Homepage>
         <Packager>
             <Name>Sami Babat</Name>
