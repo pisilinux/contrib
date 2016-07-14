@@ -10,4 +10,4 @@ from pisi.actionsapi import shelltools
 
 
 def install():
-    pisitools.insinto("/usr/share/VSCode-linux-x64, "./*")   
+    pisitools.insinto("/usr/share/VSCode-linux-x64", "./*")  
