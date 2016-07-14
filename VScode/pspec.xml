@@ -16,7 +16,7 @@
 </Archive>
     </Source>
     <Package>
-        <Name>Visual Studio Code</Name>
+        <Name>VSCode</Name>
         <Files>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
