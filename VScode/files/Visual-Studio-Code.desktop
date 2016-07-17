@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Visual Studio Code
+GenericName=Visual Studio Code
+GenericName[tr]=Visual Studio Code
+Comment=Visual Studio Code
+Comment[tr]=Visual Studio Code
+Icon=code
+Exec=/usr/share/VSCode-linux-x64/code
+Terminal=false
+StartupNotify=false
+Categories=TextEditor;Development;

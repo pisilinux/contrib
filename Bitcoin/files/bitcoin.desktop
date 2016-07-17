@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Bitcoin
+GenericName=Bitcoin
+GenericName[tr]=Bitcoin
+Comment=Bitcoin E-Cüzdan
+Comment[tr]=Bitcoin E-Cüzdan
+Icon=bitcoin
+Exec=bitcoin-qt
+Terminal=false
+StartupNotify=false
+Categories=Network;

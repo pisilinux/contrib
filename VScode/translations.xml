@@ -1,0 +1,7 @@
+<PISI>
+    <Source>
+        <Name>VSCode</Name>
+        <Summary xml:lang="tr">Visual Studio Code</Summary>
+        <Description xml:lang="tr">Visual Studio Code</Description>
+    </Source>
+</PISI>
