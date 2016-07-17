@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser</Summary>
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
-        <Archive sha1sum="a1d5496076aaef3c9c9dc0e1a83b2f700943de21" type="binary">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/37.0.2178.32/linux/opera-stable_37.0.2178.32_amd64.deb</Archive>
+        <Archive sha1sum="8e6f85d41eeb8bbf59f6f348b84e6600ff18f77c" type="binary">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/38.0.2220.41/linux/opera-stable_38.0.2220.41_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -64,8 +64,8 @@
 
     <History>
         <Update release="1">
-            <Date>2016-05-27</Date>
-            <Version>37.0.2178.32</Version>
+            <Date>2016-07-17</Date>
+            <Version>38.0.2220.41</Version>
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
