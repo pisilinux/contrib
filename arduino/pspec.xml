@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>arduino</Name>
+        <Homepage>http://energia.nu/</Homepage>
+        <Packager>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv1</License>
+        <PartOf>programming</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+        <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
+        <Icon>arduino</Icon>
+        <Archive sha1sum="8361ce33fd7b7e04a22d696a3c1c41b8ce505bac" type="tarxz">https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>arduino</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/arduino.png" owner="root" permission="0744" group="root">arduino.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-07-20</Date>
+            <Version>1.6.9</Version>
+            <Comment>Yazılım geliştirme editörü</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
