@@ -1,6 +1,45 @@
 <PISI>
     <SpecFile>
         <Source>
+            <Name>arduino</Name>
+            <Homepage>http://energia.nu/</Homepage>
+            <Packager>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>GPLv1</License>
+            <IsA>app:gui</IsA>
+            <PartOf>programming</PartOf>
+            <Summary xml:lang="en">
+Arduino IDE,  Software Development Environment</Summary>
+            <Description xml:lang="en">The Arduino project provides the Arduino integrated development environment (IDE), which is a cross-platform application written in the programming language Java. It originated from the IDE for the languages Processing and Wiring.</Description>
+            <Icon>arduino</Icon>
+            <Archive type="tarxz" sha1sum="8361ce33fd7b7e04a22d696a3c1c41b8ce505bac">https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz</Archive>
+            <SourceURI>arduino/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>arduino</Name>
+            <Summary xml:lang="en">Arduino IDE, yazılım geliştirme ortamı</Summary>
+            <Files>
+                <Path fileType="data">/usr</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/arduino.desktop" permission="0744" owner="root" group="root">arduino.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/arduino.png" permission="0744" owner="root" group="root">arduino.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-20</Date>
+                <Version>1.6.9</Version>
+                <Comment>Yazılım geliştirme editörü</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>teamviewer</Name>
             <Homepage>http://www.teamviewer.com/</Homepage>
             <Packager>
@@ -418,6 +457,216 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>caprine</Name>
+            <Homepage>http://messengerfordesktop.com/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Unofficial Facebook Messenger app.</Summary>
+            <Description xml:lang="en">Not an official app. No affiliation with Facebook.</Description>
+            <Icon>Facebook Desktop Messenger</Icon>
+            <Archive type="targz" sha1sum="9ec926dd10aebc81727c9f832d7d476045927077">https://github.com/groni/Sources/raw/master/caprine.tar.gz</Archive>
+            <SourceURI>Caprine/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caprine</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/caprine.desktop" permission="0644" owner="root">caprine.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/caprine.png" permission="0644" owner="root">caprine.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-11</Date>
+                <Version>1.4.1</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>VSCode</Name>
+            <Homepage>http://code.visualstudio.com</Homepage>
+            <Packager>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>editor</PartOf>
+            <Summary xml:lang="en">Visual Studio Code</Summary>
+            <Summary xml:lang="tr">Visual Studio Code</Summary>
+            <Description xml:lang="en">Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
+            <Description xml:lang="tr">Visual Studio Code</Description>
+            <Icon>code</Icon>
+            <Archive type="zip" sha1sum="e1de83e88a9a67e4911a7c731cb3772ca37a3b13">https://az764295.vo.msecnd.net/stable/e6b4afa53e9c0f54edef1673de9001e9f0f547ae/VSCode-linux-x64-stable.zip</Archive>
+            <SourceURI>VScode/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>VSCode</Name>
+            <Summary xml:lang="en">Visual Studio Code</Summary>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/Visual-Studio-Code.desktop" permission="0744" owner="root" group="root">Visual-Studio-Code.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/code.png" permission="0744" owner="root" group="root">code.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-17</Date>
+                <Version>1.3.1</Version>
+                <Comment>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>obs-studio</Name>
+            <Homepage>https://obsproject.com/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">OBS-Studio is a rewrite of what was formerly known as Open Broadcaster Software</Summary>
+            <Summary xml:lang="tr">OBS-Studio is a rewrite of what was formerly known as Open Broadcaster
+ Software</Summary>
+            <Description xml:lang="en">OBS-Studio software was originally designed for recording and streaming live video content, efficiently</Description>
+            <Description xml:lang="tr">OBS-Studio software was originally designed for recording and streaming live
+ video content, efficiently</Description>
+            <Icon>obs-studio</Icon>
+            <Archive type="targz" sha1sum="4b6bfbb3e99964522b71710bbc327376bd038f13">https://github.com/jp9000/obs-studio/archive/0.15.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>curl-devel</Dependency>
+                <Dependency>dbus-devel</Dependency>
+                <Dependency>x264-devel</Dependency>
+                <Dependency>zlib-devel</Dependency>
+                <Dependency>eudev-devel</Dependency>
+                <Dependency>ffmpeg-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libv4l-devel</Dependency>
+                <Dependency>libxcb-devel</Dependency>
+                <Dependency>jansson-devel</Dependency>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>jack-audio-connection-kit-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>obs-studio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>obs-studio</Name>
+            <RuntimeDependencies>
+                <Dependency>curl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>x264</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>ffmpeg</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libv4l</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>jansson</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/obs-studio.desktop" permission="0644" owner="root">obs-studio.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/obs-logo.png" permission="0644" owner="root">obs-logo.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>obs-studio-devel</Name>
+            <Summary xml:lang="en">Development files for obs-studio</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">obs-studio</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/cmake</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-13</Date>
+                <Version>0.15.1</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>brscan3</Name>
             <Homepage>http://support.brother.com/g/s/id/linux/en</Homepage>
             <Packager>
@@ -737,6 +986,117 @@
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>anatine</Name>
+            <Homepage>https://github.com/sindresorhus/anatine</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Pristine Twitter app.</Summary>
+            <Description xml:lang="en">Twitter Application for the Desktop.</Description>
+            <Icon>anatine</Icon>
+            <Archive type="targz" sha1sum="0a4e4af1a39684175ca19259d33a10d8a4b96844">https://github.com/groni/Sources/raw/master/anatine.tar.gz</Archive>
+            <SourceURI>anatine/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>anatine</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/anatine.desktop" permission="0644" owner="root">anatine.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/anatine.png" permission="0644" owner="root">anatine.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-11</Date>
+                <Version>0.5.1</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>bitcoin</Name>
+            <Homepage>https://bitcoin.org/</Homepage>
+            <Packager>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network</PartOf>
+            <Summary xml:lang="en">Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
+            <Summary xml:lang="tr">Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
+            <Description xml:lang="en">Bitcoin eşler arası teknolojiyi kullanarak merkez otorite veya banka olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır; tasarımı halka açıktır, kimse Bitcoin&apos;e sahip değildir ve onu kontrol edemez, herkes katılabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</Description>
+            <Description xml:lang="tr">Bitcoin eşler arası teknolojiyi kullanarak merkez otorite veya banka olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır; tasarımı halka açıktır, kimse Bitcoin&apos;e sahip değildir ve onu kontrol edemez, herkes katılabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</Description>
+            <Icon>bitcoin</Icon>
+            <Archive type="targz" sha1sum="156b897c6c7d1f12587d72ea92ccaf28dccedd55">https://bitcoin.org/bin/bitcoin-core-0.12.1/bitcoin-0.12.1-linux64.tar.gz</Archive>
+            <SourceURI>Bitcoin/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bitcoin</Name>
+            <Summary xml:lang="en">Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
+            <Files>
+                <Path fileType="data">/usr/</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/bitcoin.desktop" permission="0744" owner="root" group="root">bitcoin.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/bitcoin.ico" permission="0744" owner="root" group="root">bitcoin.ico</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-18</Date>
+                <Version>0.12.1</Version>
+                <Comment>Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -1279,7 +1639,7 @@
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Opera Web Browser</Summary>
             <Description xml:lang="en">Opera Web Browser</Description>
-            <Archive type="binary" sha1sum="a1d5496076aaef3c9c9dc0e1a83b2f700943de21">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/37.0.2178.32/linux/opera-stable_37.0.2178.32_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="8e6f85d41eeb8bbf59f6f348b84e6600ff18f77c">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/38.0.2220.41/linux/opera-stable_38.0.2220.41_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -1331,8 +1691,8 @@
         </Package>
         <History>
             <Update release="1">
-                <Date>2016-05-27</Date>
-                <Version>37.0.2178.32</Version>
+                <Date>2016-07-17</Date>
+                <Version>38.0.2220.41</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -1627,6 +1987,60 @@
                 <Version>5.4.3.0</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>focuswriter</Name>
+            <Homepage>https://gottcode.org/focuswriter/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">FocusWriter is a simple, distraction-free writing environment.</Summary>
+            <Summary xml:lang="tr">FocusWriter is a simple, distraction-free writing environment.</Summary>
+            <Description xml:lang="en">Focuswriter utilizes a hide-away interface that you access by moving your mouse to the edges of the screen, allowing the program to have a familiar look and feel to it while still getting out of the way so that you can immerse yourself in your work.</Description>
+            <Description xml:lang="tr">Focuswriter utilizes a hide-away interface that you access by moving your mouse to the edges of the screen, allowing the program to have a familiar look and feel to it while still getting out of the way so that you can immerse yourself in your work.</Description>
+            <Archive type="tarbz2" sha1sum="41a62ce3690660f693f3728035f3e5f040948dbe">https://github.com/groni/Sources/raw/master/focuswriter-1.5.7-src.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>zlib-devel</Dependency>
+                <Dependency>hunspell-devel</Dependency>
+                <Dependency>qt5-multimedia-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>focuswriter/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>focuswriter</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-multimedia</Dependency>
+                <Dependency>hunspell</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="pixmaps">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share/focuswriter</Path>
+                <Path fileType="icons">/usr/share/icons/hicolor</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-18</Date>
+                <Version>1.5.7</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
