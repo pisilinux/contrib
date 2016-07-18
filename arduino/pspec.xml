@@ -18,8 +18,8 @@
         <Name>arduino</Name>
         <Files>
             <Path fileType="data">/usr</Path>
-            <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path> 
+            <!--Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path--> 
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
