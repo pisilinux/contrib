@@ -17,7 +17,7 @@
     <Package>
         <Name>arduino</Name>
         <Files>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
             <Path fileType="application">/usr/share/applications</Path> 
         </Files>
