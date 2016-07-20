@@ -190,6 +190,43 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>discount</Name>
+            <Homepage>https://github.com/Orc/discount</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>BSD</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">A Markdown implementation written in C</Summary>
+            <Summary xml:lang="tr">A Markdown implementation written in C</Summary>
+            <Description xml:lang="en">implementation of the Markdown markup language in C</Description>
+            <Description xml:lang="tr">implementation of the Markdown markup language in C</Description>
+            <Archive type="binary" sha1sum="359bd6ddfb01ae5980bb91ee07d6ef243fa8612c">https://launchpad.net/ubuntu/+archive/primary/+files/discount_2.1.7-1_amd64.deb</Archive>
+            <SourceURI>discount/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>discount</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-19</Date>
+                <Version>2.1.7</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>easypaint</Name>
             <Homepage>http://qt-apps.org/content/show.php/EasyPaint?content=140877</Homepage>
             <Packager>
