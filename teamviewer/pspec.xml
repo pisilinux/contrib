@@ -23,13 +23,11 @@
         <Name>teamviewer</Name>
         <RuntimeDependencies>
             <Dependency>libXtst-32bit</Dependency>
+            <Dependency>teamviewer-fonts</Dependency>
             <Dependency>alsa-lib-32bit</Dependency>
             <Dependency>libXdamage-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
             <Dependency>freetype-32bit</Dependency>
-            <Dependency>fontconfig-32bit</Dependency>
-            <Dependency>libpng-32bit</Dependency>
-            <Dependency>libjpeg-turbo-32bit</Dependency>
             <Dependency>libSM-32bit</Dependency>
             <Dependency>libX11-32bit</Dependency>
             <Dependency>libXau-32bit</Dependency>
