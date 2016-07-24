@@ -40,6 +40,51 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>telegram-desktop</Name>
+            <Homepage>https://telegram.org/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Telegram a new era of messaging</Summary>
+            <Summary xml:lang="tr">Telegram a new era of messaging</Summary>
+            <Description xml:lang="en">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
+            <Description xml:lang="tr">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
+            <Archive type="targz" sha1sum="c04e612491852ac3300168cdb1e1d9041570e702">https://github.com/groni/Sources/raw/master/telegram_0.9.56.tar.gz</Archive>
+            <SourceURI>telegram-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>telegram-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="icon">/usr/share/icons</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-24</Date>
+                <Version>0.9.56</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>teamviewer</Name>
             <Homepage>http://www.teamviewer.com/</Homepage>
             <Packager>

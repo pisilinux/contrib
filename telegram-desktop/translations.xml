@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>telegram-desktop</Name>
+        <Summary xml:lang="tr">Telegram a new era of messaging</Summary>
+        <Description xml:lang="tr">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
+    </Source>
+</PISI>
