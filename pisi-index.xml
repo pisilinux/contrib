@@ -64,6 +64,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Name>teamviewer</Name>
             <RuntimeDependencies>
                 <Dependency>libXtst-32bit</Dependency>
+                <Dependency>teamviewer-fonts</Dependency>
                 <Dependency>alsa-lib-32bit</Dependency>
                 <Dependency>libXdamage-32bit</Dependency>
                 <Dependency>zlib-32bit</Dependency>
@@ -489,6 +490,48 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Comment>First release.</Comment>
                 <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>zenity</Name>
+            <Homepage>https://help.gnome.org/users/zenity/stable/</Homepage>
+            <Packager>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Zenity enables you to create the following types of simple dialog</Summary>
+            <Summary xml:lang="tr">Zenity enables you to create the following types of simple dialog:
+</Summary>
+            <Description xml:lang="en">Zenity enables you to create the following types of simple dialog</Description>
+            <Description xml:lang="tr">Zenity enables you to create the following types of simple dialog:
+</Description>
+            <Icon>zenity</Icon>
+            <Archive type="tarxz" sha1sum="23cd194247d1f8a7747604574840b824323ccbf9">http://ftp.gnome.org/pub/gnome/sources/zenity/3.20/zenity-3.20.0.tar.xz</Archive>
+            <SourceURI>zenity/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>zenity</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/help</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-21</Date>
+                <Version>3.20.0</Version>
+                <Comment>First release</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -1200,7 +1243,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="7a1bf0a0dc13dbc47263b425ffaf219ac15185f9">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="0341af3dc321e75b1d9cf809ad30d82e445ec623">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -1260,6 +1303,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="10">
+                <Date>2016-07-21</Date>
+                <Version>52.0.2743.82</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="9">
                 <Date>2016-06-24</Date>
                 <Version>51.0.2704.106</Version>
@@ -2531,6 +2581,39 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Comment>First release.</Comment>
                 <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>teamviewer-fonts</Name>
+            <Homepage>http://www.pisilinux.org</Homepage>
+            <Packager>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Teamviewer fonts</Summary>
+            <Description xml:lang="en">teamviewer windows fonts</Description>
+            <Archive type="targz" sha1sum="28cc454bc7692ab80fe74f239b1f940e55fe1526">https://dl.dropboxusercontent.com/s/u4tmxiwc51f0rer/teamviewer-fonts.tar.gz</Archive>
+            <SourceURI>teamviewer-font/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>teamviewer-fonts</Name>
+            <Files>
+                <Path fileType="library">/usr/lib32/</Path>
+                <Path fileType="data">/opt/teamviewer/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-07-30</Date>
+                <Version>0.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
