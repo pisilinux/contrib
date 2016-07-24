@@ -29,21 +29,8 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="icon">/usr/share/icons</Path>
             <Path fileType="application">/usr/share/applications</Path>            
-            <Path fileType="doc">/usr/share/doc</Path>
-            -->
-        </Files>
-        <!--
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/telegram-desktop.desktop">telegram-desktop.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/telegram-desktop.png">telegram-desktop.png</AdditionalFile>
-        </AdditionalFiles>
-        -->
-        <!--
-        <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
-        -->
+            <Path fileType="doc">/usr/share/doc</Path>            
+        </Files>        
     </Package>
 
     <History>
