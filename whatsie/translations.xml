@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>whatsie</Name>
+        <Summary xml:lang="tr">A simple and beautiful desktop client for WhatsApp Web.</Summary>
+        <Description xml:lang="tr">Chat without distractions on OS X, Windows and Linux. Not affiliated with WhatsApp or Facebook. This is NOT an official product.</Description>
+    </Source>
+</PISI>
