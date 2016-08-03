@@ -1726,6 +1726,44 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>bzr</Name>
+            <Homepage>http://bazaar.canonical.com/en/</Homepage>
+            <Packager>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Distributed and Client–server revision control system</Summary>
+            <Summary xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi</Summary>
+            <Description xml:lang="en">Bazaar can be used by a single developer working on multiple branches of local content, or by teams collaborating across a network</Description>
+            <Description xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi
+Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
+            <Archive type="targz" sha1sum="872f6088f8b07558519dbbc88fffa05e37602f52">https://launchpad.net/bzr/2.7/2.7.0/+download/bzr-2.7.0.tar.gz</Archive>
+            <SourceURI>bazaar/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bzr</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="man">/usr/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-03</Date>
+                <Version>2.7.0</Version>
+                <Comment>First release</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>steam</Name>
             <Homepage>http://store.steampowered.com/</Homepage>
             <Packager>
@@ -2725,6 +2763,70 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Comment>Version Bump</Comment>
                 <Name>Ergün Salman</Name>
                 <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gitbook-editor</Name>
+            <Homepage>https://www.gitbook.com/editor</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">GitBook Simple writing from your desktop.</Summary>
+            <Description xml:lang="en">The GitBook workflow you love, on your Desktop. Try it now !</Description>
+            <Archive type="targz" sha1sum="9533674c1351dffe89960b39fd4081b48977d68b">https://github.com/groni/Sources/raw/master/gitbook-editor-6.2.1-x64.tar.gz</Archive>
+            <SourceURI>gitbook-editor/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gitbook-editor</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/opt</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-03</Date>
+                <Version>6.2.0</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
