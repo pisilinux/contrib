@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gitbook-editor</Name>
+        <Homepage>https://www.gitbook.com/editor</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:gui</IsA>
+        <Summary>GitBook Simple writing from your desktop.</Summary>
+        <Description>The GitBook workflow you love, on your Desktop. Try it now !</Description>
+        <Archive sha1sum="9533674c1351dffe89960b39fd4081b48977d68b" type="targz">https://github.com/groni/Sources/raw/master/gitbook-editor-6.2.1-x64.tar.gz</Archive>        
+    </Source>
+
+    <Package>
+        <Name>gitbook-editor</Name>        
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>            
+        </RuntimeDependencies>        
+        <Files>            
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path>            
+        </Files>        
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-08-03</Date>
+            <Version>6.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
