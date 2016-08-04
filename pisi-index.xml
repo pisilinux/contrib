@@ -792,6 +792,80 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>wordpress-desktop</Name>
+            <Homepage>https://apps.wordpress.com/desktop/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Wordpress Desktop a Control Panel for all your Wordpress Sites</Summary>
+            <Summary xml:lang="tr">Wordpress Desktop a Control Panel for all your Wordpress Sites</Summary>
+            <Description xml:lang="en">A desktop app that gives WordPress a permanent home in your dock.You&apos;ll need a WordPress.com login.</Description>
+            <Description xml:lang="tr">A desktop app that gives WordPress a permanent home in your dock.You&apos;ll need a WordPress.com login.</Description>
+            <Icon>wordpress-desktop</Icon>
+            <Archive type="targz" sha1sum="d4d0b211fbab7b217d59ec1b9ae939195b4d81fa">https://github.com/groni/Sources/raw/master/wordpress.com-1-4-0.tar.gz</Archive>
+            <SourceURI>wordpress-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>wordpress-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/wpcom.desktop" permission="0644" owner="root">wpcom.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/wpcom.png" permission="0644" owner="root">wpcom.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-08-04</Date>
+                <Version>1.4.0</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>brscan3</Name>
             <Homepage>http://support.brother.com/g/s/id/linux/en</Homepage>
             <Packager>
@@ -1288,7 +1362,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="0341af3dc321e75b1d9cf809ad30d82e445ec623">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="8dcee461a9f32a0e02fba1c1aec827d476f84b1a">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -1348,6 +1422,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="11">
+                <Date>2016-08-04</Date>
+                <Version>52.0.2743.116</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="10">
                 <Date>2016-07-21</Date>
                 <Version>52.0.2743.82</Version>
