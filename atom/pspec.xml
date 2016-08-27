@@ -45,7 +45,7 @@
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>google-chrome</Dependency>
             <Dependency>libXcomposite</Dependency>
