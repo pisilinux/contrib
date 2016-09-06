@@ -36,6 +36,7 @@
             <Dependency>libXfixes-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>harfbuzz-32bit</Dependency>
+            <Dependency>qt5-base-32bit</Dependency> <!---------No Remove Run Dependency-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
