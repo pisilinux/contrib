@@ -244,6 +244,58 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>ocenaudio</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Proprietary</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
+            <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
+            <Archive type="binary" sha1sum="01f1a2f8ee74051aa4e1de55ecfb5ae4b6851204">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>oceanaudio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ocenaudio</Name>
+            <Icon>ocenaudio</Icon>
+            <RuntimeDependencies>
+                <Dependency>xz</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libutil-linux</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/ocenaudio</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016.09.11</Date>
+                <Version>3.1.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>discount</Name>
             <Homepage>https://github.com/Orc/discount</Homepage>
             <Packager>
