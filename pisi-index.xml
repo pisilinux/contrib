@@ -1760,6 +1760,63 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>teamspeak3</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Copyright (c) TeamSpeak Systems GmbH.</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Crystal Clear Cross-Platform Voice Communication</Summary>
+            <Description xml:lang="en">VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.</Description>
+            <Archive type="binary" sha1sum="87ab161865e9ba694e4862a81a9d06f6c5a7ed3b">http://dl.4players.de/ts/releases/3.0.19.4/TeamSpeak3-Client-linux_amd64-3.0.19.4.run</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-sql-mysql</Dependency>
+                <Dependency>qt5-sql-sqlite</Dependency>
+                <Dependency>binutils</Dependency>
+                <Dependency>sed</Dependency>
+                <Dependency>wget</Dependency>
+            </BuildDependencies>
+            <SourceURI>teamspeak3/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>teamspeak3</Name>
+            <RuntimeDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/TeamSpeak3.desktop" permission="0644" owner="root">TeamSpeak3.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/teamspeak3.png" permission="0644" owner="root">teamspeak3.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-09-11</Date>
+                <Version>3.0.19.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>gnofract4d</Name>
             <Homepage>https://github.com/edyoung/gnofract4d</Homepage>
             <Packager>
