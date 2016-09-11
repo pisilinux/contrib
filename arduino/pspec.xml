@@ -12,7 +12,7 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
         <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
         <Icon>arduino</Icon>
-        <Archive sha1sum="8361ce33fd7b7e04a22d696a3c1c41b8ce505bac" type="tarxz">https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz</Archive>
+        <Archive sha1sum="83fee56c18d5b633f13d1bf6dbfda095d9e2eb82" type="tarxz">https://downloads.arduino.cc/arduino-1.6.11-linux64.tar.xz</Archive>
     </Source>
     <Package>
         <Name>arduino</Name>
@@ -27,7 +27,14 @@
         </AdditionalFiles>
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
     </Package>
-    <History>
+    <History>        
+        <Update release="2">
+            <Date>2016-09-11</Date>
+            <Version>1.6.11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-20</Date>
             <Version>1.6.9</Version>
