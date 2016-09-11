@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A simple and beautiful desktop client for WhatsApp Web.</Summary>
         <Description>Chat without distractions on OS X, Windows and Linux. Not affiliated with WhatsApp or Facebook. This is NOT an official product.</Description>
-        <Archive sha1sum="015708419c17e7636b85b460b01d3c2877899af6" type="binary">https://github.com/Aluxian/Whatsie/releases/download/v2.0.18/whatsie-2.0.18-linux-amd64.deb</Archive>        
+        <Archive sha1sum="8207fb7994a30a4fd4cd121fb1ae54ba69826e65" type="binary">https://github.com/Aluxian/Whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -55,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-09-11</Date>
+            <Version>2.1.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-24</Date>
             <Version>2.0.18</Version>
