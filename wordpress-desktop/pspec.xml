@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Wordpress Desktop a Control Panel for all your Wordpress Sites</Summary>
         <Description>A desktop app that gives WordPress a permanent home in your dock.You'll need a WordPress.com login.</Description>
-        <Archive sha1sum="d4d0b211fbab7b217d59ec1b9ae939195b4d81fa" type="targz">https://github.com/groni/Sources/raw/master/wordpress.com-1-4-0.tar.gz</Archive>        
+        <Archive sha1sum="fcc2decb4254b1c373e9d967f50c3a54fe24ac60" type="targz">https://github.com/groni/Sources/raw/master/wordpress-com-1-7-0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-09-11</Date>
+            <Version>1.7.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-08-04</Date>
             <Version>1.4.0</Version>
