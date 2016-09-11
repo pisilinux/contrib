@@ -16,9 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="b0e6eba68f161ee863a43d6a0f57fe077fd8198d" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-4.4.29.tar.gz</Archive>
-        <Archive sha1sum="460cb5604b353b7694093f8c633ff03bb493d50f" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-4.4.29.tar.gz</Archive>
-        <Archive sha1sum="2d8868de60c696c7aa3663750c388a96c4622ebc" type="targz" target="hede">http://kde-look.org/CONTENT/content-files/141519-dropbox-icons.tar.gz</Archive>
+        <Archive sha1sum="817d9bfce4a281a846c07c169cd55ba25b355014" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-9.4.49.tar.gz</Archive>
+        <Archive sha1sum="84033cf0b387c93bd3d7fb59ed519046506ea5fe" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-9.4.49.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -36,7 +35,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-	    <Dependency>libXxf86vm</Dependency>
+	        <Dependency>libXxf86vm</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>zlib</Dependency>
@@ -62,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2016-09-11</Date>
+            <Version>9.4.49</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2016-06-09</Date>
             <Version>4.4.29</Version>
