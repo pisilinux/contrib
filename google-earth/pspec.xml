@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>google-earth</Name>
+        <Homepage>http://www.google.com/earth</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>3D interface for satellite imagery from Google</Summary>
+        <Description>Google Earth provides a 3D interface for viewing satellite imagery and maps.</Description>
+        <License>EULA</License>
+        <Archive sha1sum="da42cdc66f278ef5ec68e0ee0262d619139b409b" type="binary">https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>google-earth</Name>
+        <Icon>google-earth</Icon>
+        <RuntimeDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>mesa-glu-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+        </RuntimeDependencies>        
+        <Files>
+            <Path fileType="data">/lib</Path>
+            <Path fileType="data">/opt/google/earth</Path>
+            <Path fileType="data">/usr</Path>
+        </Files>
+    </Package>    
+
+    <History>
+        <Update release="1">
+            <Date>09-06-2016</Date>
+            <Version>7.1.7.2600</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
