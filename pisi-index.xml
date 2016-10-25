@@ -1382,6 +1382,62 @@ Arduino IDE,  Software Development Environment</Summary>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>google-earth</Name>
+            <Homepage>http://www.google.com/earth</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>EULA</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">3D interface for satellite imagery from Google</Summary>
+            <Description xml:lang="en">Google Earth provides a 3D interface for viewing satellite imagery and maps.</Description>
+            <Archive type="binary" sha1sum="da42cdc66f278ef5ec68e0ee0262d619139b409b">https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
+            <SourceURI>google-earth/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>google-earth</Name>
+            <Icon>google-earth</Icon>
+            <RuntimeDependencies>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>sqlite</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXext-32bit</Dependency>
+                <Dependency>freetype-32bit</Dependency>
+                <Dependency>mesa-glu-32bit</Dependency>
+                <Dependency>fontconfig-32bit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/lib</Path>
+                <Path fileType="data">/opt/google/earth</Path>
+                <Path fileType="data">/usr</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>09-06-2016</Date>
+                <Version>7.1.7.2600</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>master-pdf-editor</Name>
             <Homepage>http://code-industry.net/free-pdf-editor.php</Homepage>
             <Packager>
@@ -1450,7 +1506,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="80ed6b6d8f68b0bb4504db02e09b61404d6e8442">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="3c5764a3b74b864654bec7c393d72a1b15e8e433">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
             </BuildDependencies>
@@ -1510,6 +1566,27 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="17">
+                <Date>2016-10-21</Date>
+                <Version>54.0.2840.71</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="16">
+                <Date>2016-10-13</Date>
+                <Version>54.0.2840.59</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="15">
+                <Date>2016-09-15</Date>
+                <Version>53.0.2785.116</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="14">
                 <Date>2016-09-11</Date>
                 <Version>53.0.2785.101</Version>
