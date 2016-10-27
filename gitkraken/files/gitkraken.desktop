@@ -2,7 +2,7 @@
 Name=GitKraken
 Comment=The intuitive, fast, and beautiful cross-platform Git client
 GenericName=GitKraken
-Exec=/usr/share/GitKraken/gitkraken
+Exec=/usr/share/gitkraken/gitkraken
 Icon=gitkraken
 Type=Application
 StartupNotify=true

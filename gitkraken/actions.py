@@ -8,6 +8,6 @@ from pisi.actionsapi import pisitools
 WorkDir = "."
 
 def install():   
-    pisitools.insinto("/usr/share/", "GitKraken")        
-    pisitools.insinto("/usr/bin/", "./GitKraken/gitkraken")   
-    pisitools.insinto("/usr/share/doc/", "./GitKraken/LICENSE")    
+    pisitools.insinto("/usr/share/", "gitkraken")        
+    pisitools.insinto("/usr/bin/", "./gitkraken/gitkraken")   
+    pisitools.insinto("/usr/share/doc/", "./gitkraken/LICENSE")    

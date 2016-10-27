@@ -12,7 +12,7 @@
         <IsA>gui</IsA>        
         <Summary>The intuitive, fast, and beautiful cross-platform Git client.</Summary>
         <Description>GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-        <Archive sha1sum="34d705d0c5a6d074250f583f2fb7ecdd607cc60f" type="targz">https://release.gitkraken.com/linux/v1.5.4.tar.gz</Archive>
+        <Archive sha1sum="048bb68e99451d773e97e79e338cc673fe805d59" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -46,6 +46,7 @@
             <Dependency>libXrender</Dependency>            
             <Dependency>libgpg-error</Dependency>            
             <Dependency>libXcomposite</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
         <Files>            
@@ -62,16 +63,9 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2016-09-11</Date>
-            <Version>1.5.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
         <Update release="3">
-            <Date>2016-08-05</Date>
-            <Version>1.5.1</Version>
+            <Date>2016-10-27</Date>
+            <Version>1.8.1</Version>
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
