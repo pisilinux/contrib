@@ -1,6 +1,63 @@
 <PISI>
     <SpecFile>
         <Source>
+            <Name>phpstorm</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPL-2.0</License>
+            <License>Proprietary</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">PHPStorm - an IDE for the PHP Language</Summary>
+            <Description xml:lang="en">PHPStorm - an IDE for the PHP Language</Description>
+            <Archive type="targz" sha1sum="afd582413fcdb380d5a9f2f9c05225d2a7f5d782">https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz</Archive>
+            <SourceURI>phpstorm/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>phpstorm</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt/phpstorm</Path>
+                <Path fileType="data">/usr/bin/phpstorm</Path>
+                <Path fileType="data">/usr/share/applications/phpstorm.desktop</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/phpstorm.desktop" permission="0644" owner="root">phpstorm.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-10-27</Date>
+                <Version>2016.2.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>arduino</Name>
             <Homepage>http://energia.nu/</Homepage>
             <Packager>
@@ -1799,16 +1856,21 @@ Arduino IDE,  Software Development Environment</Summary>
 - Seçim / düğüm / düğüm ve alt düğümler /bütün ağacın dosyayı Cherrytree ihracat
 - ( Http://www.7-zip.org/ kullanarak) şifre koruması
 - Ağaç düğümleri sürükle ve bırak</Description>
-            <Archive type="tarxz" sha1sum="c0e118fd1020a7ac207bb9c1bcab05c095f80d54">http://www.giuspen.com/software/cherrytree-0.37.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="31254b6311cf5cd9b6c20ec4ed997128d5b09e26">http://www.giuspen.com/software/cherrytree-0.37.6.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>desktop-file-utils</Dependency>
             </BuildDependencies>
+            <Patches>
+                <Patch level="1">spellcheck.patch</Patch>
+            </Patches>
             <SourceURI>cherrytree/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>cherrytree</Name>
             <RuntimeDependencies>
-                <Dependency>python-enchant</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>p7zip</Dependency>
+                <Dependency>python3-enchant</Dependency>
                 <Dependency>python-gtk</Dependency>
                 <Dependency>python-gtksourceview</Dependency>
                 <Dependency>python-pygobject</Dependency>
@@ -1816,19 +1878,26 @@ Arduino IDE,  Software Development Environment</Summary>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
+                <Path fileType="library">/usr/lib/python2.7</Path>
+                <Path fileType="data">/usr/share/cherrytree</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/mime-info</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share/application-registry</Path>
+                <Path fileType="icons">/usr/share/icons/hicolor/scalable/apps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
                 <Path fileType="localedata">/usr/share/locale</Path>
                 <Path fileType="man">/usr/share/man</Path>
             </Files>
             <AdditionalFiles>
                 <AdditionalFile target="/usr/share/cherrytree/cherrytree.desktop" permission="0644" owner="root" group="root">cherrytree.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/share/cherrytree/cherrytree.svg" permission="0644" owner="root" group="root">cherrytree.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/cherrytree/cherrytree.sclipgrab.provg" permission="0644" owner="root" group="root">cherrytree.png</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
             <Update release="1">
                 <Date>2016-06-11</Date>
-                <Version>0.37.0</Version>
+                <Version>0.37.6</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -1941,6 +2010,63 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Version>3.14.1</Version>
                 <Comment>First release</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pycharm-community</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>GPL-2.0</License>
+            <License>Proprietary</License>
+            <PartOf>programming</PartOf>
+            <Summary xml:lang="en">Powerful Python and Django IDE. Community edition.</Summary>
+            <Description xml:lang="en">Powerful Python and Django IDE. Community edition.</Description>
+            <Archive type="targz" sha1sum="71c2f0c8ec2ded03db3a69445bc1b1da9042c2dc">http://download.jetbrains.com/python/pycharm-community-2016.2.3.tar.gz</Archive>
+            <SourceURI>pycharm-community/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pycharm-community</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>libxslt</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt/pycharm-community</Path>
+                <Path fileType="data">/usr/bin/pycharm-community</Path>
+                <Path fileType="data">/usr/share/applications/pycharm.desktop</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/pycharm.desktop" permission="0644" owner="root">pycharm.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-10-27</Date>
+                <Version>2016.2.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
@@ -2206,7 +2332,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Opera Web Browser</Summary>
             <Description xml:lang="en">Opera Web Browser</Description>
-            <Archive type="binary" sha1sum="b388d2a8b402823751047f7364570f4ac19c78b2">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/39.0.2256.71/linux/opera-stable_39.0.2256.71_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="d432d80df4546777f505d69c9d0bb7a454cb7de4">http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/41.0.2353.46/linux/opera-stable_41.0.2353.46_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -2257,6 +2383,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2016-10-27</Date>
+                <Version>41.0.2353.46</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-09-11</Date>
                 <Version>39.0.2256.71</Version>
@@ -2498,7 +2631,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Summary xml:lang="tr">Müzik Çalar</Summary>
             <Description xml:lang="en">Listen to music using Spotify</Description>
             <Description xml:lang="tr">Spotify&apos;ı kullanarak müzik dinleyin.</Description>
-            <Archive type="binary" sha1sum="c2affc29edc2533e832d48c8d3f02f9073f9993e">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.37.152.gc83ea995-42_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="c712bf6e744a84996437c658b877491576738dac">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.38.171.g5e1cd7b2-22_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>libXScrnSaver</Dependency>
@@ -2552,6 +2685,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="8">
+                <Date>2016-10-27</Date>
+                <Version>1.0.38.171</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="7">
                 <Date>2016-09-10</Date>
                 <Version>1.0.37.152</Version>
@@ -3105,7 +3245,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">The intuitive, fast, and beautiful cross-platform Git client.</Summary>
             <Description xml:lang="en">GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-            <Archive type="targz" sha1sum="34d705d0c5a6d074250f583f2fb7ecdd607cc60f">https://release.gitkraken.com/linux/v1.5.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="048bb68e99451d773e97e79e338cc673fe805d59">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
             <SourceURI>gitkraken/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -3139,6 +3279,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Dependency>libXrender</Dependency>
                 <Dependency>libgpg-error</Dependency>
                 <Dependency>libXcomposite</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
                 <Dependency>libgnome-keyring</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -3154,16 +3295,9 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
-            <Update release="4">
-                <Date>2016-09-11</Date>
-                <Version>1.5.4</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
             <Update release="3">
-                <Date>2016-08-05</Date>
-                <Version>1.5.1</Version>
+                <Date>2016-10-27</Date>
+                <Version>1.8.1</Version>
                 <Comment>Version bump.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -3214,6 +3348,52 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Comment>Version Bump</Comment>
                 <Name>Ergün Salman</Name>
                 <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>android-studio</Name>
+            <Homepage>https://developer.android.com/studio</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Apache-2.0</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
+            <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
+            <Archive type="binary" sha1sum="fc63ca247762697c33102a78063a95f8b5ab5dea">https://dl.google.com/dl/android/studio/ide-zips/2.2.2.0/android-studio-ide-145.3360264-linux.zip</Archive>
+            <SourceURI>android-studio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>android-studio</Name>
+            <RuntimeDependencies>
+                <Dependency>libXi</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXrender</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt/android-studio</Path>
+                <Path fileType="data">/usr/bin/android-studio</Path>
+                <Path fileType="data">/usr/share/applications/android-studio.desktop</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/android-studio.desktop" permission="0644" owner="root">android-studio.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-10-27</Date>
+                <Version>2.2.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -3278,6 +3458,75 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Comment>First release</Comment>
                 <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>franz</Name>
+            <Homepage>https://meetfranz.com</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Custom</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">A free messaging app that combines chat and messaging services into one application</Summary>
+            <Description xml:lang="en">Franz is a free messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more.</Description>
+            <Archive type="binary" sha1sum="d4665d3dd5ae3c875df18475eb99dae025c10ca0">https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+                <Dependency>wget</Dependency>
+            </BuildDependencies>
+            <SourceURI>franz/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>franz</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/opt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-10-25</Date>
+                <Version>4.0.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>

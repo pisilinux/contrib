@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>phpstorm</Name>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>Proprietary</License>        
+        <Summary>PHPStorm - an IDE for the PHP Language</Summary>
+        <Description>PHPStorm - an IDE for the PHP Language</Description>
+        <Archive type="targz" sha1sum="afd582413fcdb380d5a9f2f9c05225d2a7f5d782">https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>phpstorm</Name>
+    <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXxf86vm</Dependency>            
+        </RuntimeDependencies>        
+        <Files>
+            <Path fileType="data">/opt/phpstorm</Path>
+            <Path fileType="data">/usr/bin/phpstorm</Path>
+            <Path fileType="data">/usr/share/applications/phpstorm.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/phpstorm.desktop">phpstorm.desktop</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-10-27</Date>
+            <Version>2016.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

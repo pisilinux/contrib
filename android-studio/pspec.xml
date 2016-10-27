@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>android-studio</Name>
+        <Homepage>https://developer.android.com/studio</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>Apache-2.0</License>        
+        <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
+        <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
+        <Archive type="binary" sha1sum="fc63ca247762697c33102a78063a95f8b5ab5dea">https://dl.google.com/dl/android/studio/ide-zips/2.2.2.0/android-studio-ide-145.3360264-linux.zip</Archive>
+    </Source>
+    <Package>
+        <Name>android-studio</Name>        
+        <RuntimeDependencies>
+            <Dependency>libXi</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXrender</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/android-studio</Path>
+            <Path fileType="data">/usr/bin/android-studio</Path>
+            <Path fileType="data">/usr/share/applications/android-studio.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/android-studio.desktop">android-studio.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>      
+        <Update release="1">
+            <Date>2016-10-27</Date>
+            <Version>2.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
