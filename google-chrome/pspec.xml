@@ -14,9 +14,9 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="3c5764a3b74b864654bec7c393d72a1b15e8e433" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
-	<BuildDependencies>
-            <Dependency>rpm2targz</Dependency>
+        <Archive sha1sum="0ba84fe4b08c18f5f63b0e292daa6883847e4657" type="binary">http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_54.0.2840.90-1_amd64.deb</Archive>
+        <BuildDependencies>            
+            <Dependency>binutils</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
@@ -70,50 +70,23 @@
             <Path fileType="data">/opt/google/</Path>
             <Path fileType="data">/usr/share/pixmaps/</Path>
             <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/menu/</Path>
         </Files>
     </Package>
     <History>
-        <Update release="17">
-            <Date>2016-10-21</Date>
-            <Version>54.0.2840.71</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="16">
-            <Date>2016-10-13</Date>
-            <Version>54.0.2840.59</Version>
-            <Comment>Release bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="15">
-            <Date>2016-09-15</Date>
-            <Version>53.0.2785.116</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-    	<Update release="14">
-            <Date>2016-09-11</Date>
-            <Version>53.0.2785.101</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
         <Update release="13">
-            <Date>2016-09-03</Date>
-            <Version>53.0.2785.92</Version>
+            <Date>2016-11-02</Date>
+            <Version>54.0.2840.90</Version>
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
         </Update>
         <Update release="12">
-            <Date>2016-09-01</Date>
-            <Version>53.0.2785.79</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
+            <Date>10-27-2016</Date>
+            <Version>54.0.2840.71</Version>
+            <Comment>Update to 54.0.2840.71</Comment>
+            <Name>Aaron Johnson</Name>
+            <Email>acjohnson@pcdomain.com</Email>
         </Update>
         <Update release="11">
             <Date>2016-08-04</Date>

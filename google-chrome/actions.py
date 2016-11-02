@@ -11,9 +11,11 @@ from pisi.actionsapi import shelltools
 WorkDir = "."
 NoStrip = ["/"]
 
+Release = "-1"
+
 def setup():
-    shelltools.system("rpm2targz -v %s/google-chrome-stable_current_x86_64.rpm" %get.workDIR())
-    shelltools.system("tar xfvz %s/google-chrome-stable_current_x86_64.tar.gz --exclude=usr/share/gnome-control-center --exclude=usr/bin --exclude=etc" %get.workDIR())
+    shelltools.system("ar xf %s/google-chrome-stable_%s%s_amd64.deb" % (get.workDIR(), get.srcVERSION(), Release))
+    shelltools.system("tar xvf %s/data.tar.xz --exclude=usr/share/gnome-control-center --exclude=usr/bin --exclude=etc" %get.workDIR())
     shelltools.chmod(get.workDIR() + "/opt/google/chrome/*", 0755)
 
 def install():
