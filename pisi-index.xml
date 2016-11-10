@@ -117,7 +117,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Summary xml:lang="tr">Telegram a new era of messaging</Summary>
             <Description xml:lang="en">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
             <Description xml:lang="tr">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-            <Archive type="targz" sha1sum="c04e612491852ac3300168cdb1e1d9041570e702">https://github.com/groni/Sources/raw/master/telegram_0.9.56.tar.gz</Archive>
+            <Archive type="targz" sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>
             <SourceURI>telegram-desktop/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -138,6 +138,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-11-10</Date>
+                <Version>0.10.19</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-07-24</Date>
                 <Version>0.9.56</Version>
@@ -295,6 +302,65 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Version>1.6.6</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>ocenaudio</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Proprietary</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
+            <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
+            <Archive type="binary" sha1sum="8906e8f0524fec8ff2d926038a9e6a59affa4026">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>oceanaudio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>ocenaudio</Name>
+            <Icon>ocenaudio</Icon>
+            <RuntimeDependencies>
+                <Dependency>xz</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>openssl</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libutil-linux</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/ocenaudio</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2016-11-10</Date>
+                <Version>3.1.10</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016.09.11</Date>
+                <Version>3.1.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
@@ -780,7 +846,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="tr">OBS-Studio software was originally designed for recording and streaming live
  video content, efficiently</Description>
             <Icon>obs-studio</Icon>
-            <Archive type="targz" sha1sum="fcb99b4202e4f0d73f06bd35961032605f1e9749">https://github.com/jp9000/obs-studio/archive/0.15.4.tar.gz</Archive>
+            <Archive type="targz" sha1sum="c07ab1f0ab409f451a991847a9703d778ee956bf">https://github.com/jp9000/obs-studio/archive/0.16.5.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>curl-devel</Dependency>
                 <Dependency>dbus-devel</Dependency>
@@ -826,6 +892,7 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Dependency>libXcomposite</Dependency>
                 <Dependency>qt5-x11extras</Dependency>
                 <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>speex</Dependency>
                 <Dependency>jack-audio-connection-kit</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -844,7 +911,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Name>obs-studio-devel</Name>
             <Summary xml:lang="en">Development files for obs-studio</Summary>
             <RuntimeDependencies>
-                <Dependency release="2">obs-studio</Dependency>
+                <Dependency release="3">obs-studio</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -853,6 +920,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2016-11-10</Date>
+                <Version>0.16.5</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-09-11</Date>
                 <Version>0.15.4</Version>
@@ -945,58 +1019,6 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Date>2016-08-04</Date>
                 <Version>1.4.0</Version>
                 <Comment>First release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>ocenaudio</Name>
-            <Packager>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-            <License>Proprietary</License>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
-            <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
-            <Archive type="binary" sha1sum="01f1a2f8ee74051aa4e1de55ecfb5ae4b6851204">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
-            <BuildDependencies>
-                <Dependency>binutils</Dependency>
-                <Dependency>qt5-base-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>ocenaudio/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>ocenaudio</Name>
-            <Icon>ocenaudio</Icon>
-            <RuntimeDependencies>
-                <Dependency>xz</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>bzip2</Dependency>
-                <Dependency>eudev</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>openssl</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>qt5-base</Dependency>
-                <Dependency>libutil-linux</Dependency>
-                <Dependency>pulseaudio-libs</Dependency>
-                <Dependency>jack-audio-connection-kit</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/opt/ocenaudio</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="data">/usr/share/icons</Path>
-                <Path fileType="data">/usr/share/mime</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016.09.11</Date>
-                <Version>3.1.8</Version>
-                <Comment>First Release</Comment>
                 <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
@@ -1563,9 +1585,9 @@ Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="3c5764a3b74b864654bec7c393d72a1b15e8e433">https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</Archive>
+            <Archive type="binary" sha1sum="0ba84fe4b08c18f5f63b0e292daa6883847e4657">http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_54.0.2840.90-1_amd64.deb</Archive>
             <BuildDependencies>
-                <Dependency>rpm2targz</Dependency>
+                <Dependency>binutils</Dependency>
             </BuildDependencies>
             <SourceURI>google-chrome/pspec.xml</SourceURI>
         </Source>
@@ -1620,50 +1642,23 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Path fileType="data">/opt/google/</Path>
                 <Path fileType="data">/usr/share/pixmaps/</Path>
                 <Path fileType="data">/usr/share/applications/</Path>
+                <Path fileType="data">/usr/share/menu/</Path>
             </Files>
         </Package>
         <History>
-            <Update release="17">
-                <Date>2016-10-21</Date>
-                <Version>54.0.2840.71</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="16">
-                <Date>2016-10-13</Date>
-                <Version>54.0.2840.59</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="15">
-                <Date>2016-09-15</Date>
-                <Version>53.0.2785.116</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="14">
-                <Date>2016-09-11</Date>
-                <Version>53.0.2785.101</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
             <Update release="13">
-                <Date>2016-09-03</Date>
-                <Version>53.0.2785.92</Version>
+                <Date>2016-11-02</Date>
+                <Version>54.0.2840.90</Version>
                 <Comment>Version bump.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
             </Update>
             <Update release="12">
-                <Date>2016-09-01</Date>
-                <Version>53.0.2785.79</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
+                <Date>10-27-2016</Date>
+                <Version>54.0.2840.71</Version>
+                <Comment>Update to 54.0.2840.71</Comment>
+                <Name>Aaron Johnson</Name>
+                <Email>acjohnson@pcdomain.com</Email>
             </Update>
             <Update release="11">
                 <Date>2016-08-04</Date>
@@ -2408,71 +2403,6 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>skype</Name>
-            <Packager>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-            <License>Copyright (c) 2016 Skype and/or Microsoft</License>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Skype keeps the world talking, for free.</Summary>
-            <Description xml:lang="en">Skype keeps you together. Call, message and share with others.</Description>
-            <Archive type="binary" sha1sum="b7460ca42b95efd82fd47c67b2d63a5c220fcb4d">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_1.6.0.3_amd64.deb</Archive>
-            <BuildDependencies>
-                <Dependency>binutils</Dependency>
-            </BuildDependencies>
-            <SourceURI>skype/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>skype</Name>
-            <Icon>skypeforlinux</Icon>
-            <RuntimeDependencies>
-                <Dependency>gconf</Dependency>
-                <Dependency>atk</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>nspr</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share/icons</Path>
-                <Path fileType="data">/usr/share/pixmaps</Path>
-                <Path fileType="data">/usr/share/skypeforlinux</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2016-09-11</Date>
-                <Version>1.6.0.3</Version>
-                <Comment>First Release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>dropbox-client</Name>
             <Homepage>http://www.dropbox.com</Homepage>
             <Packager>
@@ -2809,7 +2739,10 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Summary xml:lang="tr">Google Talk için video sohbet tarayıcı eklentisi</Summary>
             <Description xml:lang="en">The Google Talk Plugin is a browser plugin that enables you to use Google voice and video chat to chat face to face with family and friends.</Description>
             <Description xml:lang="tr">Google Talk Plugin, aileniz ve arkadaşlarınızla yüz yüze sohbet etmek için Google&apos;nin sesli ve görüntülü sohbet hizmetini kullanmanızı sağlayan bir tarayıcı eklentisidir.</Description>
-            <Archive type="binary" sha1sum="1c3cc0411444587b56178de4868eb5d0ff742ec0" target="x86_64">http://dl.google.com/linux/direct/google-talkplugin_current_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="1c3cc0411444587b56178de4868eb5d0ff742ec0" target="x86_64">http://dl.google.com/linux/talkplugin/deb/pool/main/g/google-talkplugin/google-talkplugin_5.41.0.0-1_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
             <SourceURI>google-talkplugin/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -2840,6 +2773,8 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Path fileType="executable">/opt/google/talkplugin</Path>
                 <Path fileType="library">/opt/google/talkplugin/lib</Path>
                 <Path fileType="library">/opt/google/talkplugin/libnpg*</Path>
+                <Path fileType="library">/opt/google/chrome/pepper/libppgoogletalk.so</Path>
+                <Path fileType="library">/opt/google/chrome/pepper/libppo1d.so</Path>
                 <Path fileType="library">/opt/google/talkplugin/libgoogle*</Path>
                 <Path fileType="library">/usr/lib</Path>
                 <Path fileType="data">/opt/google/talkplugin/windowpicker.glade</Path>
@@ -2852,6 +2787,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-11-10</Date>
+                <Version>5.41.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-05-27</Date>
                 <Version>5.4.3.0</Version>
@@ -2876,7 +2818,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Summary xml:lang="tr">FocusWriter is a simple, distraction-free writing environment.</Summary>
             <Description xml:lang="en">Focuswriter utilizes a hide-away interface that you access by moving your mouse to the edges of the screen, allowing the program to have a familiar look and feel to it while still getting out of the way so that you can immerse yourself in your work.</Description>
             <Description xml:lang="tr">Focuswriter utilizes a hide-away interface that you access by moving your mouse to the edges of the screen, allowing the program to have a familiar look and feel to it while still getting out of the way so that you can immerse yourself in your work.</Description>
-            <Archive type="tarbz2" sha1sum="41a62ce3690660f693f3728035f3e5f040948dbe">https://github.com/groni/Sources/raw/master/focuswriter-1.5.7-src.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="11883ad5c2378edf65a21870e9e6ed422bc35c9e">https://gottcode.org/focuswriter/focuswriter-1.6.2-src.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>qt5-base-devel</Dependency>
                 <Dependency>zlib-devel</Dependency>
@@ -2906,6 +2848,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2016-11-10</Date>
+                <Version>1.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-07-18</Date>
                 <Version>1.5.7</Version>
@@ -3245,7 +3194,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">The intuitive, fast, and beautiful cross-platform Git client.</Summary>
             <Description xml:lang="en">GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-            <Archive type="targz" sha1sum="048bb68e99451d773e97e79e338cc673fe805d59">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
+            <Archive type="targz" sha1sum="ab0b76fc557481ab65fc47bd12852c0cbc0ef202">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
             <SourceURI>gitkraken/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -3295,6 +3244,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2016-11-10</Date>
+                <Version>1.9.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="3">
                 <Date>2016-10-27</Date>
                 <Version>1.8.1</Version>
@@ -3348,6 +3304,82 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Comment>Version Bump</Comment>
                 <Name>Ergün Salman</Name>
                 <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>skypeforlinux</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Copyright (c) 2016 Skype and/or Microsoft</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Skype keeps the world talking, for free.</Summary>
+            <Description xml:lang="en">Skype keeps you together. Call, message and share with others.</Description>
+            <Archive type="binary" sha1sum="aa5245cd47ab198bc6742f30a8d423ada788d24f">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_1.12.0.4_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
+            <SourceURI>skypeforlinux/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>skypeforlinux</Name>
+            <Icon>skypeforlinux</Icon>
+            <RuntimeDependencies>
+                <Dependency>gconf</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/skypeforlinux</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-11-10</Date>
+                <Version>1.12.0.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016-09-11</Date>
+                <Version>1.6.0.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
