@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="c04e612491852ac3300168cdb1e1d9041570e702" type="targz">https://github.com/groni/Sources/raw/master/telegram_0.9.56.tar.gz</Archive>        
+        <Archive sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0" type="targz">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-11-10</Date>
+            <Version>0.10.19</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-24</Date>
             <Version>0.9.56</Version>
