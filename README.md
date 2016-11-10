@@ -1,6 +1,20 @@
 # pisilife-2
 for Pisi Linux 2.0 
 
+You can add this Repository to you Pisi Linux 2.0 system, type:
+
+sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz
+
+after it 
+
+sudo pisi ur
+
+and you can install packages with
+
+sudo pisi em example ( instead example write the package Name)
+
+sudo pisi emup  source depodan kurulmuş paketlerin güncellemesi var ise yeni sürümü derleyip yükler.
+
 You found here the packages from pislife special for Pisi Linux 2.0 and much more
 
 The following Packages can you found here:
@@ -72,16 +86,3 @@ Proprietary cross-platform IM and VoIP software. Free calls, text and picture sh
 webcamoid-ffmpeg
 
 Webcamoid is a full featured webcam capture application. https://github.com/webcamoid/webcamoid
-
-
-You can add this Repository to you Pisi Linux 2.0 system, type:
-
-sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz
-
-after it 
-
-sudo pisi ur
-
-and you can install packages with
-
-sudo pisi em example ( instead example write the package Name)
