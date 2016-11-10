@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>FocusWriter is a simple, distraction-free writing environment.</Summary>
         <Description>Focuswriter utilizes a hide-away interface that you access by moving your mouse to the edges of the screen, allowing the program to have a familiar look and feel to it while still getting out of the way so that you can immerse yourself in your work.</Description>
-        <Archive sha1sum="41a62ce3690660f693f3728035f3e5f040948dbe" type="tarbz2">https://github.com/groni/Sources/raw/master/focuswriter-1.5.7-src.tar.bz2</Archive>        
+        <Archive sha1sum="11883ad5c2378edf65a21870e9e6ed422bc35c9e" type="tarbz2">https://gottcode.org/focuswriter/focuswriter-1.6.2-src.tar.bz2</Archive>        
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2016-11-10</Date>
+            <Version>1.6.2</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-18</Date>
             <Version>1.5.7</Version>
