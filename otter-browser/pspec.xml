@@ -12,7 +12,7 @@
         <IsA>gui</IsA>
         <Summary>Otter-Browser Controlled by the user, not vice versa</Summary>
         <Description>Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5.</Description>
-        <Archive sha1sum="a3b9ca975769d11fd2d72853d2b68c41f805345e" type="tarbz2">https://sourceforge.net/projects/otter-browser/files/otter-browser-beta9/otter-browser-0.9.09.tar.bz2</Archive>
+        <Archive sha1sum="160671803dbe7987c7acb591e15c22bbd133d974" type="tarbz2">https://sourceforge.net/projects/otter-browser/files/otter-browser-beta11/otter-browser-0.9.11.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>qt5-webkit-devel</Dependency>
@@ -27,6 +27,9 @@
             <Dependency>jre7-openjdk</Dependency>
             <Dependency>cmake</Dependency>
             <Dependency>autogen</Dependency>
+            <Dependency>qt5-webengine-devel</Dependency>
+            <Dependency>qt5-declarative-devel</Dependency>
+            <Dependency>hunspell-devel</Dependency>
         </BuildDependencies>   
     </Source>
 
@@ -39,6 +42,9 @@
             <Dependency>qt5-multimedia</Dependency>
             <Dependency>qt5-script</Dependency>
             <Dependency>qt5-xmlpatterns</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>hunspell</Dependency>
         </RuntimeDependencies> 
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -49,6 +55,13 @@
     </Package>   
 
     <History>
+        <Update release="2">
+            <Date>2016-11-10</Date>
+            <Version>0.9.11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-04-15</Date>
             <Version>0.9.09</Version>
