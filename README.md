@@ -3,17 +3,17 @@ is the third-party Repository for Pisi Linux 2.0
 
 You can add this Repository to you Pisi Linux 2.0 system, type:
 
-sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz
+```sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz```
 
 after it 
 
-sudo pisi ur
+```sudo pisi ur```
 
 and you can install packages with
 
-sudo pisi em example ( instead example write the package Name)
+```sudo pisi em example``` ( instead example write the package Name)
 
-sudo pisi emup  source depodan kurulmuş paketlerin güncellemesi var ise yeni sürümü derleyip yükler.
+```sudo pisi emup```  source depodan kurulmuş paketlerin güncellemesi var ise yeni sürümü derleyip yükler.
 
 This Repository is specially for Pisi Linux 2.0
 
