@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>vs-code-editor</Name>
-        <Homepage>https://www.gitkraken.com</Homepage>
+        <Homepage>http://code.visualstudio.com</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
@@ -11,7 +11,8 @@
         <Summary>Visual Studio Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. (Proprietary Version.)</Summary>
         <Description>Visual Studio Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. (Proprietary Version.)</Description>
         <License>EULA</License>
-        <Archive sha1sum="f44fb207bd2967df68c060bef45d55a6c4ba2e9a" type="binary">https://az764295.vo.msecnd.net/stable/fe7f407b95b7f78405846188259504b34ef72761/code-stable-vscode-amd64.tar.xz</Archive>
+        <Archive type="zip" sha1sum="e1de83e88a9a67e4911a7c731cb3772ca37a3b13">https://az764295.vo.msecnd.net/stable/e6b4afa53e9c0f54edef1673de9001e9f0f547ae/VSCode-linux-x64-stable.zip
+</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>gconf</Dependency>
@@ -54,15 +55,16 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXcomposite</Dependency>            
         </RuntimeDependencies>
+        
         <Files>
-            <Path fileType="data">/opt/vs-code-editor</Path>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="application">/usr/share/applications</Path> 
         </Files>
+        
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/code.png">code.png</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/vscode.desktop">vscode.desktop</AdditionalFile>            
+            <AdditionalFile owner="root" target="/usr/share/applications/Visual-Studio-Code.desktop" group="root" permission="0744">Visual-Studio-Code.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/pixmaps/code.png" group="root" permission="0744">code.png</AdditionalFile>
         </AdditionalFiles>        
     </Package>
     

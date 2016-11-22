@@ -1,15 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# Licensed under the GNU General Public License, version 3.
+# See the file http://www.gnu.org/copyleft/gpl.txt
 
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 
-def setup():
-    shelltools.system("pwd")
-    shelltools.system("tar -xJf code-stable-vscode-amd64.tar.xz")        
 def install():
-    #shelltools.cd("")
-    pisitools.insinto("/opt/vs-code-editor", "./VSCode-linux-x64/*")
-    #pisitools.insinto("/usr/bin", "./VSCode-linux-x64/code")
+    pisitools.insinto("/usr/share/VSCode-linux-x64", "./*") 
