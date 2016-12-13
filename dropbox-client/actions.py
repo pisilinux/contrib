@@ -22,4 +22,4 @@ def install():
 
     # you can remove these lines if u don't like monochromatic systemtry icons
     # i'm going to try find a way to make this optional
-    pisitools.insinto("/opt/dropbox/icons/hicolor/16x16/status", "../../hede/*.png")
+    #pisitools.insinto("/opt/dropbox/icons/hicolor/16x16/status", "../../hede/*.png")

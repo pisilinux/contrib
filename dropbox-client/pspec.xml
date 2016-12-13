@@ -16,8 +16,8 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="817d9bfce4a281a846c07c169cd55ba25b355014" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-9.4.49.tar.gz</Archive>
-        <Archive sha1sum="84033cf0b387c93bd3d7fb59ed519046506ea5fe" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-9.4.49.tar.gz</Archive>        
+        <Archive sha1sum="cdd1a1826ff8e7737cfe32211135190635ce681a" type="targz" target="i686">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-16.4.29.tar.gz</Archive>
+        <Archive sha1sum="0bd275b7204c72d29bffc9a9816683bec08fc507" type="targz" target="x86_64">https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86_64-16.4.29.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -61,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2016-12-13</Date>
+            <Version>16.4.29</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2016-09-11</Date>
             <Version>9.4.49</Version>
