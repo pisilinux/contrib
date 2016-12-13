@@ -23,6 +23,13 @@
     <Package>
         <Name>draftsight</Name>
         <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXt-32bit</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>zlib</Dependency>
