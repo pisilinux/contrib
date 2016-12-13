@@ -12,7 +12,7 @@
         <IsA>gui</IsA>        
         <Summary>The intuitive, fast, and beautiful cross-platform Git client.</Summary>
         <Description>GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-        <Archive sha1sum="ab0b76fc557481ab65fc47bd12852c0cbc0ef202" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
+        <Archive sha1sum="0937a59105eb792b3a6377dd9abd94c2bdaaa53e" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2016-12-13</Date>
+            <Version>1.9.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2016-11-10</Date>
             <Version>1.9.0</Version>
