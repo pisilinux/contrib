@@ -13,8 +13,8 @@ IgnoreAutodep = True
 Version = get.srcVERSION()
 
 def setup():
-    shelltools.system("pwd")
-    shelltools.system("ar xf opera-stable_%s_amd64.deb" % Version)
+   # shelltools.system("pwd")
+    shelltools.system("ar xf opera-stable_42.0.2393.85_amd64.deb")
     shelltools.system("tar xvf data.tar.xz")
 
 def install():
