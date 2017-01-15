@@ -12,8 +12,8 @@ WorkDir = "."
 NoStrip = ["/opt/teamviewer/tv_bin/wine/drive_c/TeamViewer/tvwine.dll.so"]
 
 def setup():
-    shelltools.system("rpm2targz -v %s/teamviewer_11.0.67687.i686.rpm" %get.workDIR())
-    shelltools.system("tar xfvz %s/teamviewer_11.0.67687.i686.tar.gz --exclude=var --exclude=etc --exclude=usr" %get.workDIR())
+    shelltools.system("rpm2targz -v %s/teamviewer_12.0.71510.i686.rpm" %get.workDIR())
+    shelltools.system("tar xfvz %s/teamviewer_12.0.71510.i686.tar.gz --exclude=var --exclude=etc --exclude=usr" %get.workDIR())
     
 def install():
     pisitools.insinto("/opt/", "./opt/*")
