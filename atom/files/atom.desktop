@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Atom Beta
+Name=Atom
 Comment=A hackable text editor for the 21st Century.
 GenericName=Text Editor
-Exec=/usr/share/atom-beta/atom %U
-Icon=atom-beta
+Exec=/usr/share/atom/atom %U
+Icon=atom
 Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Utility;TextEditor;Development;
