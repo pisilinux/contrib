@@ -8,7 +8,7 @@ from pisi.actionsapi import pisitools
 WorkDir = "."
 
 def install():
-    pisitools.insinto("/usr/bin/", "./usr/bin/apm-beta")    
-    pisitools.insinto("/usr/bin/", "./usr/bin/atom-beta")       
-    pisitools.insinto("/usr/share/atom-beta/", "./usr/share/atom-beta/*")
-    pisitools.insinto("/usr/share/doc/atom-beta", "./usr/share/doc/atom-beta/*")
+    pisitools.insinto("/usr/bin/", "./usr/bin/apm")    
+    pisitools.insinto("/usr/bin/", "./usr/bin/atom")       
+    pisitools.insinto("/usr/share/atom/", "./usr/share/atom/*")
+    pisitools.insinto("/usr/share/doc/atom", "./usr/share/doc/atom/*")
