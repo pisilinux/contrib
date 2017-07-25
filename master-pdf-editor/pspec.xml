@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
         <Description>Master PDF Editor provides you advanced functions for working with PDF format.</Description>
-        <Archive sha1sum="ea238ea119d848b3fa62620c7f1f1b9dc4dedea9" type="targz">http://get.code-industry.net/public/master-pdf-editor-3.7.10_qt5.amd64.tar.gz</Archive>        
+        <Archive sha1sum="1c7ffc8858ef5034d6f29f4ee783bc8fb4478fb5" type="targz">http://get.code-industry.net/public/master-pdf-editor-4.2.70_qt5.amd64.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -24,7 +24,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/opt/master-pdf-editor-3/lang</Path>
+            <Path fileType="data">/opt/master-pdf-editor-4/lang</Path>            
             <Path fileType="license">/usr/share/doc/master-pdf-editor</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>           
             <Path fileType="application">/usr/share/applications</Path>
@@ -36,6 +36,13 @@
     </Package>       
 
     <History>
+        <Update release="3">
+            <Date>2017-07-25</Date>
+            <Version>4.2.70</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>   
          <Update release="2">
             <Date>2016-09-11</Date>
             <Version>3.7.10</Version>

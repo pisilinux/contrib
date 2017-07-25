@@ -7,7 +7,7 @@ from pisi.actionsapi import shelltools
 NoStrip = ["/"]
 
 def setup():
-    shelltools.system("unzip android-studio-ide-145.3360264-linux.zip")
+    shelltools.system("unzip android-studio-ide-162.4069837-linux.zip")
 
 def install():
     pisitools.insinto("/opt/android-studio", "android-studio/*")
