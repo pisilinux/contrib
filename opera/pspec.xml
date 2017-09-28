@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser</Summary>
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
-        <Archive sha1sum="2a1974affe2340cbea0fbfbdcf030a4389c3aa5a" type="binary">http://download1.operacdn.com/pub/opera/desktop/43.0.2442.991/linux/opera-stable_43.0.2442.991_amd64.deb</Archive>
+        <Archive sha1sum="56857f0b8d2d029fbaa8934c3c6183f4e4f45277" type="binary">http://download1.operacdn.com/pub/opera/desktop/48.0.2685.32/linux/opera-stable_48.0.2685.32_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -63,7 +63,14 @@
     </Package>
 
     <History>
-         <Update release="5">
+        <Update release="6">
+            <Date>2017-09-28</Date>
+            <Version>48.0.2685.32</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update> 
+        <Update release="5">
             <Date>2017-02-21</Date>
             <Version>43.0.2442.991</Version>
             <Comment>Opera version bump.</Comment>
