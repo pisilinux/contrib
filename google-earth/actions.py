@@ -10,7 +10,7 @@ NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
 def setup():
-    shelltools.system("ar xf google-earth-stable_current_amd64.deb")
+    shelltools.system("ar xf google-earth-stable_7.1.8.3036-r0_amd64.deb")
     shelltools.system("tar xvf data.tar.xz")
     shelltools.system("mv opt/google/earth/free/google-earth.desktop .")
 

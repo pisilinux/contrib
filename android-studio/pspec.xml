@@ -11,11 +11,12 @@
         <License>Apache-2.0</License>        
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-        <Archive type="binary" sha1sum="fc63ca247762697c33102a78063a95f8b5ab5dea">https://dl.google.com/dl/android/studio/ide-zips/2.2.2.0/android-studio-ide-145.3360264-linux.zip</Archive>
+        <Archive type="zip" sha1sum="0d636009aa98f278311dd5d68bca1c948803dde2">https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip</Archive>
     </Source>
     <Package>
         <Name>android-studio</Name>        
         <RuntimeDependencies>
+            <Dependency>unzip</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
@@ -24,6 +25,11 @@
             <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libXrender</Dependency>
+            <Dependency>bzip2-32bit</Dependency>
+            <Dependency>openjdk-8</Dependency>
+            <Dependency>libstdc++-32bit</Dependency>
+            <Dependency>ncurses-32bit</Dependency>
+            <Dependency>zlib-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/android-studio</Path>
@@ -35,7 +41,14 @@
         </AdditionalFiles>
     </Package>
     
-    <History>      
+    <History>
+        <Update release="2">
+            <Date>2017-07-25</Date>
+            <Version>2.3.3.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-10-27</Date>
             <Version>2.2.2</Version>

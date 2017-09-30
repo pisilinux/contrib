@@ -9,12 +9,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def install():
-    pisitools.insinto("/usr/share/pixmaps/", "masterpdfeditor3.png")
-    pisitools.insinto("/usr/share/applications/", "masterpdfeditor3.desktop")
-    pisitools.dodir("/opt/master-pdf-editor-3")
-    pisitools.insinto("/opt/master-pdf-editor-3/lang","lang/*.qm")
-    pisitools.insinto("/opt/master-pdf-editor-3/lang","lang/*.ts")
-    pisitools.insinto("/usr/bin/","masterpdfeditor3")
+    pisitools.insinto("/usr/share/pixmaps/", "masterpdfeditor4.png")
+    pisitools.insinto("/usr/share/applications/", "masterpdfeditor4.desktop")
+    pisitools.dodir("/opt/master-pdf-editor-4")
+    pisitools.insinto("/opt/master-pdf-editor-4/lang","lang/*.qm")
+    pisitools.insinto("/opt/master-pdf-editor-4/lang","lang/*.ts")
+    pisitools.insinto("/usr/bin/","masterpdfeditor4")
     
     pisitools.dodoc("license.txt")
     

@@ -5,9 +5,19 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 
-WorkDir = "."
+NoStrip = ["/opt", "/usr"]
+IgnoreAutodep = True
 
-def install():   
-    pisitools.insinto("/usr/share/", "gitkraken")        
-    pisitools.insinto("/usr/bin/", "./gitkraken/gitkraken")   
-    pisitools.insinto("/usr/share/doc/", "./gitkraken/LICENSE")    
+# Should not change.
+Suffix = "-1"
+
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("ar xf gitkraken-amd64.deb")
+    shelltools.system("tar xvf data.tar.gz")
+    shelltools.system("sed -i 's Icon=app Icon=gitkraken ' usr/share/applications/gitkraken.desktop")
+    shelltools.system("mv usr/share/pixmaps/app.png usr/share/pixmaps/gitkraken.png")
+def install():
+    pisitools.insinto("/", "usr")   
+       
+

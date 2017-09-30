@@ -15,24 +15,25 @@
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
         <Archive sha1sum="48a645374a10aaf710f66b415374391e665f4acf" type="binary">https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_61.0.3163.100-1_amd64.deb</Archive>
-        <BuildDependencies>            
+        <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
     </Source>
+
     <Package>
         <Name>google-chrome</Name>
         <RuntimeDependencies>
-	   <Dependency>nspr</Dependency>
-	    <Dependency>bzip2</Dependency>
-	    <Dependency>libpng</Dependency>
-	    <Dependency>freetype</Dependency>
-	    <Dependency>libgcrypt</Dependency>
-	    <Dependency>dbus</Dependency>
-	    <Dependency>expat</Dependency>
-	    <Dependency>glib2</Dependency>
-	    <Dependency>libX11</Dependency>
-	    <Dependency>libgcc</Dependency>
-        <Dependency>libxcb</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>libXcomposite</Dependency>
@@ -47,9 +48,9 @@
             <Dependency>libXtst</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libXext</Dependency>
-	    <Dependency>libXrandr</Dependency>
-	    <Dependency>libXcursor</Dependency>
-            <Dependency>minizip</Dependency>            
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>minizip</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>libXScrnSaver</Dependency>
@@ -75,11 +76,12 @@
             <Path fileType="data">/usr/share/appdata/google-chrome.appdata.xml</Path>
         </Files>
     </Package>
+
     <History>
         <Update release="26">
-            <Date>2017-09-28</Date>
-            <Version>61.0.3163.100</Version>
-            <Comment>Release bump.</Comment>
+            <Date>2017-09-30</Date>
+            <Version>59.0.3071.115</Version>
+            <Comment>Version bump.</Comment>
             <Name>Ali Algul</Name>
             <Email>aligulle3801@gmail.com</Email>
         </Update>
@@ -89,7 +91,7 @@
             <Comment>Release bump.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-      </Update>
+        </Update>
         <Update release="24">
             <Date>2017-05-11</Date>
             <Version>59.0.3071.86</Version>
@@ -257,6 +259,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>
