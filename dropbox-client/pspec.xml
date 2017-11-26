@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="0bd275b7204c72d29bffc9a9816683bec08fc507" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-39.4.49.tar.gz</Archive>        
+        <Archive sha1sum="8d2c799c51a22b823b828f4d27338712cd42ed08" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-39.4.49.tar.gz</Archive>        
     </Source>
 
     <Package>
