@@ -14,7 +14,7 @@ NoStrip = ["/"]
 Release = "-1"
 
 def setup():
-    shelltools.system("ar xf %s/google-chrome-stable_%s%s_amd64.deb" % (get.workDIR(), get.srcVERSION(), Release))
+    shelltools.system("ar xf google-chrome-stable_current_amd64.deb")
     shelltools.system("tar xvf %s/data.tar.xz --exclude=usr/share/gnome-control-center --exclude=usr/bin --exclude=etc" %get.workDIR())
     shelltools.chmod(get.workDIR() + "/opt/google/chrome/*", 0755)
 
