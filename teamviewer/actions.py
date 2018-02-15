@@ -12,12 +12,13 @@ WorkDir = "."
 NoStrip = ["/opt/teamviewer/tv_bin/wine/drive_c/TeamViewer/tvwine.dll.so"]
 
 def setup():
-    shelltools.system("rpm2targz -v %s/teamviewer_12.0.76279.i686.rpm" %get.workDIR())
-    shelltools.system("tar xfvz %s/teamviewer_12.0.76279.i686.tar.gz --exclude=var --exclude=etc --exclude=usr" %get.workDIR())
+    shelltools.system("pwd")
+    shelltools.system("ar xf teamviewer_12.0.85001_i386.deb")
+    shelltools.system("tar xf data.tar.bz2")
     
 def install():
     pisitools.insinto("/opt/", "./opt/*")
-    pisitools.remove("/opt/teamviewer/tv_bin/xdg-utils/xdg-email")
+    pisitools.insinto("/etc/systemd/system", "./opt/teamviewer/tv_bin/script/teamviewerd.service")
     
     #necessary symlinks
     pisitools.dosym("/opt/teamviewer/tv_bin/teamviewerd", "etc/init.d/teamviewerd")
@@ -28,7 +29,8 @@ def install():
     pisitools.dodoc("%s/opt/teamviewer/doc/License.txt" %get.workDIR())
     
     
-    shelltools.chmod("%s/opt/teamviewer/*" % get.installDIR(),0755)  
+    shelltools.chmod("%s/opt/teamviewer/doc/*" % get.installDIR(),0755)
+    shelltools.chmod("%s/opt/teamviewer/tv_bin/*" % get.installDIR(),0755)  
     
 
     
