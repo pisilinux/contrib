@@ -11,12 +11,13 @@
         <License>Apache-2.0</License>        
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-        <Archive type="zip" sha1sum="0d636009aa98f278311dd5d68bca1c948803dde2">https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip</Archive>
+        <Archive type="zip" sha1sum="9d4ff86b8d5f0f22ec6c66347b2127bbae60abef">https://dl.google.com/dl/android/studio/ide-zips/3.0.1.0/android-studio-ide-171.4443003-linux.zip</Archive>
     </Source>
     <Package>
         <Name>android-studio</Name>        
         <RuntimeDependencies>
             <Dependency>unzip</Dependency>
+            <Dependency>klibc</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
@@ -42,6 +43,13 @@
     </Package>
     
     <History>
+        <Update release="3">
+            <Date>2018-02-18</Date>
+            <Version>3.0.1.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2017-07-25</Date>
             <Version>2.3.3.0</Version>
