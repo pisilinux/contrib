@@ -4,10 +4,8 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
+WorkDir = "."
 NoStrip = ["/"]
-
-def setup():
-    shelltools.system("unzip android-studio-ide-162.4069837-linux.zip")
 
 def install():
     pisitools.insinto("/opt/android-studio", "android-studio/*")
