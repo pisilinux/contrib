@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Unofficial Facebook Messenger app.</Summary>
         <Description>Not an official app. No affiliation with Facebook.</Description>
-        <Archive sha1sum="9ec926dd10aebc81727c9f832d7d476045927077" type="targz">https://github.com/groni/Sources/raw/master/caprine.tar.gz</Archive>        
+        <Archive sha1sum="809a20771b0e0b855f377ec1de7492975808d5a4" type="targz">https://sourceforge.net/projects/pisi-linux-global/files/Sources/caprine-2.9.0.tar.gz/download</Archive>        
     </Source>
 
     <Package>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2018-02-19</Date>
+            <Version>2.9.0</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-11</Date>
             <Version>1.4.1</Version>
