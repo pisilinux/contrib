@@ -12,7 +12,7 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
         <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
         <Icon>arduino</Icon>
-        <Archive sha1sum="a68b792ff652b025c2418cb4d8835e00" type="tarxz">https://downloads.arduino.cc/arduino-1.8.1-linux64.tar.xz</Archive>
+        <Archive sha1sum="c48471bcdac4ad67c5632ccf5da17725f2b0bd87" type="tarxz">https://github.com/arduino/Arduino/releases/download/1.8.5/Arduino-1.8.5.tar.xz</Archive>
     </Source>
     <Package>
         <Name>arduino</Name>
@@ -27,7 +27,14 @@
         </AdditionalFiles>
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
     </Package>
-    <History>        
+    <History>
+        <Update release="3">
+            <Date>2018-02-19</Date>
+            <Version>1.8.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>        
         <Update release="2">
             <Date>2016-02-19</Date>
             <Version>1.8.1</Version>
