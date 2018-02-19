@@ -13,7 +13,7 @@
         <PartOf>applications.development</PartOf>
         <Summary>A hackable text editor.</Summary>
         <Description>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
-        <Archive sha1sum="d46547135cca641646a6994ebdb7bd6966d89248" type="targz">https://sourceforge.net/projects/pisi-linux-global/files/Sources/atom-1.14.3.tar.gz</Archive>
+        <Archive sha1sum="118da444762cb6625348b67ff02295501f673f12" type="targz">https://sourceforge.net/projects/pisi-linux-global/files/Sources/atom-1.24.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -65,6 +65,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2018-02-19</Date>
+            <Version>1.24.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2017-02-20</Date>
             <Version>1.14.3</Version>
