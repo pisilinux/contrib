@@ -13,20 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>Cherrytree A hierarchical note taking application</Summary>
         <Description>A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.</Description>
-        <Archive sha1sum="31254b6311cf5cd9b6c20ec4ed997128d5b09e26" type="tarxz">http://www.giuspen.com/software/cherrytree-0.37.6.tar.xz</Archive>
+        <Archive sha1sum="bc81ae2f6c6566639c5906b3754bf97c6c16b4d4" type="tarxz">http://www.giuspen.com/software/cherrytree-0.38.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>desktop-file-utils</Dependency>
         </BuildDependencies>
-     <Patches>
-         <Patch level="1">spellcheck.patch</Patch> 
-     </Patches>
+        
     </Source>
     <Package>
         <Name>cherrytree</Name>
         <RuntimeDependencies>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>p7zip</Dependency>
-            <Dependency>python3-enchant</Dependency>
+            <Dependency>python-enchant</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>python-gtksourceview</Dependency>
             <Dependency>python-pygobject</Dependency>
@@ -52,6 +50,13 @@
     </Package>
     
     <History>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>0.38.04</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+    </Update>
         <Update release="1">
             <Date>2016-06-11</Date>
             <Version>0.37.6</Version>
