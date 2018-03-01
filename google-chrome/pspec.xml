@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="611ed5cb90a206b5245dd7645e4dcebf311f9a41" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="502db3a41f6ca920ef86b9ae3a62d6a358a9ccc4" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -24,6 +24,8 @@
         <Name>google-chrome</Name>
         <RuntimeDependencies>
             <Dependency>nspr</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
             <Dependency>bzip2</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
@@ -78,6 +80,13 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2018-03-01</Date>
+            <Version>64.0.3282.186</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="27">
             <Date>2018-02-14</Date>
             <Version>64.0.3282.167</Version>
