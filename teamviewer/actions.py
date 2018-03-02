@@ -13,8 +13,8 @@ NoStrip = ["/opt/teamviewer/tv_bin/wine/drive_c/TeamViewer/tvwine.dll.so"]
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf teamviewer_12.0.85001_i386.deb")
-    shelltools.system("tar xf data.tar.bz2")
+    shelltools.system("ar xf teamviewer_13.0.9865_amd64.deb")
+    shelltools.system("tar xf data.tar.xz")
     
 def install():
     pisitools.insinto("/opt/", "./opt/*")

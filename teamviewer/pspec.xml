@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA> 
         <Summary>User friendly remote control application</Summary>
         <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com </Description>
-        <Archive sha1sum="2c6231eb86582e22c33bff6c62bc60a3b205f990" type="binary">https://download.teamviewer.com/download/version_12x/teamviewer_12.0.85001_i386.deb</Archive>
+        <Archive sha1sum="fed8c65f72d2cb13efe0609fe8766c6fd07bb96a" type="binary">https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.9865_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -23,7 +23,6 @@
         <Name>teamviewer</Name>
         <RuntimeDependencies>
             <Dependency>libXtst-32bit</Dependency>
-            <Dependency>teamviewer-fonts</Dependency>
             <Dependency>alsa-lib-32bit</Dependency>
             <Dependency>libXdamage-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
@@ -37,6 +36,14 @@
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>harfbuzz-32bit</Dependency>
             <Dependency>qt5-base-32bit</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency> libXinerama</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>fontconfig-32bit </Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -58,7 +65,14 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="12">
+            <Date>2018-03-02</Date>
+            <Version>13.0.9865</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+         <Update release="11">
             <Date>2018-02-15</Date>
             <Version>12.0.85001</Version>
             <Comment>Version bump.</Comment>
