@@ -37,6 +37,14 @@
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>harfbuzz-32bit</Dependency>
             <Dependency>qt5-base-32bit</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency> libXinerama</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>fontconfig-32bit </Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
