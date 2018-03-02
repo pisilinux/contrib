@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA> 
         <Summary>User friendly remote control application</Summary>
         <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com </Description>
-        <Archive sha1sum="2c6231eb86582e22c33bff6c62bc60a3b205f990" type="binary">https://download.teamviewer.com/download/linux/teamviewer_amd64.deb</Archive>
+        <Archive sha1sum="fed8c65f72d2cb13efe0609fe8766c6fd07bb96a" type="binary">https://download.teamviewer.com/download/linux/teamviewer_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
