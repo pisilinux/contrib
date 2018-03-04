@@ -12,12 +12,25 @@
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
         <Archive type="zip" sha1sum="9d4ff86b8d5f0f22ec6c66347b2127bbae60abef">https://dl.google.com/dl/android/studio/ide-zips/3.0.1.0/android-studio-ide-171.4443003-linux.zip</Archive>
+        <BuildDependencies>
+            <Dependency>unzip</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>            
+        </BuildDependencies>
     </Source>
     <Package>
         <Name>android-studio</Name>        
         <RuntimeDependencies>
-            <Dependency>unzip</Dependency>
-            <Dependency>klibc</Dependency>
+            <Dependency>unzip</Dependency>            
             <Dependency>libXi</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
@@ -25,12 +38,7 @@
             <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>bzip2-32bit</Dependency>
-            <Dependency>openjdk-8</Dependency>
-            <Dependency>libstdc++-32bit</Dependency>
-            <Dependency>ncurses-32bit</Dependency>
-            <Dependency>zlib-32bit</Dependency>
+            <Dependency>libXrender</Dependency>            
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/android-studio</Path>
