@@ -15,8 +15,8 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf discount_2.1.7-1_amd64.deb")
-    shelltools.system("tar -xzf data.tar.gz")
+    shelltools.system("ar xf discount_2.2.3b8-2_amd64.deb")
+    shelltools.system("tar -xf data.tar.xz")
 
 def install():
     pisitools.insinto("/", "usr")
