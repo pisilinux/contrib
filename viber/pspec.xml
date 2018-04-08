@@ -19,6 +19,7 @@
         <RuntimeDependencies>
             <Dependency>mesa</Dependency>
             <Dependency>libXi</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -28,7 +29,6 @@
             <Dependency>glib2</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
-            <Dependency>libx11</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>sqlite</Dependency>
