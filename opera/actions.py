@@ -14,7 +14,7 @@ Version = get.srcVERSION()
 
 def setup():
    # shelltools.system("pwd")
-    shelltools.system("ar xf opera-stable_51.0.2830.34_amd64.deb ")
+    shelltools.system("ar xf opera-stable_52.0.2871.40_amd64.deb ")
     shelltools.system("tar xvf data.tar.xz")
 
 def install():
