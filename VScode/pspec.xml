@@ -12,7 +12,7 @@
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="e1de83e88a9a67e4911a7c731cb3772ca37a3b13">https://az764295.vo.msecnd.net/stable/3aeede733d9a3098f7b4bdc1f66b63b0f48c1ef9/code-stable-code_1.22.2-1523551015_amd64.tar.gz
+        <Archive type="targz" sha1sum="e9208b3e4110d9b78e92038f1ed43ec421bce5ff">https://az764295.vo.msecnd.net/stable/3aeede733d9a3098f7b4bdc1f66b63b0f48c1ef9/code-stable-code_1.22.2-1523551015_amd64.tar.gz
 </Archive>
     </Source>
     <Package>
