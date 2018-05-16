@@ -19,7 +19,7 @@
             <Dependency>libpcre-devel</Dependency>
             <Dependency>ninja</Dependency>
             <Dependency>ruby-devel</Dependency>
-            <Dependency>qt5-base-devel</Dependency>            
+            <Dependency>qt5-base-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
@@ -28,7 +28,7 @@
         <Description xml:lang="en">Android Platform Tools</Description>
         <PartOf>programming.tools</PartOf>
         <RuntimeDependencies>
-            <Dependency>libgcc</Dependency>            
+            <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/bin/adb</Path>

@@ -1,0 +1,12 @@
+--- luckybackup-0.3.orig/luckybackup.pro	2009-05-09 02:22:49.000000000 -0500
++++ luckybackup-0.3/luckybackup.pro	2009-05-24 21:39:30.000000000 -0500
+@@ -12,9 +12,6 @@
+ menu.path = /usr/share/applications
+ menu.files = menu/luckybackup.desktop menu/luckybackup-kde-su.desktop menu/luckybackup-gnome-su.desktop
+ 
+-debianmenu.path = /usr/share/menu
+-debianmenu.files = menu/luckybackup
+-
+ pixmap.path = /usr/share/pixmaps
+ pixmap.files = menu/luckybackup.xpm menu/luckybackup.png
+ 

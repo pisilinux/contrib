@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>luckybackup</Name>
+        <Summary xml:lang="de">Einfache Datensynchronisation und Backup</Summary>
+        <Description xml:lang="de">luckyBackup legt inkrementielle Sicherungen geänderter Daten im Zielverzeichnis an - auch zwei Wege (bidirektionale) Ordner Synchronisationen sind möglich.</Description>
+    </Source>
+</PISI>
