@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="38930142e71824c76dc5bc589945aee9ed91ddad" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-43.4.50.tar.gz</Archive>        
+        <Archive sha1sum="f578f47428b7bb9226b4087f9fc0c046ad42ad91" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-49.4.69.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -34,7 +34,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-	        <Dependency>libXxf86vm</Dependency>
+	    <Dependency>libXxf86vm</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>zlib</Dependency>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+	<Update release="7">
+            <Date>2018-05-21</Date>
+            <Version>49.4.69</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2018-02-17</Date>
             <Version>43.4.50</Version>
