@@ -1455,79 +1455,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>whatsie</Name>
-            <Homepage>https://github.com/Aluxian/Whatsie</Homepage>
-            <Packager>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-            <License>MIT</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">A simple and beautiful desktop client for WhatsApp Web.</Summary>
-            <Summary xml:lang="tr">A simple and beautiful desktop client for WhatsApp Web.</Summary>
-            <Description xml:lang="en">Chat without distractions on OS X, Windows and Linux. Not affiliated with WhatsApp or Facebook. This is NOT an official product.</Description>
-            <Description xml:lang="tr">Chat without distractions on OS X, Windows and Linux. Not affiliated with WhatsApp or Facebook. This is NOT an official product.</Description>
-            <Archive type="binary" sha1sum="8207fb7994a30a4fd4cd121fb1ae54ba69826e65">https://github.com/Aluxian/Whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-amd64.deb</Archive>
-            <SourceURI>whatsie/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>whatsie</Name>
-            <RuntimeDependencies>
-                <Dependency>atk</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>nspr</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>gconf</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXScrnSaver</Dependency>
-                <Dependency>libXcomposite</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/opt</Path>
-                <Path fileType="application">/usr/share/applications</Path>
-                <Path fileType="icon">/usr/share/icons</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2016-09-11</Date>
-                <Version>2.1.0</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-07-24</Date>
-                <Version>2.0.18</Version>
-                <Comment>First release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>steam</Name>
             <Homepage>http://store.steampowered.com/</Homepage>
             <Packager>
@@ -4223,6 +4150,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2018-05-21</Date>
+                <Version>3.2.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-09-11</Date>
                 <Version>1.7.0</Version>
@@ -4542,7 +4476,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Otter-Browser Controlled by the user, not vice versa</Summary>
             <Description xml:lang="en">Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5.</Description>
-            <Archive type="tarbz2" sha1sum="ee1f967a96a92649f02865b5a7333f6b6926b42a">https://sourceforge.net/projects/otter-browser/files/otter-browser-rc7/otter-browser-0.9.97.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="947ca900defd80361af6780f24177e77378603c0">https://sourceforge.net/projects/otter-browser/files/otter-browser-rc8/otter-browser-0.9.98.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>qt5-base-devel</Dependency>
                 <Dependency>qt5-webkit-devel</Dependency>
@@ -4585,6 +4519,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Files>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2018-05-21</Date>
+                <Version>0.9.98</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="3">
                 <Date>2018-04-118</Date>
                 <Version>0.9.97</Version>
