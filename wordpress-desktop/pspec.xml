@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Wordpress Desktop a Control Panel for all your Wordpress Sites</Summary>
         <Description>A desktop app that gives WordPress a permanent home in your dock.You'll need a WordPress.com login.</Description>
-        <Archive sha1sum="fcc2decb4254b1c373e9d967f50c3a54fe24ac60" type="targz">https://github.com/groni/Sources/raw/master/wordpress-com-1-7-0.tar.gz</Archive>
+        <Archive sha1sum="a440c8852c6e852d95949fa1e09a6844f05fd6b8" type="targz">https://github.com/groni/Sources/raw/master/wordpress-com-3-2-0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -44,16 +44,15 @@
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXcomposite</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="config">/etc</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="app">/usr/share/applications</Path>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>        
         <AdditionalFiles>
