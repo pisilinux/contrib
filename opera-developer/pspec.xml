@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser Developer version</Summary>
         <Description>Opera Web Browser Developer Version</Description>
         <License>EULA</License>
-        <Archive sha1sum="018aae704e95a19ffa930ab74e3998b9e24ded5a" type="binary">https://get.geo.opera.com/pub//opera-developer/54.0.2936.0/linux/opera-developer_54.0.2936.0_amd64.deb</Archive>
+        <Archive sha1sum="13d59f0d05307ced7dd35c5891685bee398a9108" type="binary">https://get.geo.opera.com/pub//opera-developer/55.0.2962.0/linux/opera-developer_55.0.2962.0_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -72,7 +72,7 @@
     <History>
         <Update release="1">
             <Date>2018-05-03</Date>
-            <Version>54.0.2936.0</Version>
+            <Version>55.0.2962.0</Version>
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
