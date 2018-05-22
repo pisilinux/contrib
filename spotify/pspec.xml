@@ -8,11 +8,11 @@
 	    <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <License>Spotify</License> 
+        <License>Copyright (c) 2006-2010 Spotify Ltd.</License> 
         <IsA>app:gui</IsA> 
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="bec94894f0a74110f3f178264da1a900e021cf97" type="binary">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.70.399.g5ffabd56-26_amd64.deb</Archive>
+        <Archive sha1sum="f59467b12c98971a88a6f1965969f7dd9bdb1b8f" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.77.338.g758ebd78-41_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>libXScrnSaver</Dependency>
@@ -51,7 +51,9 @@
           <Dependency>libXrender</Dependency>
           <Dependency>libXScrnSaver</Dependency>
           <Dependency>google-chrome</Dependency>
-          <Dependency>libXcomposite</Dependency>          
+          <Dependency>gcc</Dependency>
+          <Dependency>libxcb</Dependency>
+          <Dependency>libXcomposite</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -66,6 +68,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="12">
+            <Date>2018-05-22</Date>
+            <Version>1.0.77.338</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="11">
             <Date>2018-02-17</Date>
             <Version>1.0.70.399</Version>
