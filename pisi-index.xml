@@ -481,7 +481,7 @@
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Opera Web Browser Developer version</Summary>
             <Description xml:lang="en">Opera Web Browser Developer Version</Description>
-            <Archive type="binary" sha1sum="018aae704e95a19ffa930ab74e3998b9e24ded5a">https://get.geo.opera.com/pub//opera-developer/54.0.2936.0/linux/opera-developer_54.0.2936.0_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="13d59f0d05307ced7dd35c5891685bee398a9108">https://get.geo.opera.com/pub//opera-developer/55.0.2962.0/linux/opera-developer_55.0.2962.0_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -541,7 +541,7 @@
         <History>
             <Update release="1">
                 <Date>2018-05-03</Date>
-                <Version>54.0.2936.0</Version>
+                <Version>55.0.2962.0</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -891,7 +891,7 @@
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
             <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
-            <Archive type="binary" sha1sum="8906e8f0524fec8ff2d926038a9e6a59affa4026">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
+            <Archive type="binary" sha1sum="fd8dfd94fa041098540636b8f5c352c49669240f">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>qt5-base-devel</Dependency>
@@ -923,6 +923,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2018-05-22</Date>
+                <Version>3.3.10</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-11-10</Date>
                 <Version>3.1.10</Version>
@@ -1009,7 +1016,7 @@
             <Summary xml:lang="en">A Dropbox client</Summary>
             <Description xml:lang="en">Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
             <Icon>dropbox</Icon>
-            <Archive type="targz" sha1sum="38930142e71824c76dc5bc589945aee9ed91ddad" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-43.4.50.tar.gz</Archive>
+            <Archive type="targz" sha1sum="f578f47428b7bb9226b4087f9fc0c046ad42ad91" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-49.4.69.tar.gz</Archive>
             <SourceURI>dropbox-client/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -1052,6 +1059,13 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="7">
+                <Date>2018-05-21</Date>
+                <Version>49.4.69</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="6">
                 <Date>2018-02-17</Date>
                 <Version>43.4.50</Version>
@@ -1447,6 +1461,76 @@
             <Update release="1">
                 <Date>2018-05-16</Date>
                 <Version>0.4.9</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>slack-desktop</Name>
+            <Packager>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>Proprietary</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Team communication for the 21st century.</Summary>
+            <Description xml:lang="en">Team communication for the 21st century.</Description>
+            <Archive type="binary" sha1sum="0ca8ed9b7879d112c58b95e3f73bf8bfd3f9550d">https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.5-amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
+            <SourceURI>slack-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>slack-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2018-05-24</Date>
+                <Version>3.0.5</Version>
                 <Comment>First Release</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -1953,6 +2037,7 @@
             <RuntimeDependencies>
                 <Dependency>mesa</Dependency>
                 <Dependency>libXi</Dependency>
+                <Dependency>libX11</Dependency>
                 <Dependency>libxslt</Dependency>
                 <Dependency>libXext</Dependency>
                 <Dependency>fontconfig</Dependency>
@@ -1962,7 +2047,6 @@
                 <Dependency>glib2</Dependency>
                 <Dependency>libSM</Dependency>
                 <Dependency>libICE</Dependency>
-                <Dependency>libx11</Dependency>
                 <Dependency>libgcc</Dependency>
                 <Dependency>libxcb</Dependency>
                 <Dependency>sqlite</Dependency>
@@ -2355,7 +2439,7 @@
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Skype keeps the world talking, for free.</Summary>
             <Description xml:lang="en">Skype keeps you together. Call, message and share with others.</Description>
-            <Archive type="binary" sha1sum="8da8793511f94ca115eac140936eb93578537cd4">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.16.76.1_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="bb2f67090d6996752ba2ba97eaec708caa2075ca">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.22.0.2_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -2405,6 +2489,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="8">
+                <Date>2018-05-22</Date>
+                <Version>8.22.0.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="7">
                 <Date>2018-02-15</Date>
                 <Version>8.16.76</Version>
@@ -3589,14 +3680,14 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
             </Packager>
-            <License>Spotify</License>
+            <License>Copyright (c) 2006-2010 Spotify Ltd.</License>
             <IsA>app:gui</IsA>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Music Player</Summary>
             <Summary xml:lang="tr">Müzik Çalar</Summary>
             <Description xml:lang="en">Listen to music using Spotify</Description>
             <Description xml:lang="tr">Spotify&apos;ı kullanarak müzik dinleyin.</Description>
-            <Archive type="binary" sha1sum="bec94894f0a74110f3f178264da1a900e021cf97">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.70.399.g5ffabd56-26_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="f59467b12c98971a88a6f1965969f7dd9bdb1b8f">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.77.338.g758ebd78-41_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>libXScrnSaver</Dependency>
@@ -3636,6 +3727,8 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Dependency>libXrender</Dependency>
                 <Dependency>libXScrnSaver</Dependency>
                 <Dependency>google-chrome</Dependency>
+                <Dependency>gcc</Dependency>
+                <Dependency>libxcb</Dependency>
                 <Dependency>libXcomposite</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -3651,6 +3744,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="12">
+                <Date>2018-05-22</Date>
+                <Version>1.0.77.338</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="11">
                 <Date>2018-02-17</Date>
                 <Version>1.0.70.399</Version>
@@ -3735,7 +3835,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">3D interface for satellite imagery from Google</Summary>
             <Description xml:lang="en">Google Earth provides a 3D interface for viewing satellite imagery and maps.</Description>
-            <Archive type="binary" sha1sum="f02bad883d13db6e87bae7a38c59e386acd1d4ab">https://dl.google.com/linux/earth/deb/pool/main/g/google-earth-stable/google-earth-stable_7.1.8.3036-r0_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="992871363887ea3ed46a8d58c454d029651b8b5a">https://dl.google.com/linux/earth/deb/pool/main/g/google-earth-pro-stable/google-earth-pro-stable_7.3.1.4507-r0_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -3762,6 +3862,15 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Dependency>freetype-32bit</Dependency>
                 <Dependency>mesa-glu-32bit</Dependency>
                 <Dependency>fontconfig-32bit</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libproxy</Dependency>
+                <Dependency>gstreamer-next</Dependency>
+                <Dependency>gst-plugins-base-next</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/lib</Path>
@@ -3770,6 +3879,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </Files>
         </Package>
         <History>
+            <Update release="3">
+                <Date>2018-05-22</Date>
+                <Version>7.3.1.4507</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2017-07-25</Date>
                 <Version>7.1.8.3036</Version>
@@ -4101,7 +4217,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Description xml:lang="en">A desktop app that gives WordPress a permanent home in your dock.You&apos;ll need a WordPress.com login.</Description>
             <Description xml:lang="tr">A desktop app that gives WordPress a permanent home in your dock.You&apos;ll need a WordPress.com login.</Description>
             <Icon>wordpress-desktop</Icon>
-            <Archive type="targz" sha1sum="fcc2decb4254b1c373e9d967f50c3a54fe24ac60">https://github.com/groni/Sources/raw/master/wordpress-com-1-7-0.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a440c8852c6e852d95949fa1e09a6844f05fd6b8">https://github.com/groni/Sources/raw/master/wordpress-com-3-2-0.tar.gz</Archive>
             <SourceURI>wordpress-desktop/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -4132,16 +4248,15 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Dependency>libXdamage</Dependency>
                 <Dependency>libXrender</Dependency>
                 <Dependency>libXcomposite</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="info">/usr/share/info</Path>
+                <Path fileType="app">/usr/share/applications</Path>
+                <Path fileType="data">/opt</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
             </Files>
             <AdditionalFiles>
@@ -4756,133 +4871,4 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Update>
         </History>
     </SpecFile>
-    <Package>
-        <Name>teamviewer</Name>
-        <Summary xml:lang="en">User friendly remote control application</Summary>
-        <Summary xml:lang="tr">Kullanıcı dostu masaüstü paylaşım uygulaması</Summary>
-        <Description xml:lang="en">TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com</Description>
-        <Description xml:lang="tr">Teamviewer uzaktan bakım,online sunum ,dosya transferi yapmaya olanak sağlayan bir masaüstü paylaşım yazılımıdır.</Description>
-        <IsA>app:gui</IsA>
-        <PartOf>unknown</PartOf>
-        <License>as-is</License>
-        <License>TeamViewer GmbH</License>
-        <RuntimeDependencies>
-            <Dependency>libXtst-32bit</Dependency>
-            <Dependency>teamviewer-fonts</Dependency>
-            <Dependency>alsa-lib-32bit</Dependency>
-            <Dependency>libXdamage-32bit</Dependency>
-            <Dependency>zlib-32bit</Dependency>
-            <Dependency>freetype-32bit</Dependency>
-            <Dependency>libSM-32bit</Dependency>
-            <Dependency>libX11-32bit</Dependency>
-            <Dependency>libXau-32bit</Dependency>
-            <Dependency>libXext-32bit</Dependency>
-            <Dependency>libXrandr-32bit</Dependency>
-            <Dependency>libXfixes-32bit</Dependency>
-            <Dependency>libXrender-32bit</Dependency>
-            <Dependency>harfbuzz-32bit</Dependency>
-            <Dependency>qt5-base-32bit</Dependency>
-        </RuntimeDependencies>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
-        <History>
-            <Update release="11">
-                <Date>2018-02-15</Date>
-                <Version>12.0.85001</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="10">
-                <Date>2017-07-25</Date>
-                <Version>12.0.76279</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="9">
-                <Date>2017-01-15</Date>
-                <Version>12.0.71510</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="8">
-                <Date>2016-11-10</Date>
-                <Version>11.0.67687</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="7">
-                <Date>2016-03-31</Date>
-                <Version>11.0.57095</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="6">
-                <Date>2015-08-21</Date>
-                <Version>10.0.46203</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@pisilinux.org</Email>
-            </Update>
-            <Update release="5">
-                <Date>2015-01-20</Date>
-                <Version>10.0.37742</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@pisilinux.org</Email>
-            </Update>
-            <Update release="4">
-                <Date>2014-12-09</Date>
-                <Version>10.0.36281</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@pisilinux.org</Email>
-            </Update>
-            <Update release="3">
-                <Date>2014-12-03</Date>
-                <Version>10.0.35002</Version>
-                <Comment>Version bump</Comment>
-                <Name>Ergün Salman</Name>
-                <Email>poyraz76@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2014-05-10</Date>
-                <Version>9.0.24147</Version>
-                <Comment>*Version bump to 9 series
-                     *Add comar script</Comment>
-                <Name>Alihan Öztürk</Name>
-                <Email>alihan@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2013-08-03</Date>
-                <Version>7.0.9377</Version>
-                <Comment>First release</Comment>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Update>
-        </History>
-        <BuildHost>localhost</BuildHost>
-        <Distribution>PisiLinux</Distribution>
-        <DistributionRelease>2.0</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>150630483</InstalledSize>
-        <PackageSize>32704356</PackageSize>
-        <PackageHash>de1dd4f8172ee9898f8165e6aea31e79107d3943</PackageHash>
-        <InstallTarHash>d9502c0674372a6a83ebb94f297aad3aeef5e4a4</InstallTarHash>
-        <PackageURI>teamviewer/teamviewer-12.0.85001-11-p2-x86_64.pisi</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>teamviewer</Name>
-            <Homepage>http://www.teamviewer.com/</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-        </Source>
-    </Package>
 </PISI>
