@@ -11,7 +11,10 @@
         <Icon>viber</Icon>
         <Summary>Proprietary cross-platform IM and VoIP softwareı</Summary>
         <Description>Free calls, text and picture sharing with anyone, anywhere!</Description>
-        <Archive sha1sum="3c079075518d5481083b6798c248fde9e57b124a" type="tarxz">https://github.com/groni/Sources/raw/master/viber-4.2.2.6.tar.xz</Archive>
+        <Archive sha1sum="27f1df316a8ffc2ab774656ce5e9b3cee621b81b" type="binary">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
+    <BuildDependencies>
+        <Dependency>binutils</Dependency>
+    </BuildDependencies>
     </Source>
 
     <Package>
@@ -38,10 +41,12 @@
             <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt/viber</Path>
             <Path fileType="data">/usr/share/viber</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
         </Files>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
@@ -49,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2018-05-25</Date>
+            <Version>7.0.0.1035</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-04-12</Date>
             <Version>4.2.2.6</Version>

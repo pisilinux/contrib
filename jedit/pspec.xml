@@ -33,16 +33,15 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="doc">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/java/jedit</Path>   
-            <Path fileType="data">/usr/share/jedit</Path>     
+            <Path fileType="data">/usr/share/java/jedit</Path>
+            <Path fileType="data">/usr/share/jedit</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/jedit.desktop">jedit.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/jedit.png">jedit.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
-    
-    
+
     <History>
         <Update release="1">
             <Date>2016-05-26</Date>
@@ -50,6 +49,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

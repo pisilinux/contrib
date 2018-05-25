@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Kronometer is a simple chronometer application built for KDE</Summary>
         <Description>Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
-        <Archive sha1sum="2b4be09d605003dc39650934cd98b5701205443c" type="tarxz">http://download.kde.org/stable/kronometer/2.0.1/src/kronometer-2.0.1.tar.xz</Archive>
+        <Archive sha1sum="d576eed5cbe63c339b77f50167d90841734b112d" type="tarxz">https://download.kde.org/stable/kronometer/2.2.1/src/kronometer-2.2.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>kconfig-devel</Dependency>
@@ -38,10 +38,11 @@
             <Dependency>kcoreaddons</Dependency>
             <Dependency>kconfigwidgets</Dependency>
             <Dependency>libgcc</Dependency>
+            <Dependency>kcrash</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>            
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="application">/usr/share/applications</Path>
             <Path fileType="icon">/usr/share/icons</Path>
@@ -50,12 +51,19 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2018-05-25</Date>
+            <Version>2.2.1</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-04-01</Date>
             <Version>2.0.1</Version>
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

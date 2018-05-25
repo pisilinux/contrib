@@ -7,6 +7,13 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
+NoStrip = ["/opt", "/usr"]
+IgnoreAutodep = True
+
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("ar xf viber.deb")
+    shelltools.system("tar xvf data.tar.xz")
 def install():
-    pisitools.insinto("/", "*")
-    shelltools.chmod("%s/usr/" % get.installDIR(),0777)
+    pisitools.insinto("/", "opt")
+    pisitools.insinto("/", "usr")

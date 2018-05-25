@@ -1374,7 +1374,7 @@
             <Summary xml:lang="tr">Kronometer is a simple chronometer application built for KDE</Summary>
             <Description xml:lang="en">Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
             <Description xml:lang="tr">Kronometer features the basic stopwatch actions (pause/resume/reset/laps), as well the ability to save the times on filesystem and resume them later.</Description>
-            <Archive type="tarxz" sha1sum="2b4be09d605003dc39650934cd98b5701205443c">http://download.kde.org/stable/kronometer/2.0.1/src/kronometer-2.0.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="d576eed5cbe63c339b77f50167d90841734b112d">https://download.kde.org/stable/kronometer/2.2.1/src/kronometer-2.2.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>qt5-base-devel</Dependency>
                 <Dependency>kconfig-devel</Dependency>
@@ -1400,6 +1400,7 @@
                 <Dependency>kcoreaddons</Dependency>
                 <Dependency>kconfigwidgets</Dependency>
                 <Dependency>libgcc</Dependency>
+                <Dependency>kcrash</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -1411,6 +1412,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2018-05-25</Date>
+                <Version>2.2.1</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-04-01</Date>
                 <Version>2.0.1</Version>
@@ -1821,81 +1829,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>caprine</Name>
-            <Homepage>http://messengerfordesktop.com/</Homepage>
-            <Packager>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-            <License>MIT</License>
-            <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Unofficial Facebook Messenger app.</Summary>
-            <Description xml:lang="en">Not an official app. No affiliation with Facebook.</Description>
-            <Icon>Facebook Desktop Messenger</Icon>
-            <Archive type="targz" sha1sum="809a20771b0e0b855f377ec1de7492975808d5a4">https://sourceforge.net/projects/pisi-linux-global/files/Sources/caprine-2.9.0.tar.gz/download</Archive>
-            <SourceURI>Caprine/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>caprine</Name>
-            <RuntimeDependencies>
-                <Dependency>atk</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>nspr</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>gconf</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>libnotify</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXcomposite</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="icon">/usr/share/pixmaps</Path>
-                <Path fileType="application">/usr/share/applications</Path>
-            </Files>
-            <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/caprine.desktop" permission="0644" owner="root">caprine.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/share/pixmaps/caprine.png" permission="0644" owner="root">caprine.png</AdditionalFile>
-            </AdditionalFiles>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2018-02-19</Date>
-                <Version>2.9.0</Version>
-                <Comment>First release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016-07-11</Date>
-                <Version>1.4.1</Version>
-                <Comment>First release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>discount</Name>
             <Homepage>https://github.com/Orc/discount</Homepage>
             <Packager>
@@ -2029,7 +1962,10 @@
             <Description xml:lang="en">Free calls, text and picture sharing with anyone, anywhere!</Description>
             <Description xml:lang="tr">Ücretsiz arama, mesajlaşma ve konuşma yazılımı</Description>
             <Icon>viber</Icon>
-            <Archive type="tarxz" sha1sum="3c079075518d5481083b6798c248fde9e57b124a">https://github.com/groni/Sources/raw/master/viber-4.2.2.6.tar.xz</Archive>
+            <Archive type="binary" sha1sum="27f1df316a8ffc2ab774656ce5e9b3cee621b81b">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
             <SourceURI>viber/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -2057,15 +1993,24 @@
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/opt/viber</Path>
                 <Path fileType="data">/usr/share/viber</Path>
-                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/pixmaps/</Path>
             </Files>
             <Provides>
                 <COMAR script="package.py">System.Package</COMAR>
             </Provides>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2018-05-25</Date>
+                <Version>7.0.0.1035</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-04-12</Date>
                 <Version>4.2.2.6</Version>
@@ -4148,7 +4093,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
             <Description xml:lang="en">Master PDF Editor provides you advanced functions for working with PDF format.</Description>
-            <Archive type="targz" sha1sum="47cf799636b2c31bbfbe6d766021c41209d2ac88">http://get.code-industry.net/public/master-pdf-editor-4.3.82_qt5.amd64.tar.gz</Archive>
+            <Archive type="targz" sha1sum="89d332b27c5f0233030b0cba316f2dbec46f42d3">https://code-industry.net/public/master-pdf-editor-5.0.03_qt5.amd64.tar.gz</Archive>
             <SourceURI>master-pdf-editor/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -4157,20 +4102,31 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
                 <Dependency>qt5-base</Dependency>
                 <Dependency>libgcc</Dependency>
                 <Dependency>mesa</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>qt5-svg</Dependency>
+                <Dependency>sane-backends</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/opt/master-pdf-editor-4/lang</Path>
+                <Path fileType="data">/opt/master-pdf-editor-5/lang</Path>
                 <Path fileType="license">/usr/share/doc/master-pdf-editor</Path>
                 <Path fileType="icon">/usr/share/pixmaps</Path>
                 <Path fileType="application">/usr/share/applications</Path>
             </Files>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/masterpdfeditor3.desktop" permission="0644" owner="root">masterpdfeditor3.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/share/pixmaps/masterpdfeditor3.png" permission="0644" owner="root">pdfeditor.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/masterpdfeditor5.desktop" permission="0644" owner="root">masterpdfeditor5.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/masterpdfeditor5.png" permission="0644" owner="root">masterpdfeditor5.png</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2018-05-25</Date>
+                <Version>5.0.03</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="4">
                 <Date>2018-02-05</Date>
                 <Version>4.3.82</Version>
