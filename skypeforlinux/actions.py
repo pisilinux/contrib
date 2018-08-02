@@ -13,7 +13,7 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf skypeforlinux_8.22.0.2_amd64.deb")
+    shelltools.system("ar xf skypeforlinux_8.27.76.86_amd64.deb")
     shelltools.system("tar xf data.tar.xz")
 
 def install():

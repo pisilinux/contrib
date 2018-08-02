@@ -10,7 +10,7 @@
         <Summary>Skype keeps the world talking, for free.</Summary>
         <Description>Skype keeps you together. Call, message and share with others.</Description>
         <License>Copyright (c) 2016 Skype and/or Microsoft</License>
-        <Archive sha1sum="bb2f67090d6996752ba2ba97eaec708caa2075ca" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.22.0.2_amd64.deb</Archive>
+        <Archive sha1sum="969ea25b0997f61296e8e6ff0fa6eff029cc6ce1" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.27.76.86_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -48,7 +48,10 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>libgnome-keyring</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>libxcb</Dependency>
+            <Dependency>libsecret</Dependency>
         </RuntimeDependencies>        
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -61,6 +64,13 @@
     </Package>
     
     <History>
+        <Update release="9">
+            <Date>2018-08-02</Date>
+            <Version>8.27.76</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2018-05-22</Date>
             <Version>8.22.0.2</Version>
