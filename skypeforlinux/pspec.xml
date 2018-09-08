@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>skypeforlinux</Name>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>Skype keeps the world talking, for free.</Summary>
+        <Description>Skype keeps you together. Call, message and share with others.</Description>
+        <License>Copyright (c) 2016 Skype and/or Microsoft</License>
+        <Archive sha1sum="969ea25b0997f61296e8e6ff0fa6eff029cc6ce1" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.27.76.86_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>skypeforlinux</Name>
+        <Icon>skypeforlinux</Icon>
+        <RuntimeDependencies>
+            <Dependency>gconf</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libsecret</Dependency>
+        </RuntimeDependencies>        
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/skypeforlinux</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="9">
+            <Date>2018-08-02</Date>
+            <Version>8.27.76</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2018-05-22</Date>
+            <Version>8.22.0.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2018-02-15</Date>
+            <Version>8.16.76</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="6">
+            <Date>2018-01-06</Date>
+            <Version>8.13.76.8</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Ali Cengiz Kurt(alick01)</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+        <Update release="5">
+            <Date>2017-07-25</Date>
+            <Version>5.4.0.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2017-01-17</Date>
+            <Version>1.16.0.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2017-01-15</Date>
+            <Version>1.15.0.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2016-12-13</Date>
+            <Version>1.13.0.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-11-10</Date>
+            <Version>1.12.0.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+        <Update release="1">
+            <Date>2016-09-11</Date>
+            <Version>1.6.0.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

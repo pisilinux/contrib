@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>discount</Name>
+        <Homepage>https://github.com/Orc/discount</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>app:console</IsA>
+        <Summary>A Markdown implementation written in C</Summary>
+        <Description>implementation of the Markdown markup language in C</Description>
+        <Archive sha1sum="3b32a196e7f192955715865be4e998b195a9092d" type="binary">https://launchpad.net/ubuntu/+archive/primary/+files/discount_2.2.3b8-2_amd64.deb</Archive>       
+    </Source>
+
+    <Package>
+        <Name>discount</Name>        
+        <Files>            
+            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="data">/usr/share</Path>            
+            <Path fileType="man">/usr/share/man</Path>            
+            <Path fileType="doc">/usr/share/doc</Path>            
+        </Files>        
+    </Package>
+
+    <History>    
+        <Update release="2">
+            <Date>2018-03-12</Date>
+            <Version>2.2.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">             
+            <Date>2016-07-19</Date>
+            <Version>2.1.7</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

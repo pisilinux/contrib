@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.5.7
+Name=ProjectLibre
+GenericName=ProjectLibre
+Comment=Open Source replacement of Microsoft Project 
+Icon=/usr/share/pixmaps/Libre.png
+Exec=sh /opt/projectlibre/projectlibre.sh
+Categories=Development;
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+MultipleArgs=false

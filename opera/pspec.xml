@@ -1,0 +1,182 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>opera</Name>
+        <Homepage>http://www.opera.com/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>Opera Web Browser</Summary>
+        <Description>Opera Web Browser</Description>
+        <License>EULA</License>
+        <Archive sha1sum="7f5932623a2338879823d57f9fc690e8506c45fb" type="binary">http://download1.operacdn.com/pub/opera/desktop/54.0.2952.64/linux/opera-stable_54.0.2952.64_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>opera-stable</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/opera</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/menu</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="13">
+            <Date>2018-08-01</Date>
+            <Version>54.0.2952.64</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="13">
+            <Date>2018-07-25</Date>
+            <Version>54.0.2952.60</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="12">
+            <Date>2018-07-03</Date>
+            <Version>54.0.2952.41</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="11">
+            <Date>2018-06-13</Date>
+            <Version>53.0.2907.99</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2018-05-27</Date>
+            <Version>53.0.2907.68</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2018-05-11</Date>
+            <Version>53.0.2907.37</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="9">
+            <Date>2018-05-02</Date>
+            <Version>52.0.2871.99</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2018-04-18</Date>
+            <Version>52.0.2871.64</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2018-04-08</Date>
+            <Version>52.0.2871.40</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update> 
+        <Update release="6">
+            <Date>2018-02-17</Date>
+            <Version>51.0.2830.34</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update> 
+        <Update release="6">
+            <Date>2017-09-28</Date>
+            <Version>48.0.2685.32</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update> 
+        <Update release="5">
+            <Date>2017-02-21</Date>
+            <Version>43.0.2442.991</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2016-12-19</Date>
+            <Version>42.0.2393</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2016-10-27</Date>
+            <Version>41.0.2353.46</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2016-09-11</Date>
+            <Version>39.0.2256.71</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-07-17</Date>
+            <Version>38.0.2220.41</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update> 
+    </History>
+</PISI>

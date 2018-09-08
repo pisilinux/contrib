@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-enchant</Name>
+        <Homepage>http://www.rfk.id.au/software/pyenchant</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <IsA>library</IsA>
+        <Summary>Spellchecking library for Python</Summary>
+        <Description>python-enchant is an efficient Python module for Enchant spellchecker.</Description>
+        <Archive sha1sum="353b0b06cb29deef46298337afdd96ec71f01625" type="targz">https://pypi.python.org/packages/4a/2c/355274f41cafa938cf7d41752469a0316efb360506558cc4890abf4c5dae/pyenchant-1.6.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>enchant-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>python-enchant</Name>
+        <RuntimeDependencies>
+            <Dependency>enchant</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-06-11</Date>
+            <Version>1.6.6</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>

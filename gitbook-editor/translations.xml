@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gitbook</Name>
+        <Summary xml:lang="tr">GitBook Simple writing from your desktop.</Summary>
+        <Description xml:lang="tr">The GitBook workflow you love, on your Desktop. Try it now !</Description>
+    </Source>
+</PISI>

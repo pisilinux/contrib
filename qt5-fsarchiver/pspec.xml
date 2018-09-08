@@ -1,0 +1,63 @@
+<PISI>
+    <Source>
+        <Name>qt5-fsarchiver</Name>
+        <Homepage>https://github.com/DieterBaum/qt5-fsarchiver</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Summary>GUI for the program fsarchiver</Summary>
+        <Description>qt5 fsarchiver program was extended with these points: Backup and restore partition table, HD cloning, images of hard drives and partitions write and restore.
+        qt5-fsarchiver save and restore partitions, directories, MBR/GPT, Clone partitions and make Images.</Description>
+        <Archive type="targz" sha1sum="2ded8126036702ff3395959cde4decb28d4a7fd8">https://github.com/DieterBaum/qt5-fsarchiver/archive/v0.6.19-20.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>attr-devel</Dependency>
+            <Dependency>e2fsprogs-devel</Dependency>
+            <Dependency>libgcrypt-devel</Dependency>
+            <Dependency>libutil-linux-devel</Dependency>
+            <Dependency>libzip-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>fsarchiver</Dependency>
+            <Dependency>zlib-devel</Dependency>
+            <Dependency>libtar-devel</Dependency>
+            <Dependency>libarchive-devel</Dependency>
+            <Dependency>lzo-devel</Dependency>
+            <Dependency>xz-devel</Dependency>
+            <Dependency>bzip2</Dependency>
+        </BuildDependencies>
+        
+    </Source>
+    <Package>
+        <Name>qt5-fsarchiver</Name>
+        <Summary>GUI for the program fsarchiver</Summary>
+        <RuntimeDependencies>
+            <Dependency>xz</Dependency>
+            <Dependency>e2fsprogs</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>libutil-linux</Dependency>
+            <Dependency>lzo</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>bzip2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/qt5</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-13</Date>
+            <Version>0.8.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,72 @@
+<PISI>
+    <Source>
+        <Name>viber</Name>
+        <Homepage>http://www.viber.com/products/linux/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:gui</IsA>
+        <Icon>viber</Icon>
+        <Summary>Proprietary cross-platform IM and VoIP softwareı</Summary>
+        <Description>Free calls, text and picture sharing with anyone, anywhere!</Description>
+        <Archive sha1sum="27f1df316a8ffc2ab774656ce5e9b3cee621b81b" type="binary">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
+    <BuildDependencies>
+        <Dependency>binutils</Dependency>
+    </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>viber</Name>
+        <RuntimeDependencies>
+            <Dependency>mesa</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt/viber</Path>
+            <Path fileType="data">/usr/share/viber</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2018-05-25</Date>
+            <Version>7.0.0.1035</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-04-12</Date>
+            <Version>4.2.2.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

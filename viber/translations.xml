@@ -1,0 +1,9 @@
+<PISI>
+    <Source>
+        <Name>viber</Name>
+        <Summary xml:lang="tr">Konuşma ve yazışma uygulaması</Summary>
+        <Description xml:lang="tr">Ücretsiz arama, mesajlaşma ve konuşma yazılımı</Description>
+        <Summary xml:lang="en">Free calls, text and picture sharing with anyone, anywhere!</Summary>
+        <Description xml:lang="en">Free calls, text and picture sharing with anyone, anywhere!</Description>
+    </Source>
+</PISI>

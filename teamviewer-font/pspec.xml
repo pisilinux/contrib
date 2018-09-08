@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>teamviewer-fonts</Name>
+        <Homepage>http://www.pisilinux.org</Homepage>
+        <Packager>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>library</IsA>
+        <Summary>Teamviewer fonts</Summary>
+        <Description>teamviewer windows fonts</Description>
+        <Archive sha1sum="28cc454bc7692ab80fe74f239b1f940e55fe1526" type="targz">https://dl.dropboxusercontent.com/s/u4tmxiwc51f0rer/teamviewer-fonts.tar.gz</Archive> 
+    </Source>
+
+    <Package>
+        <Name>teamviewer-fonts</Name>
+        <Files>
+            <Path fileType="library">/usr/lib32/</Path>
+            <Path fileType="data">/opt/teamviewer/</Path>
+        </Files>
+    </Package>
+
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-30</Date>
+            <Version>0.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

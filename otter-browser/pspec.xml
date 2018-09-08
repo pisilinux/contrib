@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>otter-browser</Name>
+        <Homepage>http://otter-browser.org/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>gui</IsA>
+        <Summary>Otter-Browser Controlled by the user, not vice versa</Summary>
+        <Description>Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5.</Description>
+        <Archive sha1sum="947ca900defd80361af6780f24177e77378603c0" type="tarbz2">https://sourceforge.net/projects/otter-browser/files/otter-browser-rc8/otter-browser-0.9.98.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-webkit-devel</Dependency>
+            <Dependency>openssl-devel</Dependency>
+            <Dependency>qt5-multimedia-devel</Dependency>
+            <Dependency>qt5-script-devel</Dependency>
+            <Dependency>qt5-sql-sqlite</Dependency>
+            <Dependency>qt5-xmlpatterns-devel</Dependency>
+            <Dependency>qt5-location-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>autogen</Dependency>
+            <Dependency>qt5-webengine-devel</Dependency>
+            <Dependency>qt5-declarative-devel</Dependency>
+            <Dependency>hunspell-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>otter-browser</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-svg</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>qt5-script</Dependency>
+            <Dependency>qt5-xmlpatterns</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>hunspell</Dependency>
+        </RuntimeDependencies> 
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share</Path>
+            <Path fileType="man">/usr/share/man/man1</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="4">
+            <Date>2018-05-21</Date>
+            <Version>0.9.98</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2018-04-118</Date>
+            <Version>0.9.97</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2016-11-10</Date>
+            <Version>0.9.11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-04-15</Date>
+            <Version>0.9.09</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>teamviewer</Name> 
+        <Homepage>http://www.teamviewer.com/</Homepage> 
+        <Packager>
+            <Name>PisiLinux Community</Name> 
+            <Email>admins@pisilinux.org</Email> 
+        </Packager>
+        <License>as-is</License> 
+        <License>TeamViewer GmbH</License> 
+        <IsA>app:gui</IsA> 
+        <Summary>User friendly remote control application</Summary>
+        <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com </Description>
+        <Archive sha1sum="fed8c65f72d2cb13efe0609fe8766c6fd07bb96a" type="binary">https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.9865_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>teamviewer</Name>
+        <RuntimeDependencies>
+            <Dependency>libXtst-32bit</Dependency>
+            <Dependency>alsa-lib-32bit</Dependency>
+            <Dependency>libXdamage-32bit</Dependency>
+            <Dependency>zlib-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>libSM-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
+            <Dependency>libXau-32bit</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>libXrandr-32bit</Dependency>
+            <Dependency>libXfixes-32bit</Dependency>
+            <Dependency>libXrender-32bit</Dependency>
+            <Dependency>harfbuzz-32bit</Dependency>
+            <Dependency>qt5-base-32bit</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency> libXinerama</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>fontconfig-32bit </Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/opt/teamviewer*</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="config">/etc/init.d</Path>
+            <Path fileType="config">/etc/teamviewer</Path>
+            <Path fileType="config">/etc/systemd/system/teamviewerd.service</Path>
+            <Path fileType="data">/var/log</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/teamviewer.desktop">teamviewer.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/teamviewer.png">teamviewer.png</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="12">
+            <Date>2018-03-02</Date>
+            <Version>13.0.9865</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+         <Update release="11">
+            <Date>2018-02-15</Date>
+            <Version>12.0.85001</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2017-07-25</Date>
+            <Version>12.0.76279</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="9">
+            <Date>2017-01-15</Date>
+            <Version>12.0.71510</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2016-11-10</Date>
+            <Version>11.0.67687</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2016-03-31</Date>
+            <Version>11.0.57095</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    <Update release="6">
+            <Date>2015-08-21</Date>
+            <Version>10.0.46203</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+    <Update release="5">
+            <Date>2015-01-20</Date>
+            <Version>10.0.37742</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+      <Update release="4">
+            <Date>2014-12-09</Date>
+            <Version>10.0.36281</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+      <Update release="3">
+            <Date>2014-12-03</Date>
+            <Version>10.0.35002</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-05-10</Date>
+            <Version>9.0.24147</Version>
+            <Comment>*Version bump to 9 series
+                     *Add comar script</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2013-08-03</Date>
+            <Version>7.0.9377</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

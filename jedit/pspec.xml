@@ -1,0 +1,54 @@
+<PISI>
+    <Source>
+        <Name>JEdit</Name>
+        <Homepage>http://www.jedit.org/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <Icon>jedit</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>editor</PartOf>
+        <Summary>jEdit is a mature programmer's text editor.</Summary>
+        <Description>jEdit is a mature programmer's text editor with hundreds (counting the time developing plugins) of person-years of development behind it. It is written in Java</Description>
+        <BuildDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>libxslt-devel</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
+            <Dependency>jre7-openjdk</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="956992c86d33ab30a6695a029eba25d116ec1631" type="binary">https://sourceforge.net/projects/jedit/files/jedit/5.3.0/jedit5.3.0install.jar</Archive>
+    </Source>
+    <Package>
+        <Name>jedit</Name>
+        <RuntimeDependencies>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libxslt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/java</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/java/jedit</Path>
+            <Path fileType="data">/usr/share/jedit</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/jedit.desktop">jedit.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/jedit.png">jedit.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-05-26</Date>
+            <Version>5.3.0</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

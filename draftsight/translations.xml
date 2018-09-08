@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>draftsight</Name>
+        <Summary xml:lang="tr">DraftSight ® - DWG dosyaları için CAD ​​yazılımı.</Summary>
+        <Description xml:lang="tr">DraftSight profesyonel CAD kullanıcılarının, öğrencilerin ve eğitimcilerin DWG dosyalarını oluşturmasını, düzenlemesini ve görüntülemesini sağlar.</Description>
+        <Summary xml:lang="es">DraftSight®: Programa CAD gratuito* de nivel profesional.</Summary>
+        <Description xml:lang="es">Con DraftSight, los usuarios CAD profesionales, estudiantes y educadores pueden crear, editar y visualizar ficheros DWG.</Description>
+        <Summary xml:lang="de">DraftSight®: Kostenlose Profi-CAD-Software.</Summary>
+        <Description xml:lang="de">Mit DraftSight können professionelle CAD-Anwender, Studenten und Ausbilder DWG-Dateien erstellen, bearbeiten und ansehen.</Description>
+    </Source>
+</PISI>

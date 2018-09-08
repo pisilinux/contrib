@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>zenity</Name>
+        <Homepage>https://help.gnome.org/users/zenity/stable/</Homepage>
+        <Packager>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <Icon>zenity</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Zenity enables you to create the following types of simple dialog
+</Summary>
+        <Description>Zenity enables you to create the following types of simple dialog
+</Description>
+        <Archive sha1sum="23cd194247d1f8a7747604574840b824323ccbf9" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/zenity/3.20/zenity-3.20.0.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>zenity</Name>
+
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/help</Path>
+        </Files>
+     
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-07-21</Date>
+            <Version>3.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

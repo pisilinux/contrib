@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>android-studio</Name>
+        <Homepage>https://developer.android.com/studio</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>Apache-2.0</License>        
+        <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
+        <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
+        <Archive type="zip" sha1sum="9d4ff86b8d5f0f22ec6c66347b2127bbae60abef">https://dl.google.com/dl/android/studio/ide-zips/3.0.1.0/android-studio-ide-171.4443003-linux.zip</Archive>
+        <BuildDependencies>
+            <Dependency>unzip</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>            
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>android-studio</Name>        
+        <RuntimeDependencies>
+            <Dependency>unzip</Dependency>            
+            <Dependency>libXi</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXrender</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/android-studio</Path>
+            <Path fileType="data">/usr/bin/android-studio</Path>
+            <Path fileType="data">/usr/share/applications/android-studio.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/android-studio.desktop">android-studio.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="3">
+            <Date>2018-02-18</Date>
+            <Version>3.0.1.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2017-07-25</Date>
+            <Version>2.3.3.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-10-27</Date>
+            <Version>2.2.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

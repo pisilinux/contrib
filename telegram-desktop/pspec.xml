@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>telegram-desktop</Name>
+        <Homepage>https://telegram.org/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Telegram a new era of messaging</Summary>
+        <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
+        <Archive sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0" type="targz">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>        
+    </Source>
+
+    <Package>
+        <Name>telegram-desktop</Name>        
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+        </RuntimeDependencies>       
+        <Files>            
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="icon">/usr/share/icons</Path>
+            <Path fileType="application">/usr/share/applications</Path>            
+            <Path fileType="doc">/usr/share/doc</Path>            
+        </Files>        
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2016-11-10</Date>
+            <Version>0.10.19</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-07-24</Date>
+            <Version>0.9.56</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

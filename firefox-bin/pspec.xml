@@ -1,0 +1,38 @@
+<PISI>
+    <Source>
+        <Name>firefox</Name>
+        <Homepage>https://ftp.mozilla.org/</Homepage>
+        <Packager>
+            <Name>Mustafa Cinasal</Name>
+            <Email>muscnsl@gmail.com</Email>
+        </Packager>
+        <License>MPL-1.1</License>
+        <License>NPL-1.1</License>
+        <License>GPLv2</License>
+        <Icon>firefox</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Firefox Web Browser</Summary>
+        <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
+        <Archive sha1sum="3d4da4858be892b02d8f940565ac0e26cee67039" type="tarbz2">https://ftp.mozilla.org/pub/firefox/releases/59.0/linux-x86_64/tr/firefox-59.0.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>firefox</Name>
+        <Files>
+            <Path fileType="all">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/pixmaps/firefox.png" permission="0644">firefox.png</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/applications/mozillafirefox.desktop" permission="0644">pisilinux/mozillafirefox.desktop</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>web</Summary>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-12</Date>
+            <Version>59.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Mustafa Cinasal</Name>
+            <Email>muscnsl@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,23 @@
+[Desktop Entry]
+Version=1.0
+Name=Opera-Developer
+GenericName=Web browser
+Comment=Fast and secure web browser
+#TryExec=opera-developer
+Exec=/usr/lib/opera-developer/opera-developer
+Terminal=false
+Icon=/usr/share/pixmaps/opera-developer.png
+Type=Application
+Categories=Network;WebBrowser;Internet
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;application/x-opera-download;
+Actions=NewWindow;NewPrivateWindow;
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=opera-developer --new-window
+TargetEnvironment=Unity
+
+[Desktop Action NewPrivateWindow]
+Name=New Private Window
+Exec=opera-developer --private
+TargetEnvironment=Unity

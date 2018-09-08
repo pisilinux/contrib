@@ -1,0 +1,43 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brscan2</Name>
+        <Homepage></Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>Sane scanner drivers for Brother DCP and MFC multifunction printers.</Summary>
+        <Description>brscan2 scanner driver is a sane backend which supports numerous Brother multifunction printers.</Description>
+        <License>as-is</License>
+        <IsA>library</IsA>
+        <Archive sha1sum="5ff7ec01fb8a43ba0e27aa9f8cad929903587558" type="binary">https://github.com/groni/Sources/raw/master/brscan2-0.2.5-1.x86_64.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>brscan2</Name>
+        <RuntimeDependencies>
+            <Dependency>sane-backends</Dependency>
+            <Dependency>libusb-compat</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/local/Brother/sane/GrayCmData</Path>
+            <Path fileType="data">/usr/local/Brother/sane/models2</Path>
+            <Path fileType="data">/usr/local/Brother/sane</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/lib/sane</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-11</Date>
+            <Version>0.2.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>	
+</PISI>

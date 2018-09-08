@@ -1,0 +1,7 @@
+<PISI>
+    <Source>
+        <Name>bitcoin</Name>
+        <Summary xml:lang="tr">Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
+        <Description xml:lang="tr">Bitcoin eşler arası teknolojiyi kullanarak merkez otorite veya banka olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır; tasarımı halka açıktır, kimse Bitcoin'e sahip değildir ve onu kontrol edemez, herkes katılabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</Description>
+    </Source>
+</PISI> 

@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>google-earth</Name>
+        <Homepage>http://www.google.com/earth</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>3D interface for satellite imagery from Google</Summary>
+        <Description>Google Earth provides a 3D interface for viewing satellite imagery and maps.</Description>
+        <License>EULA</License>
+        <Archive sha1sum="992871363887ea3ed46a8d58c454d029651b8b5a" type="binary">https://dl.google.com/linux/earth/deb/pool/main/g/google-earth-pro-stable/google-earth-pro-stable_7.3.1.4507-r0_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>google-earth</Name>
+        <Icon>google-earth</Icon>
+        <RuntimeDependencies>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXext-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>mesa-glu-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>gstreamer-next</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+        </RuntimeDependencies>        
+        <Files>
+            <Path fileType="data">/lib</Path>
+            <Path fileType="data">/opt/google/earth</Path>
+            <Path fileType="data">/usr</Path>
+        </Files>
+    </Package>    
+
+    <History>
+        <Update release="3">
+            <Date>2018-05-22</Date>
+            <Version>7.3.1.4507</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2017-07-25</Date>
+            <Version>7.1.8.3036</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+        <Update release="1">
+            <Date>09-06-2016</Date>
+            <Version>7.1.7.2600</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

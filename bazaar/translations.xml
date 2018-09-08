@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>bzr</Name>
+        <Summary xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi</Summary>
+        <Description xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi
+Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
+<Summary xml:lang="en">Distributed and Client–server revision control system</Summary>
+        <Description xml:lang="en">Bazaar can be used by a single developer working on multiple branches of local content, or by teams collaborating across a network</Description>
+    </Source>
+</PISI>

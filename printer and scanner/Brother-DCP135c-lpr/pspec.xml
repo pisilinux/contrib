@@ -1,0 +1,42 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dcp135clpr-1.0.1</Name>
+        <Homepage>http://solutions.brother.com/linux</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>lpr Driver for Brother dcp135c</Summary>
+        <Description>LPR Driver for Brother DCP135c</Description>
+        <License>as-is+</License>
+        <IsA>data</IsA>
+        <IsA>app:console</IsA>
+        <Archive sha1sum="48ff8b594f2bae70094dff883ec4e8153408eeae">http://www.brother.com/pub/bsc/linux/dlf/dcp135clpr-1.0.1-1.i386.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>dcp135clpr-1.0.1</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/local/Brother/Printer/dcp135c/inf</Path>
+            <Path fileType="executable">/usr/local/Brother/Printer/dcp135c/lpd</Path>
+            <Path fileType="data">/var/spool/lpd/brother-dcp7030</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-11</Date>
+            <Version>1.0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>	
+</PISI>

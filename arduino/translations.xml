@@ -1,0 +1,8 @@
+<PISI>
+    <Source>
+        <Name>arduino</Name>
+        <Summary xml:lang="en">
+Arduino IDE,  Software Development Environment</Summary>
+        <Description xml:lang="en">The Arduino project provides the Arduino integrated development environment (IDE), which is a cross-platform application written in the programming language Java. It originated from the IDE for the languages Processing and Wiring.</Description>
+    </Source>
+</PISI>

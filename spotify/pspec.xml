@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>spotify</Name> 
+        <Homepage>http://spotify.com</Homepage> 
+        <Packager>
+	    <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>Copyright (c) 2006-2010 Spotify Ltd.</License> 
+        <IsA>app:gui</IsA> 
+        <Summary>Music Player</Summary>
+        <Description>Listen to music using Spotify</Description>
+        <Archive sha1sum="f59467b12c98971a88a6f1965969f7dd9bdb1b8f" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.77.338.g758ebd78-41_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>spotify</Name>
+        <RuntimeDependencies>
+	  <Dependency>atk</Dependency>
+	  <Dependency>nss</Dependency>
+	  <Dependency>cups</Dependency>
+	  <Dependency>curl</Dependency> 
+	  <Dependency>dbus</Dependency>
+	  <Dependency>gtk2</Dependency>
+	  <Dependency>nspr</Dependency>
+	  <Dependency>zlib</Dependency>
+          <Dependency>cairo</Dependency>
+          <Dependency>expat</Dependency>
+          <Dependency>gconf</Dependency>
+          <Dependency>glib2</Dependency>
+          <Dependency>libXi</Dependency>
+          <Dependency>pango</Dependency>
+          <Dependency>libX11</Dependency>
+          <Dependency>libgcc</Dependency>
+          <Dependency>libXext</Dependency>
+          <Dependency>libXtst</Dependency>
+          <Dependency>openssl</Dependency>
+          <Dependency>alsa-lib</Dependency>
+          <Dependency>freetype</Dependency>
+          <Dependency>libXfixes</Dependency>
+          <Dependency>libXrandr</Dependency>
+          <Dependency>fontconfig</Dependency>
+          <Dependency>gdk-pixbuf</Dependency>
+          <Dependency>libXcursor</Dependency>
+          <Dependency>libXdamage</Dependency>
+          <Dependency>libXrender</Dependency>
+          <Dependency>libXScrnSaver</Dependency>
+          <Dependency>google-chrome</Dependency>
+          <Dependency>gcc</Dependency>
+          <Dependency>libxcb</Dependency>
+          <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/spotify</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/applications/spotify.desktop">spotify.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/share/icons/spotify-linux-256.png">spotify-linux-256.png</AdditionalFile>            
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="12">
+            <Date>2018-05-22</Date>
+            <Version>1.0.77.338</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="11">
+            <Date>2018-02-17</Date>
+            <Version>1.0.70.399</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2017-07-25</Date>
+            <Version>1.0.59.395</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2017-06-20</Date>
+            <Version>1.0.55.487</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="9">
+            <Date>2016-12-13</Date>
+            <Version>1.0.43.125</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2016-10-27</Date>
+            <Version>1.0.38.171</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    	<Update release="7">
+            <Date>2016-09-10</Date>
+            <Version>1.0.37.152</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    	<Update release="6">
+            <Date>2016-08-29</Date>
+            <Version>1.0.36.120</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2016-08-05</Date>
+            <Version>1.0.34</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2016-05-27</Date>
+            <Version>1.0.28.89</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2016-01-28</Date>
+            <Version>1.0.27.71</Version>
+            <Comment>First Release.</Comment>
+	    <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>	
+    </History>
+</PISI>

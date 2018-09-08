@@ -1,0 +1,7 @@
+<PISI>
+    <Source>
+        <Name>numlockx</Name>
+        <Summary xml:lang="tr">Açılışta numlock otamatik çalıştırmaya yarar.</Summary>
+        <Description xml:lang="tr">Numlockx X başladıktan sonra NumLock'u otomatik çalışır.</Description>
+    </Source>
+</PISI>

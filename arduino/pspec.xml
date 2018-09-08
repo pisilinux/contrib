@@ -1,0 +1,53 @@
+<PISI>
+    <Source>
+        <Name>arduino</Name>
+        <Homepage>http://energia.nu/</Homepage>
+        <Packager>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv1</License>
+        <PartOf>programming</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+        <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
+        <Icon>arduino</Icon>
+        <Archive sha1sum="c48471bcdac4ad67c5632ccf5da17725f2b0bd87" type="tarxz">https://github.com/arduino/Arduino/releases/download/1.8.5/Arduino-1.8.5.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>arduino</Name>
+        <Files>
+            <Path fileType="data">/usr</Path>
+            <!--Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path--> 
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/arduino.png" owner="root" permission="0744" group="root">arduino.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+    </Package>
+    <History>
+        <Update release="3">
+            <Date>2018-02-19</Date>
+            <Version>1.8.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>        
+        <Update release="2">
+            <Date>2016-02-19</Date>
+            <Version>1.8.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-07-20</Date>
+            <Version>1.6.9</Version>
+            <Comment>Yazılım geliştirme editörü</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

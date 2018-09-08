@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cherrytree</Name>
+        <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3+</License>
+        <PartOf>office</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Cherrytree A hierarchical note taking application</Summary>
+        <Description>A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in a single xml or sqlite file.</Description>
+        <Archive sha1sum="bc81ae2f6c6566639c5906b3754bf97c6c16b4d4" type="tarxz">http://www.giuspen.com/software/cherrytree-0.38.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+        </BuildDependencies>
+        
+    </Source>
+    <Package>
+        <Name>cherrytree</Name>
+        <RuntimeDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>p7zip</Dependency>
+            <Dependency>python-enchant</Dependency>
+            <Dependency>python-gtk</Dependency>
+            <Dependency>python-gtksourceview</Dependency>
+            <Dependency>python-pygobject</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="data">/usr/share/cherrytree</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/mime-info</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/application-registry</Path>
+            <Path fileType="icons">/usr/share/icons/hicolor/scalable/apps</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/cherrytree/cherrytree.desktop" permission="0644" group="root" owner="root">cherrytree.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/cherrytree/cherrytree.sclipgrab.provg" permission="0644" group="root" owner="root">cherrytree.png</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+    
+    <History>
+        <Update release="2">
+            <Date>2018-02-21</Date>
+            <Version>0.38.04</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+    </Update>
+        <Update release="1">
+            <Date>2016-06-11</Date>
+            <Version>0.37.6</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+    </Update>        
+    </History>
+</PISI>

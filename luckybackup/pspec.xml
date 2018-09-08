@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>luckybackup</Name>
+        <Homepage>http://luckybackup.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>util.archive</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>A powerful, fast and reliable backup and sync tool</Summary>
+        <Description>luckyBackup is an application for data back-up and synchronization powered by the rsync tool.</Description>
+        <Archive sha1sum="a8662494e011d47e2b875fb20aefe5e6d34bc862" type="targz">http://downloads.sourceforge.net/project/luckybackup/0.4.9/source/luckybackup-0.4.9.tar.gz</Archive>
+    </Source>
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+        </BuildDependencies>
+    <Package>
+        <Name>luckybackup</Name>
+        <RuntimeDependencies>
+            <Dependency>openssh</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>rsync</Dependency>
+            <Dependency>xdg-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable" permanent="0">/usr/bin/luckybackup</Path>
+            <Path fileType="data" permanent="0">/usr/share/applications/*</Path>
+            <Path fileType="data" permanent="0">/usr/share/menu/luckybackup</Path>
+            <Path fileType="doc" permanent="0">/usr/share/doc/luckybackup/*</Path>
+            <Path fileType="data" permanent="0">/usr/share/luckybackup/*</Path>
+            <Path fileType="man" permanent="0">/usr/share/man/man8/luckybackup.8.gz</Path>
+            <Path fileType="data" permanent="0">/usr/share/pixmaps/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-05-16</Date>
+            <Version>0.4.9</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

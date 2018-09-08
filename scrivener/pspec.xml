@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>scrivener</Name>
+        <Homepage>https://www.literatureandlatte.com/</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>A powerful content-generation tool for writers</Summary>
+        <Description>A powerful content-generation tool for writersf</Description>
+        <License>https://www.literatureandlatte.com/licence.php</License>
+        <Archive sha1sum="e3d214b8510a54d5363679a9ea31fee303435f63" type="binary">http://www.literatureandlatte.com/scrivenerforlinux/scrivener-1.9.0.1-amd64.deb</Archive>
+
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>scrivener</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="icons">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/menu</Path>
+            <Path fileType="pixmaps">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/scrivener</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>libpng12</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-14</Date>
+            <Version>1.9.0.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

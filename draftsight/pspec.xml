@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>draftsight</Name> 
+        <Homepage>http://www.3ds.com/products-services/draftsight</Homepage> 
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>AS IS</License>
+        <License>EULA</License> 
+        <Icon>draftsight</Icon>
+        <IsA>app:gui</IsA> 
+        <Summary>DraftSight® - Free CAD software for your DWG files</Summary>
+        <Description>DraftSight lets professional CAD users, students and educators create, edit and view DWG files.</Description>
+        <Archive sha1sum="fda51c49fccad809a2407e8e376d814444e2be62" type="binary">http://www.draftsight.com/download-linux-fedora</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>draftsight</Name>
+        <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libXt-32bit</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>calibre</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>glibc-32bit</Dependency>
+            <Dependency>mariadb-lib</Dependency>
+            <Dependency>libXau-32bit</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libutil-linux</Dependency>
+            <Dependency>postgresql-lib</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+        </RuntimeDependencies>
+
+        <Files>
+            <Path fileType="executable">/usr/bin/draftsight.bin</Path>
+            <Path fileType="executable">/usr/bin/draftsight</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/opt/dassault-systemes/</Path>
+            <Path fileType="data">/var/opt/dassault-systemes/</Path>
+        </Files>
+
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/draftsight.desktop">draftsight.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/draftsight">draftsight</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/opt/dassault-systemes/DraftSight/Libraries/libaudio.so.2">libaudio.so.2</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/draftsight.png">draftsight.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="4">
+            <Date>2016-12-13</Date>
+            <Version>7.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2016-03-31</Date>
+            <Version>6.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-10-17</Date>
+            <Version>6.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2014-04-01</Date>
+            <Version>5.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

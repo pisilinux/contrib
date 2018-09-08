@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pisi-linux-imagewriter</Name>
+        <Homepage>http://wiki.rosalab.ru/ru/index.php/ROSA_ImageWriter</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Pisi Linux Image Writer is a program for writing installation images to a flash disk.</Summary>
+        <Description>Pisi Linux Image Writer is a fork based on the ROSA ImageWriter</Description>
+        <Archive sha1sum="0a47ec79ec656b3aebf02f2e3d0220ca60d92c32" type="targz">https://github.com/groni/Sources/raw/master/pisi-linux-imagewriter.tar.gz</Archive>        
+        <BuildDependencies>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>eudev-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+        </BuildDependencies>       
+    </Source>
+
+    <Package>
+        <Name>pisi-linux-imagewriter</Name>        
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>libgcc</Dependency>            
+        </RuntimeDependencies>
+        
+        <Files>           
+            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="data">/usr/share</Path>            
+            <Path fileType="doc">/usr/share/doc/pisi-linux-imagewriter</Path>            
+        </Files>
+        
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pisilinux-imagewriter.desktop">pisilinux-imagewriter.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/icon-pisi.png">icon-pisi.png</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+
+    <History>        
+        <Update release="1">
+            <Date>2016-06-14</Date>
+            <Version>2.6.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Stefan Gronewold(groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

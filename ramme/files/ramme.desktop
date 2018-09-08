@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ramme
+Comment=Unofficial Instagram Desktop App
+Exec="/usr/bin/ramme"
+Terminal=false
+Type=Application
+Icon=/usr/share/icons/hicolor/512x512/apps/ramme.png
+Categories=Internet;Network;Chat

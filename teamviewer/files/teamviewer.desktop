@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=TeamViewer
+GenericName=Remote Access over the Internet
+GenericName[de]=Fernwartung über das Internet
+GenericName[tr]=Uzak Masaüstü Bağlantısı
+Comment=TeamViewer Remote Control Application.
+Comment[tr]=TeamViewer Uzak Masaüstü Bağlantısı
+Icon=teamviewer.png
+Exec=teamviewer
+Categories=Application;Network;
+Type=Application
+Terminal=false
+X-KDE-StartupNotify=true
+MultipleArgs=false

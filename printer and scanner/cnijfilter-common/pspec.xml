@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>cnijfilter-common</Name>
+        <Homepage>http://software.canon-europe.com</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>driver</IsA>
+        <PartOf>applications.printing</PartOf>
+        <Summary>Canon IJ Printer Driver (Common package) x86_64</Summary>
+        <Description>Canon printing drivers which supports MP600 multifunction printer.</Description>
+        <Archive sha1sum="246491bdd78a333a5d88855ac3688848fbbd5984" type="targz">https://github.com/groni/Sources/raw/master/cnijfilter-common-3.40-x86_64.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>cnijfilter-common</Name>
+        <RuntimeDependencies>
+            <Dependency>cups</Dependency>
+            <Dependency>popt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/local/bin</Path>
+            <Path fileType="executable">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-04-26</Date>
+            <Version>3.40</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

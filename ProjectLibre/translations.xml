@@ -1,0 +1,16 @@
+<PISI>
+    <Source>
+        <Name>ProjectLibre</Name>
+        <Summary xml:lang="tr">Açık kaynak Proje Yönetimi Aracı</Summary>
+        <Description xml:lang="tr">- Microsoft Project yedek
+- Gantt Chart
+- Güncellemeleri / hata düzeltmeleri yüzlerce OpenProj yeni ve güncellenmiş versiyonu
+- Maliyet Kazanılan Değer
+- PERT Grafikler
+- Proje Yönetimi yazılımı
+- RBS Grafik
+- OpenProj yeni versiyonu</Description>
+    </Source>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->

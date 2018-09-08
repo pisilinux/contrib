@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>steam</Name>
+        <Summary xml:lang="tr">Linux için steam</Summary>
+        <Description xml:lang="tr">Steam dijital platform çalıştırıcısı</Description>
+    </Source>
+</PISI>

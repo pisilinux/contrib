@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bzr</Name>
+        <Homepage>http://bazaar.canonical.com/en/</Homepage>
+        <Packager>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <Summary>Bazaar is a version control system that helps you track project history over time and to collaborate easily with others</Summary>
+        <Description>Whether you're a single developer, a co-located team or a community of developers scattered across the world, Bazaar scales and adapts to meet your needs.</Description>
+        <Archive sha1sum="872f6088f8b07558519dbbc88fffa05e37602f52" type="targz">https://launchpad.net/bzr/2.7/2.7.0/+download/bzr-2.7.0.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>bzr</Name>
+        <RuntimeDependencies>
+            <Dependency>python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/man</Path>
+
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-08-03</Date>
+            <Version>2.7.0</Version>
+            <Comment>First release</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

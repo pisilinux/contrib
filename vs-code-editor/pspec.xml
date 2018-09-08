@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vs-code-editor</Name>
+        <Homepage>http://code.visualstudio.com</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>Visual Studio Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. (Proprietary Version.)</Summary>
+        <Description>Visual Studio Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. (Proprietary Version.)</Description>
+        <License>EULA</License>
+        <Archive type="zip" sha1sum="e1de83e88a9a67e4911a7c731cb3772ca37a3b13">https://az764295.vo.msecnd.net/stable/e6b4afa53e9c0f54edef1673de9001e9f0f547ae/VSCode-linux-x64-stable.zip
+</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>wget</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>vs-code-editor</Name>
+    <RuntimeDependencies>
+            <Dependency>gconf</Dependency>            
+            <Dependency>libX11</Dependency>
+            <Dependency>nodejs</Dependency>
+            <Dependency>python</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>            
+        </RuntimeDependencies>
+        
+        <Files>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path> 
+        </Files>
+        
+        <AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/applications/Visual-Studio-Code.desktop" group="root" permission="0744">Visual-Studio-Code.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/pixmaps/code.png" group="root" permission="0744">code.png</AdditionalFile>
+        </AdditionalFiles>        
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2016-06-29</Date>
+            <Version>1.2.1</Version>
+            <Comment>First Release.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>        
+    </History>
+</PISI>

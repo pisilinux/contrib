@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gnofract4d</Name>
+        <Summary xml:lang="tr">Gnofract 4D is a free, open source program which allows anyone to create beautiful images called fractals.</Summary>
+        <Description xml:lang="tr">The images are automatically created by the computer based on mathematical principles. These include the Mandelbrot and Julia sets and many more.</Description>
+    </Source>
+</PISI>

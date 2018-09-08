@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>XnViewMP</Name>
+        <Summary xml:lang="tr">Verimli bir multimedya görüntüleyici, tarayıcı ve dönüştürücü.</Summary>
+        <Description xml:lang="tr">Verimli bir multimedya görüntüleyici, tarayıcı ve dönüştürücü.</Description>
+    </Source>
+</PISI>
