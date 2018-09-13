@@ -12,7 +12,7 @@
         <License>Proprietary</License>
         <IsA>network</IsA>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="046297bfbc35adb859523994d683c81f182aab6c">file:///home/sam0bt/Masa%C3%BCst%C3%BC/discord-0.0.5.tar.gz</Archive>
+        <Archive sha1sum="046297bfbc35adb859523994d683c81f182aab6c">https://dl.discordapp.net/apps/linux/0.0.5/discord-0.0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>gconf</Dependency>
@@ -28,10 +28,11 @@
         <Name>discord</Name>
         <Files>
 			<Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/bin</Path>
         </Files>
          <AdditionalFiles>
             <AdditionalFile owner="root" target="/usr/share/pixmaps/discord.png" permission="0644">discord.png</AdditionalFile>
-            <AdditionalFile owner="root" target="/usr/share/applications/Discord.desktop" permission="0644">Discord.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/applications/discord.desktop" permission="0644">discord.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

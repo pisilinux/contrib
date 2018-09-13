@@ -7,5 +7,5 @@ from pisi.actionsapi import shelltools, get, pisitools
 WorkDir = "."
 
 def install():
-    pisitools.insinto("usr/share", "discord")
-    pisitools.dosym("/usr/share/discord/Discord", "/usr/bin/discord")
+    pisitools.insinto("usr/share", "Discord")
+    pisitools.dosym("/usr/share/Discord/Discord", "/usr/bin/discord")
