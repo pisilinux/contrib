@@ -1,5 +1,43 @@
 <PISI>
     <SpecFile>
+    <Source>
+        <Name>Slack</Name>
+        <Homepage>http://slack.com</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>Slack, bulut tabanlı bir ekip iş birliği uygulamasıdır.</Summary>
+        <Description>Slack, bulut tabanlı bir ekip iş birliği uygulamasıdır. </Description>
+        <License>Proprietary</License>
+        <IsA>network</IsA>
+        <IsA>app:gui</IsA>
+        <Archive sha1sum="f4a1e106753406de26ed146ab3b5a8f2ce50de20">https://downloads.slack-edge.com/linux_releases/slack-3.3.1-0.1.fc21.x86_64.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>slack</Name>
+        <Files>
+            <Path fileType="data">/usr/bin/</Path>
+			<Path fileType="data">/usr/lib/</Path>
+			<Path fileType="data">/usr/share/</Path>
+			<Path fileType="data">/etc/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-09-13</Date>
+            <Version>3.3.1</Version>
+            <Comment>Ilk sürüm</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>	
         <Source>
             <Name>franz</Name>
             <Homepage>https://meetfranz.com</Homepage>
