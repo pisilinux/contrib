@@ -12,7 +12,7 @@
         <License>Proprietary</License>
         <IsA>network</IsA>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="f4a1e106753406de26ed146ab3b5a8f2ce50de20">file:///home/sam0bt/Masa%C3%BCst%C3%BC/slack-3.3.1-0.1.fc21.x86_64.rpm</Archive>
+        <Archive sha1sum="f4a1e106753406de26ed146ab3b5a8f2ce50de20">https://downloads.slack-edge.com/linux_releases/slack-3.3.1-0.1.fc21.x86_64.rpm</Archive>
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
             <Dependency>tar</Dependency>
