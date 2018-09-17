@@ -1,0 +1,37 @@
+<PISI>
+    <Source>
+        <Name>fpc-src</Name>
+        <Homepage>http://freepascal.com</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>Fpc-src, pascal için derleyici</Summary>
+        <Description>Fpc-src, pascal için derleyici</Description>
+        <License>GPL</License>
+        <IsA>data</IsA>
+        <IsA>app:console</IsA>
+        <Archive sha1sum="215aeb42c07eee80a52f8cecd7aa23c11bcc79a1">https://datapacket.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20x86_64%20RPM/Lazarus%201.8.4/fpc-src-3.0.4-1.x86_64.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>fpc-src</Name>
+        <Files>
+            <Path fileType="executable">/usr/share/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-09-11</Date>
+            <Version>3.0.4</Version>
+            <Comment>Ilk sürüm</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>	
+</PISI>

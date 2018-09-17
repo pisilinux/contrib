@@ -1,0 +1,41 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fpc</Name>
+        <Homepage>http://freepascal.com</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>Fpc-src, pascal için derleyici</Summary>
+        <Description>Fpc-src, pascal için derleyici</Description>
+        <License>GPL</License>
+        <IsA>data</IsA>
+        <IsA>app:console</IsA>
+        <Archive sha1sum="e13de5eacd47fa2010ee65ca1ad84a782a942f2d">https://datapacket.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20x86_64%20RPM/Lazarus%201.8.4/fpc-3.0.4-1.x86_64.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>fpc</Name>
+        <Files>
+            <Path fileType="data">/usr/bin/</Path>
+			 <Path fileType="data">/usr/share/</Path>
+			  <Path fileType="data">/usr/lib64/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-09-12</Date>
+            <Version>3.0.4</Version>
+            <Comment>Ilk sürüm</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>	
+</PISI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" ?> 
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lazarus</Name>
+        <Homepage>http://lazarus-ide.com</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır.</Summary>
+        <Description>Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır. Pascal ve Object Pascal geliştiricileri için Rapid Application Development Delphi benzeri bir ortam sağlamayı amaçlar. </Description>
+        <License>GPL</License>
+        <IsA>editor</IsA>
+        <IsA>app:gui</IsA>
+        <Archive sha1sum="8e28ee2831d399791c61bbfbf74c34a6c7a51f47">file:///home/sam0bt/Masa%C3%BCst%C3%BC/Lazarus_yeni/lazarus-1.8.4-0.x86_64.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
+			<Dependency>fpc</Dependency>
+			<Dependency>fpc-src</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lazarus</Name>
+        <Files>
+            <Path fileType="data">/usr/bin/</Path>
+			<Path fileType="data">/usr/lib/</Path>
+			<Path fileType="data">/usr/lib64/</Path>
+			<Path fileType="data">/usr/share/</Path>
+			<Path fileType="data">/etc/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-09-112</Date>
+            <Version>1.8.4</Version>
+            <Comment>Ilk sürüm</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>	
+</PISI>
