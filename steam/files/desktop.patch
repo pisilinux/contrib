@@ -1,0 +1,12 @@
+diff -Nuar a/steam.desktop b/steam.desktop
+--- a/steam.desktop	2018-07-24 05:07:26.000000000 +0300
++++ b/steam.desktop	2018-09-29 23:04:53.439082677 +0300
+@@ -27,7 +27,7 @@
+ Comment[tr]=Steam üzerinden oyun oynama ve düzenleme uygulaması
+ Comment[uk]=Програма для керування іграми та запуску ігор у Steam
+ Comment[vi]=Ứng dụng để quản lý và chơi trò chơi trên Steam
+-Exec=/usr/bin/steam %U
++Exec=LC_ALL=C /usr/bin/steam %U
+ Icon=steam
+ Terminal=false
+ Type=Application
