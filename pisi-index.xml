@@ -1469,7 +1469,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="b59c8140af92f58e16ce3b59f02fc2f17e55996a">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="dba64d6988030d004e60c1051f8fa9a51a37f44f">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>libidn2-devel</Dependency>
