@@ -1537,6 +1537,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
         <History>
             <Update release="39">
                 <Date>2018-10-15</Date>
+                <Version>70.0.3538.77</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+            <Update release="39">
+                <Date>2018-10-15</Date>
                 <Version>69.0.3497.100</Version>
                 <Comment>Version bump.</Comment>
                 <Name>Kamil Atlı</Name>
