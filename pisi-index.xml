@@ -1469,7 +1469,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="d61531017a98ab21c8dc4f39f868c50d267b9c79">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="b59c8140af92f58e16ce3b59f02fc2f17e55996a">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>libidn2-devel</Dependency>
@@ -1535,6 +1535,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Files>
         </Package>
         <History>
+            <Update release="39">
+                <Date>2018-10-15</Date>
+                <Version>69.0.3497.100</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
             <Update release="38">
                 <Date>2018-08-02</Date>
                 <Version>68.0.3440.84</Version>
@@ -3842,7 +3849,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Skype keeps the world talking, for free.</Summary>
             <Description xml:lang="en">Skype keeps you together. Call, message and share with others.</Description>
-            <Archive type="binary" sha1sum="969ea25b0997f61296e8e6ff0fa6eff029cc6ce1">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.27.76.86_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="c45bd65e04fab730a606a82067b567fa5bc4ff3e">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.33.76.26_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -3895,6 +3902,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </Files>
         </Package>
         <History>
+            <Update release="10">
+                <Date>2018-08-02</Date>
+                <Version>8.33.76.26</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
             <Update release="9">
                 <Date>2018-08-02</Date>
                 <Version>8.27.76</Version>
