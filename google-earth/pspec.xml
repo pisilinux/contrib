@@ -45,8 +45,8 @@
             <Dependency>libxml2</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>libproxy</Dependency>
-            <Dependency>gstreamer-next</Dependency>
-            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>        
         <Files>
             <Path fileType="data">/lib</Path>
