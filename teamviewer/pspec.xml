@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA> 
         <Summary>User friendly remote control application</Summary>
         <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com </Description>
-        <Archive sha1sum="fed8c65f72d2cb13efe0609fe8766c6fd07bb96a" type="binary">https://dl.tvcdn.de/download/linux/version_13x/teamviewer_13.0.9865_amd64.deb</Archive>
+        <Archive sha1sum="d55cd63c84fc3b785778aa7902557882bd77ee36" type="binary">https://dl.tvcdn.de/download/linux/version_14x/teamviewer_14.0.14470_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -22,6 +22,7 @@
     <Package>
         <Name>teamviewer</Name>
         <RuntimeDependencies>
+            <Dependency>libXinerama-32bit</Dependency>
             <Dependency>libXtst-32bit</Dependency>
             <Dependency>alsa-lib-32bit</Dependency>
             <Dependency>libXdamage-32bit</Dependency>
@@ -63,8 +64,14 @@
             <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
-
     <History>
+        <Update release="13">
+            <Date>2018-11-30</Date>
+            <Version>14.0.14470</Version>
+            <Comment>version bump</Comment>
+            <Name>AYDIN ATMACA</Name>
+            <Email>aydinatmaca@gmail.com</Email>
+        </Update>
         <Update release="12">
             <Date>2018-03-02</Date>
             <Version>13.0.9865</Version>
