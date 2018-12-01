@@ -3,7 +3,7 @@ is the third-party Repository for Pisi Linux 2.0
 
 You can add this Repository to you Pisi Linux 2.0 system, type:
 
-```sudo pisi ar pisilife-2 https://gitlab.com/PisiLinux/pisilife-2/raw/master/pisi-index.xml.xz```
+```sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz```
 
 after it 
 
