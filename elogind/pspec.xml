@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>elogind</Name>
+        <Homepage>https://github.com/elogind</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>Elogind User, Seat and Session Manager</Summary>
+        <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.  It integrates with PAM to know the set of users
+that are logged in to a system and whether they are logged in graphically, on the console, or remotely..</Description>
+        <Archive sha1sum="12e7e7dd45e19ad674d4320d74041f8966c6dd52" type="targz">https://github.com/elogind/elogind/archive/v239.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>ninja</Dependency>
+            <Dependency>meson</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>elogind</Name>
+        <RuntimeDependencies>
+            <Dependency>acl</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>audit</Dependency>
+            <Dependency>eudev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="cof">/etc/elogind</Path>
+             <Path fileType="data">/lib</Path>
+            <Path fileType="data">/lib/elogind</Path>
+            <Path fileType="data">/usr/lib</Path>
+            <Path fileType="locale">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/include/elogind</Path>
+            <Path fileType="locale">/etc/pam.d</Path>
+            <Path fileType="man">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-12-03</Date>
+            <Version>239.2</Version>
+            <Comment>First Release.</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+ 

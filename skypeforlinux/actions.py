@@ -7,13 +7,12 @@
 from pisi.actionsapi import get, pisitools, shelltools
 
 NoStrip = ["/usr"]
-IgnoreAutodep = True
 
 Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf skypeforlinux_8.34.76.37_amd64.deb")
+    shelltools.system("ar xf skypeforlinux-64.deb")
     shelltools.system("tar xf data.tar.xz")
 
 def install():
