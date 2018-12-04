@@ -33,15 +33,14 @@ that are logged in to a system and whether they are logged in graphically, on th
         <Files>
             <Path fileType="executable">/bin</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="cof">/etc/elogind</Path>
+            <Path fileType="conf">/etc/elogind</Path>
              <Path fileType="data">/lib</Path>
-            <Path fileType="data">/lib/elogind</Path>
+            <Path fileType="lib">/lib/elogind</Path>
             <Path fileType="data">/usr/lib</Path>
             <Path fileType="locale">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/usr/include/elogind</Path>
-            <Path fileType="locale">/etc/pam.d</Path>
-            <Path fileType="man">/usr/share</Path>
+            <Path fileType="header">/usr/include/elogind</Path>
+            <Path fileType="conf">/etc/pam.d</Path>
         </Files>
     </Package>
 
