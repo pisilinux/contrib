@@ -10,7 +10,7 @@
         <Summary>Skype keeps the world talking, for free.</Summary>
         <Description>Skype keeps you together. Call, message and share with others.</Description>
         <License>Copyright (c) 2016 Skype and/or Microsoft</License>
-        <Archive sha1sum="86f660872bb52449f9574abc464c86cbcd204f7a" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux-64.deb</Archive>
+        <Archive sha1sum="86f660872bb52449f9574abc464c86cbcd204f7a" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.34.0.78_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
