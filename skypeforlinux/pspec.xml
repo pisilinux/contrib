@@ -25,7 +25,7 @@
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>dbus</Dependency>
-            <Dependency>elongind</Dependency>           
+            <Dependency>elogind</Dependency>           
             <Dependency>gtk2</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>cairo</Dependency>
