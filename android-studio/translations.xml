@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>android-studio</Name>
+        <Summary xml:lang="tr">The official Android IDE (Stable branch)</Summary>
+        <Description xml:lang="tr">The official Android IDE (Stable branch)</Description>
+    </Source>
+</PISI>
