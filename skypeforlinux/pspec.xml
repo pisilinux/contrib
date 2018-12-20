@@ -10,7 +10,7 @@
         <Summary>Skype keeps the world talking, for free.</Summary>
         <Description>Skype keeps you together. Call, message and share with others.</Description>
         <License>Copyright (c) 2016 Skype and/or Microsoft</License>
-        <Archive sha1sum="15218002021cc64a25844cf3d6b67d74d87e6fec" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.34.76.37_amd64.deb</Archive>
+        <Archive sha1sum="86f660872bb52449f9574abc464c86cbcd204f7a" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.34.0.78_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -25,6 +25,7 @@
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>dbus</Dependency>
+            <Dependency>elogind</Dependency>           
             <Dependency>gtk2</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>cairo</Dependency>
@@ -64,13 +65,19 @@
     </Package>
 
     <History>
-        
         <Update release="11">
-            <Date>2018-10-30</Date>
-            <Version>8.34.76.37</Version>
+            <Date>2018-12-03</Date>
+            <Version>8.34.0.78</Version>
             <Comment>Version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
+            <Name>Ali Cengiz Kurt(alick01)</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+        <Update release="10">
+            <Date>2018-08-02</Date>
+            <Version>8.33.76.26</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
         </Update>
         <Update release="9">
             <Date>2018-08-02</Date>

@@ -68,7 +68,8 @@
             <Dependency>libjpeg-turbo</Dependency> 
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
-            <Dependency>flac</Dependency>  
+            <Dependency>flac</Dependency>
+            <Dependency>libutil-linux</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/</Path>
@@ -86,12 +87,12 @@
 
     <History>
         <Update release="40">
-            <Date>2018-12-11</Date>
-            <Version>71.0.3578.80</Version>
+            <Date>2018-10-15</Date>
+            <Version>70.0.3538.110</Version>
             <Comment>Version bump.</Comment>
-            <Name>AYDIN ATMACA</Name>
-            <Email>aydinatmaca@gmail.com</Email>
-        </Update>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+       </Update>
         <Update release="39">
             <Date>2018-10-15</Date>
             <Version>70.0.3538.77</Version>

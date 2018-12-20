@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>elogind</Name>
+        <Homepage>https://github.com/elogind</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2.1</License>
+        <IsA>app:console</IsA>
+        <Summary>Elogind User, Seat and Session Manager</Summary>
+        <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.  It integrates with PAM to know the set of users
+that are logged in to a system and whether they are logged in graphically, on the console, or remotely..</Description>
+        <Archive sha1sum="12e7e7dd45e19ad674d4320d74041f8966c6dd52" type="targz">https://github.com/elogind/elogind/archive/v239.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>eudev-devel</Dependency>
+            <Dependency>audit-devel</Dependency>
+            <Dependency>pam-devel</Dependency>
+            <Dependency>bash-completion</Dependency>
+            <Dependency>dbus-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>libcap-devel</Dependency>
+            <Dependency>acl-devel</Dependency>
+            <Dependency>sysvinit</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>meson</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>elogind</Name>
+        <RuntimeDependencies>
+            <Dependency>acl</Dependency>
+            <Dependency>pam</Dependency>
+            <Dependency>audit</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>bash-completion</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="conf">/etc</Path>
+            <Path fileType="library">/lib</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="locale">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/factory</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/zsh</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>elogind-devel</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">elogind</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-12-03</Date>
+            <Version>239.2</Version>
+            <Comment>First Release.</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
