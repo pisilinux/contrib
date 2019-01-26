@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tesseract</Name>
+        <Homepage>https://github.com/tesseract-ocr/tesseract</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>APACHE</License>
+        <IsA>app:console</IsA>
+        <Summary>An OCR program</Summary>
+        <Description>An OCR program</Description>
+        <Archive sha1sum="243a4919d44bc64d1e7e4cac660c716c845a8d03" type="targz">https://github.com/tesseract-ocr/tesseract/archive/4.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>icu4c-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>leptonica-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>tesseract</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>leptonica</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/tessdata</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>tesseract-devel</Name>
+        <Summary>Development files for tesseract</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">tesseract</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2019-01-25</Date>
+            <Version>4.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
