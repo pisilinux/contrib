@@ -40,9 +40,9 @@
 	<Update release="2">
             <Date>2019-02-17</Date>
             <Version>0.0.8</Version>
-            <Comment>0.0.8 Surumu</Comment>
-            <Name>Mustafa Kemal CELEP</Name>
-            <Email>tekshoot@tekimizbir.com</Email>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
         </Update>
         <Update release="1">
             <Date>2018-09-13</Date>
