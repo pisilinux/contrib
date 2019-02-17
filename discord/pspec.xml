@@ -7,8 +7,8 @@
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
         </Packager>
-        <Summary>Takım savaşları için olan oyunlarda sesli iletişim daha etkili bir uygulamadır..</Summary>
-        <Description>Takım savaşları için olan oyunlarda sesli iletişim daha etkili bir uygulamadır.. </Description>
+        <Summary>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Summary>
+        <Description>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır.. </Description>
         <License>Proprietary</License>
         <IsA>network</IsA>
         <IsA>app:gui</IsA>
@@ -41,7 +41,7 @@
             <Date>2019-02-17</Date>
             <Version>0.0.8</Version>
             <Comment>0.0.8 Surumu</Comment>
-            <Name>Mustafa Kemal Celep</Name>
+            <Name>Mustafa Kemal CELEP</Name>
             <Email>tekshoot@tekimizbir.com</Email>
         </Update>
         <Update release="1">
