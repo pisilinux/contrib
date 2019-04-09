@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser</Summary>
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
-        <Archive sha1sum="7f5932623a2338879823d57f9fc690e8506c45fb" type="binary">http://download1.operacdn.com/pub/opera/desktop/54.0.2952.64/linux/opera-stable_54.0.2952.64_amd64.deb</Archive>
+        <Archive sha1sum="77f2e79d1f0cdd4a86f17fdf8ca1e66091dec5c1" type="binary">http://download1.operacdn.com/pub/opera/desktop/60.0.3255.27/linux/opera-stable_60.0.3255.27_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -66,6 +66,13 @@
     </Package>
 
     <History>
+         <Update release="14">
+            <Date>2019-04-09</Date>
+            <Version>60.0.3255.27</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="13">
             <Date>2018-08-01</Date>
             <Version>54.0.2952.64</Version>
