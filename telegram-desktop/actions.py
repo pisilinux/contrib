@@ -8,8 +8,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-def setup():
-shelltools.system("tar xvf tsetup.1.6.3.tar.xz")
 
 
 def install():
