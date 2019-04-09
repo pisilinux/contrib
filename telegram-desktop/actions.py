@@ -7,6 +7,11 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
+
+def setup():
+shelltools.system("tar xvf tsetup.1.6.3.tar.xz")
+
 
 def install():
     pisitools.insinto("/", "usr")
