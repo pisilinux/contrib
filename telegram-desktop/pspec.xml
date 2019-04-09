@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="1472d452f1243fccd7ce4c82ec43db22d02e3dd5" type="targz">https://updates.tdesktop.com/tlinux/tsetup.1.6.3.tar.xz</Archive>        
+        <Archive sha1sum="1472d452f1243fccd7ce4c82ec43db22d02e3dd5" type="tarxz">https://updates.tdesktop.com/tlinux/tsetup.1.6.3.tar.xz</Archive>        
     </Source>
 
     <Package>
