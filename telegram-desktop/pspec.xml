@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0" type="targz">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>        
+        <Archive sha1sum="1472d452f1243fccd7ce4c82ec43db22d02e3dd5" type="binary">https://updates.tdesktop.com/tlinux/tsetup.1.6.3.tar.xz</Archive>        
     </Source>
 
     <Package>
@@ -26,14 +26,18 @@
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>       
         <Files>            
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="icon">/usr/share/icons</Path>
-            <Path fileType="application">/usr/share/applications</Path>            
-            <Path fileType="doc">/usr/share/doc</Path>            
+            <Path fileType="executable">/opt/Telegram</Path>
         </Files>        
     </Package>
 
     <History>
+       <Update release="3">
+            <Date>2019-04-09</Date>
+            <Version>1.6.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2016-11-10</Date>
             <Version>0.10.19</Version>

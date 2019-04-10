@@ -3,10 +3,16 @@
 #
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
+from pisi.actionsapi import get, pisitools, shelltools
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
+NoStrip = ["/opt", "/Telegram"]
+IgnoreAutodep = True
+
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("tar xvf tsetup.1.6.3.tar.xz")
 
 def install():
-    pisitools.insinto("/", "usr")
+    pisitools.insinto("/opt/", "Telegram")
+    
+   
