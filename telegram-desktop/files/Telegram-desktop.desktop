@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Telegram-desktop
+GenericName=Telegram-desktop 
+Comment=Telegram a new era of messaging
+Exec=/usr/bin/Telegram %F
+Terminal=false
+MimeType=text/plain;
+Categories=Application;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupNotify=true
+Icon=Telegram-desktop
