@@ -26,8 +26,14 @@
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>       
         <Files>            
-            <Path fileType="executable">/opt/Telegram</Path>
-        </Files>        
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>  
+        <AdditionalFiles>
+        <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
+        <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
+    </AdditionalFiles>      
     </Package>
 
     <History>
