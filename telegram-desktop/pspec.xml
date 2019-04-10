@@ -26,10 +26,7 @@
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>       
         <Files>            
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="icon">/usr/share/icons</Path>
-            <Path fileType="application">/usr/share/applications</Path>            
-            <Path fileType="doc">/usr/share/doc</Path>            
+            <Path fileType="executable">/opt/Telegram</Path>
         </Files>        
     </Package>
 
