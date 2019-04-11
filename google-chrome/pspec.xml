@@ -14,12 +14,13 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="0c11d90820e43a7415728ce7f2ca310678377357" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="fc14a719c61fa2a54959c6a73503032d0237baed" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
         <BuildDependencies>
-            <Dependency>libutil-linux-devel</Dependency>
-            <Dependency>at-spi2-core-devel</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>eudev</Dependency>
             <Dependency>binutils</Dependency>
-            <Dependency>libidn2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +32,6 @@
             <Dependency>nspr</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>at-spi2-atk</Dependency>
-            <Dependency>bzip2</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libgcrypt</Dependency>
@@ -44,7 +44,6 @@
             <Dependency>cairo</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>gconf</Dependency>
@@ -64,11 +63,9 @@
             <Dependency>icu4c</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>libxslt</Dependency> 
             <Dependency>libjpeg-turbo</Dependency> 
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
-            <Dependency>flac</Dependency>
             <Dependency>libutil-linux</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -86,6 +83,13 @@
     </Package>
 
     <History>
+        <Update release="43">
+            <Date>2018-12-30</Date>
+            <Version>73.0.3683.103</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+       </Update>
         <Update release="42">
             <Date>2018-12-30</Date>
             <Version>72.0.3626.109</Version>

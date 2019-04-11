@@ -24,12 +24,15 @@ def install():
     shelltools.system("chmod -v 4755 %s/opt/google/chrome/chrome-sandbox" %get.installDIR())
     pisitools.dosym("/opt/google/chrome/google-chrome", "/usr/bin/google-chrome-stable")
     #pisitools.dosym("/opt/google/chrome/google-chrome.desktop", "/usr/share/applications/google-chrome.desktop")
+    
     pisitools.dosym("/opt/google/chrome/product_logo_32.xpm", "/usr/share/pixmaps/google-chrome.xpm")
     pisitools.dosym("/opt/google/chrome/product_logo_256.png", "/usr/share/pixmaps/google-chrome.png")
+    # link needed library
     pisitools.dosym("/usr/lib/nss/libnss3.so", "/usr/lib/libnss3.so.1d")
     pisitools.dosym("/usr/lib/nss/libnssutil3.so", "/usr/lib/libnssutil3.so.1d")
     pisitools.dosym("/usr/lib/nss/libsmime3.so", "/usr/lib/libsmime3.so.1d")
     pisitools.dosym("/usr/lib/nss/libssl3.so", "/usr/lib/libssl3.so.1d")
+    
     pisitools.dosym("/usr/lib/libplds4.so", "/usr/lib/libplds4.so.0d")
     pisitools.dosym("/usr/lib/libplc4.so", "/usr/lib/libplc4.so.0d")
     pisitools.dosym("/usr/lib/libnspr4.so", "/usr/lib/libnspr4.so.0d")
