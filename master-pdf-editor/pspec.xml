@@ -13,13 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
         <Description>Master PDF Editor provides you advanced functions for working with PDF format.</Description>
-<<<<<<< HEAD
-        <Summary>A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
-        <Description>Master PDF Editor provides you advanced functions for working with PDF format.</Description>
         <Archive sha1sum="a9e9cbb3a20d0e0bfcf64e4a786877a1c48d39ec" type="targz">https://code-industry.net/public/master-pdf-editor-5.4.04_qt5.amd64.tar.gz</Archive>
-=======
-        <Archive sha1sum="4ce7fe38335d82873e0620942a99e00eb1345413" type="targz">https://code-industry.net/public/master-pdf-editor-5.2.00_qt5.amd64.tar.gz</Archive>
->>>>>>> parent of 21eea03... Version Bump
     </Source>
 
     <Package>
