@@ -13,7 +13,7 @@ WorkDir = "EasyPaint-0.1.1/sources"
 def setup():
     #shelltools.cd("EasyPaint-0.1.1/sources")
     #shelltools.system("lupdate easypaint.pro")
-   # shelltools.system("lrelease easypaint.pro")
+    #shelltools.system("lrelease easypaint.pro")
     qt5.configure("easypaint.pro")
 
 def build():

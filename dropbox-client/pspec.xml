@@ -11,7 +11,7 @@
         <License>as-is</License>
         <License>MIT</License>
         <License>GPLv2</License>
-        <License>LGPLv2.1</License>        
+        <License>LGPLv2.1</License>
         <Icon>dropbox</Icon>
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
@@ -34,7 +34,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-	    <Dependency>libXxf86vm</Dependency>
+            <Dependency>libXxf86vm</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>zlib</Dependency>
@@ -60,7 +60,7 @@
     </Package>
 
     <History>
-	<Update release="7">
+        <Update release="7">
             <Date>2018-05-21</Date>
             <Version>49.4.69</Version>
             <Comment>Release bump.</Comment>
@@ -74,7 +74,7 @@
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Update>
-	 <Update release="5">
+        <Update release="5">
             <Date>2017-11-26</Date>
             <Version>39.4.49</Version>
             <Comment>Release bump.</Comment>
@@ -108,6 +108,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold (groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

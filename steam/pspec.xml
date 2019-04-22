@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>Steam for linux</Summary>
         <Description>Steam Digital Platform Runner</Description>
-          <Archive sha1sum="b96d36151e3d93e85874748896e08d6b46395769" type="targz">http://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.56.tar.gz</Archive>
+        <Archive sha1sum="b96d36151e3d93e85874748896e08d6b46395769" type="targz">http://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.56.tar.gz</Archive>
         <Patches>
             <Patch level="1">alsa_sdl_audiodriver.patch</Patch>
             <Patch level="1">desktop.patch</Patch>

@@ -21,7 +21,7 @@
 
     <Package>
         <Name>google-talkplugin</Name>
-        <RuntimeDependencies>            
+        <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -32,14 +32,14 @@
             <Dependency>libXfixes</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libXt</Dependency>            
+            <Dependency>libXt</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency>pulseaudio</Dependency>            
-	         <Dependency>pango</Dependency>
-             <Dependency>glib2</Dependency>
-             <Dependency>libX11</Dependency>
-             <Dependency>libgcc</Dependency>
-             <Dependency>libXext</Dependency>             
+            <Dependency>pulseaudio</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/google/talkplugin/GoogleTalkPlugin</Path>
@@ -56,7 +56,7 @@
             <Path fileType="localedata">/opt/google/talkplugin/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>	  
+        <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/google-talkplugin/LICENSE">LICENSE</AdditionalFile>
         </AdditionalFiles>
     </Package>
@@ -75,6 +75,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

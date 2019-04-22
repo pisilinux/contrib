@@ -22,13 +22,13 @@
             <Dependency>jre7-openjdk</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt</Path>            
+            <Path fileType="data">/opt</Path>
             <Path fileType="data">/usr</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/ProjectLibre.desktop" permission="0644" group="root" owner="root">ProjectLibre.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/pixmaps/Libre.png" permission="0644" group="root" owner="root">Libre.png</AdditionalFile>
-        </AdditionalFiles>        
+        </AdditionalFiles>
     </Package>
     
     <History>
@@ -38,6 +38,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

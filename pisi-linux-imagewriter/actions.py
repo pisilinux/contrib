@@ -8,7 +8,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import qt5
 
-def setup():    
+def setup():
     qt5.configure("PisiImageWriter.pro")
 
 def build():

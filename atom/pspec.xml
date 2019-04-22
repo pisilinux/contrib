@@ -52,7 +52,7 @@
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>            
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/atom</Path>
             <Path fileType="doc">/usr/share/doc/atom</Path>
            <Path fileType="icon">/usr/share/pixmaps</Path>
@@ -60,7 +60,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/atom.png">atom.png</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/atom.desktop">atom.desktop</AdditionalFile>            
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/atom.desktop">atom.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

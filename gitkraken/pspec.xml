@@ -3,13 +3,13 @@
 <PISI>
     <Source>
         <Name>gitkraken</Name>
-        <Homepage>http://www.gitkraken.com/</Homepage>
+        <Homepage>https://www.gitkraken.com/</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
         <License>custom</License>
-        <IsA>gui</IsA>        
+        <IsA>gui</IsA>
         <Summary>The intuitive, fast, and beautiful cross-platform Git client.</Summary>
         <Description>GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
         <Archive sha1sum="71d961c9d0decff942775d7ac04a98f1728d030e" type="binary">https://release.gitkraken.com/linux/gitkraken-amd64.deb</Archive>
@@ -46,22 +46,22 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>            
-            <Dependency>libgpg-error</Dependency>            
+            <Dependency>libXrender</Dependency>
+            <Dependency>libgpg-error</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
-        <Files>            
-            <Path fileType="executable">/usr/bin</Path>            
-            <Path fileType="data">/usr/share</Path>            
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
             <Path fileType="doc">/usr/share/doc</Path>
            <Path fileType="icon">/usr/share/pixmaps</Path>
            <Path fileType="application">/usr/share/applications</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gitkraken.png">gitkraken.png</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gitkraken.desktop">gitkraken.desktop</AdditionalFile>            
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gitkraken.desktop">gitkraken.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

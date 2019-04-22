@@ -18,19 +18,19 @@
             <Dependency>zlib-devel</Dependency>
             <Dependency>hunspell-devel</Dependency>
             <Dependency>qt5-multimedia-devel</Dependency>
-        </BuildDependencies>        
+        </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>focuswriter</Name>        
+        <Name>focuswriter</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>qt5-multimedia</Dependency>
             <Dependency>hunspell</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>libgcc</Dependency>
-        </RuntimeDependencies>       
-        <Files>            
+        </RuntimeDependencies>
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="pixmaps">/usr/share/pixmaps</Path>
             <Path fileType="application">/usr/share/applications</Path>
@@ -38,8 +38,8 @@
             <Path fileType="data">/usr/share/metainfo</Path>
             <Path fileType="data">/usr/share/focuswriter</Path>
             <Path fileType="icons">/usr/share/icons/hicolor</Path>
-            <Path fileType="man">/usr/share/man</Path>            
-            <Path fileType="doc">/usr/share/doc</Path>            
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         
     </Package>

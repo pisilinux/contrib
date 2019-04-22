@@ -28,12 +28,12 @@
 
     <Package>
         <Name>python-gtksourceview</Name>
-        <RuntimeDependencies>            
+        <RuntimeDependencies>
             <Dependency>glib2</Dependency>
-            <Dependency>python</Dependency>            
-            <Dependency>gdk-pixbuf</Dependency>            
+            <Dependency>python</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>gtksourceview</Dependency>            
+            <Dependency>gtksourceview</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -135,21 +135,21 @@
             <Comment>Opera version bump.</Comment>
             <Name>Stefan Gronewold (groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update> 
+        </Update>
         <Update release="6">
             <Date>2018-02-17</Date>
             <Version>51.0.2830.34</Version>
             <Comment>Opera version bump.</Comment>
             <Name>Stefan Gronewold (groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update> 
+        </Update>
         <Update release="6">
             <Date>2017-09-28</Date>
             <Version>48.0.2685.32</Version>
             <Comment>Opera version bump.</Comment>
             <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
             <Email>prdsmehmetstc@pisilinux.org</Email>
-        </Update> 
+        </Update>
         <Update release="5">
             <Date>2017-02-21</Date>
             <Version>43.0.2442.991</Version>

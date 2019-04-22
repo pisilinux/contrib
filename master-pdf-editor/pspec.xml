@@ -38,7 +38,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/masterpdfeditor5.desktop">masterpdfeditor5.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/masterpdfeditor5.png">masterpdfeditor5.png</AdditionalFile>
         </AdditionalFiles>
-    </Package>       
+    </Package>
 
     <History>
 <<<<<<< HEAD
@@ -85,14 +85,14 @@
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>   
+        </Update>
          <Update release="2">
             <Date>2016-09-11</Date>
             <Version>3.7.10</Version>
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
         <Update release="1">
             <Date>2016-04-01</Date>
             <Version>3.6.17</Version>
@@ -102,4 +102,4 @@
         </Update>
     </History>
 </PISI>
- 
+

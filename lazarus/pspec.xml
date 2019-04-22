@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>lazarus</Name>
-        <Homepage>http://lazarus-ide.com</Homepage>
+        <Homepage>https://www.lazarus-ide.org/</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
@@ -17,8 +17,8 @@
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
             <Dependency>tar</Dependency>
-			<Dependency>fpc</Dependency>
-			<Dependency>fpc-src</Dependency>
+            <Dependency>fpc</Dependency>
+            <Dependency>fpc-src</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,10 +26,10 @@
         <Name>lazarus</Name>
         <Files>
             <Path fileType="data">/usr/bin/</Path>
-			<Path fileType="data">/usr/lib/</Path>
-			<Path fileType="data">/usr/lib64/</Path>
-			<Path fileType="data">/usr/share/</Path>
-			<Path fileType="data">/etc/</Path>
+            <Path fileType="data">/usr/lib/</Path>
+            <Path fileType="data">/usr/lib64/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/etc/</Path>
         </Files>
     </Package>
 

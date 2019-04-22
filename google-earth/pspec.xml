@@ -47,13 +47,13 @@
             <Dependency>libproxy</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>gst-plugins-base</Dependency>
-        </RuntimeDependencies>        
+        </RuntimeDependencies>
         <Files>
             <Path fileType="data">/lib</Path>
             <Path fileType="data">/opt/google/earth</Path>
             <Path fileType="data">/usr</Path>
         </Files>
-    </Package>    
+    </Package>
 
     <History>
         <Update release="4">
@@ -76,7 +76,7 @@
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
         <Update release="1">
             <Date>09-06-2016</Date>
             <Version>7.1.7.2600</Version>

@@ -10,4 +10,4 @@ def setup():
     shelltools.system("tar xvf tsetup.1.6.7.tar.xz")
 
 def install():
-    pisitools.insinto("/usr/bin/", "Telegram/*")  
+    pisitools.insinto("/usr/bin/", "Telegram/*")

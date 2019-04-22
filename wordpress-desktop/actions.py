@@ -12,7 +12,7 @@ NoStrip = ["/"]
 
 def install():
     pisitools.insinto("/opt/wpcom/", "./share/wpcom/*")
-    #pisitools.insinto("/usr/bin/", "./share/wpcom/wpcom")    
-    #pisitools.insinto("/usr/share/pixmaps/", "./share/pixmaps/wpcom.png")       
+    #pisitools.insinto("/usr/bin/", "./share/wpcom/wpcom")
+    #pisitools.insinto("/usr/share/pixmaps/", "./share/pixmaps/wpcom.png")
     #pisitools.insinto("/usr/share/applications/", "./share/applications/*")
     #pisitools.insinto("/usr/share/doc/atom", "./usr/share/doc/atom/*")

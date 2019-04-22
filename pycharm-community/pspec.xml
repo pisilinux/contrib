@@ -35,7 +35,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libXxf86vm</Dependency>            
+            <Dependency>libXxf86vm</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/pycharm-community</Path>
@@ -44,7 +44,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/pycharm.desktop">pycharm.desktop</AdditionalFile>
-        </AdditionalFiles>        
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="4">

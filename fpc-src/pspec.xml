@@ -1,7 +1,7 @@
 <PISI>
     <Source>
         <Name>fpc-src</Name>
-        <Homepage>http://freepascal.com</Homepage>
+        <Homepage>https://www.freepascal.org/</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>

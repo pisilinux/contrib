@@ -9,9 +9,9 @@
             <Email>admins@pisilinux.org</Email>
         </Packager>
         <License>AS IS</License>
-        <License>EULA</License> 
+        <License>EULA</License>
         <Icon>draftsight</Icon>
-        <IsA>app:gui</IsA> 
+        <IsA>app:gui</IsA>
         <Summary>DraftSight® - Free CAD software for your DWG files</Summary>
         <Description>DraftSight lets professional CAD users, students and educators create, edit and view DWG files.</Description>
         <Archive sha1sum="fda51c49fccad809a2407e8e376d814444e2be62" type="binary">http://www.draftsight.com/download-linux-fedora</Archive>

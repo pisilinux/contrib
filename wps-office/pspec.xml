@@ -12,7 +12,6 @@
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
         <Archive sha1sum="c6c13413d1c974468d0589498c41870146fd9a91" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5707~a21_amd64.deb</Archive>
-
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>libpng12-devel</Dependency>
@@ -66,11 +65,11 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libutil-linux</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>gst-plugins-base</Dependency>            
+            <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
     </Package>
 
-    <History>        
+    <History>
         <Update release="1">
             <Date>2018-03-01</Date>
             <Version>10.1.0.5707</Version>

@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd"'>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>brscan3</Name>
@@ -24,14 +24,14 @@
             <Dependency>sane-backends</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/local</Path>            
+            <Path fileType="data">/usr/local</Path>
             <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="library">/usr/lib/</Path>            
+            <Path fileType="library">/usr/lib/</Path>
             <Path fileType="library">/usr/lib/sane</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan3.rules">brscan3.rules</AdditionalFile>            
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan3.rules">brscan3.rules</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
