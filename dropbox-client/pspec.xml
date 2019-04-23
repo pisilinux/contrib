@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>dropbox-client</Name>
-        <Homepage>http://www.dropbox.com</Homepage>
+        <Homepage>https://www.dropbox.com</Homepage>
         <Packager>
             <Name>PisiLinux Community</Name>
             <Email>admins@pisilinux.org</Email>
@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="f578f47428b7bb9226b4087f9fc0c046ad42ad91" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-49.4.69.tar.gz</Archive>        
+        <Archive sha1sum="fcb39505a674b3865b6aa47baa8904645d44f4d7" type="targz" target="x86_64"> https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-70.4.93.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+	<Update release="8">
+            <Date>2019-04-23</Date>
+            <Version>70.4.93</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>    
 	<Update release="7">
             <Date>2018-05-21</Date>
             <Version>49.4.69</Version>
