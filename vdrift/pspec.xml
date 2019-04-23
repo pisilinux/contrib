@@ -15,7 +15,7 @@
         <Description>VDrift is a driving simulation game with drift racing in mind.</Description>
         <Archive sha1sum="1b98f6e70d64952dee24788989697dae444c6056"  type="tarbz2">mirrors://sourceforge/vdrift/vdrift-2014-10-20.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>sdl2-devel</Dependency>
+            <Dependency>libsdl2-devel</Dependency>
             <Dependency>sdl2-image-devel</Dependency>
             <Dependency>glew-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -36,7 +36,7 @@
     <Package>
         <Name>vdrift</Name>
         <RuntimeDependencies>
-            <Dependency>sdl2</Dependency>
+            <Dependency>libsdl2</Dependency>
             <Dependency>sdl2-image</Dependency>
             <Dependency>glew</Dependency>
             <Dependency>mesa</Dependency>
