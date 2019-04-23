@@ -29,19 +29,19 @@
     <Package>
         <Name>webcamoid-ffmpeg</Name>
         <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>           
+            <Dependency>qt5-base</Dependency>
             <Dependency>qt5-declarative</Dependency>
-            <Dependency>libgcc</Dependency>            
+            <Dependency>libgcc</Dependency>
             <Dependency>ffmpeg</Dependency>
-            <Dependency>pulseaudio-libs</Dependency>          
+            <Dependency>pulseaudio-libs</Dependency>
         </RuntimeDependencies>
-        <Files>            
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/qt5</Path>
             <Path fileType="application">/usr/share/applications</Path>
-        </Files>        
+        </Files>
     </Package>
 
     <History>

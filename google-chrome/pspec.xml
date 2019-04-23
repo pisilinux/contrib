@@ -89,28 +89,28 @@
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="42">
             <Date>2018-12-30</Date>
             <Version>72.0.3626.109</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="41">
             <Date>2018-12-30</Date>
             <Version>71.0.3578.98</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="40">
             <Date>2018-10-15</Date>
             <Version>70.0.3538.110</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="39">
             <Date>2018-10-15</Date>
             <Version>70.0.3538.77</Version>

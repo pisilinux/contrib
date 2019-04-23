@@ -16,31 +16,30 @@
     <Package>
         <Name>Valentina_Studio</Name>
         <RuntimeDependencies>
-           	<Dependency>atk</Dependency>
-			<Dependency>gtk2</Dependency>
-			<Dependency>mesa</Dependency>
-			<Dependency>zlib</Dependency>
-			<Dependency>cairo</Dependency>
-			<Dependency>glib2</Dependency>
-			<Dependency>libSM</Dependency>
-			<Dependency>libXi</Dependency>
-			<Dependency>pango</Dependency>
-			<Dependency>libICE</Dependency>
-			<Dependency>libX11</Dependency>
-			<Dependency>libgcc</Dependency>
-			<Dependency>libxcb</Dependency>
-			<Dependency>libXext</Dependency>
-			<Dependency>freetype</Dependency>
-			<Dependency>fontconfig</Dependency>
-			<Dependency>gdk-pixbuf</Dependency>
-			<Dependency>libXrender</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/VStudio</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/doc</Path>
-		</Files>
-       
+        </Files>
     </Package>
 
     <History>

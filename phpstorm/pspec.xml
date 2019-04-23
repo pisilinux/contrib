@@ -8,14 +8,14 @@
             <Email>groni@pisilinux.org</Email>
         </Packager>
         <License>GPL-2.0</License>
-        <License>Proprietary</License>        
+        <License>Proprietary</License>
         <Summary>PHPStorm - an IDE for the PHP Language</Summary>
         <Description>PHPStorm - an IDE for the PHP Language</Description>
         <Archive type="targz" sha1sum="afd582413fcdb380d5a9f2f9c05225d2a7f5d782">https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz</Archive>
     </Source>
     <Package>
         <Name>phpstorm</Name>
-    <RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>mesa</Dependency>
@@ -34,8 +34,8 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libXxf86vm</Dependency>            
-        </RuntimeDependencies>        
+            <Dependency>libXxf86vm</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/phpstorm</Path>
             <Path fileType="data">/usr/bin/phpstorm</Path>
@@ -43,7 +43,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/phpstorm.desktop">phpstorm.desktop</AdditionalFile>
-        </AdditionalFiles>        
+        </AdditionalFiles>
     </Package>
     
     <History>

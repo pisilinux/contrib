@@ -24,7 +24,7 @@
     <Package>
         <Name>vs-code-editor</Name>
     <RuntimeDependencies>
-            <Dependency>gconf</Dependency>            
+            <Dependency>gconf</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>nodejs</Dependency>
             <Dependency>python</Dependency>
@@ -53,19 +53,19 @@
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libXcomposite</Dependency>            
+            <Dependency>libXcomposite</Dependency>
         </RuntimeDependencies>
         
         <Files>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path> 
+            <Path fileType="application">/usr/share/applications</Path>
         </Files>
         
         <AdditionalFiles>
             <AdditionalFile owner="root" target="/usr/share/applications/Visual-Studio-Code.desktop" group="root" permission="0744">Visual-Studio-Code.desktop</AdditionalFile>
             <AdditionalFile owner="root" target="/usr/share/pixmaps/code.png" group="root" permission="0744">code.png</AdditionalFile>
-        </AdditionalFiles>        
+        </AdditionalFiles>
     </Package>
     
     <History>
@@ -75,6 +75,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update>        
+        </Update>
     </History>
 </PISI>

@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>fpc</Name>
-        <Homepage>http://freepascal.com</Homepage>
+        <Homepage>https://www.freepascal.org/</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
@@ -24,8 +24,8 @@
         <Name>fpc</Name>
         <Files>
             <Path fileType="data">/usr/bin/</Path>
-			 <Path fileType="data">/usr/share/</Path>
-			  <Path fileType="data">/usr/lib64/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/lib64/</Path>
         </Files>
     </Package>
 
@@ -37,5 +37,5 @@
             <Name>Sami BABAT</Name>
             <Email>sami.babat@gmail.com</Email>
         </Update>
-    </History>	
+    </History>
 </PISI>

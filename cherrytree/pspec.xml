@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>cherrytree</Name>
-        <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
+        <Homepage>https://www.giuspen.com/cherrytree/</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
@@ -46,13 +46,13 @@
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/cherrytree/cherrytree.desktop" permission="0644" group="root" owner="root">cherrytree.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/cherrytree/cherrytree.sclipgrab.provg" permission="0644" group="root" owner="root">cherrytree.png</AdditionalFile>
-        </AdditionalFiles>        
+        </AdditionalFiles>
     </Package>
     
     <History>
         <Update release="2">
             <Date>2018-02-21</Date>
-            <Version>0.38.04</Version>
+            <Version>0.38.4</Version>
             <Comment>Version bump.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
@@ -63,6 +63,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
-    </Update>        
+    </Update>
     </History>
 </PISI>

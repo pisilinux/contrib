@@ -8,7 +8,7 @@
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <License>Apache-2.0</License>        
+        <License>Apache-2.0</License>
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
         <Archive sha1sum="886916b5dc587c0e12236030d940b49a496240e8" type="zip">https://dl.google.com/dl/android/studio/ide-zips/3.2.1.0/android-studio-ide-181.5056338-linux.zip</Archive>
@@ -30,11 +30,11 @@
     </Source>
 
     <Package>
-        <Name>android-studio</Name>        
+        <Name>android-studio</Name>
         <RuntimeDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>klibc</Dependency>
-            <Dependency>unzip</Dependency>            
+            <Dependency>unzip</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
@@ -42,7 +42,7 @@
             <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency>libXrender</Dependency>            
+            <Dependency>libXrender</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/android-studio</Path>

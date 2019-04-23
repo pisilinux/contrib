@@ -12,11 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="ec62422621467ec754fc654263c9741797c5ffb5" type="binary">https://updates.tdesktop.com/tlinux/tsetup.1.6.7.tar.xz</Archive>        
+        <Archive sha1sum="ec62422621467ec754fc654263c9741797c5ffb5" type="binary">https://updates.tdesktop.com/tlinux/tsetup.1.6.7.tar.xz</Archive>
     </Source>
 
     <Package>
-        <Name>telegram-desktop</Name>        
+        <Name>telegram-desktop</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>dbus</Dependency>
@@ -24,16 +24,16 @@
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-        </RuntimeDependencies>       
-        <Files>            
+        </RuntimeDependencies>
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
-        </Files>  
+        </Files>
         <AdditionalFiles>
         <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
         <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
-    </AdditionalFiles>      
+    </AdditionalFiles>
     </Package>
 
     <History>

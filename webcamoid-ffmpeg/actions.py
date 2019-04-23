@@ -16,8 +16,8 @@ def setup():
 def build():
      qt5.make()
 
-def install():            
-    qt5.install("INSTALL_ROOT=%s" % get.installDIR())    
+def install():
+    qt5.install("INSTALL_ROOT=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "CONTRIBUTING.md", "COPYING", "README.md")    
-    
+    pisitools.dodoc("AUTHORS", "ChangeLog", "CONTRIBUTING.md", "COPYING", "README.md")
+

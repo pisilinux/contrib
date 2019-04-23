@@ -56,7 +56,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
-        </Files>        
+        </Files>
     </Package>
     
     <History>

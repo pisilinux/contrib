@@ -19,7 +19,7 @@
         <Files>
             <Path fileType="data">/usr</Path>
             <!--Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path--> 
+            <Path fileType="application">/usr/share/applications</Path-->
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
@@ -34,7 +34,7 @@
             <Comment>Version bump.</Comment>
             <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
             <Email>prdsmehmetstc@pisilinux.org</Email>
-        </Update>        
+        </Update>
         <Update release="2">
             <Date>2016-02-19</Date>
             <Version>1.8.1</Version>

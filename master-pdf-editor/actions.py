@@ -17,4 +17,4 @@ def install():
     pisitools.insinto("/usr/bin/","masterpdfeditor5")
     
     pisitools.dodoc("license.txt")
-    
+

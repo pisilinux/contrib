@@ -59,7 +59,7 @@
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
         </Update>
-      <Update release="6">
+        <Update release="6">
             <Date>2015-08-10</Date>
             <Version>0.9.12.8.1362</Version>
             <Comment>V.Bump</Comment>

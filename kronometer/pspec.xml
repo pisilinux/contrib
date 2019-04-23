@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>kronometer</Name>
-        <Homepage>http://kde-apps.org/content/show.php/Kronometer?content=162829</Homepage>
+        <Homepage>https://userbase.kde.org/Kronometer</Homepage>
         <Packager>
             <Name>Pisi Linux Community</Name>
             <Email>admins@pisilinux.org</Email>

@@ -23,4 +23,4 @@ def install():
     pisitools.insinto("/", "opt")
     pisitools.insinto("/", "usr")
     pisitools.removeDir("/opt/google/chrome-unstable")
-    pisitools.removeDir("/opt/google/chrome-beta")   
+    pisitools.removeDir("/opt/google/chrome-beta")
