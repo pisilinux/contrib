@@ -39,9 +39,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/masterpdfeditor5.png">masterpdfeditor5.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
-
     <History>
-<<<<<<< HEAD
         <Update release="8">
             <Date>2019-04-19</Date>
             <Version>5.4.04</Version>
@@ -55,9 +53,7 @@
             <Comment>Version bump.</Comment>
             <Name>Ali Cengiz Kurt</Name>
             <Email>alicengizkurt@gmail.com</Email>
-        </Update> 
-=======
->>>>>>> parent of 21eea03... Version Bump
+        </Update>
         <Update release="6">
             <Date>2018-11-29</Date>
             <Version>5.2.00</Version>
