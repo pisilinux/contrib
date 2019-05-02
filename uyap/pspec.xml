@@ -38,7 +38,7 @@
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
-        <Update release="2">
+        <Update release="1">
             <Date>2014-04-06</Date>
             <Version>1.0</Version>
             <Comment>First Release</Comment>
