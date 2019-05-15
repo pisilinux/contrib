@@ -64,14 +64,14 @@
         </Files>
     </Package>
     <History>
-         <Update release="14">
+         <Update release="15">
             <Date>2019-04-09</Date>
             <Version>60.0.3255.27</Version>
             <Comment>Opera version bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="13">
+        <Update release="14">
             <Date>2018-08-01</Date>
             <Version>54.0.2952.64</Version>
             <Comment>Opera version bump.</Comment>
