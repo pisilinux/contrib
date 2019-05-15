@@ -16,7 +16,6 @@
             <Dependency>binutils</Dependency>
         </BuildDependencies>
     </Source>
-
     <Package>
         <Name>opera-stable</Name>
         <RuntimeDependencies>
@@ -64,7 +63,6 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
     </Package>
-
     <History>
          <Update release="14">
             <Date>2019-04-09</Date>
