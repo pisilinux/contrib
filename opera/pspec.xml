@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>opera</Name>
-        <Homepage>http://www.opera.com/</Homepage>
+        <Homepage>https://www.opera.com/</Homepage>
         <Packager>
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
