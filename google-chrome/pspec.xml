@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="fc14a719c61fa2a54959c6a73503032d0237baed" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="3dc428949db33eb36a61e64f7ef1374d1f322842" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>bzip2</Dependency>
             <Dependency>nss</Dependency>
@@ -83,6 +83,13 @@
     </Package>
 
     <History>
+         <Update release="44">
+            <Date>2019-05-16</Date>
+            <Version>74.0.3729.157</Version>
+            <Comment>Version bump.</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
         <Update release="43">
             <Date>2018-12-30</Date>
             <Version>73.0.3683.103</Version>
