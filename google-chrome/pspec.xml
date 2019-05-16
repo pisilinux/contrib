@@ -83,6 +83,13 @@
     </Package>
 
     <History>
+         <Update release="44">
+            <Date>2019-05-16</Date>
+            <Version>74.0.3729.157</Version>
+            <Comment>Version bump.</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
         <Update release="43">
             <Date>2018-12-30</Date>
             <Version>73.0.3683.103</Version>
