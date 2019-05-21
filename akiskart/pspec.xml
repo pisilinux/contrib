@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akiskart</Name>
+        <Homepage>http://www.akiskart.com.tr/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <Summary>View and modify files,folders and objects in an AKIS smartcard</Summary>
+        <Description>View and modify files,folders and objects in an AKIS smartcard</Description>
+        <Archive sha1sum="dd5f2950478f2650aa3465a457bef67619a981e1" type="binary">http://www.akiskart.com.tr/dosyalar/akis_1.6_amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>akiskart</Name>
+        <RuntimeDependencies>
+        	<Dependency>ccid</Dependency>
+            <Dependency>pcsc-lite</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>jre7-openjdk-headless</Dependency>
+        </RuntimeDependencies>
+        <Files>
+        	<Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/akis</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/akia">akia</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-05-20</Date>
+            <Version>1.6</Version>
+            <Comment>First release</Comment>
+            <Name>Ertuğrul Erata</Name>
+            <Email>ertugrulerata@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
