@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
         <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
-        <Archive sha1sum="3d11ef8700b524e2894b6edc5a9cc54a621f9582" type="tarxz">https://iweb.dl.sourceforge.net/project/ar-iv/uyap-4.1.12.tar.xz</Archive>
+        <Archive sha1sum="11fef31b4c1028658fcaed1d84c380d2ca951725" type="targz">https://master.dl.sourceforge.net/project/ar-iv/uyapeditor-4.2.0.tar.gz</Archive>
     </Source>
     
     <Package>
@@ -31,6 +31,13 @@
     </Package>
     
     <History>
+    <Update release="3">
+            <Date>2019-05-22</Date>
+            <Version>4.2.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2019-05-02</Date>
             <Version>4.1.12</Version>
