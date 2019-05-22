@@ -10,5 +10,5 @@ from pisi.actionsapi import shelltools
 
 
 def install():
-    pisitools.insinto("/usr/share/arduino-1.8.1", "*") 
-    pisitools.dosym("/usr/share/arduino-1.8.1/arduino", "/usr/bin/arduino")
+    pisitools.insinto("/usr/share/arduino-1.8.9", "*") 
+    pisitools.dosym("/usr/share/arduino-1.8.9/arduino", "/usr/bin/arduino")
