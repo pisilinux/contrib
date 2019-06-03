@@ -23,6 +23,7 @@
             <Dependency>gtk3</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>at-spi2-atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>curl</Dependency>
