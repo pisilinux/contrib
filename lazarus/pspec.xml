@@ -13,7 +13,7 @@
         <License>GPL</License>
         <IsA>editor</IsA>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="8e28ee2831d399791c61bbfbf74c34a6c7a51f47">file:///home/sam0bt/Masa%C3%BCst%C3%BC/Lazarus_yeni/lazarus-1.8.4-0.x86_64.rpm</Archive>
+        <Archive sha1sum="8e28ee2831d399791c61bbfbf74c34a6c7a51f47">https://liquidtelecom.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20x86_64%20RPM/Lazarus%201.8.4/lazarus-1.8.4-0.x86_64.rpm</Archive>
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
             <Dependency>tar</Dependency>
