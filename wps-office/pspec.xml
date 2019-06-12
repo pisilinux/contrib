@@ -11,37 +11,18 @@
         <Summary>WPS Office Suite</Summary>
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
-        <Archive sha1sum="c6c13413d1c974468d0589498c41870146fd9a91" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5707~a21_amd64.deb</Archive>
+        <Archive sha1sum="edb1bc215e46c46bb979869e374788498486b56c" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/8392/wps-office_11.1.0.8392_amd64.deb</Archive>
         <BuildDependencies>
-            <Dependency>binutils</Dependency>
-            <Dependency>libpng12-devel</Dependency>
-            <Dependency>xz-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>zlib-devel</Dependency>
-            <Dependency>bzip2</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency>libSM-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
-            <Dependency>mesa-glu-devel</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>libutil-linux-devel</Dependency>
-            <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency> 
+            <Dependency>rpm2targz</Dependency>
+            <Dependency>tar</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>wps-office</Name>
         <Files>
-            <Path fileType="conf">/etc/fonts</Path>
-            <Path fileType="data">/opt/kingsoft/wps-office/office6</Path>
+            <Path fileType="conf">/etc</Path>
+            <Path fileType="data">/opt/kingsoft</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
@@ -70,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2019-06-11</Date>
+            <Version>11.1.0.8392</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2018-03-01</Date>
             <Version>10.1.0.5707</Version>
