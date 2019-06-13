@@ -27,7 +27,7 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
         <RuntimeDependencies>
-            <Dependency>libpng12</Dependency>
+            <!--Dependency>libpng12</Dependency-->
             <Dependency>xz</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>zlib</Dependency>
