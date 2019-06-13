@@ -8,15 +8,14 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-NoStrip = ["/usr", "/opt"]
-IgnoreAutodep = True
-
-Version = get.srcVERSION()
+WorkDir = "."
 
 def setup():
-    shelltools.system("pwd")
-    shelltools.system("ar xf wps-office_%s~*amd64.deb" % Version)
+    shelltools.system("ar xf wps-office_11.1.0.8392_amd64.deb")
     shelltools.system("tar xf data.tar.xz")
+
+def build():
+    pass
 
 def install():
     pisitools.insinto("/", "usr")
