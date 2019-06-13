@@ -14,7 +14,7 @@
         <Archive sha1sum="c6c13413d1c974468d0589498c41870146fd9a91" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5707~a21_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
-            <Dependency>libpng12-devel</Dependency>
+            <!-- <Dependency>libpng12-devel</Dependency> -->
             <Dependency>xz-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
