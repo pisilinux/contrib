@@ -31,6 +31,9 @@
             <Path fileType="data">/usr/share/</Path>
             <Path fileType="data">/etc/</Path>
         </Files>
+         <RuntimeDependencies>
+             <Dependency>fpc</Dependency>
+         </RuntimeDependencies>
         
          <Provides>
              <COMAR script="package.py">System.Package</COMAR>
