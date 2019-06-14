@@ -33,6 +33,7 @@
         </Files>
          <RuntimeDependencies>
              <Dependency>fpc</Dependency>
+             <Dependency>fpc-src</Dependency>
          </RuntimeDependencies>
         
          <Provides>
