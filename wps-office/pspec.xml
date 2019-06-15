@@ -12,6 +12,7 @@
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
         <Archive sha1sum="edb1bc215e46c46bb979869e374788498486b56c" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/8392/wps-office_11.1.0.8392_amd64.deb</Archive>
+        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="opt/kingsoft/wps-office/office6/dicts/spellcheck" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
         <BuildDependencies>
             <Dependency>tar</Dependency>
             <Dependency>binutils</Dependency>
