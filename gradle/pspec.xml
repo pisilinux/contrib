@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gradle</Name>
+        <Homepage>http://gradle.org/</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPL</License>
+        <!--<Icon>gradle</Icon>-->
+        <IsA>app:konsole</IsA>
+        <Summary>Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+        <Description>Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Description>
+        <Archive sha1sum="208a8582aceffd940d93c8081f18d9012897de03" type="zip">https://downloads.gradle.org/distributions/gradle-5.4.1-bin.zip</Archive>
+    </Source>
+    <Package>
+        <Name>gradle</Name>
+        <Files>
+			<Path fileType="data">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <Summary>Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+</Package>
+    <History>
+        <Update release="1">
+            <Date>2019-06-18</Date>
+            <Version>5.4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
