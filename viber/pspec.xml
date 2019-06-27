@@ -12,9 +12,9 @@
         <Summary>Proprietary cross-platform IM and VoIP softwareı</Summary>
         <Description>Free calls, text and picture sharing with anyone, anywhere!</Description>
         <Archive sha1sum="27f1df316a8ffc2ab774656ce5e9b3cee621b81b" type="binary">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
-    <BuildDependencies>
-        <Dependency>binutils</Dependency>
-    </BuildDependencies>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>

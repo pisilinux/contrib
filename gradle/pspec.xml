@@ -18,7 +18,7 @@
     <Package>
         <Name>gradle</Name>
         <Files>
-			<Path fileType="data">/usr/bin</Path>
+            <Path fileType="data">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
         <Summary>Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>

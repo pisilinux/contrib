@@ -11,7 +11,7 @@
         <License>GPLv3</License>
         <Icon>fritzing</Icon>
         <IsA>app:gui</IsA>
-	<partOf>elektronics</partOf>
+        <partOf>elektronics</partOf>
         <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
         <Description>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Description>
         <Archive sha1sum="7ca1ffc56c67fdcdfa6d394f44cd42b779d1985d" type="tarbz2">http://fritzing.org/download/0.9.3b/linux-64bit/fritzing-0.9.3b.linux.AMD64.tar.bz2</Archive>
@@ -33,7 +33,7 @@
     <Package>
         <Name>fritzing</Name>
         <Files>
-			<Path fileType="data">/usr/bin</Path>
+            <Path fileType="data">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
             <Path fileType="application">/usr/share/applications</Path>
@@ -43,7 +43,7 @@
             <AdditionalFile owner="root" target="/usr/share/pixmaps/fritzing_icon.png" group="root" permission="0744">fritzing_icon.png</AdditionalFile>
         </AdditionalFiles>
         <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
-</Package>
+    </Package>
     <History>
         <Update release="1">
             <Date>2019-06-18</Date>
