@@ -17,13 +17,13 @@
     <Package>
         <Name>akiskart</Name>
         <RuntimeDependencies>
-        	<Dependency>ccid</Dependency>
+            <Dependency>ccid</Dependency>
             <Dependency>pcsc-lite</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>jre7-openjdk-headless</Dependency>
         </RuntimeDependencies>
         <Files>
-        	<Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/akis</Path>
         </Files>

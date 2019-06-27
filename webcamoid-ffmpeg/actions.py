@@ -14,7 +14,7 @@ def setup():
     qt5.configure("Webcamoid.pro")
 
 def build():
-     qt5.make()
+    qt5.make()
 
 def install():
     qt5.install("INSTALL_ROOT=%s" % get.installDIR())

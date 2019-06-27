@@ -31,18 +31,18 @@
             <Path fileType="data">/usr/share/</Path>
             <Path fileType="data">/etc/</Path>
         </Files>
-         <RuntimeDependencies>
-             <Dependency>fpc</Dependency>
-             <Dependency>fpc-src</Dependency>
-         </RuntimeDependencies>
+        <RuntimeDependencies>
+            <Dependency>fpc</Dependency>
+            <Dependency>fpc-src</Dependency>
+        </RuntimeDependencies>
         
-         <Provides>
-             <COMAR script="package.py">System.Package</COMAR>
-</Provides>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
-         <Update release="2">
+        <Update release="2">
             <Date>2019-06-22</Date>
             <Version>2.0.2</Version>
             <Comment>update versiyon</Comment>

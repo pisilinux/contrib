@@ -47,7 +47,7 @@
         </AdditionalFiles>
     </Package>
     <History>
-    <Update release="5">
+        <Update release="5">
             <Date>2019-05-02</Date>
             <Version>2019.1.1</Version>
             <Comment>version bump</Comment>

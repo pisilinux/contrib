@@ -11,10 +11,8 @@
         <License>LGPLv2</License>
         <Icon>zenity</Icon>
         <IsA>app:gui</IsA>
-        <Summary>Zenity enables you to create the following types of simple dialog
-</Summary>
-        <Description>Zenity enables you to create the following types of simple dialog
-</Description>
+        <Summary>Zenity enables you to create the following types of simple dialog</Summary>
+        <Description>Zenity enables you to create the following types of simple dialog</Description>
         <Archive sha1sum="23cd194247d1f8a7747604574840b824323ccbf9" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/zenity/3.20/zenity-3.20.0.tar.xz</Archive>
     </Source>
 
