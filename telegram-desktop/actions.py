@@ -10,4 +10,5 @@ def setup():
     shelltools.system("tar xvf tsetup.1.7.13.tar.xz")
 
 def install():
-    pisitools.insinto("/usr/bin/", "Telegram/*")
+    pisitools.insinto("/opt/telegram-desktop/", "Telegram/*")
+    pisitools.dosym("/opt/telegram-desktop/Telegram", "/usr/bin/telegram-desktop")

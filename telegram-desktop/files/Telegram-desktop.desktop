@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Telegram
+Comment=Telegram, çoklu platform desteği sunan, güvenli anlık mesajlaşma servisidir.
+GenericName=Anlık mesajlaşma
+Exec=/opt/telegram-desktop/Telegram 
+Icon=telegram
+Type=Application
+StartupNotify=true
+Categories=Web;
+MimeType=text/plain;

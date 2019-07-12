@@ -26,6 +26,7 @@
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="executable">/opt/telegram-desktop</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
