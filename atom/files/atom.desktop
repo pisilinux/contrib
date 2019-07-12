@@ -2,9 +2,9 @@
 Name=Atom
 Comment=A hackable text editor for the 21st Century.
 GenericName=Text Editor
-Exec=/usr/share/atom/atom %U
+Exec=/opt/atom/atom %U
 Icon=atom
 Type=Application
 StartupNotify=true
-Categories=GNOME;GTK;Utility;TextEditor;Development;
+Categories=TextEditor;Development;
 MimeType=text/plain;

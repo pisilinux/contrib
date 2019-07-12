@@ -1,14 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from pisi.actionsapi import shelltools
-from pisi.actionsapi import get
-from pisi.actionsapi import pisitools
+from pisi.actionsapi import get, pisitools, shelltools
 
-WorkDir = "."
+
+
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("tar xvf atom-amd64.tar.gz")
 
 def install():
-    pisitools.insinto("/usr/bin/", "./usr/bin/apm")
-    pisitools.insinto("/usr/bin/", "./usr/bin/atom")
-    pisitools.insinto("/usr/share/atom/", "./usr/share/atom/*")
-    pisitools.insinto("/usr/share/doc/atom", "./usr/share/doc/atom/*")
+    pisitools.insinto("/opt/atom/", "atom-1.38.2-amd64/*")

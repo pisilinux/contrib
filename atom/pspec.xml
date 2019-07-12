@@ -9,13 +9,12 @@
             <Email>admins@pisilinux.org</Email>
         </Packager>
         <License>as-is</License>
-        <IsA>gui</IsA>
+        <IsA>app:gui</IsA>
         <PartOf>applications.development</PartOf>
         <Summary>A hackable text editor.</Summary>
         <Description>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
-        <Archive sha1sum="118da444762cb6625348b67ff02295501f673f12" type="targz">https://sourceforge.net/projects/pisi-linux-global/files/Sources/atom-1.24.0.tar.gz</Archive>
+        <Archive sha1sum="6d3e9e18b68e07f84db26b325d39799e2f9dbd1f" type="binary">https://github.com/atom/atom/releases/download/v1.38.2/atom-amd64.tar.gz</Archive>
     </Source>
-
     <Package>
         <Name>atom</Name>
         <RuntimeDependencies>
@@ -52,9 +51,7 @@
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/atom</Path>
-            <Path fileType="doc">/usr/share/doc/atom</Path>
+           <Path fileType="executable">/opt/atom</Path>
            <Path fileType="icon">/usr/share/pixmaps</Path>
            <Path fileType="application">/usr/share/applications</Path>
         </Files>
@@ -65,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2019-07-12</Date>
+            <Version>1.38.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2018-02-19</Date>
             <Version>1.24.0</Version>
