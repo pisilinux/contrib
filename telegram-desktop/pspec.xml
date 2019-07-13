@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-         <Archive sha1sum="410f608bc348b9cb07fb68d1ccca1e773b7c38c9" type="binary">https://updates.tdesktop.com/tlinux/tsetup.1.7.13.tar.xz</Archive>  
+         <Archive sha1sum="31c9cabfc227ac6e63fd026b82267390ebb91816" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.14/tsetup.1.7.14.tar.xz</Archive>  
     </Source>
 
     <Package>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+         <Update release="9">
+            <Date>2019-07-13</Date>
+            <Version>1.7.14</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2019-06-24</Date>
             <Version>1.7.13</Version>
