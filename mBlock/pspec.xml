@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mBlock</Name>
+        <homepage>https://www.mblock.cc</homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>The perfect combination of Scratch and Arduino code</Summary>
+        <Description>The perfect combination of Scratch and Arduino code,designed for programming for kids</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="b5df21a0e94f50fcc9b2688bdd51256b4b53564f" type="binary">https://github.com/Makeblock-official/mBlock/releases/download/V4.0.0-Linux/mBlock-4.0.0-linux-4.0.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>mBlock</Name>
+        <RuntimeDependencies>
+            <Dependency>gconf</Dependency>       
+        </RuntimeDependencies>
+        
+         <Files>
+            <Path fileType="executable">/opt/mBlock</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+        <AdditionalFile target="/usr/share/applications/mblock.desktop" owner="root">mblock.desktop</AdditionalFile>
+        <AdditionalFile target="/usr/share/icons/mblock.jpeg" owner="root">mblock.jpeg</AdditionalFile>
+    </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-07-22</Date>
+            <Version>4.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
