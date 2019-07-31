@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?> 
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>spotify</Name> 
@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="c9cd195c4eea3b1573c9799569a644a2b5dbb01e" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.0.237.g378f6f25-11_amd64.deb</Archive>
+        <Archive sha1sum="d10d3999de175b3046995d947829c4963de51775" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>libXScrnSaver</Dependency>
@@ -68,6 +68,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+         <Update release="15">
+            <Date>2019-07-31</Date>
+            <Version>1.1.10.546</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="14">
             <Date>2019-02-17</Date>
             <Version>1.1.0.237</Version>
