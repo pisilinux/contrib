@@ -12,16 +12,14 @@
         <IsA>app:gui</IsA>
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="d10d3999de175b3046995d947829c4963de51775" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb</Archive>
-        <BuildDependencies>
-            <Dependency>binutils</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="d10d3999de175b3046995d947829c4963de51775" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.10.546.ge08ef575-19_amd64.deb</Archive>        
     </Source>
     <Package>
         <Name>spotify</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
+            <Dependency>at-spi2-atk </Dependency>
+            <Dependency>at-spi2-core </Dependency>           
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>curl</Dependency>
