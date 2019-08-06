@@ -20,6 +20,6 @@ def setup():
 
 def install():
     pisitools.insinto("/", "usr")
-    pisitools.dosym("/usr/lib/libcurl.so.4.4.0", "/usr/lib/libcurl-gnutls.so.4") 
+    pisitools.dosym("/usr/lib/libcurl.so", "/usr/lib/libcurl-gnutls.so.4") 
     #pisitools.dosym("/usr/share/spotify/spotify.desktop", "/usr/share/applications/spotify.desktop")
     #pisitools.dosym("/usr/share/libffado/icons/hi64-apps-ffado.png", "/usr/share/pixmaps/ffado-mixer.png")
