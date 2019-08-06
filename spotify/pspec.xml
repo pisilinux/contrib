@@ -55,6 +55,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/lib</Path>
             <Path fileType="data">/usr/share/spotify</Path>
             <Path fileType="data">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
