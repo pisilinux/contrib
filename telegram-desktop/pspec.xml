@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-         <Archive sha1sum="31c9cabfc227ac6e63fd026b82267390ebb91816" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.14/tsetup.1.7.14.tar.xz</Archive>  
+        <Archive sha1sum="31c9cabfc227ac6e63fd026b82267390ebb91816" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.14/tsetup.1.7.14.tar.xz</Archive>  
     </Source>
 
     <Package>
@@ -32,13 +32,13 @@
             <Path fileType="data">/usr/share/icons</Path>
         </Files>
         <AdditionalFiles>
-        <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
-        <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
-    </AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
-         <Update release="9">
+        <Update release="9">
             <Date>2019-07-13</Date>
             <Version>1.7.14</Version>
             <Comment>version bump</Comment>

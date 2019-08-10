@@ -12,7 +12,7 @@
         <License>openssl</License>
         <IsA>library</IsA>
         <Summary>Video chat browser plug-in for Google Talk</Summary>
-        <Description>The Google Talk Plugin is a browser plugin that enables you to use Google voice and video chat to chat face to face with family and friends.</Description>	
+        <Description>The Google Talk Plugin is a browser plugin that enables you to use Google voice and video chat to chat face to face with family and friends.</Description>
         <Archive sha1sum="1c3cc0411444587b56178de4868eb5d0ff742ec0" type="binary" target="x86_64">http://dl.google.com/linux/talkplugin/deb/pool/main/g/google-talkplugin/google-talkplugin_5.41.0.0-1_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>

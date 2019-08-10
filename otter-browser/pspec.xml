@@ -46,7 +46,7 @@
             <Dependency>qt5-webengine</Dependency>
             <Dependency>qt5-declarative</Dependency>
             <Dependency>hunspell</Dependency>
-        </RuntimeDependencies> 
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share</Path>

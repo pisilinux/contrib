@@ -63,7 +63,7 @@
             <Dependency>icu4c</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>libjpeg-turbo</Dependency> 
+            <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>libutil-linux</Dependency>

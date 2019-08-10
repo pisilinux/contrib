@@ -63,7 +63,7 @@
             <Dependency>icu4c</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>libjpeg-turbo</Dependency> 
+            <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>libutil-linux</Dependency>
@@ -83,14 +83,14 @@
     </Package>
 
     <History>
-         <Update release="45">
+        <Update release="45">
             <Date>2019-07-09</Date>
             <Version>75.0.3770.100</Version>
             <Comment>Version bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-         <Update release="44">
+        <Update release="44">
             <Date>2019-05-16</Date>
             <Version>74.0.3729.157</Version>
             <Comment>Version bump.</Comment>
