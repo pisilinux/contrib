@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" ?> 
+﻿<?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>spotify</Name> 
+        <Name>spotify</Name>
         <Homepage>http://spotify.com</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
@@ -18,8 +18,8 @@
         <Name>spotify</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
-            <Dependency>at-spi2-atk </Dependency>
-            <Dependency>at-spi2-core </Dependency>           
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>curl</Dependency>
@@ -67,7 +67,7 @@
         </AdditionalFiles>
     </Package>
     <History>
-         <Update release="15">
+        <Update release="15">
             <Date>2019-07-31</Date>
             <Version>1.1.10.546</Version>
             <Comment>Version bump.</Comment>

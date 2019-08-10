@@ -51,9 +51,9 @@
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
         <Files>
-           <Path fileType="executable">/opt/atom</Path>
-           <Path fileType="icon">/usr/share/pixmaps</Path>
-           <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="executable">/opt/atom</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/atom.png">atom.png</AdditionalFile>
@@ -91,4 +91,4 @@
             <Email>groni@pisilinux.org</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>

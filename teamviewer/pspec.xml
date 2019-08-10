@@ -79,7 +79,7 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-         <Update release="11">
+        <Update release="11">
             <Date>2018-02-15</Date>
             <Version>12.0.85001</Version>
             <Comment>Version bump.</Comment>

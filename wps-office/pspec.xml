@@ -35,7 +35,7 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libutil-linux-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency> 
+            <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
     </Source>
 

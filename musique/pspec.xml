@@ -17,23 +17,23 @@
         <Description>Browse your collection by artists pictures and album covers. Also during playing the music Musique shows covers and additional informations about the artists.</Description>
         <Archive sha1sum="7df2cd43af2da43ca56a285cd5f4cc9ae223f78e" type="targz">https://github.com/flaviotordini/musique/archive/1.5.tar.gz</Archive>
         <BuildDependencies>
-             <Dependency>qt5-base-devel</Dependency>
-             <Dependency>qt5-assistant-devel</Dependency>
-             <Dependency>qt5-designer-devel</Dependency>
-             <Dependency>qt5-linguist</Dependency>
-             <Dependency>qt5-phonon-devel</Dependency>
-             <Dependency>taglib-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-assistant-devel</Dependency>
+            <Dependency>qt5-designer-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
+            <Dependency>qt5-phonon-devel</Dependency>
+            <Dependency>taglib-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>musique</Name>
         <RuntimeDependencies>
-             <Dependency>qt5-base</Dependency>
-             <Dependency>qt5-phonon-backend-gstreamer</Dependency>
-             <Dependency>qt5-phonon</Dependency>
-             <Dependency>taglib</Dependency>
-             <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-phonon-backend-gstreamer</Dependency>
+            <Dependency>qt5-phonon</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>libgcc</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>minitunes</Package>

@@ -65,21 +65,21 @@
         </Files>
     </Package>
     <History>
-		<Update release="16">
+        <Update release="16">
             <Date>2019-07-04</Date>
             <Version>62.0.3331.43</Version>
             <Comment>Opera version bump.</Comment>
             <Name>Idris Kalp</Name>
             <Email>idriskalp@gmail.com</Email>
         </Update>
-         <Update release="16">
+        <Update release="16">
             <Date>2019-05-15</Date>
             <Version>60.0.3255.83</Version>
             <Comment>Opera version bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-         <Update release="15">
+        <Update release="15">
             <Date>2019-04-09</Date>
             <Version>60.0.3255.27</Version>
             <Comment>Opera version bump.</Comment>
@@ -197,6 +197,6 @@
             <Comment>First Release.</Comment>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
-        </Update> 
+        </Update>
     </History>
 </PISI>

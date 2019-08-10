@@ -60,14 +60,14 @@
     </Package>
 
     <History>
-	<Update release="8">
+        <Update release="8">
             <Date>2019-04-23</Date>
             <Version>70.4.93</Version>
             <Comment>Release bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
-        </Update>    
-	      <Update release="7">
+        </Update>
+        <Update release="7">
             <Date>2018-05-21</Date>
             <Version>49.4.69</Version>
             <Comment>Release bump.</Comment>
