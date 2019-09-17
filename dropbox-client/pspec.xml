@@ -57,6 +57,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/dropbox/POLICIES">POLICIES</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/dropbox.png">dropbox.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/dropbox.desktop">dropbox.desktop</AdditionalFile>
+            <AdditionalFile owner="nobody" permission="0644" target="/opt/dropbox"></AdditionalFile>
         </AdditionalFiles>
     </Package>
 
