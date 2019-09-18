@@ -7,7 +7,7 @@ from pisi.actionsapi import get, pisitools, shelltools
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("tar xvf tsetup.1.8.4.tar.xz")
+    shelltools.system("tar xvf tsetup.1.8.8.tar.xz")
 
 def install():
     pisitools.insinto("/opt/telegram-desktop/", "Telegram/*")
