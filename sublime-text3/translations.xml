@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+	<Name>sublime-text</Name>
+        <Summary xml:lang="tr">Gelişmiş metin düzenleyici</Summary>
+	<Description xml:lang="tr">Sublime Text kod, işaretleme ve düzyazı için gelişmiş bir metin düzenleyicidir.</Description>
+    </Source>
+</PISI>
