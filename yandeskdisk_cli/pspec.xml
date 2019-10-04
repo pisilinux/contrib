@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Yandex Disk cli</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Yandex.Disk keeps your files with you at all times.</Summary>
+        <Description>Yandex.Disk keeps your files with you at all times. console</Description>
+        <License>custom</License>
+        <Archive sha1sum="9af0f25f066984ba10298798b59600fe1c710513" type="binary">http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.5.1039_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Name>Yandex Disk</Name>
+        <Icon>Yandex Disk</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-10-04</Date>
+            <Version>0.1.5.1039</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
