@@ -27,10 +27,10 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/sane</Path>
-           <Path fileType="data">/lib/udev/rules.d</Path>            
+            <Path fileType="data">/lib/udev/rules.d</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan4.rules">brscan4.rules</AdditionalFile>            
+            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/brscan4.rules">brscan4.rules</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
@@ -43,4 +43,4 @@
             <Email>groni@pisilinux.org</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>

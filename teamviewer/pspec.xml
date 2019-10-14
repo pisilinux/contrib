@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>teamviewer</Name> 
-        <Homepage>http://www.teamviewer.com/</Homepage> 
+        <Name>teamviewer</Name>
+        <Homepage>https://www.teamviewer.com/</Homepage>
         <Packager>
-            <Name>PisiLinux Community</Name> 
-            <Email>admins@pisilinux.org</Email> 
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
         </Packager>
-        <License>as-is</License> 
-        <License>TeamViewer GmbH</License> 
-        <IsA>app:gui</IsA> 
+        <License>as-is</License>
+        <License>TeamViewer GmbH</License>
+        <IsA>app:gui</IsA>
         <Summary>User friendly remote control application</Summary>
-        <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit http://www.teamviewer.com </Description>
-        <Archive sha1sum="d55cd63c84fc3b785778aa7902557882bd77ee36" type="binary">https://dl.tvcdn.de/download/linux/version_14x/teamviewer_14.0.14470_amd64.deb</Archive>
+        <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit https://www.teamviewer.com </Description>
+        <Archive sha1sum="d64a68560955eb16243ac00aa9a78734bde82523" type="binary">https://dl.teamviewer.com/download/linux/version_14x/teamviewer_14.5.1691_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -21,33 +21,16 @@
 
     <Package>
         <Name>teamviewer</Name>
-        <RuntimeDependencies>
-            <Dependency>libXinerama-32bit</Dependency>
-            <Dependency>libXtst-32bit</Dependency>
-            <Dependency>alsa-lib-32bit</Dependency>
-            <Dependency>libXdamage-32bit</Dependency>
-            <Dependency>zlib-32bit</Dependency>
-            <Dependency>freetype-32bit</Dependency>
-            <Dependency>libSM-32bit</Dependency>
-            <Dependency>libX11-32bit</Dependency>
-            <Dependency>libXau-32bit</Dependency>
-            <Dependency>libXext-32bit</Dependency>
-            <Dependency>libXrandr-32bit</Dependency>
-            <Dependency>libXfixes-32bit</Dependency>
-            <Dependency>libXrender-32bit</Dependency>
-            <Dependency>harfbuzz-32bit</Dependency>
-            <Dependency>qt5-base-32bit</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>libXtst</Dependency>
+         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
-            <Dependency>qt5-webkit</Dependency>
-            <Dependency> libXinerama</Dependency>
-            <Dependency>qt5-x11extras</Dependency>
             <Dependency>qt5-declarative</Dependency>
-            <Dependency>fontconfig-32bit </Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-quickcontrols</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+           <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/opt/teamviewer*</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="config">/etc/init.d</Path>
@@ -65,6 +48,13 @@
         </Provides>
     </Package>
     <History>
+        <Update release="14">
+            <Date>2019-08-28</Date>
+            <Version>14.5.1691</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux</Email>
+        </Update>
         <Update release="13">
             <Date>2018-11-30</Date>
             <Version>14.0.14470</Version>
@@ -79,7 +69,7 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-         <Update release="11">
+        <Update release="11">
             <Date>2018-02-15</Date>
             <Version>12.0.85001</Version>
             <Comment>Version bump.</Comment>
@@ -114,28 +104,28 @@
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
         </Update>
-    <Update release="6">
+        <Update release="6">
             <Date>2015-08-21</Date>
             <Version>10.0.46203</Version>
             <Comment>Version bump</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@pisilinux.org</Email>
         </Update>
-    <Update release="5">
+        <Update release="5">
             <Date>2015-01-20</Date>
             <Version>10.0.37742</Version>
             <Comment>Version bump</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@pisilinux.org</Email>
         </Update>
-      <Update release="4">
+        <Update release="4">
             <Date>2014-12-09</Date>
             <Version>10.0.36281</Version>
             <Comment>Version bump</Comment>
             <Name>Ergün Salman</Name>
             <Email>poyraz76@pisilinux.org</Email>
         </Update>
-      <Update release="3">
+        <Update release="3">
             <Date>2014-12-03</Date>
             <Version>10.0.35002</Version>
             <Comment>Version bump</Comment>

@@ -54,7 +54,7 @@
             <Path fileType="data">/opt</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-        </Files>        
+        </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/wpcom.desktop">wpcom.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/wpcom.png">wpcom.png</AdditionalFile>

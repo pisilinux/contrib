@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>uyap</Name>
+        <Homepage>http://www.uyap.gov.tr</Homepage>
+        <Packager>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Packager>
+        <License>IBC</License>
+        <IsA>app:gui</IsA>
+        <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
+        <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
+        <Archive sha1sum="11fef31b4c1028658fcaed1d84c380d2ca951725" type="targz">https://master.dl.sourceforge.net/project/ar-iv/uyapeditor-4.2.0.tar.gz</Archive>
+    </Source>
+    
+    <Package>
+        <Name>uyap</Name>
+        <RuntimeDependencies>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>jre7-openjdk-headless</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/UYAPEditor</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="3">
+            <Date>2019-05-22</Date>
+            <Version>4.2.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2019-05-02</Date>
+            <Version>4.1.12</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2014-04-06</Date>
+            <Version>1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

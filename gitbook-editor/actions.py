@@ -11,6 +11,6 @@ from pisi.actionsapi import shelltools
 NoStrip = ["/usr", "/opt"]
 
 def install():
-    pisitools.insinto("/opt/gitbook-editor", "./opt/gitbook-editor/*")   
+    pisitools.insinto("/opt/gitbook-editor", "./opt/gitbook-editor/*")
     pisitools.insinto("/usr/share/applications", "./usr/share/applications/gitbook-editor.desktop")
     pisitools.insinto("/usr/share/pixmaps", "./opt/gitbook-editor/gitbook.png")

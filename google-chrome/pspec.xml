@@ -14,12 +14,13 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="0c11d90820e43a7415728ce7f2ca310678377357" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="8f71cf58962c5a251e10fab372335e792d1571b3" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
         <BuildDependencies>
-            <Dependency>libutil-linux-devel</Dependency>
-            <Dependency>at-spi2-core-devel</Dependency>
+            <Dependency>bzip2</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>eudev</Dependency>
             <Dependency>binutils</Dependency>
-            <Dependency>libidn2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +32,6 @@
             <Dependency>nspr</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>at-spi2-atk</Dependency>
-            <Dependency>bzip2</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libgcrypt</Dependency>
@@ -44,7 +44,6 @@
             <Dependency>cairo</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>gconf</Dependency>
@@ -64,11 +63,9 @@
             <Dependency>icu4c</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>libxslt</Dependency> 
-            <Dependency>libjpeg-turbo</Dependency> 
+            <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
-            <Dependency>flac</Dependency>
             <Dependency>libutil-linux</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -86,27 +83,48 @@
     </Package>
 
     <History>
+        <Update release="45">
+            <Date>2019-07-09</Date>
+            <Version>75.0.3770.100</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="44">
+            <Date>2019-05-16</Date>
+            <Version>74.0.3729.157</Version>
+            <Comment>Version bump.</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+        <Update release="43">
+            <Date>2018-12-30</Date>
+            <Version>73.0.3683.103</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Update>
         <Update release="42">
             <Date>2018-12-30</Date>
             <Version>72.0.3626.109</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="41">
             <Date>2018-12-30</Date>
             <Version>71.0.3578.98</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="40">
             <Date>2018-10-15</Date>
             <Version>70.0.3538.110</Version>
             <Comment>Version bump.</Comment>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
-       </Update>
+        </Update>
         <Update release="39">
             <Date>2018-10-15</Date>
             <Version>70.0.3538.77</Version>

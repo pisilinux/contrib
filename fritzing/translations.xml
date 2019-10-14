@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fritzing</Name>
+        <Summary xml:lang="tr">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+        <Description xml:lang="tr">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Description>
+    </Source>
+</PISI>

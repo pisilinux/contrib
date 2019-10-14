@@ -1,8 +1,8 @@
-<?xml version="1.0" ?> 
+<?xml version="1.0" ?>
 <PISI>
     <Source>
         <Name>Slack</Name>
-        <Homepage>http://slack.com</Homepage>
+        <Homepage>https://slack.com/</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
@@ -23,9 +23,9 @@
         <Name>slack</Name>
         <Files>
             <Path fileType="data">/usr/bin/</Path>
-			<Path fileType="data">/usr/lib/</Path>
-			<Path fileType="data">/usr/share/</Path>
-			<Path fileType="data">/etc/</Path>
+            <Path fileType="data">/usr/lib/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/etc/</Path>
         </Files>
     </Package>
 
@@ -37,5 +37,5 @@
             <Name>Sami BABAT</Name>
             <Email>sami.babat@gmail.com</Email>
         </Update>
-    </History>	
+    </History>
 </PISI>

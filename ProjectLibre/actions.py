@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 
-def install():   
+def install():
     shelltools.cd("..")
     shelltools.move("projectlibre-%s" % get.srcVERSION(),"projectlibre")
     pisitools.dodir("/opt")

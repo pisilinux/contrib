@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>google-chrome-dev</Name>
+        <Homepage>http://chrome.google.com/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>EULA</License>
+        <Icon>google-chrome</Icon>
+        <PartOf>network.web</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Google Chrome for Linux</Summary>
+        <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
+        <Archive sha1sum="20a20e052af1fb4d3540d1884f679299576648d1" type="binary">https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>bzip2</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>eudev</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>google-chrome-dev</Name>
+        <RuntimeDependencies>
+            <Dependency>libutil-linux</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>minizip</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>icu4c</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libutil-linux</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/opt/google/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/menu/</Path>
+            <Path fileType="data">/usr/share/appdata/google-chrome-unstable.appdata.xml</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-07-04</Date>
+            <Version>77.0.3833.0</Version>
+            <Comment>First Release.</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>idriskalp@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

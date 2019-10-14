@@ -1,0 +1,54 @@
+<PISI>
+    <Source>
+        <Name>Valentina Studio</Name>
+        <Homepage>https://www.valentina-db.com</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:gui</IsA>
+        <Icon>vstudio</Icon>
+        <Summary>THE BEST FREE DB MANAGEMENT TOOL</Summary>
+        <Description>Create, administer, query and explore Valentina DB, MySQL, MariaDB, PostgreSQL and SQLite databases for FREE.</Description>
+        <Archive sha1sum="3b46fbb08c58e300c53a2ede638a6d3bedd3243a" type="binary">https://www.valentina-db.com/en/studio/download/current/vstudio_x64_lin-deb?format=raw</Archive>
+    </Source>
+    <Package>
+        <Name>Valentina_Studio</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/VStudio</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-12-08</Date>
+            <Version>8.7.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

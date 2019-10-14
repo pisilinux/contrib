@@ -1,7 +1,7 @@
 <PISI>
     <Source>
         <Name>arduino</Name>
-        <Homepage>http://energia.nu/</Homepage>
+        <Homepage>https://www.arduino.cc</Homepage>
         <Packager>
             <Name>Sami Babat</Name>
             <Email>sami.babat@gmail.com</Email>
@@ -12,14 +12,14 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
         <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
         <Icon>arduino</Icon>
-        <Archive sha1sum="c48471bcdac4ad67c5632ccf5da17725f2b0bd87" type="tarxz">https://github.com/arduino/Arduino/releases/download/1.8.5/Arduino-1.8.5.tar.xz</Archive>
+        <Archive sha1sum="4d86322b822a0ee90a7d5e8db801484d01949abf" type="tarxz">https://downloads.arduino.cc/arduino-1.8.9-linux64.tar.xz</Archive>
     </Source>
     <Package>
         <Name>arduino</Name>
         <Files>
             <Path fileType="data">/usr</Path>
             <!--Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path--> 
+            <Path fileType="application">/usr/share/applications</Path-->
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
@@ -28,13 +28,27 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
     </Package>
     <History>
+        <Update release="5">
+            <Date>2019-06-11</Date>
+            <Version>1.8.9</Version>
+            <Comment>small fixes</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+        <Update release="4">
+            <Date>2019-05-22</Date>
+            <Version>1.8.9</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2018-02-19</Date>
             <Version>1.8.5</Version>
             <Comment>Version bump.</Comment>
             <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
             <Email>prdsmehmetstc@pisilinux.org</Email>
-        </Update>        
+        </Update>
         <Update release="2">
             <Date>2016-02-19</Date>
             <Version>1.8.1</Version>

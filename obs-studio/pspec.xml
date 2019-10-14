@@ -21,7 +21,7 @@
             <Dependency>zlib-devel</Dependency>
             <Dependency>eudev-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>            
+            <Dependency>libX11-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
             <Dependency>libxcb-devel</Dependency>
             <Dependency>jansson-devel</Dependency>
@@ -34,11 +34,11 @@
             <Dependency>qt5-x11extras-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
-        </BuildDependencies>        
+        </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>obs-studio</Name>        
+        <Name>obs-studio</Name>
         <RuntimeDependencies>
             <Dependency>curl</Dependency>
             <Dependency>dbus</Dependency>
@@ -60,21 +60,20 @@
             <Dependency>qt5-x11extras</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency>jack-audio-connection-kit</Dependency>            
+            <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
-        -->
-        <Files>            
-            <Path fileType="executable">/usr/bin</Path>            
-            <Path fileType="library">/usr/lib</Path>            
+        
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>            
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            -->
-        </Files>        
+        </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/obs-studio.desktop">obs-studio.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/obs-logo.png">obs-logo.png</AdditionalFile>
-        </AdditionalFiles>       
+        </AdditionalFiles>
     </Package>
     
     <Package>

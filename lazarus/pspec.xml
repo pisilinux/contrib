@@ -1,9 +1,9 @@
-<?xml version="1.0" ?> 
+<?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>lazarus</Name>
-        <Homepage>http://lazarus-ide.com</Homepage>
+        <Homepage>https://www.lazarus-ide.org/</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
@@ -13,12 +13,12 @@
         <License>GPL</License>
         <IsA>editor</IsA>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="8e28ee2831d399791c61bbfbf74c34a6c7a51f47">file:///home/sam0bt/Masa%C3%BCst%C3%BC/Lazarus_yeni/lazarus-1.8.4-0.x86_64.rpm</Archive>
+        <Archive sha1sum="1a337a09eb4fc615043f791b4ff90b2196088922">http://mirrors.iwi.me/lazarus/releases/Lazarus%20Linux%20x86_64%20RPM/Lazarus%202.0.2/lazarus-2.0.2-0.x86_64.rpm</Archive>
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
             <Dependency>tar</Dependency>
-			<Dependency>fpc</Dependency>
-			<Dependency>fpc-src</Dependency>
+            <Dependency>fpc</Dependency>
+            <Dependency>fpc-src</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,14 +26,29 @@
         <Name>lazarus</Name>
         <Files>
             <Path fileType="data">/usr/bin/</Path>
-			<Path fileType="data">/usr/lib/</Path>
-			<Path fileType="data">/usr/lib64/</Path>
-			<Path fileType="data">/usr/share/</Path>
-			<Path fileType="data">/etc/</Path>
+            <Path fileType="data">/usr/lib/</Path>
+            <Path fileType="data">/usr/lib64/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/etc/</Path>
         </Files>
+        <RuntimeDependencies>
+            <Dependency>fpc</Dependency>
+            <Dependency>fpc-src</Dependency>
+        </RuntimeDependencies>
+        
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2019-06-22</Date>
+            <Version>2.0.2</Version>
+            <Comment>update versiyon</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2018-09-112</Date>
             <Version>1.8.4</Version>
@@ -41,5 +56,5 @@
             <Name>Sami BABAT</Name>
             <Email>sami.babat@gmail.com</Email>
         </Update>
-    </History>	
+    </History>
 </PISI>

@@ -12,11 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0" type="targz">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>        
+        <Archive sha1sum="a919fc989d8d13da99a01e48a57ffc88e93615fb" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.8.8/tsetup.1.8.8.tar.xz</Archive>  
     </Source>
 
     <Package>
-        <Name>telegram-desktop</Name>        
+        <Name>telegram-desktop</Name>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>dbus</Dependency>
@@ -24,16 +24,104 @@
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
-        </RuntimeDependencies>       
-        <Files>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/telegram-desktop</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="icon">/usr/share/icons</Path>
-            <Path fileType="application">/usr/share/applications</Path>            
-            <Path fileType="doc">/usr/share/doc</Path>            
-        </Files>        
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+    	<Update release="14">
+            <Date>2019-09-18</Date>
+            <Version>1.8.8</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="13">
+            <Date>2019-09-08</Date>
+            <Version>1.8.4</Version>
+            <Comment>version fix</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="12">
+            <Date>2019-09-06</Date>
+            <Version>1.8.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+         <Update release="11">
+            <Date>2019-08-21</Date>
+            <Version>1.8.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="10">
+            <Date>2019-08-11</Date>
+            <Version>1.8.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="9">
+            <Date>2019-07-13</Date>
+            <Version>1.7.14</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2019-06-24</Date>
+            <Version>1.7.13</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2019-06-24</Date>
+            <Version>1.7.10</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="6">
+            <Date>2019-06-01</Date>
+            <Version>1.7.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2019-05-10</Date>
+            <Version>1.7.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2019-04-14</Date>
+            <Version>1.6.7</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2019-04-09</Date>
+            <Version>1.6.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2016-11-10</Date>
             <Version>0.10.19</Version>

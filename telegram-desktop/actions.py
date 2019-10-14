@@ -3,10 +3,12 @@
 #
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
+from pisi.actionsapi import get, pisitools, shelltools
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
+def setup():
+    shelltools.system("pwd")
+    shelltools.system("tar xvf tsetup.1.8.8.tar.xz")
 
 def install():
-    pisitools.insinto("/", "usr")
+    pisitools.insinto("/opt/telegram-desktop/", "Telegram/*")
+    pisitools.dosym("/opt/telegram-desktop/Telegram", "/usr/bin/telegram-desktop")

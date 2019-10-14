@@ -1,4 +1,4 @@
-<?xml version="1.0" ?> 
+<?xml version="1.0" ?>
 <PISI>
     <Source>
         <Name>discord</Name>
@@ -8,7 +8,7 @@
             <Email>samibabat@gmail.com</Email>
         </Packager>
         <Summary>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Summary>
-        <Description>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır.. </Description>
+        <Description>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Description>
         <License>Proprietary</License>
         <IsA>network</IsA>
         <IsA>app:gui</IsA>
@@ -27,17 +27,17 @@
     <Package>
         <Name>discord</Name>
         <Files>
-			<Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="data">/usr/bin</Path>
         </Files>
-         <AdditionalFiles>
+        <AdditionalFiles>
             <AdditionalFile owner="root" target="/usr/share/pixmaps/discord.png" permission="0644">discord.png</AdditionalFile>
             <AdditionalFile owner="root" target="/usr/share/applications/discord.desktop" permission="0644">discord.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
-	<Update release="2">
+        <Update release="2">
             <Date>2019-02-17</Date>
             <Version>0.0.8</Version>
             <Comment>Version Bump</Comment>
@@ -51,5 +51,5 @@
             <Name>Sami BABAT</Name>
             <Email>sami.babat@gmail.com</Email>
         </Update>
-    </History>	
+    </History>
 </PISI>

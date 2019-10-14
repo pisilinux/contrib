@@ -1,0 +1,61 @@
+
+<PISI>
+    <Source>
+        <Name>zotero</Name>
+        <Homepage>http://www.zotero.org</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPL3</License>
+        <Icon>zotero</Icon>
+        <IsA>app</IsA>
+        <Summary>Zotero Standalone. Is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.</Summary>
+        <Description>Zotero Standalone. Is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.</Description>
+        <Archive sha1sum="63e4903df7b981ff549a1fcd697df4d3ecda2c3c" type="tarbz2">https://download.zotero.org/client/release/5.0.72/Zotero-5.0.72_linux-x86_64.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>zotero</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency> gtk2</Dependency>
+            <Dependency> gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>dbus-glib</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libxcb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/zotero.desktop">zotero.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-07-26</Date>
+            <Version>5.0.72</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

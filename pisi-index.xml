@@ -1,156 +1,198 @@
 <PISI>
     <SpecFile>
         <Source>
-            <Name>franz</Name>
-            <Homepage>https://meetfranz.com</Homepage>
+            <Name>fpc-src</Name>
+            <Homepage>https://www.freepascal.org/</Homepage>
             <Packager>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@pisilinux.org</Email>
+                <Name>Sami BABAT</Name>
+                <Email>samibabat@gmail.com</Email>
             </Packager>
-            <License>Custom</License>
+            <License>GPL</License>
+            <IsA>data</IsA>
+            <IsA>app:console</IsA>
             <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">A free messaging app that combines chat and messaging services into one application</Summary>
-            <Description xml:lang="en">Franz is a free messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more.</Description>
-            <Archive type="binary" sha1sum="5ea99c85305688053539d9a8d546e546e83381f4">https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.14/franz_5.0.0-beta.14_amd64.deb</Archive>
+            <Summary xml:lang="en">Fpc-src, pascal için derleyici</Summary>
+            <Description xml:lang="en">Fpc-src, pascal için derleyici</Description>
+            <Archive sha1sum="215aeb42c07eee80a52f8cecd7aa23c11bcc79a1">https://datapacket.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20x86_64%20RPM/Lazarus%201.8.4/fpc-src-3.0.4-1.x86_64.rpm</Archive>
             <BuildDependencies>
-                <Dependency>binutils</Dependency>
-                <Dependency>wget</Dependency>
+                <Dependency>rpm2targz</Dependency>
+                <Dependency>tar</Dependency>
             </BuildDependencies>
-            <SourceURI>franz/pspec.xml</SourceURI>
+            <SourceURI>fpc-src/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>franz</Name>
-            <RuntimeDependencies>
-                <Dependency>gtk2</Dependency>
-                <Dependency>desktop-file-utils</Dependency>
-                <Dependency>gconf</Dependency>
-                <Dependency>libnotify</Dependency>
-                <Dependency>libXtst</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>atk</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>nspr</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXScrnSaver</Dependency>
-                <Dependency>libXcomposite</Dependency>
-            </RuntimeDependencies>
+            <Name>fpc-src</Name>
             <Files>
-                <Path fileType="data">/opt</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="executable">/usr/share/</Path>
             </Files>
         </Package>
         <History>
-            <Update release="2">
-                <Date>2018-05-19</Date>
-                <Version>5.0.0</Version>
-                <Comment>Version bump</Comment>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@gmail.com</Email>
-            </Update>
             <Update release="1">
-                <Date>2016-10-25</Date>
-                <Version>4.0.4</Version>
-                <Comment>First Release</Comment>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@gmail.com</Email>
+                <Date>2018-09-11</Date>
+                <Version>3.0.4</Version>
+                <Comment>Ilk sürüm</Comment>
+                <Name>Sami BABAT</Name>
+                <Email>sami.babat@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>opera-developer</Name>
-            <Homepage>http://www.opera.com/</Homepage>
+            <Name>ocenaudio</Name>
             <Packager>
-                <Name>Stefan Gronewold(groni)</Name>
+                <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
             </Packager>
-            <License>EULA</License>
+            <License>Proprietary</License>
             <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Opera Web Browser Developer version</Summary>
-            <Description xml:lang="en">Opera Web Browser Developer Version</Description>
-            <Archive type="binary" sha1sum="13d59f0d05307ced7dd35c5891685bee398a9108">https://get.geo.opera.com/pub//opera-developer/55.0.2962.0/linux/opera-developer_55.0.2962.0_amd64.deb</Archive>
+            <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
+            <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
+            <Archive type="binary" sha1sum="fd8dfd94fa041098540636b8f5c352c49669240f">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
             </BuildDependencies>
-            <SourceURI>opera-developer/pspec.xml</SourceURI>
+            <SourceURI>oceanaudio/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>opera-developer</Name>
+            <Name>ocenaudio</Name>
+            <Icon>ocenaudio</Icon>
             <RuntimeDependencies>
-                <Dependency>atk</Dependency>
-                <Dependency>gtk3</Dependency>
-                <Dependency>libxcb</Dependency>
-                <Dependency>at-spi2-atk</Dependency>
-                <Dependency>nss</Dependency>
-                <Dependency>cups</Dependency>
-                <Dependency>curl</Dependency>
-                <Dependency>dbus</Dependency>
-                <Dependency>gtk2</Dependency>
-                <Dependency>nspr</Dependency>
+                <Dependency>xz</Dependency>
                 <Dependency>zlib</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>expat</Dependency>
-                <Dependency>gconf</Dependency>
-                <Dependency>glib2</Dependency>
-                <Dependency>libXi</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libX11</Dependency>
+                <Dependency>bzip2</Dependency>
+                <Dependency>eudev</Dependency>
                 <Dependency>libgcc</Dependency>
-                <Dependency>libXext</Dependency>
-                <Dependency>libXtst</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>openssl</Dependency>
                 <Dependency>alsa-lib</Dependency>
-                <Dependency>libXfixes</Dependency>
-                <Dependency>libXrandr</Dependency>
-                <Dependency>libnotify</Dependency>
-                <Dependency>fontconfig</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>libXcursor</Dependency>
-                <Dependency>libXdamage</Dependency>
-                <Dependency>libXrender</Dependency>
-                <Dependency>libXScrnSaver</Dependency>
-                <Dependency>libXcomposite</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libutil-linux</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>jack-audio-connection-kit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/ocenaudio</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2018-05-22</Date>
+                <Version>3.3.10</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2016-11-10</Date>
+                <Version>3.1.10</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2016.09.11</Date>
+                <Version>3.1.8</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold (groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>rpm2targz</Name>
+            <Homepage>http://www.slackware.com/config/packages.php</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>as-is</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">RPM to .tar.gz converter</Summary>
+            <Summary xml:lang="tr">.rpm dosyalarını .tar.gz dosyalarına dönüştürme uygulaması</Summary>
+            <Description xml:lang="en">Convert an RPM (RedHat Package Manager) file to a .tar.gz archive. In case you ever run across the need to obtain something that is only in RPM format, this program may come in handy.</Description>
+            <Description xml:lang="tr">Red Hat, SUSE gibi dağıtımların kullandığı RPM (RedHat Package Manager) paketlerini .tar.gz paketlerine dönüştürür. Sadece RPM sürümü olan bir dosya bulduğunuzda ve içeriğine ulaşmanız gerektiğinde kullanışlı olabilir.</Description>
+            <Archive type="tarxz" sha1sum="d6be32fc2b8fcd04c017f9ec1e014d4795b55e31">http://mirror.yandex.ru/gentoo-distfiles/distfiles/rpm2targz-9.0.0.5g.tar.xz</Archive>
+            <SourceURI>rpm2targz/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>rpm2targz</Name>
+            <RuntimeDependencies>
+                <Dependency>xz</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2014-03-10</Date>
+                <Version>9.0.0.5g</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Varol Maksutoğlu</Name>
+                <Email>waroi@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-03-14</Date>
+                <Version>9.0.0.5g</Version>
+                <Comment>Updated</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2010-10-12</Date>
+                <Version>9.0.0.4g</Version>
+                <Comment>First release</Comment>
+                <Name>Pisi Linux Admins</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>akiskart</Name>
+            <Homepage>http://www.akiskart.com.tr/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">View and modify files,folders and objects in an AKIS smartcard</Summary>
+            <Description xml:lang="en">View and modify files,folders and objects in an AKIS smartcard</Description>
+            <Archive type="binary" sha1sum="dd5f2950478f2650aa3465a457bef67619a981e1">http://www.akiskart.com.tr/dosyalar/akis_1.6_amd64.deb</Archive>
+            <SourceURI>akiskart/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>akiskart</Name>
+            <RuntimeDependencies>
+                <Dependency>ccid</Dependency>
+                <Dependency>pcsc-lite</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>jre7-openjdk-headless</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="library">/usr/lib</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share/menu</Path>
-                <Path fileType="data">/usr/share/mime</Path>
-                <Path fileType="data">/usr/share/icons</Path>
-                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/akis</Path>
             </Files>
             <AdditionalFiles>
-                <AdditionalFile target="/usr/share/applications/opera-developer.desktop" permission="0644" owner="root" group="root">opera-developer.desktop</AdditionalFile>
-                <AdditionalFile target="/usr/share/pixmaps/opera-developer.png" permission="0644" owner="root" group="root">opera-developer.png</AdditionalFile>
+                <AdditionalFile target="/usr/bin/akia" permission="0755" owner="root">akia</AdditionalFile>
             </AdditionalFiles>
         </Package>
         <History>
             <Update release="1">
-                <Date>2018-05-03</Date>
-                <Version>55.0.2962.0</Version>
-                <Comment>First Release.</Comment>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@pisilinux.org</Email>
+                <Date>2019-05-20</Date>
+                <Version>1.6</Version>
+                <Comment>First release</Comment>
+                <Name>Ertuğrul Erata</Name>
+                <Email>ertugrulerata@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -165,8 +207,10 @@
             <License>Apache-2.0</License>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
+            <Summary xml:lang="tr">The official Android IDE (Stable branch)</Summary>
             <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-            <Archive type="zip" sha1sum="9d4ff86b8d5f0f22ec6c66347b2127bbae60abef">https://dl.google.com/dl/android/studio/ide-zips/3.0.1.0/android-studio-ide-171.4443003-linux.zip</Archive>
+            <Description xml:lang="tr">The official Android IDE (Stable branch)</Description>
+            <Archive type="targz" sha1sum="457211a63813575765f5ca9a336beec953e1626c">https://dl.google.com/dl/android/studio/ide-zips/3.4.1.0/android-studio-ide-183.5522156-linux.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>unzip</Dependency>
                 <Dependency>mesa-devel</Dependency>
@@ -180,12 +224,15 @@
                 <Dependency>alsa-lib-devel</Dependency>
                 <Dependency>freetype-devel</Dependency>
                 <Dependency>libXrender-devel</Dependency>
+                <Dependency>zlib-devel</Dependency>
             </BuildDependencies>
             <SourceURI>android-studio/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>android-studio</Name>
             <RuntimeDependencies>
+                <Dependency>zlib</Dependency>
+                <Dependency>klibc</Dependency>
                 <Dependency>unzip</Dependency>
                 <Dependency>libXi</Dependency>
                 <Dependency>libX11</Dependency>
@@ -206,6 +253,20 @@
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2019-07-09</Date>
+                <Version>3.4.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2018-12-05</Date>
+                <Version>3.2.1.0</Version>
+                <Comment>Version bump-add Dependency</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
             <Update release="3">
                 <Date>2018-02-18</Date>
                 <Version>3.0.1.0</Version>
@@ -277,8 +338,95 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>anydesk</Name>
+            <Packager>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Packager>
+            <License>Proprietary</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">AnyDesk is a remote desktop application</Summary>
+            <Description xml:lang="en">AnyDesk is a remote desktop application</Description>
+            <Archive type="binary" sha1sum="c84d611e589c6b8d509ee455f35213f8ba7817d9">https://download.anydesk.com/linux/anydesk_5.1.1-1_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>libXt-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libXmu-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libxcb-devel</Dependency>
+                <Dependency>polkit-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>freetype-devel</Dependency>
+                <Dependency>gtkglext-devel</Dependency>
+                <Dependency>mesa-glu-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>pangox-compat-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>anydesk/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>anydesk</Name>
+            <Icon>anydesk</Icon>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXt</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXmu</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>polkit</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>gtkglext</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>pangox-compat</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-07-15</Date>
+                <Version>5.1.1</Version>
+                <Comment>First release</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>arduino</Name>
-            <Homepage>http://energia.nu/</Homepage>
+            <Homepage>https://www.arduino.cc</Homepage>
             <Packager>
                 <Name>Sami Babat</Name>
                 <Email>sami.babat@gmail.com</Email>
@@ -286,11 +434,10 @@
             <License>GPLv1</License>
             <IsA>app:gui</IsA>
             <PartOf>programming</PartOf>
-            <Summary xml:lang="en">
-Arduino IDE,  Software Development Environment</Summary>
+            <Summary xml:lang="en">Arduino IDE,  Software Development Environment</Summary>
             <Description xml:lang="en">The Arduino project provides the Arduino integrated development environment (IDE), which is a cross-platform application written in the programming language Java. It originated from the IDE for the languages Processing and Wiring.</Description>
             <Icon>arduino</Icon>
-            <Archive type="tarxz" sha1sum="c48471bcdac4ad67c5632ccf5da17725f2b0bd87">https://github.com/arduino/Arduino/releases/download/1.8.5/Arduino-1.8.5.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="4d86322b822a0ee90a7d5e8db801484d01949abf">https://downloads.arduino.cc/arduino-1.8.9-linux64.tar.xz</Archive>
             <SourceURI>arduino/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -305,6 +452,20 @@ Arduino IDE,  Software Development Environment</Summary>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2019-06-11</Date>
+                <Version>1.8.9</Version>
+                <Comment>small fixes</Comment>
+                <Name>Sami Babat</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2019-05-22</Date>
+                <Version>1.8.9</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="3">
                 <Date>2018-02-19</Date>
                 <Version>1.8.5</Version>
@@ -337,11 +498,11 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Email>admins@pisilinux.org</Email>
             </Packager>
             <License>as-is</License>
-            <IsA>gui</IsA>
+            <IsA>app:gui</IsA>
             <PartOf>applications.development</PartOf>
             <Summary xml:lang="en">A hackable text editor.</Summary>
             <Description xml:lang="en">Atom is a text editor that&apos;s modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
-            <Archive type="targz" sha1sum="118da444762cb6625348b67ff02295501f673f12">https://sourceforge.net/projects/pisi-linux-global/files/Sources/atom-1.24.0.tar.gz</Archive>
+            <Archive type="binary" sha1sum="6d3e9e18b68e07f84db26b325d39799e2f9dbd1f">https://github.com/atom/atom/releases/download/v1.38.2/atom-amd64.tar.gz</Archive>
             <SourceURI>atom/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -380,9 +541,7 @@ Arduino IDE,  Software Development Environment</Summary>
                 <Dependency>libgnome-keyring</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="data">/usr/share/atom</Path>
-                <Path fileType="doc">/usr/share/doc/atom</Path>
+                <Path fileType="executable">/opt/atom</Path>
                 <Path fileType="icon">/usr/share/pixmaps</Path>
                 <Path fileType="application">/usr/share/applications</Path>
             </Files>
@@ -392,6 +551,13 @@ Arduino IDE,  Software Development Environment</Summary>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2019-07-12</Date>
+                <Version>1.38.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="3">
                 <Date>2018-02-19</Date>
                 <Version>1.24.0</Version>
@@ -429,8 +595,7 @@ Arduino IDE,  Software Development Environment</Summary>
             <Summary xml:lang="en">Distributed and Client–server revision control system</Summary>
             <Summary xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi</Summary>
             <Description xml:lang="en">Bazaar can be used by a single developer working on multiple branches of local content, or by teams collaborating across a network</Description>
-            <Description xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi
-Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
+            <Description xml:lang="tr">Dağıtık ve İstemci-sunucu revizyon kontrol sistemi Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Archive type="targz" sha1sum="872f6088f8b07558519dbbc88fffa05e37602f52">https://launchpad.net/bzr/2.7/2.7.0/+download/bzr-2.7.0.tar.gz</Archive>
             <SourceURI>bazaar/pspec.xml</SourceURI>
         </Source>
@@ -500,8 +665,60 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>bullet</Name>
+            <Homepage>http://bulletphysics.org/wordpress/</Homepage>
+            <Packager>
+                <Name>Erdinç Gültekin</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>Zlib</License>
+            <IsA>library</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Professional 3D collision detection library</Summary>
+            <Summary xml:lang="tr">Profesyonel 3D çarpma tespiti kütüphane</Summary>
+            <Description xml:lang="en">Bullet is a professional open source multi-threaded 3D Collision Detection and Rigid Body Dynamics Library for games and animation.</Description>
+            <Description xml:lang="tr">Bullet, oyun ve animasyon için profesyonel bir açık kaynak kodlu çoklu iş parçacıklı 3D çarpma tespiti ve Katı Cisim Dinamiği Kütüphanesidir.</Description>
+            <Archive type="targz" sha1sum="a0867257b9b18e9829bbeb4c6c5872a5b29d1d33">https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/bullet-2.82-r2704.tgz</Archive>
+            <BuildDependencies>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>doxygen</Dependency>
+                <Dependency>freeglut-devel</Dependency>
+                <Dependency>perl-template-toolkit</Dependency>
+            </BuildDependencies>
+            <SourceURI>bullet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>bullet</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>bullet-devel</Name>
+            <Summary xml:lang="en">Development files for bullet</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">bullet</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/bullet.pc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2018-12-31</Date>
+                <Version>2.82_2704</Version>
+                <Comment>First Release</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>cherrytree</Name>
-            <Homepage>http://www.giuspen.com/cherrytree/</Homepage>
+            <Homepage>https://www.giuspen.com/cherrytree/</Homepage>
             <Packager>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -575,7 +792,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
         <History>
             <Update release="2">
                 <Date>2018-02-21</Date>
-                <Version>0.38.04</Version>
+                <Version>0.38.4</Version>
                 <Comment>Version bump.</Comment>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -601,9 +818,9 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <IsA>network</IsA>
             <IsA>app:gui</IsA>
             <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Takım savaşları için olan oyunlarda sesli iletişim daha etkili bir uygulamadır..</Summary>
-            <Description xml:lang="en">Takım savaşları için olan oyunlarda sesli iletişim daha etkili bir uygulamadır..</Description>
-            <Archive sha1sum="046297bfbc35adb859523994d683c81f182aab6c">https://dl.discordapp.net/apps/linux/0.0.5/discord-0.0.5.tar.gz</Archive>
+            <Summary xml:lang="en">Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Summary>
+            <Description xml:lang="en">Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Description>
+            <Archive sha1sum="cffe34ad257bc3166e1ca877e7b5fc45b4d7e783">https://dl.discordapp.net/apps/linux/0.0.8/discord-0.0.8.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>alsa-lib</Dependency>
                 <Dependency>gconf</Dependency>
@@ -627,6 +844,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2019-02-17</Date>
+                <Version>0.0.8</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2018-09-13</Date>
                 <Version>0.0.5</Version>
@@ -792,7 +1016,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
     <SpecFile>
         <Source>
             <Name>dropbox-client</Name>
-            <Homepage>http://www.dropbox.com</Homepage>
+            <Homepage>https://www.dropbox.com</Homepage>
             <Packager>
                 <Name>PisiLinux Community</Name>
                 <Email>admins@pisilinux.org</Email>
@@ -806,7 +1030,7 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             <Summary xml:lang="en">A Dropbox client</Summary>
             <Description xml:lang="en">Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
             <Icon>dropbox</Icon>
-            <Archive type="targz" sha1sum="f578f47428b7bb9226b4087f9fc0c046ad42ad91" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-49.4.69.tar.gz</Archive>
+            <Archive type="targz" sha1sum="fcb39505a674b3865b6aa47baa8904645d44f4d7" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-70.4.93.tar.gz</Archive>
             <SourceURI>dropbox-client/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -849,6 +1073,13 @@ Projelerinizi yönetebileceğiniz bir havuz sistemi.</Description>
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="8">
+                <Date>2019-04-23</Date>
+                <Version>70.4.93</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="7">
                 <Date>2018-05-21</Date>
                 <Version>49.4.69</Version>
@@ -1201,7 +1432,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>fpc</Name>
-            <Homepage>http://freepascal.com</Homepage>
+            <Homepage>https://www.freepascal.org/</Homepage>
             <Packager>
                 <Name>Sami BABAT</Name>
                 <Email>samibabat@gmail.com</Email>
@@ -1239,36 +1470,118 @@ ENet omits certain higher level networking features such as authentication, lobb
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>fpc-src</Name>
-            <Homepage>http://freepascal.com</Homepage>
+            <Name>franz</Name>
+            <Homepage>https://meetfranz.com</Homepage>
             <Packager>
-                <Name>Sami BABAT</Name>
-                <Email>samibabat@gmail.com</Email>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
             </Packager>
-            <License>GPL</License>
-            <IsA>data</IsA>
-            <IsA>app:console</IsA>
+            <License>Custom</License>
             <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Fpc-src, pascal için derleyici</Summary>
-            <Description xml:lang="en">Fpc-src, pascal için derleyici</Description>
-            <Archive sha1sum="215aeb42c07eee80a52f8cecd7aa23c11bcc79a1">https://datapacket.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20x86_64%20RPM/Lazarus%201.8.4/fpc-src-3.0.4-1.x86_64.rpm</Archive>
+            <Summary xml:lang="en">A free messaging app that combines chat and messaging services into one application</Summary>
+            <Description xml:lang="en">Franz is a free messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more.</Description>
+            <Archive type="binary" sha1sum="5ea99c85305688053539d9a8d546e546e83381f4">https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.14/franz_5.0.0-beta.14_amd64.deb</Archive>
             <BuildDependencies>
-                <Dependency>rpm2targz</Dependency>
-                <Dependency>tar</Dependency>
+                <Dependency>binutils</Dependency>
+                <Dependency>wget</Dependency>
             </BuildDependencies>
-            <SourceURI>fpc-src/pspec.xml</SourceURI>
+            <SourceURI>franz/pspec.xml</SourceURI>
         </Source>
         <Package>
-            <Name>fpc-src</Name>
+            <Name>franz</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
             <Files>
-                <Path fileType="executable">/usr/share/</Path>
+                <Path fileType="data">/opt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2018-05-19</Date>
+                <Version>5.0.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@gmail.com</Email>
+            </Update>
             <Update release="1">
-                <Date>2018-09-11</Date>
-                <Version>3.0.4</Version>
-                <Comment>Ilk sürüm</Comment>
+                <Date>2016-10-25</Date>
+                <Version>4.0.4</Version>
+                <Comment>First Release</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>fritzing</Name>
+            <Homepage>https://fritzing.org/</Homepage>
+            <Packager>
+                <Name>Sami BABAT</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır.</Summary>
+            <Summary xml:lang="tr">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+            <Description xml:lang="en">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır.</Description>
+            <Description xml:lang="tr">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Description>
+            <Icon>fritzing</Icon>
+            <Archive type="tarbz2" sha1sum="7ca1ffc56c67fdcdfa6d394f44cd42b779d1985d">http://fritzing.org/download/0.9.3b/linux-64bit/fritzing-0.9.3b.linux.AMD64.tar.bz2</Archive>
+            <SourceURI>fritzing/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>fritzing</Name>
+            <Summary xml:lang="en">Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır.</Summary>
+            <Files>
+                <Path fileType="data">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="icon">/usr/share/pixmaps</Path>
+                <Path fileType="application">/usr/share/applications</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/fritzing.desktop" permission="0744" owner="root" group="root">fritzing.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/fritzing_icon.png" permission="0744" owner="root" group="root">fritzing_icon.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-06-18</Date>
+                <Version>0.9.3</Version>
+                <Comment>First release</Comment>
                 <Name>Sami BABAT</Name>
                 <Email>sami.babat@gmail.com</Email>
             </Update>
@@ -1412,7 +1725,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>gitkraken</Name>
-            <Homepage>http://www.gitkraken.com/</Homepage>
+            <Homepage>https://www.gitkraken.com/</Homepage>
             <Packager>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -1597,20 +1910,24 @@ ENet omits certain higher level networking features such as authentication, lobb
             <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
             <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
             <Icon>google-chrome</Icon>
-            <Archive type="binary" sha1sum="27acc8a85c86db4344a1c215d4dbea5ffd445c96">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="764168f8bff664b1e77ad6578043bffe51a75e89">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
             <BuildDependencies>
+                <Dependency>bzip2</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>eudev</Dependency>
                 <Dependency>binutils</Dependency>
-                <Dependency>libidn2-devel</Dependency>
             </BuildDependencies>
             <SourceURI>google-chrome/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>google-chrome</Name>
             <RuntimeDependencies>
+                <Dependency>libutil-linux</Dependency>
+                <Dependency>at-spi2-core</Dependency>
                 <Dependency>nspr</Dependency>
                 <Dependency>gtk3</Dependency>
                 <Dependency>at-spi2-atk</Dependency>
-                <Dependency>bzip2</Dependency>
                 <Dependency>libpng</Dependency>
                 <Dependency>freetype</Dependency>
                 <Dependency>libgcrypt</Dependency>
@@ -1623,7 +1940,6 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Dependency>cairo</Dependency>
                 <Dependency>atk</Dependency>
                 <Dependency>libXcomposite</Dependency>
-                <Dependency>gtk2</Dependency>
                 <Dependency>libXrender</Dependency>
                 <Dependency>icon-theme-hicolor</Dependency>
                 <Dependency>gconf</Dependency>
@@ -1643,11 +1959,9 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Dependency>icu4c</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>cups</Dependency>
-                <Dependency>libxslt</Dependency>
                 <Dependency>libjpeg-turbo</Dependency>
                 <Dependency>gdk-pixbuf</Dependency>
                 <Dependency>libvpx</Dependency>
-                <Dependency>flac</Dependency>
                 <Dependency>libutil-linux</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -1664,6 +1978,41 @@ ENet omits certain higher level networking features such as authentication, lobb
             </Files>
         </Package>
         <History>
+            <Update release="45">
+                <Date>2019-07-09</Date>
+                <Version>75.0.3770.100</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="44">
+                <Date>2019-05-16</Date>
+                <Version>74.0.3729.157</Version>
+                <Comment>Version bump.</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+            <Update release="43">
+                <Date>2018-12-30</Date>
+                <Version>73.0.3683.103</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+            <Update release="42">
+                <Date>2018-12-30</Date>
+                <Version>72.0.3626.109</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
+            <Update release="41">
+                <Date>2018-12-30</Date>
+                <Version>71.0.3578.98</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Kamil Atlı</Name>
+                <Email>suvari@pisilinux.org</Email>
+            </Update>
             <Update release="40">
                 <Date>2018-10-15</Date>
                 <Version>70.0.3538.110</Version>
@@ -1955,6 +2304,101 @@ ENet omits certain higher level networking features such as authentication, lobb
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>google-chrome-dev</Name>
+            <Homepage>http://chrome.google.com/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>EULA</License>
+            <IsA>app:gui</IsA>
+            <PartOf>network.web</PartOf>
+            <Summary xml:lang="de">Google Chrome für Linux</Summary>
+            <Summary xml:lang="en">Google Chrome for Linux</Summary>
+            <Summary xml:lang="es">Google Chrome para Linux</Summary>
+            <Description xml:lang="de">Google Chrome ist ein Web-Browser der von Google Inc. entwickelt wird. Wichtige Bestandteile sind die Rendering-Engine Webkit, sowie die JavaScript Engine. Beliebt macht den Browser seine einfach zu bedienende Oberfläche und die hohe Geschwindigkeit.</Description>
+            <Description xml:lang="en">Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
+            <Description xml:lang="es">Google Chrome es un navegador web desarrollado por Google Inc... Usa el motor de renderizado WebKit, así como el motor de JavaScript. Un navegador popular con una interfaz fácil de usar y de alta velocidad.</Description>
+            <Icon>google-chrome</Icon>
+            <Archive type="binary" sha1sum="20a20e052af1fb4d3540d1884f679299576648d1">https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>bzip2</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>eudev</Dependency>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
+            <SourceURI>google-chrome-dev/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>google-chrome-dev</Name>
+            <RuntimeDependencies>
+                <Dependency>libutil-linux</Dependency>
+                <Dependency>at-spi2-core</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>at-spi2-atk</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>libgcrypt</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>libevent</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>minizip</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>icu4c</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libvpx</Dependency>
+                <Dependency>libutil-linux</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/opt/google/</Path>
+                <Path fileType="data">/usr/share/pixmaps/</Path>
+                <Path fileType="data">/usr/share/applications/</Path>
+                <Path fileType="data">/usr/share/menu/</Path>
+                <Path fileType="data">/usr/share/appdata/google-chrome-unstable.appdata.xml</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-07-04</Date>
+                <Version>77.0.3833.0</Version>
+                <Comment>First Release.</Comment>
+                <Name>Idris Kalp</Name>
+                <Email>idriskalp@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>google-earth</Name>
             <Homepage>http://www.google.com/earth</Homepage>
             <Packager>
@@ -1965,7 +2409,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">3D interface for satellite imagery from Google</Summary>
             <Description xml:lang="en">Google Earth provides a 3D interface for viewing satellite imagery and maps.</Description>
-            <Archive type="binary" sha1sum="992871363887ea3ed46a8d58c454d029651b8b5a">https://dl.google.com/linux/earth/deb/pool/main/g/google-earth-pro-stable/google-earth-pro-stable_7.3.1.4507-r0_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="ab368e740757f2178c5d4f85fc7f9872a70af8a9">https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -2009,6 +2453,13 @@ ENet omits certain higher level networking features such as authentication, lobb
             </Files>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2019-04-10</Date>
+                <Version>7.3.2.5776</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
             <Update release="3">
                 <Date>2018-05-22</Date>
                 <Version>7.3.1.4507</Version>
@@ -2114,6 +2565,42 @@ ENet omits certain higher level networking features such as authentication, lobb
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gradle</Name>
+            <Homepage>http://gradle.org/</Homepage>
+            <Packager>
+                <Name>Sami BABAT</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Packager>
+            <License>GPL</License>
+            <IsA>app:konsole</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+            <Summary xml:lang="tr">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+            <Description xml:lang="en">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Description>
+            <Description xml:lang="tr">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Description>
+            <Archive type="zip" sha1sum="ab0cb2dd7a649fbf47b8731cb4dc531b4eb3bce5">https://downloads.gradle.org/distributions/gradle-4.1-bin.zip</Archive>
+            <SourceURI>gradle/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gradle</Name>
+            <Summary xml:lang="en">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+            <Files>
+                <Path fileType="data">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-06-18</Date>
+                <Version>4.1</Version>
+                <Comment>First release</Comment>
+                <Name>Sami BABAT</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>JEdit</Name>
             <Homepage>http://www.jedit.org/</Homepage>
             <Packager>
@@ -2169,7 +2656,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>kronometer</Name>
-            <Homepage>http://kde-apps.org/content/show.php/Kronometer?content=162829</Homepage>
+            <Homepage>https://userbase.kde.org/Kronometer</Homepage>
             <Packager>
                 <Name>Pisi Linux Community</Name>
                 <Email>admins@pisilinux.org</Email>
@@ -2238,7 +2725,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>lazarus</Name>
-            <Homepage>http://lazarus-ide.com</Homepage>
+            <Homepage>https://www.lazarus-ide.org/</Homepage>
             <Packager>
                 <Name>Sami BABAT</Name>
                 <Email>samibabat@gmail.com</Email>
@@ -2249,7 +2736,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır.</Summary>
             <Description xml:lang="en">Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır. Pascal ve Object Pascal geliştiricileri için Rapid Application Development Delphi benzeri bir ortam sağlamayı amaçlar.</Description>
-            <Archive sha1sum="8e28ee2831d399791c61bbfbf74c34a6c7a51f47">file:///home/sam0bt/Masa%C3%BCst%C3%BC/Lazarus_yeni/lazarus-1.8.4-0.x86_64.rpm</Archive>
+            <Archive sha1sum="1a337a09eb4fc615043f791b4ff90b2196088922">http://mirrors.iwi.me/lazarus/releases/Lazarus%20Linux%20x86_64%20RPM/Lazarus%202.0.2/lazarus-2.0.2-0.x86_64.rpm</Archive>
             <BuildDependencies>
                 <Dependency>rpm2targz</Dependency>
                 <Dependency>tar</Dependency>
@@ -2260,6 +2747,10 @@ ENet omits certain higher level networking features such as authentication, lobb
         </Source>
         <Package>
             <Name>lazarus</Name>
+            <RuntimeDependencies>
+                <Dependency>fpc</Dependency>
+                <Dependency>fpc-src</Dependency>
+            </RuntimeDependencies>
             <Files>
                 <Path fileType="data">/usr/bin/</Path>
                 <Path fileType="data">/usr/lib/</Path>
@@ -2267,14 +2758,89 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Path fileType="data">/usr/share/</Path>
                 <Path fileType="data">/etc/</Path>
             </Files>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2019-06-22</Date>
+                <Version>2.0.2</Version>
+                <Comment>update versiyon</Comment>
+                <Name>Sami BABAT</Name>
+                <Email>sami.babat@gmail.com</Email>
+            </Update>
             <Update release="1">
                 <Date>2018-09-112</Date>
                 <Version>1.8.4</Version>
                 <Comment>Ilk sürüm</Comment>
                 <Name>Sami BABAT</Name>
                 <Email>sami.babat@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>leptonica</Name>
+            <Homepage>http://www.leptonica.com/</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Software that is broadly useful for image processing and image analysis applications</Summary>
+            <Summary xml:lang="tr">Software that is broadly useful for image processing and image analysis applications</Summary>
+            <Description xml:lang="en">Görüntü işleme ve görüntü analiz uygulamaları için geniş ölçüde yararlı olan yazılım</Description>
+            <Description xml:lang="tr">Görüntü işleme ve görüntü analiz uygulamaları için geniş ölçüde yararlı olan yazılım</Description>
+            <Archive type="targz" sha1sum="bf4ec6e64749c7c11c983c98e1a9f939dc3d23c1">http://www.leptonica.com/source/leptonica-1.77.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>tiff-devel</Dependency>
+                <Dependency>webp-devel</Dependency>
+                <Dependency>zlib-devel</Dependency>
+                <Dependency>giflib-devel</Dependency>
+                <Dependency>libpng-devel</Dependency>
+                <Dependency>openjpeg2-devel</Dependency>
+                <Dependency>libjpeg-turbo-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>leptonica/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>leptonica</Name>
+            <RuntimeDependencies>
+                <Dependency>tiff</Dependency>
+                <Dependency>webp</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>giflib</Dependency>
+                <Dependency>libpng</Dependency>
+                <Dependency>openjpeg2</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>leptonica-devel</Name>
+            <Summary xml:lang="en">Development files for leptonica</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">leptonica</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-01-25</Date>
+                <Version>1.77.0</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -2339,7 +2905,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
             <Description xml:lang="en">Master PDF Editor provides you advanced functions for working with PDF format.</Description>
-            <Archive type="targz" sha1sum="4ce7fe38335d82873e0620942a99e00eb1345413">https://code-industry.net/public/master-pdf-editor-5.2.00_qt5.amd64.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a9e9cbb3a20d0e0bfcf64e4a786877a1c48d39ec">https://code-industry.net/public/master-pdf-editor-5.4.04_qt5.amd64.tar.gz</Archive>
             <SourceURI>master-pdf-editor/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -2366,6 +2932,20 @@ ENet omits certain higher level networking features such as authentication, lobb
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="8">
+                <Date>2019-04-19</Date>
+                <Version>5.4.04</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
+            <Update release="7">
+                <Date>2019-01-13</Date>
+                <Version>5.2.20</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
+            </Update>
             <Update release="6">
                 <Date>2018-11-29</Date>
                 <Version>5.2.00</Version>
@@ -2595,11 +3175,9 @@ ENet omits certain higher level networking features such as authentication, lobb
             <IsA>app:gui</IsA>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">OBS-Studio is a rewrite of what was formerly known as Open Broadcaster Software</Summary>
-            <Summary xml:lang="tr">OBS-Studio is a rewrite of what was formerly known as Open Broadcaster
- Software</Summary>
+            <Summary xml:lang="tr">OBS-Studio is a rewrite of what was formerly known as Open Broadcaster Software</Summary>
             <Description xml:lang="en">OBS-Studio software was originally designed for recording and streaming live video content, efficiently</Description>
-            <Description xml:lang="tr">OBS-Studio software was originally designed for recording and streaming live
- video content, efficiently</Description>
+            <Description xml:lang="tr">OBS-Studio software was originally designed for recording and streaming live video content, efficiently</Description>
             <Icon>obs-studio</Icon>
             <Archive type="targz" sha1sum="0344864b2ba72c26c9e485d54083c5041604866a">https://github.com/jp9000/obs-studio/archive/21.0.1.tar.gz</Archive>
             <BuildDependencies>
@@ -2707,74 +3285,8 @@ ENet omits certain higher level networking features such as authentication, lobb
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>ocenaudio</Name>
-            <Packager>
-                <Name>Stefan Gronewold</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Packager>
-            <License>Proprietary</License>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
-            <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
-            <Archive type="binary" sha1sum="fd8dfd94fa041098540636b8f5c352c49669240f">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>
-            <BuildDependencies>
-                <Dependency>binutils</Dependency>
-                <Dependency>qt5-base-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>oceanaudio/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>ocenaudio</Name>
-            <Icon>ocenaudio</Icon>
-            <RuntimeDependencies>
-                <Dependency>xz</Dependency>
-                <Dependency>zlib</Dependency>
-                <Dependency>bzip2</Dependency>
-                <Dependency>eudev</Dependency>
-                <Dependency>libgcc</Dependency>
-                <Dependency>libxml2</Dependency>
-                <Dependency>openssl</Dependency>
-                <Dependency>alsa-lib</Dependency>
-                <Dependency>qt5-base</Dependency>
-                <Dependency>libutil-linux</Dependency>
-                <Dependency>pulseaudio-libs</Dependency>
-                <Dependency>jack-audio-connection-kit</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/opt/ocenaudio</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="data">/usr/share/icons</Path>
-                <Path fileType="data">/usr/share/mime</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="3">
-                <Date>2018-05-22</Date>
-                <Version>3.3.10</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2016-11-10</Date>
-                <Version>3.1.10</Version>
-                <Comment>Version bump.</Comment>
-                <Name>Stefan Gronewold(groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2016.09.11</Date>
-                <Version>3.1.8</Version>
-                <Comment>First Release</Comment>
-                <Name>Stefan Gronewold (groni)</Name>
-                <Email>groni@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>opera</Name>
-            <Homepage>http://www.opera.com/</Homepage>
+            <Homepage>https://www.opera.com/</Homepage>
             <Packager>
                 <Name>Stefan Gronewold(groni)</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -2783,7 +3295,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Opera Web Browser</Summary>
             <Description xml:lang="en">Opera Web Browser</Description>
-            <Archive type="binary" sha1sum="7f5932623a2338879823d57f9fc690e8506c45fb">http://download1.operacdn.com/pub/opera/desktop/54.0.2952.64/linux/opera-stable_54.0.2952.64_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="ea2062607eef4e4b68dc00886399da6230bb6217">https://get.geo.opera.com/pub/opera/desktop/62.0.3331.43/linux/opera-stable_62.0.3331.43_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
             </BuildDependencies>
@@ -2796,6 +3308,7 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Dependency>gtk3</Dependency>
                 <Dependency>libxcb</Dependency>
                 <Dependency>at-spi2-atk</Dependency>
+                <Dependency>at-spi2-core</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>cups</Dependency>
                 <Dependency>curl</Dependency>
@@ -2837,7 +3350,28 @@ ENet omits certain higher level networking features such as authentication, lobb
             </Files>
         </Package>
         <History>
-            <Update release="13">
+            <Update release="16">
+                <Date>2019-07-04</Date>
+                <Version>62.0.3331.43</Version>
+                <Comment>Opera version bump.</Comment>
+                <Name>Idris Kalp</Name>
+                <Email>idriskalp@gmail.com</Email>
+            </Update>
+            <Update release="16">
+                <Date>2019-05-15</Date>
+                <Version>60.0.3255.83</Version>
+                <Comment>Opera version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="15">
+                <Date>2019-04-09</Date>
+                <Version>60.0.3255.27</Version>
+                <Comment>Opera version bump.</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="14">
                 <Date>2018-08-01</Date>
                 <Version>54.0.2952.64</Version>
                 <Comment>Opera version bump.</Comment>
@@ -2945,6 +3479,85 @@ ENet omits certain higher level networking features such as authentication, lobb
             <Update release="1">
                 <Date>2016-07-17</Date>
                 <Version>38.0.2220.41</Version>
+                <Comment>First Release.</Comment>
+                <Name>Stefan Gronewold</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>opera-developer</Name>
+            <Homepage>http://www.opera.com/</Homepage>
+            <Packager>
+                <Name>Stefan Gronewold(groni)</Name>
+                <Email>groni@pisilinux.org</Email>
+            </Packager>
+            <License>EULA</License>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Opera Web Browser Developer version</Summary>
+            <Description xml:lang="en">Opera Web Browser Developer Version</Description>
+            <Archive type="binary" sha1sum="13d59f0d05307ced7dd35c5891685bee398a9108">https://get.geo.opera.com/pub//opera-developer/55.0.2962.0/linux/opera-developer_55.0.2962.0_amd64.deb</Archive>
+            <BuildDependencies>
+                <Dependency>binutils</Dependency>
+            </BuildDependencies>
+            <SourceURI>opera-developer/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>opera-developer</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>at-spi2-atk</Dependency>
+                <Dependency>nss</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>dbus</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>nspr</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>expat</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/menu</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/opera-developer.desktop" permission="0644" owner="root" group="root">opera-developer.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/opera-developer.png" permission="0644" owner="root" group="root">opera-developer.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2018-05-03</Date>
+                <Version>55.0.2962.0</Version>
                 <Comment>First Release.</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@pisilinux.org</Email>
@@ -3557,7 +4170,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>programming</PartOf>
             <Summary xml:lang="en">Powerful Python and Django IDE. Community edition.</Summary>
             <Description xml:lang="en">Powerful Python and Django IDE. Community edition.</Description>
-            <Archive type="targz" sha1sum="85fb6783036e6bb7e34de605c59938c07e72f796">https://download-cf.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz</Archive>
+            <Archive type="targz" sha1sum="929c3d8205a05d137eef29b6f1d8cb6d60124580">https://download-cf.jetbrains.com/python/pycharm-community-2019.1.1.tar.gz</Archive>
             <SourceURI>pycharm-community/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -3593,6 +4206,13 @@ ENet omits certain higher level networking features such as authentication, lobb
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2019-05-02</Date>
+                <Version>2019.1.1</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
             <Update release="4">
                 <Date>2017-10-03</Date>
                 <Version>2017.2.3</Version>
@@ -3767,8 +4387,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <License>GPLv3</License>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">GUI for the program fsarchiver</Summary>
-            <Description xml:lang="en">qt5 fsarchiver program was extended with these points: Backup and restore partition table, HD cloning, images of hard drives and partitions write and restore.
-        qt5-fsarchiver save and restore partitions, directories, MBR/GPT, Clone partitions and make Images.</Description>
+            <Description xml:lang="en">qt5 fsarchiver program was extended with these points: Backup and restore partition table, HD cloning, images of hard drives and partitions write and restore. qt5-fsarchiver save and restore partitions, directories, MBR/GPT, Clone partitions and make Images.</Description>
             <Archive type="targz" sha1sum="2ded8126036702ff3395959cde4decb28d4a7fd8">https://github.com/DieterBaum/qt5-fsarchiver/archive/v0.6.19-20.1.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>attr-devel</Dependency>
@@ -3888,58 +4507,6 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Comment>First Release</Comment>
                 <Name>Stefan Gronewold</Name>
                 <Email>groni@gmail.com</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
-            <Name>rpm2targz</Name>
-            <Homepage>http://www.slackware.com/config/packages.php</Homepage>
-            <Packager>
-                <Name>PisiLinux Community</Name>
-                <Email>admins@pisilinux.org</Email>
-            </Packager>
-            <License>as-is</License>
-            <IsA>app:console</IsA>
-            <PartOf>unknown</PartOf>
-            <Summary xml:lang="en">RPM to .tar.gz converter</Summary>
-            <Summary xml:lang="tr">.rpm dosyalarını .tar.gz dosyalarına dönüştürme uygulaması</Summary>
-            <Description xml:lang="en">Convert an RPM (RedHat Package Manager) file to a .tar.gz archive. In case you ever run across the need to obtain something that is only in RPM format, this program may come in handy.</Description>
-            <Description xml:lang="tr">Red Hat, SUSE gibi dağıtımların kullandığı RPM (RedHat Package Manager) paketlerini .tar.gz paketlerine dönüştürür. Sadece RPM sürümü olan bir dosya bulduğunuzda ve içeriğine ulaşmanız gerektiğinde kullanışlı olabilir.</Description>
-            <Archive type="tarxz" sha1sum="d6be32fc2b8fcd04c017f9ec1e014d4795b55e31">http://mirror.yandex.ru/gentoo-distfiles/distfiles/rpm2targz-9.0.0.5g.tar.xz</Archive>
-            <SourceURI>rpm2targz/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>rpm2targz</Name>
-            <RuntimeDependencies>
-                <Dependency>xz</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="3">
-                <Date>2014-03-10</Date>
-                <Version>9.0.0.5g</Version>
-                <Comment>Rebuild</Comment>
-                <Name>Varol Maksutoğlu</Name>
-                <Email>waroi@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2013-03-14</Date>
-                <Version>9.0.0.5g</Version>
-                <Comment>Updated</Comment>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2010-10-12</Date>
-                <Version>9.0.0.4g</Version>
-                <Comment>First release</Comment>
-                <Name>Pisi Linux Admins</Name>
-                <Email>admins@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -4149,7 +4716,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>Slack</Name>
-            <Homepage>http://slack.com</Homepage>
+            <Homepage>https://slack.com/</Homepage>
             <Packager>
                 <Name>Sami BABAT</Name>
                 <Email>samibabat@gmail.com</Email>
@@ -4271,7 +4838,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <Summary xml:lang="tr">Müzik Çalar</Summary>
             <Description xml:lang="en">Listen to music using Spotify</Description>
             <Description xml:lang="tr">Spotify&apos;ı kullanarak müzik dinleyin.</Description>
-            <Archive type="binary" sha1sum="f59467b12c98971a88a6f1965969f7dd9bdb1b8f">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.0.77.338.g758ebd78-41_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="c9cd195c4eea3b1573c9799569a644a2b5dbb01e">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.0.237.g378f6f25-11_amd64.deb</Archive>
             <BuildDependencies>
                 <Dependency>binutils</Dependency>
                 <Dependency>libXScrnSaver</Dependency>
@@ -4328,6 +4895,20 @@ ENet omits certain higher level networking features such as authentication, lobb
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="14">
+                <Date>2019-02-17</Date>
+                <Version>1.1.0.237</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Mustafa Kemal CELEP</Name>
+                <Email>tekshoot@tekimizbir.com</Email>
+            </Update>
+            <Update release="13">
+                <Date>2018-12-11</Date>
+                <Version>1.0.94.262</Version>
+                <Comment>Version bump.</Comment>
+                <Name>AYDIN ATMACA</Name>
+                <Email>aydinatmaca@gmail.com</Email>
+            </Update>
             <Update release="12">
                 <Date>2018-05-22</Date>
                 <Version>1.0.77.338</Version>
@@ -4794,10 +5375,8 @@ ENet omits certain higher level networking features such as authentication, lobb
             <IsA>app:gui</IsA>
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Telegram a new era of messaging</Summary>
-            <Summary xml:lang="tr">Telegram a new era of messaging</Summary>
             <Description xml:lang="en">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-            <Description xml:lang="tr">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-            <Archive type="targz" sha1sum="1e7a6a5a8f5ba0200ed0dc3f980f8b6f3cccc4b0">https://github.com/groni/Sources/raw/master/telegram-0.10.19.tar.gz</Archive>
+            <Archive type="binary" sha1sum="31c9cabfc227ac6e63fd026b82267390ebb91816">https://github.com/telegramdesktop/tdesktop/releases/download/v1.7.14/tsetup.1.7.14.tar.xz</Archive>
             <SourceURI>telegram-desktop/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -4811,13 +5390,66 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Dependency>libxcb</Dependency>
             </RuntimeDependencies>
             <Files>
+                <Path fileType="executable">/opt/telegram-desktop</Path>
                 <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="icon">/usr/share/icons</Path>
-                <Path fileType="application">/usr/share/applications</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/applications/</Path>
+                <Path fileType="data">/usr/share/icons</Path>
             </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/Telegram-desktop.desktop" owner="root">Telegram-desktop.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/Telegram-desktop.png" owner="root">Telegram-desktop.png</AdditionalFile>
+            </AdditionalFiles>
         </Package>
         <History>
+            <Update release="9">
+                <Date>2019-07-13</Date>
+                <Version>1.7.14</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="8">
+                <Date>2019-06-24</Date>
+                <Version>1.7.13</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="7">
+                <Date>2019-06-24</Date>
+                <Version>1.7.10</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="6">
+                <Date>2019-06-01</Date>
+                <Version>1.7.2</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="5">
+                <Date>2019-05-10</Date>
+                <Version>1.7.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2019-04-14</Date>
+                <Version>1.6.7</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2019-04-09</Date>
+                <Version>1.6.3</Version>
+                <Comment>version bump</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="2">
                 <Date>2016-11-10</Date>
                 <Version>0.10.19</Version>
@@ -4831,6 +5463,248 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Comment>First release</Comment>
                 <Name>Stefan Gronewold (groni)</Name>
                 <Email>groni@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>tesseract</Name>
+            <Homepage>https://github.com/tesseract-ocr/tesseract</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>APACHE</License>
+            <IsA>app:console</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">An OCR program</Summary>
+            <Summary xml:lang="tr">An OCR program</Summary>
+            <Description xml:lang="en">An OCR program</Description>
+            <Description xml:lang="tr">An OCR program</Description>
+            <Archive type="targz" sha1sum="243a4919d44bc64d1e7e4cac660c716c845a8d03">https://github.com/tesseract-ocr/tesseract/archive/4.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libgomp</Dependency>
+                <Dependency>icu4c-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>leptonica-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>tesseract/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>tesseract</Name>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libgomp</Dependency>
+                <Dependency>leptonica</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="data">/usr/share/tessdata</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>tesseract-devel</Name>
+            <Summary xml:lang="en">Development files for tesseract</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">tesseract</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2019-01-25</Date>
+                <Version>4.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>uyap</Name>
+            <Homepage>http://www.uyap.gov.tr</Homepage>
+            <Packager>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Packager>
+            <License>IBC</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Udf dosya uzantısı açmaya yarayan program.</Summary>
+            <Description xml:lang="en">Udf dosya uzantısı açmaya yarayan program.</Description>
+            <Archive type="targz" sha1sum="11fef31b4c1028658fcaed1d84c380d2ca951725">https://master.dl.sourceforge.net/project/ar-iv/uyapeditor-4.2.0.tar.gz</Archive>
+            <SourceURI>uyap/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>uyap</Name>
+            <RuntimeDependencies>
+                <Dependency>jre7-openjdk</Dependency>
+                <Dependency>jre7-openjdk-headless</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/UYAPEditor</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2019-05-22</Date>
+                <Version>4.2.0</Version>
+                <Comment>V.bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2019-05-02</Date>
+                <Version>4.1.12</Version>
+                <Comment>V.bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-06</Date>
+                <Version>1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>Valentina Studio</Name>
+            <Homepage>https://www.valentina-db.com</Homepage>
+            <Packager>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Packager>
+            <License>custom</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">THE BEST FREE DB MANAGEMENT TOOL</Summary>
+            <Description xml:lang="en">Create, administer, query and explore Valentina DB, MySQL, MariaDB, PostgreSQL and SQLite databases for FREE.</Description>
+            <Icon>vstudio</Icon>
+            <Archive type="binary" sha1sum="3b46fbb08c58e300c53a2ede638a6d3bedd3243a">https://www.valentina-db.com/en/studio/download/current/vstudio_x64_lin-deb?format=raw</Archive>
+            <SourceURI>valentina_studio/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>Valentina_Studio</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>freetype</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/opt/VStudio</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2018-12-08</Date>
+                <Version>8.7.2</Version>
+                <Comment>First Release</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>vdrift</Name>
+            <Homepage>http://www.vdrift.net</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>unknown</PartOf>
+            <Summary xml:lang="en">Driving simulation</Summary>
+            <Summary xml:lang="tr">Araba yarışı</Summary>
+            <Description xml:lang="en">VDrift is a driving simulation game with drift racing in mind.</Description>
+            <Description xml:lang="tr">Drift tarzı yarışabileceğiniz araba simulasyonu</Description>
+            <Icon>vdrift</Icon>
+            <Archive type="tarbz2" sha1sum="1b98f6e70d64952dee24788989697dae444c6056">mirrors://sourceforge/vdrift/vdrift-2014-10-20.tar.bz2</Archive>
+            <BuildDependencies>
+                <Dependency>libsdl2-devel</Dependency>
+                <Dependency>sdl2-image-devel</Dependency>
+                <Dependency>glew-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>mesa-glu-devel</Dependency>
+                <Dependency>libvorbis-devel</Dependency>
+                <Dependency>curl-devel</Dependency>
+                <Dependency>bullet-devel</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>libarchive-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>vdrift-gcc6.patch</Patch>
+                <Patch>vdrift-sconscript.patch</Patch>
+                <Patch>vdrift-sconstruct.patch</Patch>
+            </Patches>
+            <SourceURI>vdrift/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>vdrift</Name>
+            <RuntimeDependencies>
+                <Dependency>libsdl2</Dependency>
+                <Dependency>sdl2-image</Dependency>
+                <Dependency>glew</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>mesa-glu</Dependency>
+                <Dependency>libvorbis</Dependency>
+                <Dependency>bullet</Dependency>
+                <Dependency>curl</Dependency>
+                <Dependency>libarchive</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/vdrift</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/vdrift.desktop" permission="0644" owner="root">vdrift.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/vdrift.png" permission="0644" owner="root">vdrift.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2018-12-31</Date>
+                <Version>20141020</Version>
+                <Comment>First Release</Comment>
+                <Name>Ali Cengiz Kurt</Name>
+                <Email>alicengizkurt@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
@@ -4986,7 +5860,7 @@ ENet omits certain higher level networking features such as authentication, lobb
     <SpecFile>
         <Source>
             <Name>VSCode</Name>
-            <Homepage>http://code.visualstudio.com</Homepage>
+            <Homepage>https://code.visualstudio.com</Homepage>
             <Packager>
                 <Name>Sami Babat</Name>
                 <Email>sami.babat@gmail.com</Email>
@@ -4999,7 +5873,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <Description xml:lang="en">Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
             <Description xml:lang="tr">Visual Studio Code</Description>
             <Icon>code</Icon>
-            <Archive type="targz" sha1sum="e9208b3e4110d9b78e92038f1ed43ec421bce5ff">https://az764295.vo.msecnd.net/stable/3aeede733d9a3098f7b4bdc1f66b63b0f48c1ef9/code-stable-code_1.22.2-1523551015_amd64.tar.gz</Archive>
+            <Archive type="targz" sha1sum="a0fe2f3568e3dbfda1e904ef83c1ee455e312f24">https://az764295.vo.msecnd.net/stable/2213894ea0415ee8c85c5eea0d0ff81ecc191529/code-stable-1562627471.tar.gz</Archive>
             <SourceURI>VScode/pspec.xml</SourceURI>
         </Source>
         <Package>
@@ -5016,6 +5890,27 @@ ENet omits certain higher level networking features such as authentication, lobb
             </AdditionalFiles>
         </Package>
         <History>
+            <Update release="4">
+                <Date>2019-07-12</Date>
+                <Version>1.36</Version>
+                <Comment>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2019-06-09</Date>
+                <Version>1.35</Version>
+                <Comment>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2019-05-22</Date>
+                <Version>1.34</Version>
+                <Comment>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Comment>
+                <Name>Erkan IŞIK</Name>
+                <Email>erkanisik@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2016-07-17</Date>
                 <Version>1.3.1</Version>
@@ -5185,10 +6080,11 @@ ENet omits certain higher level networking features such as authentication, lobb
             <PartOf>unknown</PartOf>
             <Summary xml:lang="en">Kingsoft Office (WPS Office) is an office productivity suite.</Summary>
             <Description xml:lang="en">Kingsoft Office (WPS Office) is an office productivity suite.</Description>
-            <Archive type="binary" sha1sum="c6c13413d1c974468d0589498c41870146fd9a91">http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5707~a21_amd64.deb</Archive>
+            <Archive type="binary" sha1sum="edb1bc215e46c46bb979869e374788498486b56c">http://kdl.cc.ksosoft.com/wps-community/download/8392/wps-office_11.1.0.8392_amd64.deb</Archive>
+            <Archive type="zip" sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="opt/kingsoft/wps-office/office6/dicts/spellcheck">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
             <BuildDependencies>
+                <Dependency>tar</Dependency>
                 <Dependency>binutils</Dependency>
-                <Dependency>libpng12-devel</Dependency>
                 <Dependency>xz-devel</Dependency>
                 <Dependency>mesa-devel</Dependency>
                 <Dependency>zlib-devel</Dependency>
@@ -5214,7 +6110,6 @@ ENet omits certain higher level networking features such as authentication, lobb
         <Package>
             <Name>wps-office</Name>
             <RuntimeDependencies>
-                <Dependency>libpng12</Dependency>
                 <Dependency>xz</Dependency>
                 <Dependency>mesa</Dependency>
                 <Dependency>zlib</Dependency>
@@ -5236,13 +6131,20 @@ ENet omits certain higher level networking features such as authentication, lobb
                 <Dependency>gst-plugins-base</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="conf">/etc/fonts</Path>
-                <Path fileType="data">/opt/kingsoft/wps-office/office6</Path>
+                <Path fileType="conf">/etc</Path>
+                <Path fileType="data">/opt/kingsoft</Path>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2019-06-11</Date>
+                <Version>11.1.0.8392</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2018-03-01</Date>
                 <Version>10.1.0.5707</Version>

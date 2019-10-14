@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fritzing</Name>
+        <Homepage>https://fritzing.org/</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>fritzing</Icon>
+        <IsA>app:gui</IsA>
+        <partOf>elektronics</partOf>
+        <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+        <Description>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Description>
+        <Archive sha1sum="7ca1ffc56c67fdcdfa6d394f44cd42b779d1985d" type="tarbz2">http://fritzing.org/download/0.9.3b/linux-64bit/fritzing-0.9.3b.linux.AMD64.tar.bz2</Archive>
+        <!--
+        <BuildDependencies>
+            <Dependency>Dep1-devel</Dependency>
+            <Dependency>Dep2-devel</Dependency>
+            <Dependency>Dep3-devel</Dependency>
+            <Dependency versionFrom="">Dep4-devel</Dependency>
+        </BuildDependencies>
+        -->
+        <!--
+        <Patches>
+            <Patch>fritzing.patch</Patch>
+            <Patch level="1">fritzing.patch</Patch>
+        </Patches>
+        -->
+    </Source>
+    <Package>
+        <Name>fritzing</Name>
+        <Files>
+            <Path fileType="data">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/applications/fritzing.desktop" group="root" permission="0744">fritzing.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/pixmaps/fritzing_icon.png" group="root" permission="0744">fritzing_icon.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-06-18</Date>
+            <Version>0.9.3</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vdrift</Name>
+        <Homepage>http://www.vdrift.net</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>vdrift</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Driving simulation</Summary>
+        <Description>VDrift is a driving simulation game with drift racing in mind.</Description>
+        <Archive sha1sum="1b98f6e70d64952dee24788989697dae444c6056"  type="tarbz2">mirrors://sourceforge/vdrift/vdrift-2014-10-20.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libsdl2-devel</Dependency>
+            <Dependency>sdl2-image-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>curl-devel</Dependency>
+            <Dependency>bullet-devel</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>libarchive-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch>vdrift-gcc6.patch</Patch>
+            <Patch>vdrift-sconscript.patch</Patch>
+            <Patch>vdrift-sconstruct.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>vdrift</Name>
+        <RuntimeDependencies>
+            <Dependency>libsdl2</Dependency>
+            <Dependency>sdl2-image</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>bullet</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>libarchive</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/vdrift</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/vdrift.desktop">vdrift.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/vdrift.png">vdrift.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-12-31</Date>
+            <Version>20141020</Version>
+            <Comment>First Release</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
