@@ -13,17 +13,17 @@ WorkDir = "."
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf teamviewer_14.5.1691_amd64.deb")
+    shelltools.system("ar xf teamviewer_14.6.2452_amd64.deb")
     shelltools.system("tar xf data.tar.xz")
     
 def install():
     pisitools.insinto("/opt/teamviewer/", "opt/teamviewer/*")
-    pisitools.insinto("/etc/systemd/system", "opt/teamviewer/tv_bin/script/teamviewerd.service")
+    #pisitools.insinto("/etc/systemd/system", "opt/teamviewer/tv_bin/script/teamviewerd.service")
     
     #necessary symlinks
     pisitools.dosym("/opt/teamviewer/tv_bin/teamviewerd", "etc/init.d/teamviewerd")
     pisitools.dosym("/opt/teamviewer/tv_bin/script/teamviewer", "usr/bin/teamviewer")
-    pisitools.dosym("/opt/teamviewer/logfiles", "var/log/teamviewer")
+    #pisitools.dosym("/opt/teamviewer/logfiles", "var/log/teamviewer")
     pisitools.dosym("/opt/teamviewer/config", "etc/teamviewer")
     
     pisitools.dodoc("%s/opt/teamviewer/doc/License.txt" %get.workDIR())

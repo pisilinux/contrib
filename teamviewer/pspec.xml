@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>User friendly remote control application</Summary>
         <Description>TeamViewer is a computer software for remote control, desktop sharing, and file transfer between Linux, Windows and Apple computers. TeamViewer is free for personal use. You can use TeamViewer completely free of charge to access your private computers or to help your friends with their computer problems. To buy a license for commercial use, please visit https://www.teamviewer.com </Description>
-        <Archive sha1sum="d64a68560955eb16243ac00aa9a78734bde82523" type="binary">https://dl.teamviewer.com/download/linux/version_14x/teamviewer_14.5.1691_amd64.deb</Archive>
+        <Archive sha1sum="1791632acb3e57a2e3e880c01907452ad99153ad" type="binary">https://dl.teamviewer.com/download/linux/version_14x/teamviewer_14.6.2452_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -28,6 +28,16 @@
             <Dependency>qt5-webkit</Dependency>
             <Dependency>qt5-x11extras</Dependency>
             <Dependency>qt5-quickcontrols</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXinerama</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="executable">/usr/bin</Path>
@@ -48,6 +58,13 @@
         </Provides>
     </Package>
     <History>
+    	<Update release="15">
+            <Date>2019-10-14</Date>
+            <Version>14.6.2452</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux</Email>
+        </Update>
         <Update release="14">
             <Date>2019-08-28</Date>
             <Version>14.5.1691</Version>
