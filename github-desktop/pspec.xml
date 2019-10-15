@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>github-desktop</Name>
+        <Homepage>https://desktop.github.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>app:gui</IsA>
+        <Summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Summary>
+        <Description>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Description>
+        <Archive sha1sum="9b83a81ff51ec3b27c4825734224ec4ff5e21865" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.1.0-linux1/GitHubDesktop-linux-2.1.0-linux1.deb</Archive>  
+    </Source>
+
+    <Package>
+        <Name>github-desktop</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/github-desktop</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/github-desktop.desktop" owner="root">github-desktop.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/github-desktop.png" owner="root">github-desktop.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-10-15</Date>
+            <Version>2.1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
