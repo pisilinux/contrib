@@ -16,7 +16,7 @@
         <IsA>app:gui</IsA>
         <Summary>A Dropbox client</Summary>
         <Description>Dropbox is a Web-based file hosting service which uses cloud computing to enable users to store and share files and folders with others across the Internet using file synchronization.</Description>
-        <Archive sha1sum="fcb39505a674b3865b6aa47baa8904645d44f4d7" type="targz" target="x86_64"> https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-70.4.93.tar.gz</Archive>        
+        <Archive sha1sum="4af35bc8eb779c2cf419de06682ab22b75da9212" type="targz" target="x86_64">https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-80.4.127.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -50,16 +50,25 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="executable">/opt/dropbox</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/doc/dropbox/POLICIES">POLICIES</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/dropbox.png">dropbox.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/dropbox.desktop">dropbox.desktop</AdditionalFile>
+            <AdditionalFile owner="nobody" permission="0644" target="/opt/dropbox"></AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
+    	<Update release="9">
+            <Date>2019-09-13</Date>
+            <Version>80.4.127</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2019-04-23</Date>
             <Version>70.4.93</Version>

@@ -7,13 +7,14 @@
 from pisi.actionsapi import get, pisitools, shelltools
 
 NoStrip = ["/usr"]
+IgnoreAutodep = True
 
 Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf skypeforlinux_"+Version+"_amd64.deb")
-    shelltools.system("tar xf data.tar.xz")
+    shelltools.system("ar xf yandex-disk_"+Version+"_amd64.deb ")
+    shelltools.system("tar xf data.tar.gz")
 
 def install():
     pisitools.insinto("/", "usr")

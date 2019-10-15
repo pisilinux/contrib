@@ -13,6 +13,7 @@ NoStrip = "/opt/dropbox/library.zip"
 def install():
     #pisitools.dodir("/opt/dropbox")
     pisitools.insinto("/opt/dropbox", "*")
+    pisitools.dosym("/opt/dropbox/dropboxd", "/usr/bin/dropbox")
 
     # Arch removes this lib, Pardus libgcc package provides libstdc++.so.6
     #pisitools.remove("/opt/dropbox/libstdc++.so.6")
