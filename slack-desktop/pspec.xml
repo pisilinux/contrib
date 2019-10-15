@@ -10,8 +10,9 @@
         <Summary>Team communication for the 21st century.</Summary>
         <Description>Team communication for the 21st century.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="0ca8ed9b7879d112c58b95e3f73bf8bfd3f9550d" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-3.0.5-amd64.deb</Archive>
+        <Archive sha1sum="468d4f7e0ce291092722a196f06960b00bfcd1cf" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-4.1.1-amd64.deb</Archive>
         <BuildDependencies>
+            <Dependency>tar</Dependency>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
     </Source>
@@ -61,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>2019-10-14</Date>
+            <Version>4.1.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
         <Update release="1">
             <Date>2018-05-24</Date>
             <Version>3.0.5</Version>
