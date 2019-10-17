@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>poco</Name>
+        <Homepage>https://pocoproject.org/</Homepage>
+        <Packager>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Packager>
+        <License>Boost</License>
+        <IsA>library</IsA>
+        <Summary> C++ Portable Components (POCO) Development files</Summary>
+        <Description>The POCO C++ Libraries are a collection of open source C++ class libraries that simplify and accelerate the development of network-centric, portable applications in C++. The libraries integrate perfectly with the C++ Standard Library and fill many of the functional gaps left open by it.</Description>
+        <Archive sha1sum="5658dc91755ce071fb2bfe6cccdf17e6934ec8d7" type="targz">https://pocoproject.org/releases/poco-1.9.4/poco-1.9.4-all.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>openssl-devel</Dependency>
+            <Dependency>unixODBC-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>poco</Name>
+        <RuntimeDependencies>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>mariadb-lib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>poco-devel</Name>
+        <RuntimeDependencies>
+            <Dependency>poco</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-10-17</Date>
+            <Version>1.9.4</Version>
+            <Comment>First release</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+    </History>
+</PISI>
