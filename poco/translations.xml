@@ -3,10 +3,6 @@
     <Source>
         <Name>poco</Name>
         <Summary xml:lang="tr"> C++ Portable Components (POCO) Development files</Summary>
-        <Description xml:lang="tr">The POCO C++ Libraries are a collection of open source C++ class libraries that simplify and accelerate the development of network-centric, portable applications in C++. The libraries integrate perfectly with the C++ Standard Library and fill many of the functional gaps left open by it.
-
-POCO is built strictly using standard ANSI/ISO C++, including the standard library. The contributors attempt to find a good balance between using advanced C++ features and keeping the classes comprehensible and the code clean, consistent and easy to maintain.
-
-POCO consists of four core libraries, and a number of add-on libraries. The core libraries are Foundation, XML, Util and Net. Two of the add-on libraries are NetSSL, providing SSL support for the network classes in the Net library, and Data, a library for uniformly accessing different SQL databases.</Description>
+        <Description xml:lang="tr">The POCO C++ Libraries are a collection of open source C++ class libraries that simplify and accelerate the development of network-centric, portable applications in C++. The libraries integrate perfectly with the C++ Standard Library and fill many of the functional gaps left open by it.</Description>
     </Source>
 </PISI>
