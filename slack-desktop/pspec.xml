@@ -62,7 +62,7 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2019-10-14</Date>
             <Version>4.1.1</Version>
             <Comment>Version bump.</Comment>
