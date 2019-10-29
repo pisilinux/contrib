@@ -1,35 +1,37 @@
-<?xml version="1.0" ?> 
+<?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>sublime-text3</Name> 
-        <Homepage>http://www.sublimetext.com</Homepage> 
+        <Name>sublime-text3</Name>
+        <Homepage>http://www.sublimetext.com</Homepage>
         <Packager>
-	    <Name>Stefan Gronewold</Name>
+        <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <License>Sublime Text</License> 
-        <IsA>app:gui</IsA> 
+        <License>Sublime Text</License>
+        <IsA>app:gui</IsA>
         <Summary>Sophisticated text editor</Summary>
         <Description>Sublime Text is a sophisticated text editor for code, markup and prose.</Description>
         <Archive sha1sum="38c21a4497f1fbc42072f65931bd0b82319becb1" type="tarbz2">https://download.sublimetext.com/sublime_text_3_build_3211_x64.tar.bz2</Archive>
-    </Source>  
+    </Source>
+
     <Package>
         <Name>sublime-text3</Name>
         <RuntimeDependencies>
-	    <Dependency>glib2</Dependency>
-            <Dependency>libX11</Dependency>          
+        <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="data">/usr/share/icons/hicolor/</Path>
-	    <Path fileType="data">/usr/share/applications/</Path>
-	    <Path fileType="data">/opt/sublime_text_3</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/opt/sublime_text_3</Path>
         </Files>
-	<AdditionalFiles>
-		<AdditionalFile target="/usr/share/applications/sublime_text.desktop" owner="root">sublime_text.desktop</AdditionalFile>
-	</AdditionalFiles>
-    </Package>  
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/sublime_text.desktop" owner="root">sublime_text.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
     <History>
         <Update release="9">
             <Date>2019-10-01</Date>
@@ -38,60 +40,60 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-    	<Update release="8">
+        <Update release="8">
             <Date>2019-04-07</Date>
             <Version>3207</Version>
             <Comment>version dump.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-    	<Update release="7">
+        <Update release="7">
             <Date>2019-03-13</Date>
             <Version>3200</Version>
             <Comment>version fix.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-    	<Update release="6">
+        <Update release="6">
             <Date>2018-05-14</Date>
             <Version>3176</Version>
             <Comment>version fix.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>info@erkanisik.com</Email>
-        </Update>  
-    	<Update release="5">
+        </Update>
+        <Update release="5">
             <Date>2018-05-08</Date>
             <Version>3170</Version>
             <Comment>user release.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>info@erkanisik.com</Email>
-        </Update>   
-    	<Update release="4">
+        </Update>
+        <Update release="4">
             <Date>2017-11-26</Date>
             <Version>3143</Version>
             <Comment>user release.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>info@erkanisik.com</Email>
         </Update>
-    	<Update release="3">
+        <Update release="3">
             <Date>2017-09-17</Date>
             <Version>3144</Version>
             <Comment>Developer release.</Comment>
-    	    <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>info@erkanisik.com</Email>
         </Update>
-    	<Update release="2">
+        <Update release="2">
             <Date>2017-07-14</Date>
             <Version>3126</Version>
             <Comment>Second release.</Comment>
-	        <Name>Erkan IŞIK</Name>
+            <Name>Erkan IŞIK</Name>
             <Email>info@erkanisik.com</Email>
-        </Update>    
+        </Update>
         <Update release="1">
             <Date>2016-02-23</Date>
             <Version>3103</Version>
             <Comment>First release.</Comment>
-	        <Name>Stefan Gronewold</Name>
+            <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Update>
     </History>

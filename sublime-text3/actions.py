@@ -14,4 +14,4 @@ def install():
         pisitools.domove("/opt/sublime_text_3/Icon/{0}x{0}/sublime-text.png".format(i),"/usr/share/icons/hicolor/{0}x{0}/apps".format(i))
     pisitools.removeDir("/opt/sublime_text_3/Icon")    
     for i in ['-','_']:
-        pisitools.dosym("/opt/sublime_text_3/sublime_text","/usr/bin/sublime%stext_3" % i)        
+        pisitools.dosym("/opt/sublime_text_3/sublime_text","/usr/bin/sublime%stext_3" % i)

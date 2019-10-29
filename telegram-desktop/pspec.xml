@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="a919fc989d8d13da99a01e48a57ffc88e93615fb" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.8.8/tsetup.1.8.8.tar.xz</Archive>  
+        <Archive sha1sum="a919fc989d8d13da99a01e48a57ffc88e93615fb" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v1.8.8/tsetup.1.8.8.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -38,7 +38,7 @@
     </Package>
 
     <History>
-    	<Update release="14">
+        <Update release="14">
             <Date>2019-09-18</Date>
             <Version>1.8.8</Version>
             <Comment>version bump</Comment>
