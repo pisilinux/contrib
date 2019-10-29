@@ -21,7 +21,7 @@
 
     <Package>
         <Name>teamviewer</Name>
-         <RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>qt5-declarative</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
@@ -57,8 +57,9 @@
             <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
+
     <History>
-    	<Update release="15">
+        <Update release="15">
             <Date>2019-10-14</Date>
             <Version>14.6.2452</Version>
             <Comment>version bump</Comment>
