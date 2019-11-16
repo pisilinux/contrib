@@ -1,11 +1,12 @@
 #!/usr/bin/python
-
 # Created For PisiLinux
 
 from pisi.actionsapi import shelltools, get, pisitools
 
 WorkDir = "."
+NoStrip = ["/"]
 
 def install():
-    pisitools.insinto("usr/share", "Discord")
-    pisitools.dosym("/usr/share/Discord/Discord", "/usr/bin/discord")
+    pisitools.insinto("/opt/Discord/", "Discord/*")
+    pisitools.dosym("/opt/Discord/Discord", "/usr/bin/Discord")
+    shelltools.chmod(get.installDIR() + "/opt/Discord/Discord")

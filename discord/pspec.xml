@@ -27,12 +27,13 @@
     <Package>
         <Name>discord</Name>
         <Files>
+        	<Path fileType="data">/opt/Discord/</Path>
             <Path fileType="data">/usr/share/</Path>
             <Path fileType="data">/usr/bin</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" target="/usr/share/pixmaps/discord.png" permission="0644">discord.png</AdditionalFile>
-            <AdditionalFile owner="root" target="/usr/share/applications/discord.desktop" permission="0644">discord.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/applications/discord.desktop" permission="0644">discord.desktop</AdditionalFile>            
         </AdditionalFiles>
     </Package>
 
