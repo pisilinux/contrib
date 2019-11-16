@@ -12,7 +12,7 @@
         <License>Proprietary</License>
         <IsA>network</IsA>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="cffe34ad257bc3166e1ca877e7b5fc45b4d7e783">https://dl.discordapp.net/apps/linux/0.0.8/discord-0.0.8.tar.gz</Archive>
+        <Archive sha1sum="06675d5b6f4b7a09777f2c88a97f505d4b387760">https://dl.discordapp.net/apps/linux/0.0.9/discord-0.0.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>gconf</Dependency>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+         <Update release="3">
+            <Date>2019-11-16</Date>
+            <Version>0.0.9</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2019-02-17</Date>
             <Version>0.0.8</Version>
