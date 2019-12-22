@@ -13,8 +13,8 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf anydesk_5.5.1-1_amd64.deb")
-    shelltools.system("tar xf data.tar.gz")
+    shelltools.system("ar xf yd-tools_"+Version+"_all.deb")
+    shelltools.system("tar xf data.tar.xz")
 
 def install():
     pisitools.insinto("/", "usr")

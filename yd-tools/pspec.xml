@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>yd-tools</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Panel indicator (GUI) for YandexDisk CLI client for Linux</Summary>
+        <Description>Panel indicator (GUI) for YandexDisk CLI client for Linux</Description>
+        <License>GPLv3</License>
+        <Archive sha1sum="ca96245c9a9a1058841356cc2fc5950768d3b72a" type="binary">https://launchpad.net/~slytomcat/+archive/ubuntu/ppa/+files/yd-tools_1.11.0_all.deb</Archive>
+        <BuildDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Name>yd-tools</Name>
+        <Icon>yd-tools</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-12-19</Date>
+            <Version>1.11.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
