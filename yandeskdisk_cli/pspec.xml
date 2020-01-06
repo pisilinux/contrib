@@ -24,7 +24,7 @@
             <Dependency>glibc</Dependency>
             <Dependency>zlib</Dependency>
         </RuntimeDependencies>
-        <Name>Yandex Disk</Name>
+        <Name>yandex-disk</Name>
         <Icon>Yandex Disk</Icon>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+    	 <Update release="2">
+            <Date>2020-01-06</Date>
+            <Version>0.1.5.1039</Version>
+            <Comment>name fix</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2019-10-04</Date>
             <Version>0.1.5.1039</Version>
