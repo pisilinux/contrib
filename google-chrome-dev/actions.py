@@ -15,7 +15,7 @@ Release = "-1"
 
 def setup():
     shelltools.system("ar xf google-chrome-unstable_current_amd64.deb")
-    shelltools.system("tar xvf %s/data.tar.xz --exclude=usr/share/gnome-control-center --exclude=usr/bin --exclude=etc" %get.workDIR())
+    shelltools.system("bsdtar xvf %s/data.tar.xz --exclude=usr/share/gnome-control-center --exclude=usr/bin --exclude=etc" %get.workDIR())
     shelltools.chmod(get.workDIR() + "/opt/google/chrome-unstable/*", 0755)
 
 def install():
