@@ -14,7 +14,7 @@
         <Summary>Open source Project Management Tool</Summary>
         <Description>- Microsoft Project replacement,Gantt Chart,Earned Value Costing,PERT Charts,Project Management software
           RBS Chart, New version of OpenProj</Description>
-        <Archive sha1sum="990d88e7f433b6218fdcdef5c2ff4e931efb5486" type="targz">https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.6.2/projectlibre-1.6.2.tar.gz</Archive>
+        <Archive sha1sum="bbd8d827e04c334a9b3f140b338b86a6cdad1b50" type="targz">https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.9.1/projectlibre-1.9.1.tar.gz</Archive>
     </Source>
     <Package>
         <Name>ProjectLibre</Name>
@@ -32,6 +32,13 @@
     </Package>
     
     <History>
+    	<Update release="2">
+            <Date>2020-01-29</Date>
+            <Version>1.9.1</Version>
+            <Comment>version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-06-24</Date>
             <Version>1.6.2</Version>
