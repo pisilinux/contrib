@@ -8,7 +8,7 @@ from pisi.actionsapi import get, pisitools, shelltools
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("tar xvf tsetup.1.9.8.tar.xz")
+    shelltools.system("tar xvf tsetup.%s.tar.xz" % get.srcVERSION())
 
 
 def install():
