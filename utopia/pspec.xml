@@ -16,11 +16,10 @@
     <Package>
         <Name>utopia</Name>
         <Icon>utopia</Icon>
-        <Files>
-
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/run/dbus/system_bus_socket</Path>
-        </Files>
+        <Path fileType="executable">/opt/utopia/</Path>
+        <Path fileType="data">usr/share/applications/</Path>
+        <Path fileType="data">/usr/share/pixmaps/</Path>
+        <Path fileType="data">/run/dbus/</Path>
     </Package>
 
     <History>

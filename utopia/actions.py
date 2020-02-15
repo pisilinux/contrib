@@ -7,12 +7,10 @@
 from pisi.actionsapi import get, pisitools, shelltools
 
 
-
 def setup():
     shelltools.system("pwd")
     shelltools.system("ar xf utopia-latest.amd64.deb")
     shelltools.system("tar xf data.tar.xz")
 
 def install():
-	pisitools.insinto("/opt/utopia/", "/*")
-    #pisitools.insinto("/", "opt")
+	pisitools.insinto("/", "opt/")
