@@ -16,9 +16,10 @@
     <Package>
         <Name>utopia</Name>
         <Files>
-	        <Path fileType="executable">/opt/utopia/messenger/</Path>
-	      	<Path fileType="executable">/usr/bin</Path>
-	        <Path fileType="data">/usr/share/applications/</Path>
+	        <Path fileType="executable">/opt/utopia/messenger/utopia</Path>
+			<Path fileType="executable">/usr/bin</Path>
+			<Path fileType="data">/utopia/messenger/</Path>
+			<Path fileType="data">/usr/share/applications/</Path>
 	        <Path fileType="data">/usr/share/icons</Path>
 	    </Files>
 	     <AdditionalFiles>
@@ -30,7 +31,7 @@
     <History>
     	<Update release="1">
             <Date>2020-02-15</Date>
-            <Version>5.1.1</Version>
+            <Version>1.0.5672</Version>
             <Comment>First release</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
