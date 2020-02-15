@@ -13,4 +13,5 @@ def setup():
     shelltools.system("tar xf data.tar.xz")
 
 def install():
-	pisitools.insinto("/", "opt/")
+	pisitools.insinto("/", "opt/*")
+	pisitools.dosym("/opt/utopia/messenger/utopia","/usr/bin/utopia")

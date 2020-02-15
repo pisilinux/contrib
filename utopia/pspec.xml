@@ -15,11 +15,16 @@
 
     <Package>
         <Name>utopia</Name>
-        <Icon>utopia</Icon>
-        <Path fileType="executable">/opt/utopia/</Path>
-        <Path fileType="data">usr/share/applications/</Path>
-        <Path fileType="data">/usr/share/pixmaps/</Path>
-        <Path fileType="data">/run/dbus/</Path>
+        <Files>
+	        <Path fileType="executable">/opt/utopia/messenger/</Path>
+	      	<Path fileType="executable">/usr/bin</Path>
+	        <Path fileType="data">/usr/share/applications/</Path>
+	        <Path fileType="data">/usr/share/icons</Path>
+	    </Files>
+	     <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/utopia.desktop" owner="root">utopia.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/utopia.png" owner="root">utopia.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
