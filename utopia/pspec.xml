@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>utopia</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
+        <Description>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="0094142787a10841d58738bdef093fb780f4aac9" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>utopia</Name>
+        <Icon>utopia</Icon>
+        <Files>
+
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/run/dbus/system_bus_socket</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	<Update release="1">
+            <Date>2020-02-15</Date>
+            <Version>5.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
