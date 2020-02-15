@@ -18,7 +18,7 @@
         <Files>
 	        <Path fileType="executable">/opt/utopia/messenger/utopia</Path>
 			<Path fileType="executable">/usr/bin</Path>
-			<Path fileType="data">/utopia/messenger/</Path>
+			<Path fileType="data">/opt/utopia/</Path>
 			<Path fileType="data">/usr/share/applications/</Path>
 	        <Path fileType="data">/usr/share/icons</Path>
 	    </Files>
