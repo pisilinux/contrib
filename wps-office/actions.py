@@ -11,7 +11,7 @@ from pisi.actionsapi import shelltools
 WorkDir = "."
 
 def setup():
-    shelltools.system("ar xf wps-office_11.1.0.8392_amd64.deb")
+    shelltools.system("ar xf wps-office_%s.XA_amd64.deb" %get.srcVERSION())
     shelltools.system("tar xf data.tar.xz")
 
 def build():
