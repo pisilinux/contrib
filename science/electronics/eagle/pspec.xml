@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>eagle</Name>
+        <Homepage>https://www.autodesk.com/products/eagle/overview</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>CUSTOM</License>
+        <Summary>Powerful suite for schematic capture and printed circuit board design (aka eaglecad)</Summary>
+        <Description>Powerful suite for schematic capture and printed circuit board design (aka eaglecad).</Description>
+        <Icon>eagle</Icon>
+        <Archive sha1sum="b26368523c403cd9ea539b435625aa61c2e8c2ac" type="targz">https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.5.2_English_Linux_64bit.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>eagle</Name>
+        <Files>
+            <Path fileType="executable">/opt/eagle-9.5.2</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/eagle.desktop" owner="root">eagle.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/eagle.png" owner="root">eagle.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Powerful suite for schematic capture and printed circuit board design</Summary>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2020-02-21</Date>
+            <Version>9.5.2</Version>
+             <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

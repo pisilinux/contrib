@@ -7,27 +7,33 @@
             <Email>sami.babat@gmail.com</Email>
         </Packager>
         <License>GPLv1</License>
-        <PartOf>programming</PartOf>
-        <IsA>app:gui</IsA>
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
         <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
         <Icon>arduino</Icon>
-        <Archive sha1sum="4d86322b822a0ee90a7d5e8db801484d01949abf" type="tarxz">https://downloads.arduino.cc/arduino-1.8.9-linux64.tar.xz</Archive>
+        <Archive sha1sum="010b5fe4cc11a81876455aa46a7fc8f17796db54" type="tarxz">https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz</Archive>
     </Source>
     <Package>
         <Name>arduino</Name>
         <Files>
-            <Path fileType="data">/usr</Path>
-            <!--Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path-->
+            <Path fileType="data">/opt/arduino-1.8.12</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/pixmaps/arduino.png" owner="root" permission="0744" group="root">arduino.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/arduino.png" owner="root" permission="0744" group="root">arduino.png</AdditionalFile>
         </AdditionalFiles>
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
     </Package>
     <History>
+    	<Update release="6">
+            <Date>2020-02-22</Date>
+            <Version>1.8.12</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2019-06-11</Date>
             <Version>1.8.9</Version>
