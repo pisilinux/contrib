@@ -11,8 +11,8 @@
         <Summary>WPS Office Suite</Summary>
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
-        <Archive sha1sum="edb1bc215e46c46bb979869e374788498486b56c" type="binary">http://kdl.cc.ksosoft.com/wps-community/download/8392/wps-office_11.1.0.8392_amd64.deb</Archive>
-        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="opt/kingsoft/wps-office/office6/dicts/spellcheck" type="zip">http://wps-community.org/download/dicts/tr_TR.zip</Archive>
+        <Archive sha1sum="c6735dcfc912f3ee0a5450fe5c38fe0a75e04cc8" type="binary">http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9080/wps-office_11.1.0.9080.XA_amd64.deb</Archive>
+        <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="opt/kingsoft/wps-office/office6/dicts/spellcheck" type="zip">https://github.com/wps-community/wps_community_website/raw/master/root/download/dicts/tr_TR.zip</Archive>
         <BuildDependencies>
             <Dependency>tar</Dependency>
             <Dependency>binutils</Dependency>
@@ -72,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2020-02-17</Date>
+            <Version>11.1.0.9080</Version>
+            <Comment>Version bump</Comment>
+            <Name>İdris Kalp</Name>
+            <Email>idriskalp@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2019-06-11</Date>
             <Version>11.1.0.8392</Version>
