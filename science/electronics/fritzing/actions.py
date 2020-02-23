@@ -10,5 +10,5 @@ from pisi.actionsapi import shelltools
 
 
 def install():
-	pisitools.insinto("/usr/share/fritzing", "./*");
-	pisitools.dosym("/usr/share/fritzing/Fritzing", "/usr/bin/fritzing")
+	pisitools.insinto("/opt/fritzing", "./*");
+	pisitools.dosym("/opt/fritzing/Fritzing", "/usr/bin/fritzing")

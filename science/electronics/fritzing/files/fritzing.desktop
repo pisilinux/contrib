@@ -11,4 +11,4 @@ Icon=fritzing_icon
 Exec=fritzing
 Terminal=false
 StartupNotify=false
-Categories=Application;Game;
+Categories=Application;Electronics;
