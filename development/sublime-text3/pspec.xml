@@ -5,7 +5,7 @@
         <Name>sublime-text3</Name>
         <Homepage>http://www.sublimetext.com</Homepage>
         <Packager>
-        <Name>Stefan Gronewold</Name>
+            <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
         <License>Sublime Text</License>
@@ -18,7 +18,7 @@
     <Package>
         <Name>sublime-text3</Name>
         <RuntimeDependencies>
-        <Dependency>glib2</Dependency>
+            <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
