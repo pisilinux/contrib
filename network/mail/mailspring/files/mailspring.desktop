@@ -2,11 +2,11 @@
 Name=Mailspring
 Comment=The best email app for people and teams at work
 GenericName=Mailspring
-Exec=/opt/mailspring %U
+Exec=/usr/share/mailspring/mailspring %U
 Icon=mailspring
 Type=Application
 StartupNotify=true
 StartupWMClass=Mailspring
-Categories=Network;Email;
+Categories=Network;
 Keywords=email;internet;
 MimeType=x-scheme-handler/mailto;x-scheme-handler/mailspring;

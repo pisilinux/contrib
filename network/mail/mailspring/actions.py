@@ -13,4 +13,5 @@ def setup():
 
 
 def install():
-      pisitools.insinto("/opt/mailspring/", "/*")
+     pisitools.insinto("/", "usr")
+
