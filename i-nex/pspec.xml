@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>i-nex</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>system Information tool for Linux</Summary>
+        <Description>system Information tool for Linux</Description>
+        <License>LGPL3</License>
+        <Archive sha1sum="e6dd92e5a2d98c4e029f1279784c8b58cff5a6e9" type="binary">https://launchpad.net/i-nex/trunk/7.6.0/+download/i-nex_7.6.0-0-bzr977-20161012-ubuntu16.10.1_amd64.deb</Archive>
+        <BuildDependencies>
+       
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+          
+        </RuntimeDependencies>
+        <Name>i-nex</Name>
+        <Icon>i-nex64x64</Icon>
+         <Files>
+            <Path fileType="executable">/usr</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	<Update release="1">
+            <Date>2020-03-07</Date>
+            <Version>7.6.1</Version>
+            <Comment>First release</Comment>
+            <Name>erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
