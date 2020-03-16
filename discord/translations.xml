@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PISI>
+    <Source>
+        <Name>discord</Name>
+        <Summary xml:lang="tr">Oyuncular için hepsi bir arada sesli ve yazılı sohbet</Summary>
+        <Description xml:lang="tr">Oyuncular için ücretsiz, güvenli, hem bilgisayarınızda hem de telefonunuzda çalışabilen, hepsi bir arada sesli ve yazılı sohbet.</Description>
+    </Source>
+</PISI>
