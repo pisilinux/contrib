@@ -1,44 +1,52 @@
 <?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>discord</Name>
-        <Homepage>https://discordapp.net</Homepage>
+        <Homepage>https://discordapp.com</Homepage>
         <Packager>
             <Name>Sami BABAT</Name>
             <Email>samibabat@gmail.com</Email>
         </Packager>
-        <Summary>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Summary>
-        <Description>Takım savaşları için olan oyunlarda sesli iletişim için daha etkili bir uygulamadır..</Description>
-        <License>Proprietary</License>
-        <IsA>network</IsA>
+        <Summary>All-in-one voice and text chat for gamers</Summary>
+        <Description>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.</Description>
+        <License>proprietary</License>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="06675d5b6f4b7a09777f2c88a97f505d4b387760">https://dl.discordapp.net/apps/linux/0.0.9/discord-0.0.9.tar.gz</Archive>
+        <Archive sha1sum="f5808f391835809fe876455529012a0a248e078b" type="targz">https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>alsa-lib</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>glibc</Dependency>
-            <Dependency>libnotify</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>noto-fonts-cjk</Dependency>
+            <Dependency>curl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>discord</Name>
+        <RuntimeDependencies>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
         <Files>
-        	<Path fileType="data">/opt/Discord/</Path>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="data">/usr/bin</Path>
+        	<Path fileType="data">/opt/discord</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" target="/usr/share/pixmaps/discord.png" permission="0644">discord.png</AdditionalFile>
-            <AdditionalFile owner="root" target="/usr/share/applications/discord.desktop" permission="0644">discord.desktop</AdditionalFile>            
-        </AdditionalFiles>
     </Package>
 
     <History>
-         <Update release="3">
+        <Update release="4">
+            <Date>2020-03-16</Date>
+            <Version>0.0.10</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+        <Update release="3">
             <Date>2019-11-16</Date>
             <Version>0.0.9</Version>
             <Comment>Version Bump</Comment>
