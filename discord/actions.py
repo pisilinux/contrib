@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # Created For PisiLinux
-from pisi.actionsapi import pisitools
+from pisi.actionsapi import pisitools, shelltools
 
 WorkDir = "."
 NoStrip = ["/"]
@@ -8,6 +8,8 @@ NoStrip = ["/"]
 
 def setup():
     pisitools.dosed('Discord/discord.desktop', 'Exec=.*', 'Exec=/usr/bin/discord')
+    shelltools.system('curl https://discordapp.com/terms -o LICENSE.html')
+    shelltools.system('curl https://discordapp.com/licenses -o OSS-LICENSES.html')
 
 
 def install():

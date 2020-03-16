@@ -13,8 +13,9 @@
         <License>proprietary</License>
         <IsA>app:gui</IsA>
         <Archive sha1sum="f5808f391835809fe876455529012a0a248e078b" type="targz">https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.tar.gz</Archive>
-        <Archive sha1sum="305a382c975f9acccfd4cbff4fb710d51dc8f6b4" type="binary" name="LICENSE.html">https://discordapp.com/terms</Archive>
-        <Archive sha1sum="cc29201ee04f9e9a510a7796cb741b2a4a508349" type="binary" name="OSS-LICENSES.html">https://discordapp.com/licenses</Archive>
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
