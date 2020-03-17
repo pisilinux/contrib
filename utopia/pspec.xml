@@ -3,6 +3,7 @@
 <PISI>
     <Source>
         <Name>utopia</Name>
+        <Homepage>https://u.is/en/</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
@@ -10,7 +11,7 @@
         <Summary>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
         <Description>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="0094142787a10841d58738bdef093fb780f4aac9" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
+        <Archive sha1sum="ccc3787be8fcc6c075f5819d8122aba91bbca06a" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -29,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2020-03-17</Date>
+            <Version>1.0.5763</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	<Update release="1">
             <Date>2020-02-15</Date>
             <Version>1.0.5672</Version>
