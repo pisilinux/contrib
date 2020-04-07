@@ -1,0 +1,46 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brother-1210w</Name>
+        <Homepage></Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>brother-1210w</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Brother HL-1210W CUPS driver. After installing this, install printer from CUPS web interface</Summary>
+        <Description>Brother HL-1210W CUPS driver. After installing this, install printer from CUPS web interface</Description>
+        <Archive sha1sum="74a6e2ad6bd1373ddb04a231c0ab61fae4b67347" type="binary">http://download.brother.com/welcome/dlf101549/hl1210wlpr-3.0.1-1.i386.rpm</Archive>
+        <Archive sha1sum="279ed55b210f57943e92c7ccb72a90830bbdbeb6" type="binary">http://download.brother.com/welcome/dlf101548/hl1210wcupswrapper-3.0.1-1.i386.rpm</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>brother-1210w</Name>
+        <RuntimeDependencies>
+            <Dependency>cups</Dependency>
+            <Dependency>ghostscript</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/opt</Path>
+            <Path fileType="library">/usr/lib/cups</Path>
+            <Path fileType="data">/usr/share/cups</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2020-04-06</Date>
+            <Version>3.0.1</Version>
+            <Comment>First release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
