@@ -11,7 +11,7 @@
         <Summary>WPS Office Suite</Summary>
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
-        <Archive sha1sum="c6735dcfc912f3ee0a5450fe5c38fe0a75e04cc8" type="binary">http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9080/wps-office_11.1.0.9080.XA_amd64.deb</Archive>
+        <Archive sha1sum="20e1aeb6860d66227f1510a936e20bfd6d0275e5" type="binary">http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9505/wps-office_11.1.0.9505.XA_amd64.deb</Archive>
         <Archive sha1sum="467908aefffc4dea537d2a97aac6e105502c1abe" target="opt/kingsoft/wps-office/office6/dicts/spellcheck" type="zip">https://github.com/wps-community/wps_community_website/raw/master/root/download/dicts/tr_TR.zip</Archive>
         <BuildDependencies>
             <Dependency>tar</Dependency>
@@ -72,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2020-02-17</Date>
+            <Version>11.1.0.9505</Version>
+            <Comment>Version bump</Comment>
+            <Name>İdris Kalp</Name>
+            <Email>idriskalp@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2020-02-17</Date>
             <Version>11.1.0.9080</Version>
