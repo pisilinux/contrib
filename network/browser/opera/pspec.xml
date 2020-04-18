@@ -52,6 +52,7 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXcomposite</Dependency>
+	    <Dependency>gsettings-desktop-schemas</Dependency>	
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
