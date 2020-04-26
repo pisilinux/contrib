@@ -10,34 +10,7 @@
         <Summary>AnyDesk is a remote desktop application</Summary>
         <Description>AnyDesk is a remote desktop application</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="07d2cd08a7bd39a566f221168424046c122c7999" type="binary">https://download.anydesk.com/linux/anydesk_5.5.1-1_amd64.deb</Archive>
-        <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency>libSM-devel</Dependency>
-            <Dependency>libXi-devel</Dependency>
-            <Dependency>libXt-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>libXmu-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>libxcb-devel</Dependency>
-            <Dependency>polkit-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
-            <Dependency>gtkglext-devel</Dependency>
-            <Dependency>mesa-glu-devel</Dependency>
-            <Dependency>libXfixes-devel</Dependency>
-            <Dependency>libXrandr-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libXdamage-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>pangox-compat-devel</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="6f7104a6b44fbe7c8f016166e154e3eb10eceac1" type="binary">https://download.anydesk.com/linux/anydesk_5.5.5-1_amd64.deb</Archive>      
     </Source>
 
     <Package>
@@ -75,9 +48,20 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/anydesk.png" owner="root">anydesk.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+          <Update release="3">
+            <Date>2020-04-27</Date>
+            <Version>5.5.5</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	 <Update release="2">
             <Date>2019-12-05</Date>
             <Version>5.5.1.1</Version>

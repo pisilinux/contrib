@@ -13,7 +13,7 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf anydesk_5.5.1-1_amd64.deb")
+    shelltools.system("ar xf anydesk_%s-1_amd64.deb"  % get.srcVERSION())
     shelltools.system("tar xf data.tar.gz")
 
 def install():
