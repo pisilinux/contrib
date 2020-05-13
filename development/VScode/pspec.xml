@@ -12,7 +12,7 @@
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="85f234d0ab3878611fc9bb41059347672f84f11c">https://az764295.vo.msecnd.net/stable/2aae1f26c72891c399f860409176fe435a154b13/code-stable-1586345639.tar.gz</Archive>
+        <Archive type="targz" sha1sum="590e195dad8700958d46b3e91bcf1de53c36bff7">https://az764295.vo.msecnd.net/stable/d69a79b73808559a91206d73d7717ff5f798f23c/code-stable-1588868611.tar.gz</Archive>
     </Source>
     <Package>
         <Name>VSCode</Name>
@@ -28,6 +28,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+		<Update release="9">
+            <Date>2020-05-13</Date>
+            <Version>1.45</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2020-04-09</Date>
             <Version>1.44</Version>
