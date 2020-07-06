@@ -8,44 +8,31 @@
             <Name>Stefan Gronewold (groni)</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <License>GPLv2</License>
+        <License>GPL-3</License>
         <IsA>gui</IsA>
         <Summary>Otter-Browser Controlled by the user, not vice versa</Summary>
         <Description>Otter Browser aims to recreate the best aspects of the classic Opera (12.x) UI using Qt5.</Description>
-        <Archive sha1sum="947ca900defd80361af6780f24177e77378603c0" type="tarbz2">https://sourceforge.net/projects/otter-browser/files/otter-browser-rc8/otter-browser-0.9.98.tar.bz2</Archive>
+        <Archive sha1sum="10f0bd2bc2626df442d91837496a6625b8786df5" type="targz">https://github.com/OtterBrowser/otter-browser/archive/v1.0.01.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>qt5-base-devel</Dependency>
-            <Dependency>qt5-webkit-devel</Dependency>
-            <Dependency>openssl-devel</Dependency>
-            <Dependency>qt5-multimedia-devel</Dependency>
-            <Dependency>qt5-script-devel</Dependency>
-            <Dependency>qt5-sql-sqlite</Dependency>
-            <Dependency>qt5-xmlpatterns-devel</Dependency>
-            <Dependency>qt5-location-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
-            <Dependency>jre7-openjdk</Dependency>
-            <Dependency>cmake</Dependency>
-            <Dependency>autogen</Dependency>
-            <Dependency>qt5-webengine-devel</Dependency>
-            <Dependency>qt5-declarative-devel</Dependency>
             <Dependency>hunspell-devel</Dependency>
+            <Dependency>qt5-multimedia-devel</Dependency>
+            <Dependency>qt5-svg-devel</Dependency>
+            <Dependency>qt5-webengine-devel</Dependency>
+            <Dependency>qt5-webkit-devel</Dependency>
+            <Dependency>qt5-xmlpatterns-devel</Dependency>
+            <Dependency>cmake</Dependency>           
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>otter-browser</Name>
         <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>qt5-svg</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>qt5-webkit</Dependency>
-            <Dependency>qt5-multimedia</Dependency>
-            <Dependency>qt5-script</Dependency>
-            <Dependency>qt5-xmlpatterns</Dependency>
-            <Dependency>qt5-webengine</Dependency>
-            <Dependency>qt5-declarative</Dependency>
             <Dependency>hunspell</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>qt5-svg</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-xmlpatterns</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -56,6 +43,13 @@
     </Package>
 
     <History>
+         <Update release="5">
+            <Date>2020-07-06</Date>
+            <Version>1.0.01</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2018-05-21</Date>
             <Version>0.9.98</Version>
