@@ -10,7 +10,7 @@
         <Summary>Slack Desktop</Summary>
         <Description>Slack Client for Linux</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="9bc4dc939837269ec9c452c0e21f3c6f802b94a5" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.2-amd64.deb</Archive>
+        <Archive sha1sum="09f40f2ca09354b17ba3e3843393524a76a2ee6d" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-4.7.0-amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>tar</Dependency>
             <Dependency>binutils</Dependency>
@@ -62,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2020-07-06</Date>
+            <Version>4.7.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2020-04-10</Date>
             <Version>4.4.2</Version>

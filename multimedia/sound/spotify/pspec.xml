@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="b430674975cdb64f610e40bfe4cab0fa9f1c7089" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.26.501.gbe11e53b-15_amd64.deb</Archive>        
+        <Archive sha1sum="b430674975cdb64f610e40bfe4cab0fa9f1c7089" type="binary">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.26.501.gbe11e53b-15_amd64.deb</Archive>
     </Source>
     <Package>
         <Name>spotify</Name>
