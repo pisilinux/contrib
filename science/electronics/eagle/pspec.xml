@@ -12,12 +12,12 @@
         <Summary>Powerful suite for schematic capture and printed circuit board design (aka eaglecad)</Summary>
         <Description>Powerful suite for schematic capture and printed circuit board design (aka eaglecad).</Description>
         <Icon>eagle</Icon>
-        <Archive sha1sum="b26368523c403cd9ea539b435625aa61c2e8c2ac" type="targz">https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.5.2_English_Linux_64bit.tar.gz</Archive>
+        <Archive sha1sum="af3a626ab7da31c740b99bfc26a262be196c9abd" type="targz">https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.6.2_English_Linux_64bit.tar.gz</Archive>
     </Source>
     <Package>
         <Name>eagle</Name>
         <Files>
-            <Path fileType="executable">/opt/eagle-9.5.2</Path>
+            <Path fileType="executable">/opt/eagle-9.6.2</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
@@ -29,6 +29,13 @@
         <Summary>Powerful suite for schematic capture and printed circuit board design</Summary>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2020-09-04</Date>
+            <Version>9.6.2</Version>
+             <Comment>version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2020-02-21</Date>
             <Version>9.5.2</Version>
