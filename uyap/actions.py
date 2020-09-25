@@ -14,7 +14,10 @@ def setup():
 
 def install():
     pisitools.insinto("/usr", "%s/usr/*" % get.workDIR())
-    #For java_8
-    pisitools.dosed("%s/usr/share/UYAPEditor/dokuman.sh" % get.installDIR(), "java", "java_8")
-    pisitools.dosed("%s/usr/share/UYAPEditor/sablon.sh" % get.installDIR(), "java", "java_8")
+
+    #fixed the authentication problem.
     shelltools.system("chmod -R 0755 %s/usr/share/UYAPEditor/*" % get.installDIR())
+
+    #UYAPEditor has singing problem with java-8. For now 
+    #pisitools.dosed("%s/usr/share/UYAPEditor/dokuman.sh" % get.installDIR(), "java", "java_8")
+    #pisitools.dosed("%s/usr/share/UYAPEditor/sablon.sh" % get.installDIR(), "java", "java_8")
