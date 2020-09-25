@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
         <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
-        <Archive sha1sum="09cd6495abea105cae7c3cb116e43c827a109288" type="tarxz">https://master.dl.sourceforge.net/project/ar-iv/uyapeditor-4.2.9.tar.xz</Archive>
+        <Archive sha1sum="612f793fc40f36de8389934ce61578eb2f350976" type="zip">http://www.uyap.gov.tr/destek/uyappardus.zip</Archive>
     </Source>
 
     <Package>
