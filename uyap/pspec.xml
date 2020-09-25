@@ -18,8 +18,8 @@
     <Package>
         <Name>uyap</Name>
         <RuntimeDependencies>
-            <Dependency>jre8-openjdk</Dependency>
-            <Dependency>jre8-openjdk-headless</Dependency>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>jre7-openjdk-headless</Dependency>
             <Dependency>pcsc-lite</Dependency>
         </RuntimeDependencies>
         <Files>
