@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>Teams</Name>
-        <Homepage>https://teams.microsoft.com/downloads</Homepage>
+        <Homepage>https://teams.microsoft.com</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
@@ -14,8 +14,9 @@
         <Description>Microsoft Teams for Linux is your chat-centered workspace in Office 365</Description>
         <Archive sha1sum="1a58fbdb030aca49f10307c72b18ed297dc7d281" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.25560_amd64.deb</Archive>
     </Source>
+
     <Package>
-        <Name>Teams</Name>
+        <Name>teams</Name>
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>gtk3</Dependency>
@@ -25,24 +26,11 @@
             <Dependency>nss</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="exectuble">/usr/sbin/</Path>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="data">/usr/share/applications/</Path>
-            <Path fileType="data">/usr/share/pixmaps/</Path>
-            <Path fileType="data">/usr/lib/python2.7/</Path>
-            <Path fileType="data">/usr/lib/</Path>
-            <Path fileType="data">/usr/libexec/</Path>
-            <Path fileType="data">/usr/include/</Path>
-            <Path fileType="data">/usr/lib32/</Path>
-            <Path fileType="data">/usr/games</Path>
-            <Path fileType="data">/usr/src</Path>
-            <Path fileType="exectuble">/usr/share/teams/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/teams</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile target="/usr/share/applications/teams.desktop" owner="root">teams.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/pixmaps/teams.png" owner="root">teams.png</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <History>
