@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Widevine plugin for Chromium Browser</Summary>
         <Description>Widevine is a browser plugin designed for the viewing of premium video content. This package contains Widevine plugin for Chromium browser</Description>
-        <Archive sha1sum="3451c0360705375ac15d5943cd5e7c7f8953e727" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="f68bee6af5327271f2a7aa7b656b30fe48f5d947" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>nspr</Dependency>
             <Dependency>nss</Dependency>
@@ -37,7 +37,14 @@
         </Files>
     </Package>
 
-    <History> 
+    <History>
+        <Update release="3">
+            <Date>2020-10-21</Date>
+            <Version>4.10.1679.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>idriskalp@gmail.com</Email>
+        </Update> 
         <Update release="1">
             <Date>2020-01-14</Date>
             <Version>4.10.1610.6</Version>
