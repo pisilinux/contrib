@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser Developer version</Summary>
         <Description>Opera Web Browser Developer Version</Description>
         <License>EULA</License>
-        <Archive sha1sum="5e038e52ed73b7f2198de1a737673daaa8c8f95e" type="binary">https://ftp.opera.com/pub/opera-beta/68.0.3618.36/linux/opera-beta_68.0.3618.36_amd64.deb</Archive>
+        <Archive sha1sum="13ee6400a2f8fac1dcd18a579c469d15bf09b50b" type="binary">https://get.geo.opera.com/pub/opera-beta/72.0.3815.133/linux/opera-beta_72.0.3815.133_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -71,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2020-10-21</Date>
+            <Version>72.0.3815.133</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>idris Kalp</Email>
+        </Update> 
         <Update release="2">
             <Date>2020-04-14</Date>
             <Version>68.0.3618.36</Version>
