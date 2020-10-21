@@ -12,7 +12,7 @@
         <License>custom</License>
         <IsA>app:gui</IsA>
         <Summary>A complete solution for creation and editing PDF files. (Free for non-commercial use) - Qt5 version</Summary>
-        <Description>Master PDF Editor provides you advanced functions for working with PDF format.</Descript
+        <Description>Master PDF Editor provides you advanced functions for working with PDF format.</Description>
         <Archive sha1sum="fd3e19479a298bfe6770b5dddd67b009742e9321" type="targz">https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.tar.gz</Archive>
     </Source>
     <Package>
