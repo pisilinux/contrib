@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>android-tools</Name>
+        <Homepage>https://developer.android.com/studio</Homepage>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <License>Custom</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">Android Platform Tools</Summary>
+        <Description xml:lang="en">Android Platform Tools</Description>
+        <Archive type="binary" sha1sum="2016a7e8f3f696583c0069881f4270365e247cd7">https://dl.google.com/android/repository/platform-tools_r29.0.5-linux.zip</Archive>
+        <BuildDependencies>
+            <Dependency>unzip</Dependency>
+            <Dependency>libusb-devel</Dependency>
+            <Dependency>libpcre-devel</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>ruby-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>android-tools</Name>
+        <Summary xml:lang="en">Android Platform Tools</Summary>
+        <Description xml:lang="en">Android Platform Tools</Description>
+        <PartOf>programming.tools</PartOf>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/bin/adb</Path>
+            <Path fileType="data">/usr/bin/fastboot</Path>
+        </Files>
+    </Package>
+    <History>
+    	<Update release="2">
+            <Date>2020-01-06</Date>
+            <Version>29.0.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-11-12</Date>
+            <Version>26.02</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

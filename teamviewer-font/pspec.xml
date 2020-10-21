@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Teamviewer fonts</Summary>
         <Description>teamviewer windows fonts</Description>
-        <Archive sha1sum="28cc454bc7692ab80fe74f239b1f940e55fe1526" type="targz">https://dl.dropboxusercontent.com/s/u4tmxiwc51f0rer/teamviewer-fonts.tar.gz</Archive> 
+        <Archive sha1sum="28cc454bc7692ab80fe74f239b1f940e55fe1526" type="targz">https://dl.dropboxusercontent.com/s/u4tmxiwc51f0rer/teamviewer-fonts.tar.gz</Archive>
     </Source>
 
     <Package>

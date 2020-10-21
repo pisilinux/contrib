@@ -1,0 +1,2 @@
+#!/bin/sh
+java_8 -jar /usr/share/akis/akia.jar

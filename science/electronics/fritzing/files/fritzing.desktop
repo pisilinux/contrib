@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=fritzing
+GenericName=fritzing
+GenericName[tr]=fritzing
+Comment=Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. 
+Comment[tr]=Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. 
+Icon=fritzing_icon
+Exec=fritzing
+Terminal=false
+StartupNotify=false
+Categories=Application;Electronics;

@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>utopia</Name>
+        <Homepage>https://u.is/en/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
+        <Description>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="346a408fad614680e7dffc633965ed932dd288a1" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>utopia</Name>
+        <Files>
+	        <Path fileType="executable">/opt/utopia/messenger/utopia</Path>
+			<Path fileType="executable">/usr/bin</Path>
+			<Path fileType="data">/opt/utopia/</Path>
+			<Path fileType="data">/usr/share/applications/</Path>
+	        <Path fileType="data">/usr/share/icons</Path>
+	    </Files>
+	     <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/utopia.desktop" owner="root">utopia.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/utopia.png" owner="root">utopia.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+    	 <Update release="3">
+            <Date>2020-07-06</Date>
+            <Version>1.0.5986</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2020-03-17</Date>
+            <Version>1.0.5763</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    	<Update release="1">
+            <Date>2020-02-15</Date>
+            <Version>1.0.5672</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

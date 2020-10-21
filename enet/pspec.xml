@@ -14,11 +14,9 @@
         <Description>ENet's purpose is to provide a relatively thin, simple and robust network communication layer on top of UDP (User Datagram Protocol).The primary feature it provides is optional reliable, in-order delivery of packets.
 ENet omits certain higher level networking features such as authentication, lobbying, server discovery, encryption, or other similar tasks that are particularly application specific so that the library remains flexible, portable, and easily embeddable.</Description>
         <Archive sha1sum="5bcf9aa1a8f2e54cc85c1435d7dac0970d382b7e" type="targz">http://enet.bespin.org/download/enet-1.3.13.tar.gz</Archive>
-
         <BuildDependencies>
             <Dependency>glibc</Dependency>
         </BuildDependencies>
-
     </Source>
 
     <Package>
@@ -26,7 +24,6 @@ ENet omits certain higher level networking features such as authentication, lobb
         <RuntimeDependencies>
             <Dependency>glibc</Dependency>
         </RuntimeDependencies>
-
         <Files>
             <Path fileType="all">/</Path>
             <!--
@@ -47,7 +44,7 @@ ENet omits certain higher level networking features such as authentication, lobb
         <Summary>Development files for enet</Summary>
         <RuntimeDependencies>
             <Dependency release="current">enet</Dependency>
-			<Dependency>glibc-devel</Dependency>
+            <Dependency>glibc-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -55,7 +52,7 @@ ENet omits certain higher level networking features such as authentication, lobb
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
-    -->
+    
     <History>
         <Update release="1">
             <Date>2018-11-19</Date>

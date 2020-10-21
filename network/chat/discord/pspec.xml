@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>discord</Name>
+        <Homepage>https://discordapp.com</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>All-in-one voice and text chat for gamers</Summary>
+        <Description>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.</Description>
+        <License>proprietary</License>
+        <IsA>app:gui</IsA>
+        <Archive sha1sum="1143e037a5d10fa203817b4994ef53d1ab642993" type="targz">https://dl.discordapp.net/apps/linux/0.0.11/discord-0.0.11.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>curl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>discord</Name>
+        <RuntimeDependencies>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>mesa</Dependency>
+        </RuntimeDependencies>
+        <Files>
+        	<Path fileType="data">/opt/discord</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="5">
+            <Date>2020-08-07</Date>
+            <Version>0.0.11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2020-03-16</Date>
+            <Version>0.0.10</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+        <Update release="3">
+            <Date>2019-11-16</Date>
+            <Version>0.0.9</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2019-02-17</Date>
+            <Version>0.0.8</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2018-09-13</Date>
+            <Version>0.0.5</Version>
+            <Comment>Ilk sürüm</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

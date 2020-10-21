@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>atom</Name>
+        <Homepage>https://atom.io/</Homepage>
+        <Packager>
+            <Name>Pisi Linux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:gui</IsA>
+        <PartOf>applications.development</PartOf>
+        <Summary>A hackable text editor.</Summary>
+        <Description>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
+        <Archive sha1sum="6d3e9e18b68e07f84db26b325d39799e2f9dbd1f" type="binary">https://github.com/atom/atom/releases/download/v1.38.2/atom-amd64.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>atom</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>google-chrome</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/atom</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/atom.png">atom.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/atom.desktop">atom.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="4">
+            <Date>2019-07-12</Date>
+            <Version>1.38.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2018-02-19</Date>
+            <Version>1.24.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2017-02-20</Date>
+            <Version>1.14.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-05-6</Date>
+            <Version>1.8.0_beta3</Version>
+            <Comment>First release.</Comment>
+            <Name>Stefan Gronewold (groni)</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

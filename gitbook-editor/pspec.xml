@@ -12,11 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>GitBook Simple writing from your desktop.</Summary>
         <Description>The GitBook workflow you love, on your Desktop. Try it now !</Description>
-        <Archive sha1sum="9533674c1351dffe89960b39fd4081b48977d68b" type="targz">https://github.com/groni/Sources/raw/master/gitbook-editor-6.2.1-x64.tar.gz</Archive>        
+        <Archive sha1sum="9533674c1351dffe89960b39fd4081b48977d68b" type="targz">https://github.com/groni/Sources/raw/master/gitbook-editor-6.2.1-x64.tar.gz</Archive>
     </Source>
 
     <Package>
-        <Name>gitbook-editor</Name>        
+        <Name>gitbook-editor</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>nss</Dependency>
@@ -44,14 +44,14 @@
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXScrnSaver</Dependency>
-            <Dependency>libXcomposite</Dependency>            
-        </RuntimeDependencies>        
-        <Files>            
+            <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/opt</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path>            
-        </Files>        
+            <Path fileType="application">/usr/share/applications</Path>
+        </Files>
     </Package>
 
     <History>

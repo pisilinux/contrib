@@ -18,6 +18,6 @@ def setup():
     shelltools.system("sed -i 's Icon=app Icon=gitkraken ' usr/share/applications/gitkraken.desktop")
     shelltools.system("mv usr/share/pixmaps/app.png usr/share/pixmaps/gitkraken.png")
 def install():
-    pisitools.insinto("/", "usr")   
-    pisitools.dosym("/usr/share/gitkraken/gitkraken", "/usr/bin/gitkraken")   
+    pisitools.insinto("/", "usr")
+    pisitools.dosym("/usr/share/gitkraken/gitkraken", "/usr/bin/gitkraken")
 

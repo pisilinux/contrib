@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gradle</Name>
+        <Summary xml:lang="tr">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Summary>
+        <Description xml:lang="tr">Gradle Android uygulaması geliştirme aşamalarını otomatize eden bir build sistemidir.</Description>
+    </Source>
+</PISI>

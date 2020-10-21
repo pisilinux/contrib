@@ -24,10 +24,10 @@
 
     <Package>
         <Name>gnofract4d</Name>
-        <RuntimeDependencies>                        
+        <RuntimeDependencies>
             <Dependency>libpng</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
-            <Dependency>libgcc</Dependency>            
+            <Dependency>libgcc</Dependency>
             <Dependency>python</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -41,7 +41,7 @@
         </Files>
     </Package>
 
-    <History>        
+    <History>
         <Update release="1">
             <Date>2016-04-01</Date>
             <Version>3.14.1</Version>

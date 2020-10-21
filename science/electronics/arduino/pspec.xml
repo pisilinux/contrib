@@ -1,0 +1,73 @@
+<PISI>
+    <Source>
+        <Name>arduino</Name>
+        <Homepage>https://www.arduino.cc</Homepage>
+        <Packager>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv1</License>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+        <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
+        <Icon>arduino</Icon>
+        <Archive sha1sum="010b5fe4cc11a81876455aa46a7fc8f17796db54" type="tarxz">https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>arduino</Name>
+        <Files>
+            <Path fileType="data">/opt/arduino-1.8.12</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/arduino.desktop" owner="root" permission="0744" group="root">arduino.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/arduino.png" owner="root" permission="0744" group="root">arduino.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
+    </Package>
+    <History>
+    	<Update release="6">
+            <Date>2020-02-22</Date>
+            <Version>1.8.12</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2019-06-11</Date>
+            <Version>1.8.9</Version>
+            <Comment>small fixes</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+        <Update release="4">
+            <Date>2019-05-22</Date>
+            <Version>1.8.9</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2018-02-19</Date>
+            <Version>1.8.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2016-02-19</Date>
+            <Version>1.8.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
+            <Email>prdsmehmetstc@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-07-20</Date>
+            <Version>1.6.9</Version>
+            <Comment>Yazılım geliştirme editörü</Comment>
+            <Name>Sami Babat</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

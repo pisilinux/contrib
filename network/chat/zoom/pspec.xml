@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>zoom</Name>
+        <Homepage>https://zoom.us/</Homepage>
+        <Packager>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Packager>
+        <License>Proprietary</License>
+        <IsA>app:gui</IsA>
+        <Summary>Zoom, Video Conferencing and Web Conferencing Service</Summary>
+        <Description>Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
+        <Archive sha1sum="0a6bc7ad6cc6e2f724d2039f9c0c0b0607b01052" type="tarxz">https://zoom.us/client/5.3.465578.0920/zoom_x86_64.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>zoom</Name>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libxshmfence</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libutil-linux</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>qt5-xmlpatterns</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>qt5-quickcontrols2</Dependency>
+        </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/Zoom.desktop">Zoom.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/Zoom.png">Zoom.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/application-x-zoom.png">application-x-zoom.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/zoom.xml">zoom.xml</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="6">
+            <Date>2020-09-07</Date>
+            <Version>5.3.465578.0920</Version>
+            <Comment>Version bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2020-09-07</Date>
+            <Version>5.2.454870.0831</Version>
+            <Comment>Version bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2020-07-06</Date>
+            <Version>5.1.422789.0705</Version>
+            <Comment>Version bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2020-05-30</Date>
+            <Version>5.0.413237.0524</Version>
+            <Comment>Version bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2020-04-08</Date>
+            <Version>3.5.383291.0407</Version>
+            <Comment>Version bump</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2020-03-27</Date>
+            <Version>3.5.374815.0324</Version>
+            <Comment>First release</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

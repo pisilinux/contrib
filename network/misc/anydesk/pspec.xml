@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>anydesk</Name>
+        <Packager>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Packager>
+        <Summary>AnyDesk is a remote desktop application</Summary>
+        <Description>AnyDesk is a remote desktop application</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="6f7104a6b44fbe7c8f016166e154e3eb10eceac1" type="binary">https://download.anydesk.com/linux/anydesk_5.5.5-1_amd64.deb</Archive>      
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>gtkglext</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>pangox-compat</Dependency>
+        </RuntimeDependencies>
+        <Name>anydesk</Name>
+        <Icon>anydesk</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/anydesk.png" owner="root">anydesk.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+          <Update release="3">
+            <Date>2020-04-27</Date>
+            <Version>5.5.5</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    	 <Update release="2">
+            <Date>2019-12-05</Date>
+            <Version>5.5.1.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2019-07-15</Date>
+            <Version>5.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

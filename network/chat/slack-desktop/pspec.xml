@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>slack-desktop</Name>
+        <Packager>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Packager>
+        <Summary>Slack Desktop</Summary>
+        <Description>Slack Client for Linux</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="561e3e6515c713ac0d1c3ec800e0596ebb3b5b29" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-4.8.0-amd64.deb</Archive>
+        <BuildDependencies>
+            <Dependency>tar</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>slack-desktop</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXcomposite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="6">
+            <Date>2020-09-07</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="5">
+            <Date>2020-07-06</Date>
+            <Version>4.7.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Update>
+        <Update release="4">
+            <Date>2020-04-10</Date>
+            <Version>4.4.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+        <Update release="3">
+            <Date>2019-12-31</Date>
+            <Version>4.2.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+        <Update release="2">
+            <Date>2019-10-14</Date>
+            <Version>4.1.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Safa Arıman</Name>
+            <Email>safa@ariman.gen.tr</Email>
+        </Update>
+        <Update release="1">
+            <Date>2018-05-24</Date>
+            <Version>3.0.5</Version>
+            <Comment>First Release</Comment>
+            <Name>Stefan Gronewold</Name>
+            <Email>groni@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

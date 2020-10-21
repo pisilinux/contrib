@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>poco</Name>
+        <Summary xml:lang="tr"> C++ Portable Components (POCO) Development files</Summary>
+        <Description xml:lang="tr">The POCO C++ Libraries are a collection of open source C++ class libraries that simplify and accelerate the development of network-centric, portable applications in C++. The libraries integrate perfectly with the C++ Standard Library and fill many of the functional gaps left open by it.</Description>
+    </Source>
+</PISI>

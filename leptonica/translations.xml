@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>leptonica</Name>
+        <Summary xml:lang="tr">Software that is broadly useful for image processing and image analysis applications</Summary>
+        <Description xml:lang="tr">Görüntü işleme ve görüntü analiz uygulamaları için geniş ölçüde yararlı olan yazılım</Description>
+    </Source>
+</PISI>

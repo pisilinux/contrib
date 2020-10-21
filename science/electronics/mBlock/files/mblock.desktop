@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Mblock
+Comment=The perfect combination of Scratch and Arduino code.
+GenericName=Arduino design.
+Exec=/opt/mBlock/mblock
+Icon=mblock
+Type=Application
+StartupNotify=true
+Categories=Programing;
+MimeType=text/plain;

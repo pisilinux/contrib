@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>leptonica</Name>
+        <Homepage>http://www.leptonica.com/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:console</IsA>
+        <Summary>Software that is broadly useful for image processing and image analysis applications</Summary>
+        <Description>Görüntü işleme ve görüntü analiz uygulamaları için geniş ölçüde yararlı olan yazılım</Description>
+        <Archive sha1sum="bf4ec6e64749c7c11c983c98e1a9f939dc3d23c1" type="targz">http://www.leptonica.com/source/leptonica-1.77.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>tiff-devel</Dependency>
+            <Dependency>webp-devel</Dependency>
+            <Dependency>zlib-devel</Dependency>
+            <Dependency>giflib-devel</Dependency>
+            <Dependency>libpng-devel</Dependency>
+            <Dependency>openjpeg2-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>leptonica</Name>
+        <RuntimeDependencies>
+            <Dependency>tiff</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>zlib</Dependency>
+            <Dependency>giflib</Dependency>
+            <Dependency>libpng</Dependency>
+            <Dependency>openjpeg2</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>leptonica-devel</Name>
+        <Summary>Development files for leptonica</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">leptonica</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+   
+    <History>
+        <Update release="1">
+            <Date>2019-01-25</Date>
+            <Version>1.77.0</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

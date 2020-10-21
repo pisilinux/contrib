@@ -43,7 +43,7 @@
             <Dependency>mesa-glu</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>bullet</Dependency>
-             <Dependency>curl</Dependency>
+            <Dependency>curl</Dependency>
             <Dependency>libarchive</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -63,10 +63,10 @@
         <Update release="1">
             <Date>2018-12-31</Date>
             <Version>20141020</Version>
-                <Comment>First Release</Comment>
+            <Comment>First Release</Comment>
             <Name>Ali Cengiz Kurt</Name>
             <Email>alicengizkurt@gmail.com</Email>
-        </Update>       
+        </Update>
     </History>
 </PISI>
- 
+

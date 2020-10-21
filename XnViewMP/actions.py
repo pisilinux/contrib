@@ -15,4 +15,4 @@ def install():
     pisitools.insinto("/opt", "XnView")
     pisitools.insinto("/usr/share/applications", "XnView/XnView.desktop")
     pisitools.insinto("/usr/share/doc", "XnView/license.txt")
-    
+

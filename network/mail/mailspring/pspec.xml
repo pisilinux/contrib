@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mailspring</Name>
+        <Homepage>https://getmailspring.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>A beautiful, fast and maintained fork of Nylas Mail by one of the original authors.</Summary>
+        <Description>A beautiful, fast and maintained fork of Nylas Mail by one of the original authors..</Description>
+        <Archive sha1sum="9cd6e814989d98e68f457714fe28f25b6893e18b" type="binary">https://github.com/Foundry376/Mailspring/releases/download/1.7.2/mailspring-1.7.2-amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>mailspring</Name>
+        <RuntimeDependencies>
+            <Dependency>libtool</Dependency>
+            <Dependency>c-ares</Dependency>
+            <Dependency>tidy</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>nss</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/mailspring.desktop" owner="root">mailspring.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/mailspring.png" owner="root">mailspring-icon.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2020-03-06</Date>
+            <Version>1.7.2</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

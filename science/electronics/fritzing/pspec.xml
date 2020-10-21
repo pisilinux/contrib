@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fritzing</Name>
+        <Homepage>https://fritzing.org/</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>fritzing</Icon>
+        <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+        <Description>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Description>
+        <Archive sha1sum="659290316bbe3fdbfe525f569b269f0978a03136" type="tarbz2">https://github.com/fritzing/fritzing-app/releases/download/CD-498/fritzing-a1ffcea08814801903b1a9515b18cf97067968ae-master-498.xenial.linux.AMD64.tar.bz2</Archive>
+    </Source>
+    <Package>
+        <Name>fritzing</Name>
+        <Files>
+        	<Path fileType="data">/opt/fritzing</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="icon">/usr/share/icon</Path>
+            <Path fileType="application">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/applications/fritzing.desktop" group="root" permission="0744">fritzing.desktop</AdditionalFile>
+            <AdditionalFile owner="root" target="/usr/share/icon/fritzing_icon.png" group="root" permission="0744">fritzing_icon.png</AdditionalFile>
+        </AdditionalFiles>
+        <Summary>Fritzing, elektronik donanım tasarımı  açık kaynaklı bir yazılımdır. </Summary>
+    </Package>
+    <History>
+    	 <Update release="2">
+            <Date>2020-02-22</Date>
+            <Version>0.9.4</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2019-06-18</Date>
+            <Version>0.9.3</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>sami.babat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
