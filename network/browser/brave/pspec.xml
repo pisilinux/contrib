@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brave-browser</Name>
+        <Homepage>https://brave.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>Mozilla Public License 2.0</License>
+        <Summary>A web browser that stops ads and trackers by default</Summary>
+        <Description>A web browser that stops ads and trackers by default</Description>
+        <Archive sha1sum="6cccab3f31f2257751099f77817dd0b7292e894b" type="binary">https://github.com/brave/brave-browser/releases/download/v1.18.8/brave-browser-nightly-1.18.8-linux-amd64.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>brave-browser</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libva</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/brave-browser</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/brave-browser.desktop" owner="root">brave-browser.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/brave-logo.png" owner="root">brave-logo.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2020-10-24</Date>
+            <Version>1.18.8</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
