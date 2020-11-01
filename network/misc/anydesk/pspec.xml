@@ -10,7 +10,7 @@
         <Summary>AnyDesk is a remote desktop application</Summary>
         <Description>AnyDesk is a remote desktop application</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="6f7104a6b44fbe7c8f016166e154e3eb10eceac1" type="binary">https://download.anydesk.com/linux/anydesk_5.5.5-1_amd64.deb</Archive>      
+        <Archive sha1sum="5e9cdae15fcfe9ad1a3f7af41e5adb12f0bf7d24" type="binary">https://download.anydesk.com/linux/anydesk_6.0.1-1_amd64.deb</Archive>      
     </Source>
 
     <Package>
@@ -55,7 +55,14 @@
     </Package>
 
     <History>
-          <Update release="3">
+        <Update release="4">
+            <Date>2020-11-01</Date>
+            <Version>6.0.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
             <Date>2020-04-27</Date>
             <Version>5.5.5</Version>
             <Comment>version bump</Comment>

@@ -2,8 +2,7 @@
 Type=Application
 Name=AnyDesk
 GenericName=AnyDesk
-X-GNOME-FullName=AnyDesk
-Exec=kdesu /usr/bin/anydesk %u
+Exec=/usr/bin/anydesk %u
 Icon=anydesk.png
 Terminal=false
 TryExec=anydesk
