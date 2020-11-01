@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Telegram a new era of messaging</Summary>
         <Description>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</Description>
-        <Archive sha1sum="16f67acd17e4e067cbec9bdc3aa638185c006b70" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v2.4.3/tsetup.2.4.3.tar.xz</Archive>
+        <Archive sha1sum="df08d493ab14b759abcf47ef035fae5a27408fd3" type="binary">https://github.com/telegramdesktop/tdesktop/releases/download/v2.4.5/tsetup.2.4.5.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+    	<Update release="24">
+            <Date>2020-11-01</Date>
+            <Version>2.4.5</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	<Update release="23">
             <Date>2020-10-19</Date>
             <Version>2.4.3</Version>
