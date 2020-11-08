@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>anydesk</Name>
+        <Packager>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Packager>
+        <Summary>AnyDesk is a remote desktop application</Summary>
+        <Description>AnyDesk is a remote desktop application</Description>
+        <License>Proprietary</License>
+        <Archive sha1sum="5e9cdae15fcfe9ad1a3f7af41e5adb12f0bf7d24" type="binary">https://download.anydesk.com/linux/anydesk_6.0.1-1_amd64.deb?_ga=2.207018515.1694862281.1604824038-260410453.1604824038</Archive>
+        <BuildDependencies>
+            <Dependency>libXtst-devel</Dependency>
+            <Dependency>libxkbfile-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>libXt-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libXmu-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libxcb-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>gtkglext-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXdamage-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>
+            <Dependency>pangox-compat-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>gtkglext</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>pangox-compat</Dependency>
+        </RuntimeDependencies>
+        <Name>anydesk</Name>
+        <Icon>anydesk</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	 <Update release="3">
+            <Date>2020-11-08</Date>
+            <Version>6.0.1.1</Version>
+            <Comment>version bump</Comment>
+            <Name>AYDIN ATMACA</Name>
+            <Email>aydinatmaca@gmail.com</Email>
+        </Update>
+    	 <Update release="2">
+            <Date>2019-12-05</Date>
+            <Version>5.5.1.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2019-07-15</Date>
+            <Version>5.1.1</Version>
+            <Comment>First release</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
