@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>youtube-to-MP3</Name>
+        <Homepage>https://www.mediahuman.com/youtube-to-mp3-converter/</Homepage>
+        <Packager>
+            <Name>AYDIN ATMACA</Name>
+            <Email>aydinatmaca@gmail.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app</IsA>
+        <Summary>YouTube to Mp3 converter\nDownloads audio from YouTube or Vimeo and saves it to mp3 or m4a format to listen to locally</Summary>
+        <Description>YouTube to Mp3 converter\nDownloads audio from YouTube or Vimeo and saves it to mp3 or m4a format to listen to locally</Description>
+        <Archive sha1sum="e6e924d36f4a153d904ce5992dda8e342f4773f4" type="binary">https://www.mediahuman.com/tr/download/YouTubeToMP3.amd64.deb</Archive>
+        <BuildDependencies>
+            <!-- 
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-declarative-devel</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>taglib-devel</Dependency>
+            <Dependency>qt5-multimedia-devel</Dependency>
+            <Dependency>qt5-webkit-devel</Dependency>
+             -->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>youtube-to-MP3</Name>
+        <RuntimeDependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-declarative</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>taglib</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+        </RuntimeDependencies>
+    
+        <Files>
+            <Path fileType="executable">/opt/youtube-to-mp3</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/youtube-to-mp3</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>       
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2020-11-08</Date>
+            <Version>3.9.9.48</Version>
+            <Comment>First release</Comment>
+            <Name>AYDIN ATMACA</Name>
+            <Email>aydinatmaca@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

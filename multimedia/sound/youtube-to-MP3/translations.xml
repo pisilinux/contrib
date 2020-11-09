@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>youtube-to-MP3</Name>
+        <Summary xml:lang="tr">YouTube to Mp3 converter\nDownloads audio from YouTube or Vimeo and saves it to mp3 or m4a format to listen to locally</Summary>
+        <Description xml:lang="tr">YouTube to Mp3 converter\nDownloads audio from YouTube or Vimeo and saves it to mp3 or m4a format to listen to locally</Description>
+    </Source>
+</PISI>
