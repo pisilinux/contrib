@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>elogind</Name>
@@ -11,57 +11,90 @@
         <License>GPLv2.1</License>
         <IsA>app:console</IsA>
         <Summary>Elogind User, Seat and Session Manager</Summary>
-        <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.  It integrates with PAM to know the set of users
-that are logged in to a system and whether they are logged in graphically, on the console, or remotely..</Description>
-        <Archive sha1sum="12e7e7dd45e19ad674d4320d74041f8966c6dd52" type="targz">https://github.com/elogind/elogind/archive/v239.2.tar.gz</Archive>
+        <Description>Elogind is the systemd project's "logind", extracted out to be a standalone daemon.  It integrates with PAM to know the set of users that are logged in to a system and whether they are logged in graphically, on the console, or remotely.</Description>
+        <Archive sha1sum="4aafb425a9ebef9a156e269ef1b25cfb32720540" type="targz">https://github.com/elogind/elogind/archive/v243.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>eudev-devel</Dependency>
-            <Dependency>audit-devel</Dependency>
+            <Dependency>gperf</Dependency>
+            <Dependency>meson</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>sysvinit</Dependency>
+            <Dependency>kauth-devel</Dependency>
+            <Dependency>kcoreaddons-devel</Dependency>
+            <Dependency>acl-devel</Dependency>
             <Dependency>pam-devel</Dependency>
-            <Dependency>bash-completion</Dependency>
             <Dependency>dbus-devel</Dependency>
+            <Dependency>audit-devel</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>eudev-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>libcap-devel</Dependency>
-            <Dependency>acl-devel</Dependency>
-            <Dependency>sysvinit</Dependency>
-            <Dependency>gperf</Dependency>
-            <Dependency>libxslt</Dependency>
-            <Dependency>docbook-xsl</Dependency>
-            <Dependency>ninja</Dependency>
-            <Dependency>meson</Dependency>
+            <Dependency>polkit-devel</Dependency>
+            <Dependency>cgmanager-devel</Dependency>
+            <Dependency>libevdev</Dependency>
+            <Dependency>p11-kit-devel</Dependency>
+            <Dependency>kernel-headers</Dependency>
+            <Dependency>libpcre2-devel</Dependency>
+            <Dependency>bash-completion</Dependency>
         </BuildDependencies>
         <Patches>
+            <!--Patch>reverse_DISABLE_BUFFER_in_cg_attach.patch</Patch>
+            <Patch>reverse_CLOSE_ON_EXEC_removal.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
         <Name>elogind</Name>
+        <Summary>Elogind User, Seat and Session Manager</Summary>
         <RuntimeDependencies>
             <Dependency>acl</Dependency>
             <Dependency>pam</Dependency>
             <Dependency>audit</Dependency>
+            <Dependency>kauth</Dependency>
+            <Dependency>kcoreaddons</Dependency>
             <Dependency>eudev</Dependency>
+            <Dependency>libevdev</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>cgmanager</Dependency>
+            <Dependency>libcap</Dependency>
             <Dependency>bash-completion</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/bin</Path>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="conf">/etc</Path>
             <Path fileType="library">/lib</Path>
+            <Path fileType="executable">/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="locale">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/zsh</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/factory</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/zsh</Path>
+            <Path fileType="locale">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/bash-completion</Path>
         </Files>
+        <AdditionalFiles>
+            <!--AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/elogind.conf">tmpfiles.conf</AdditionalFile-->
+             <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/rules.d/75-elogind.rules">25-elogind.rules</AdditionalFile>
+            <AdditionalFile permission="0644" target="/usr/share/polkit-1/rules.d/75-elogind.rules">25-elogind.rules</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/elogind-user">elogind-user</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/pam.d/system-login">system-login</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/etc/pam.d/elogind">elogind.pamd</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+        <Conflicts>
+            <!-- Package>ConsoleKit</Package -->
+        </Conflicts>
     </Package>
     
     <Package>
         <Name>elogind-devel</Name>
+        <Summary>Development files for elogind</Summary>
         <RuntimeDependencies>
             <Dependency release="current">elogind</Dependency>
         </RuntimeDependencies>
@@ -73,11 +106,11 @@ that are logged in to a system and whether they are logged in graphically, on th
 
     <History>
         <Update release="1">
-            <Date>2018-12-03</Date>
-            <Version>239.2</Version>
+            <Date>2020-02-28</Date>
+            <Version>243.7</Version>
             <Comment>First Release.</Comment>
-            <Name>Ali Cengiz Kurt</Name>
-            <Email>alicengizkurt@gmail.com</Email>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

@@ -4,15 +4,27 @@
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
-from pisi.actionsapi import autotools
-from pisi.actionsapi import shelltools
-from pisi.actionsapi import get
+from pisi.actionsapi import mesontools
 
 def setup():
-    shelltools.system("./configure")
+    mesontools.configure("-Drootlibdir=/usr/lib \
+                          --prefix=/usr \
+                          -Dpolkit=true \
+                          -Dsplit-bin=true \
+                          -Dsplit-usr=false \
+                          -Dhalt-path=/sbin/halt \
+                          -Dpamlibdir=/lib/security \
+                          -Dreboot-path=/sbin/reboot \
+                          -Dcgroup-controller=elogind \
+                          -Ddefault-hierarchy=unified \
+                          -Dpoweroff-path=/sbin/poweroff \
+                          -Ddocdir=/usr/share/doc/elogind \
+                          -Drootlibexecdir=/usr/lib/elogind \
+                          -Ddefault-kill-user-processes=false \
+                          -Ddbuspolicydir=/usr/share/dbus-1/system.d")
 
 def build():
-    autotools.make()
+    mesontools.build()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    mesontools.install()
