@@ -14,5 +14,5 @@ def setup():
     
 
 def install():
-    pisitools.insinto("/opt/github-desktop/", "opt/GitHub Desktop/*")
-    pisitools.dosym("/opt/github-desktop/github-desktop", "/usr/bin/github-desktop")
+    pisitools.insinto("/usr/lib/github-desktop/", "usr/lib/github-desktop/*")
+    pisitools.dosym("/usr/lib/github-desktop/github-desktop", "/usr/bin/github-desktop")
