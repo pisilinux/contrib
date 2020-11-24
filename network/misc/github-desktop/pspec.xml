@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Summary>
         <Description>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Description>
-        <Archive sha1sum="9b83a81ff51ec3b27c4825734224ec4ff5e21865" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.1.0-linux1/GitHubDesktop-linux-2.1.0-linux1.deb</Archive>
+        <Archive sha1sum="63ba942d70e04bbd8f445e2f6f8c8b5cb8aebc6e" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.5.7-linux1/GitHubDesktop-linux-2.5.7-linux1.deb</Archive>
     </Source>
 
     <Package>
@@ -26,10 +26,12 @@
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/opt/github-desktop</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/lib</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/lintian</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/github-desktop.desktop" owner="root">github-desktop.desktop</AdditionalFile>
@@ -38,6 +40,13 @@
     </Package>
 
     <History>
+		 <Update release="2">
+            <Date>2020-11-23</Date>
+            <Version>2.5.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2019-10-15</Date>
             <Version>2.1.0</Version>

@@ -1,10 +1,11 @@
 [Desktop Entry]
-Name=Github-Desktop
-Comment=GitHub Desktop is an open source Electron-based GitHub app.
-GenericName=Github-Desktop
-Exec=/opt/github-desktop/github-desktop 
-Icon=github
+Name=GitHub Desktop
+Comment=Simple collaboration from your desktop
+GenericName=GitHub Desktop
+Exec=github-desktop %U
+Icon=github-desktop
 Type=Application
 StartupNotify=true
-Categories=Web;
-MimeType=text/plain;
+Categories=GNOME;GTK;Utility;
+MimeType=x-scheme-handler/x-github-client;x-scheme-handler/x-github-desktop-auth;x-scheme-handler/x-github-desktop-dev-auth;
+
