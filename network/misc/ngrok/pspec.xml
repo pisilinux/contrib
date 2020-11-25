@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ngrok</Name>
+        <Homepage>https://ngrok.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <Summary>A tunneling, reverse proxy for developing and understanding networked, HTTP services</Summary>
+        <Description>A tunneling, reverse proxy for developing and understanding networked, HTTP services</Description>
+        <Archive sha1sum="508d4455a72959d5594d5f138e48405fb7f1420d" type="binary">https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>ngrok</Name>
+        <RuntimeDependencies>
+         
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/ngrok</Path>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2020-11-25</Date>
+            <Version>2.3.35</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
