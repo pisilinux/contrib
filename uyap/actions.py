@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools, shelltools, get
 WorkDir="."
 def setup():
     #shelltools.system("ar xf uyappardus.zip")
-    shelltools.system("ar xvf uyap_pardus_4_2_9_amd64/uyapeditor_4.2.9_amd64.deb")
+    shelltools.system("ar xvf uyap_pardus_5_0_1_amd64/uyapeditor_5.0.1_amd64.deb")
     shelltools.system("tar xvf data.tar.xz")
 
 def install():
