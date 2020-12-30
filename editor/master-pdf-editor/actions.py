@@ -10,7 +10,7 @@ from pisi.actionsapi import get
 
 def install():
     pisitools.insinto("/usr/share/pixmaps/", "masterpdfeditor5.png")
-    pisitools.insinto("/usr/share/applications/", "masterpdfeditor5.desktop")
+    #pisitools.insinto("/usr/share/applications/", "masterpdfeditor5.desktop")
     pisitools.dodir("/opt/master-pdf-editor-5")
     pisitools.insinto("/opt/master-pdf-editor-5/lang","lang/*.qm")
     pisitools.insinto("/opt/master-pdf-editor-5/lang","lang/*.ts")
