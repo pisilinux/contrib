@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sublime-merge</Name>
+        <Homepage>https://www.sublimemerge.com</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>Sublime Merge</License>
+        <IsA>app:gui</IsA>
+        <Summary>Meet a new Git Client, from the makers of Sublime Text</Summary>
+        <Description>Meet a new Git Client, from the makers of Sublime Text</Description>
+        <Archive sha1sum="6c0821ffed28ec7690fb72f5c957e77322111532" type="tarxz">https://download.sublimetext.com/sublime_merge_build_2039_x64.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>sublime-merge</Name>
+        <RuntimeDependencies>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/opt/sublime_merge/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/sublime_merge.desktop" owner="root">sublime_merge.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2021-01-07</Date>
+            <Version>2039</Version>
+            <Comment>First release.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
