@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Professional 3D collision detection library</Summary>
         <Description>Bullet is a professional open source multi-threaded 3D Collision Detection and Rigid Body Dynamics Library for games and animation.</Description>
-        <Archive sha1sum="a0867257b9b18e9829bbeb4c6c5872a5b29d1d33" type="targz">https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bullet/bullet-2.82-r2704.tgz</Archive>
+        <Archive sha1sum="c69710a1f756b9c5bc3f0580e6e67ab0313d6c03" type="targz">https://github.com/bulletphysics/bullet3/archive/3.08.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mesa-devel</Dependency>
             <Dependency>doxygen</Dependency>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2020-01-08</Date>
+            <Version>3.08</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2018-12-31</Date>
             <Version>2.82_2704</Version>
