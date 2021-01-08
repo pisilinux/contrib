@@ -25,6 +25,7 @@
             <Dependency>bullet-devel</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>libarchive-devel</Dependency>
+            <Dependency>scons</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>vdrift-gcc6.patch</Patch>
