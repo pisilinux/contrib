@@ -15,8 +15,14 @@
         <Archive sha1sum="c69710a1f756b9c5bc3f0580e6e67ab0313d6c03" type="targz">https://github.com/bulletphysics/bullet3/archive/3.08.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mesa-devel</Dependency>
-             <Dependency>cmake</Dependency>
+            <Dependency>cmake</Dependency>
             <Dependency>doxygen</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>python-numpy</Dependency>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <!-- Dependency>graphviz-devel</Dependency -->
             <Dependency>perl-template-toolkit</Dependency>
