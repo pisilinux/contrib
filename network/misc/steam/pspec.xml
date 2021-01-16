@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>steam</Name>
@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>Steam for linux</Summary>
         <Description>Steam Digital Platform Runner</Description>
-        <Archive sha1sum="75361c607e19089347aa1ab67a30263036b0ab2d" type="targz">https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.66.tar.gz</Archive>
+        <Archive sha1sum="51f55b0f2b7b7c4821ad3baa6b57f57d4263f82a" type="targz">https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.68.tar.gz</Archive>
         <Patches>
            <!-- 
             <Patch level="1">alsa_sdl_audiodriver.patch</Patch> -->
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+    	 <Update release="13">
+            <Date>2021-01-16</Date>
+            <Version>1.0.0.68</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Kamil Atlı</Name>
+            <Email>suvari@pisilinux.org</Email>
+        </Update>
     	 <Update release="12">
             <Date>2020-09-04</Date>
             <Version>1.0.0.66</Version>
