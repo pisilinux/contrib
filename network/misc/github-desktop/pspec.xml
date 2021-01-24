@@ -12,21 +12,22 @@
         <IsA>app:gui</IsA>
         <Summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Summary>
         <Description>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Description>
-        <Archive sha1sum="63ba942d70e04bbd8f445e2f6f8c8b5cb8aebc6e" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.5.7-linux1/GitHubDesktop-linux-2.5.7-linux1.deb</Archive>
+        <Archive sha1sum="31f29c54dae571c5ec1fec7719ac5dda7127b2ab" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.6.2-linux1/GitHubDesktop-linux-2.6.2-linux1.deb</Archive>
     </Source>
 
     <Package>
         <Name>github-desktop</Name>
         <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libxcb</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>git</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>unzip</Dependency>	
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/lib/github-desktop</Path>
+            <Path fileType="executable">/opt/github-desktop</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
@@ -38,64 +39,15 @@
     </Package>
 
     <History>
+    	 <Update release="3">
+            <Date>2021-01-24</Date>
+            <Version>2.6.2</Version>
+            <Comment>Version Bump</Comment>
+           	<Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2020-11-15</Date>
-            <Version>2.5.7</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ali Cengiz Kurt</Name>
-            <Email>alicengizkurt@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2019-10-15</Date>
-            <Version>2.1.0</Version>
-            <Comment>First release</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-    </History>
-</PISI>
-<?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
-<PISI>
-    <Source>
-        <Name>github-desktop</Name>
-        <Homepage>https://desktop.github.com/</Homepage>
-        <Packager>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Packager>
-        <License>MIT</License>
-        <IsA>app:gui</IsA>
-        <Summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Summary>
-        <Description>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Description>
-        <Archive sha1sum="63ba942d70e04bbd8f445e2f6f8c8b5cb8aebc6e" type="binary">https://github.com/shiftkey/desktop/releases/download/release-2.5.7-linux1/GitHubDesktop-linux-2.5.7-linux1.deb</Archive>
-    </Source>
-
-    <Package>
-        <Name>github-desktop</Name>
-        <RuntimeDependencies>
-            <Dependency>qt5-base</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libxcb</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/lib/github-desktop</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/applications/</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-        </Files>
-        <AdditionalFiles>
-            <AdditionalFile target="/usr/share/applications/github-desktop.desktop" owner="root">github-desktop.desktop</AdditionalFile>
-            <AdditionalFile target="/usr/share/icons/github-desktop.png" owner="root">github-desktop.png</AdditionalFile>
-        </AdditionalFiles>
-    </Package>
-
-    <History>
-        <Update release="2">
-            <Date>2029-11-15</Date>
             <Version>2.5.7</Version>
             <Comment>Version Bump</Comment>
             <Name>Ali Cengiz Kurt</Name>
