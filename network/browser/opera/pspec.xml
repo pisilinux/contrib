@@ -11,7 +11,7 @@
         <Summary>Opera Web Browser</Summary>
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
-        <Archive sha1sum="b5f7dcdb98684e95ec9dd6b5eaf9f7e010512837" type="binary">https://get.geo.opera.com/pub/opera/desktop/71.0.3770.271/linux/opera-stable_71.0.3770.271_amd64.deb</Archive>
+        <Archive sha1sum="3b6e937a21d1c0878c382f1af3c18c1fa93b53ef" type="binary">https://get.geo.opera.com/pub/opera/desktop/75.0.3969.93/linux/opera-stable_75.0.3969.93_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
         </BuildDependencies>
@@ -66,6 +66,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="22">
+            <Date>2021-03-25</Date>
+            <Version>75.0.3969.93</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@gmail.com</Email>
+        </Update>
 		<Update release="21">
             <Date>2020-10-21</Date>
             <Version>71.0.3770.271</Version>
