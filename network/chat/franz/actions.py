@@ -11,7 +11,7 @@ IgnoreAutodep = True
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf franz_5.0.0-beta.14_amd64.deb")
+    shelltools.system("ar xf franz_5.6.1_amd64.deb")
     shelltools.system("tar xf data.tar.xz")
 
 def install():
