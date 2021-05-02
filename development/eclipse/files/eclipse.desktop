@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Eclipse IDE Java için
+GenericName=Eclipse IDE For Java
+GenericName[tr]=Eclipse IDE Java için
+Comment=Eclipse, açık kaynak kodlu ve özgür bir tümleşik geliştirme ortamıdır. 
+Comment[tr]=Eclipse, açık kaynak kodlu ve özgür bir tümleşik geliştirme ortamıdır. 
+Icon=eclipse
+Exec=/usr/share/eclipse/eclipse
+Terminal=false
+StartupNotify=false
+Categories=Application;Game;

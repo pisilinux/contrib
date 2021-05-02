@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>eclipse</Name>
+        <Summary xml:lang="tr">Eclipse, açık kaynak kodlu ve özgür bir tümleşik geliştirme ortamıdır. </Summary>
+        <Description xml:lang="tr">Eclipse, açık kaynak kodlu ve özgür bir tümleşik geliştirme ortamıdır. Ana odak noktası Java ve Java ile ilişkili teknolojiler olsa da, esnek yapısı sayesinde C ve Python gibi farklı diller için de kullanılmaktadır. </Description>
+    </Source>
+</PISI>
