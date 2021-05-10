@@ -14,14 +14,8 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="fc795cf3607888405e36b61230019d6dcff508db" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
-        <BuildDependencies>
-            <Dependency>bzip2</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>eudev</Dependency>
-            <Dependency>binutils</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="e47b7fa0757caa3c9d4840fbc458824bbf8d2159" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+       
     </Source>
 
     <Package>
@@ -83,6 +77,14 @@
     </Package>
 
     <History>
+        
+        <Update release="52">
+            <Date>2021-05-09</Date>
+            <Version>90.0.4430.93</Version>
+            <Comment>Version bump.</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@gmail.com</Email>
+        </Update>
     	<Update release="51">
             <Date>2021-03-25</Date>
             <Version>89.0.4389.90</Version>

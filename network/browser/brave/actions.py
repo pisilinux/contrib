@@ -9,7 +9,7 @@ from pisi.actionsapi import get, pisitools, shelltools
 def setup():
     shelltools.system("pwd")
 
-    shelltools.system("unzip brave-browser-nightly-1.18.8-linux-amd64.zip")
+    shelltools.system("unzip brave-browser-nightly-%s-linux-amd64.zip" % get.srcVERSION())
 
 
 def install():
