@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>vivaldi-browser</Name>
+        <Homepage>https://vivaldi.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkaniisk@pisilinux.org</Email>
+        </Packager>
+        <Summary>An advanced browser made with the power user in mind.</Summary>
+        <Description>An advanced browser made with the power user in mind.</Description>
+        <License>EULA</License>
+        <Archive sha1sum="4c7e6812967b1181d0751056af80bd15c0660a73" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_3.8.2259.40-1_amd64.deb</Archive>       
+    </Source>
+    <Package>
+        <Name>vivaldi-browser</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>fontconfig</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/vivaldi</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/share</Path>
+          </Files>
+          <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/vivaldi-browser.desktop" owner="root">vivaldi-browser.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/vivaldi-browser.png" owner="root">vivaldi-browser.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>         
+        <Update release="1">
+            <Date>2021-05-10</Date>
+            <Version>3.8.2259.40</Version>
+            <Comment>First Release.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
