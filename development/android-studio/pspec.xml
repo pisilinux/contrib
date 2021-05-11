@@ -11,8 +11,9 @@
         <License>Apache-2.0</License>
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-        <Archive sha1sum="457211a63813575765f5ca9a336beec953e1626c" type="targz">https://dl.google.com/dl/android/studio/ide-zips/3.4.1.0/android-studio-ide-183.5522156-linux.tar.gz</Archive>
-        <BuildDependencies>
+        <Archive sha1sum="4bf37693edc63d3f6f46efb88f46a5e35485cdef" type="targz">https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-linux.tar.gz</Archive>
+          <!-- 
+        <BuildDependencies>          
             <Dependency>unzip</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -27,6 +28,7 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
         </BuildDependencies>
+         -->
     </Source>
 
     <Package>
@@ -54,6 +56,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+         <Update release="6">
+            <Date>2021-05-12</Date>
+            <Version>202.7322048</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2019-07-09</Date>
             <Version>3.4.1</Version>
