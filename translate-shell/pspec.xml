@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>translate-shell</Name>
+        <Homepage>https://github.com/soimort/translate-shell</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <License>The Unlicense</License>
+        <IsA>app:console</IsA>
+        <Summary>Translate Shell (formerly Google Translate CLI) is a command-line translator powered by Google Translate (default), Bing Translator, Yandex.Translate, and Apertium.</Summary>
+        <Description>Translate Shell (formerly Google Translate CLI) is a command-line translator powered by Google Translate (default), Bing Translator, Yandex.Translate, and Apertium.</Description>
+        <Archive sha1sum="43fdeda4d285e928fa8b3bff8b91f2e753241a15" type="targz">https://codeload.github.com/soimort/translate-shell/tar.gz/refs/tags/v0.9.6.12</Archive>
+        <!--
+        <BuildDependencies>
+            <Dependency>Dep1-devel</Dependency>
+            <Dependency>Dep2-devel</Dependency>
+            <Dependency>Dep3-devel</Dependency>
+            <Dependency versionFrom="">Dep4-devel</Dependency>
+        </BuildDependencies>
+        -->
+        <!--
+        <Patches>
+            <Patch>translate-shell.patch</Patch>
+            <Patch level="1">translate-shell.patch</Patch>
+        </Patches>
+        -->
+    </Source>
+
+    <Package>
+        <Name>translate-shell</Name>
+        <!--
+        <RuntimeDependencies>
+            <Dependency>Dep1</Dependency>
+            <Dependency>Dep2</Dependency>
+            <Dependency>Dep3</Dependency>
+            <Dependency versionFrom="">Dep4</Dependency>
+        </RuntimeDependencies>
+        -->
+        <Files>
+            <Path fileType="all">/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <!--
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/translate-shell.desktop">translate-shell.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/translate-shell.png">translate-shell.png</AdditionalFile>
+        </AdditionalFiles>
+        -->
+        <!--
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+        -->
+    </Package>
+    <!--
+    <Package>
+        <Name>translate-shell-devel</Name>
+        <Summary>Development files for translate-shell</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">translate-shell</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    -->
+    <!--
+    <Package>
+        <Name>translate-shell-docs</Name>
+        <Summary>Development files for translate-shell</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">translate-shell</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+    -->
+    <History>
+        <Update release="1">
+            <Date>2021-05-12</Date>
+            <Version>0.9.6.12</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
