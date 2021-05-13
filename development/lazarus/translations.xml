@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lazarus</Name>
+        <Summary xml:lang="tr">Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır.</Summary>
+        <Description xml:lang="tr">Lazarus açık kaynak kodlu Free Pascal derleyicisi tarafından geliştirilip, desteklenen çoklu platform Görsel programlama geliştirme ortamıdır. Pascal ve Object Pascal geliştiricileri için Rapid Application Development Delphi benzeri bir ortam sağlamayı amaçlar.</Description>
+    </Source>
+</PISI>
