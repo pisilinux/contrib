@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Apache Netbeans</Name>
+        <Homepage>https://netbeans.apache.org</Homepage>
+        <Packager>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Packager>
+        <Summary>NetBeans, Oracle tarafından geliştirilen bir Java geliştirme ortamıdır.</Summary>
+        <Description>NetBeans, Oracle tarafından geliştirilen bir Java geliştirme ortamıdır. Özellikle kullanıcı arayüzü tasarımında sağladığı kolaylıklardan dolayı tercih edilmektedir.</Description>
+        <License>custom</License>
+        <Archive sha1sum="eb6c8286be8c556821381f83a2ff5027dae47915" type="zip">https://www-eu.apache.org/dist/netbeans/netbeans/12.3/netbeans-12.3-bin.zip</Archive>
+    </Source>
+
+    <Package>
+        <Name>netbeans</Name>
+        <Icon>netbeans</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr</Path>
+            <Path fileType="data">/usr/share/netbeans</Path>
+        </Files>
+
+     <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/netbeans.desktop">netbeans.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/ApacheNetbeans.png">ApacheNetbeans.png</AdditionalFile>
+        </AdditionalFiles>
+
+    </Package>
+
+    <History>
+    	 <Update release="1">
+            <Date>2021-05-18</Date>
+            <Version>12.3</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

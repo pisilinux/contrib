@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Encoding=UTF-8
+Name=Apache NetBeans
+GenericName=Apache NetBeans
+GenericName[tr]=Apache NetBeans
+Comment=NetBeans is an integrated development environment (IDE) for Java. 
+Comment[tr]=NetBeans, Oracle tarafından geliştirilen bir Java geliştirme ortamıdır ve ücretsiz olarak dağıtılmaktadır.  
+Icon=ApacheNetbeans
+Exec=netbeans
+Terminal=false
+StartupNotify=false
+Categories=TextEditor;Development;IDE
