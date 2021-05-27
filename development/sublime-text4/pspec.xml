@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>sublime-text3</Name>
+        <Name>sublime-text4</Name>
         <Homepage>http://www.sublimetext.com</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
@@ -12,20 +12,20 @@
         <IsA>app:gui</IsA>
         <Summary>Sophisticated text editor</Summary>
         <Description>Sublime Text is a sophisticated text editor for code, markup and prose.</Description>
-        <Archive sha1sum="38c21a4497f1fbc42072f65931bd0b82319becb1" type="tarbz2">https://download.sublimetext.com/sublime_text_3_build_3211_x64.tar.bz2</Archive>
+        <Archive sha1sum="b69c7d398f786691b8fda120a32446b29b36d4c1" type="tarxz">https://download.sublimetext.com/sublime_text_build_4107_x64.tar.xz</Archive>
     </Source>
 
     <Package>
-        <Name>sublime-text3</Name>
+        <Name>sublime-text4</Name>
         <RuntimeDependencies>
             <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="data">/opt/sublime_text_4</Path>
             <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="data">/usr/share/icons/hicolor/</Path>
             <Path fileType="data">/usr/share/applications/</Path>
-            <Path fileType="data">/opt/sublime_text_3</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/sublime_text.desktop" owner="root">sublime_text.desktop</AdditionalFile>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2021-05-27</Date>
+            <Version>4107</Version>
+            <Comment>version dump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2019-10-01</Date>
             <Version>3211</Version>

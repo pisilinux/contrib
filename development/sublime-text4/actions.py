@@ -9,9 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
 def install():
-    pisitools.insinto("/opt/sublime_text_3","*")
+    pisitools.insinto("/opt/sublime_text_4","*")
     for i in [16,32,48,128,256]:
-        pisitools.domove("/opt/sublime_text_3/Icon/{0}x{0}/sublime-text.png".format(i),"/usr/share/icons/hicolor/{0}x{0}/apps".format(i))
-    pisitools.removeDir("/opt/sublime_text_3/Icon")    
+        pisitools.domove("/opt/sublime_text_4/Icon/{0}x{0}/sublime-text.png".format(i),"/usr/share/icons/hicolor/{0}x{0}/apps".format(i))
+    pisitools.removeDir("/opt/sublime_text_4/Icon")    
     for i in ['-','_']:
-        pisitools.dosym("/opt/sublime_text_3/sublime_text","/usr/bin/sublime%stext_3" % i)
+        pisitools.dosym("/opt/sublime_text_4/sublime_text","/usr/bin/sublime%stext_4" % i)

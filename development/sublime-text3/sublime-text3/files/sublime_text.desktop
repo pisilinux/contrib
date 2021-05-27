@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Sublime Text 3
-GenericName=Text Editor
-Comment=Sophisticated text editor for code, markup and prose
-Icon=sublime-text
-Exec=LC_ALL=en_US.UTF-8 /usr/bin/sublime-text_3 %F
-Terminal=false
-Categories=Development;
