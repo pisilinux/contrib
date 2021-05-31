@@ -11,8 +11,7 @@
         <License>GPL</License>
         <Summary>Plex media server: Bilgisayardaki media dosyalarını televizyondan izlemeye yarar.</Summary>
         <Description>Plex tüm medyalaranızı düzenlemenize ve desteklenen tüm ortamlara aktarmanıza olanak sağlayan bir medya çözüm projesidir. </Description>
-        <Archive sha1sum="9f1cf8ce5b8a788cd9030cdfe1985c00e6bf2643" type="binary" target="i686">https://downloads.plex.tv/plex-media-server/1.3.3.3148-b38628e/plexmediaserver_1.3.3.3148-b38628e_i386.deb</Archive>
-        <Archive sha1sum="4cf3cf5c65ece06869eff63eccc6c7a11232495b" type="binary" target="x86_64">https://downloads.plex.tv/plex-media-server/1.3.3.3148-b38628e/plexmediaserver_1.3.3.3148-b38628e_amd64.deb</Archive>
+        <Archive sha1sum="9516b5173bc5d43838cc026bb525f5f202585f3b" type="binary">https://downloads.plex.tv/plex-media-server-new/1.23.1.4602-280ab6053/debian/plexmediaserver_1.23.1.4602-280ab6053_amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -42,16 +41,24 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="library">/usr/lib/plexmediaserver</Path>
             <Path fileType="config">/etc</Path>
-            <Path fileType="executable">/usr/sbin</Path>
+            
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/plexmediamanager.desktop">plexmediamanager.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/plex-start.desktop">plex-start.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/plexmediamanager.desktop">plexmediamanager.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/plexmediaserver.desktop">plexmediaserver.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/plexstart.png">plexstart.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
+         <Update release="8">
+            <Date>2021-05-29</Date>
+            <Version>1.23.1.4602</Version>
+            <Comment>V.Bump</Comment>
+            <Name>erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2016-12-20</Date>
             <Version>1.3.3.3148</Version>

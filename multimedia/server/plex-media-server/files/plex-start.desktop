@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Media Manager Starter
+GenericName=Media Manager Starter
+GenericName[tr]=Plex Media server Başlatıcısı
+Comment=Manage your Plex Media
+Comment[tr]=Plex Media managerin Başlatıcısı
+Exec=/usr/lib/plexmediaserver/Plex\ Media\ Server
+Icon=plexstart.png
+Terminal=false
+Type=Application
+Categories=Multimedia;Server;Audio;Video
