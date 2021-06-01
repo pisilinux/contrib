@@ -12,7 +12,7 @@
         <PartOf>programming</PartOf>
         <Summary xml:lang="en">Powerful Python and Django IDE. Community edition.</Summary>
         <Description xml:lang="en">Powerful Python and Django IDE. Community edition.</Description>
-        <Archive type="targz" sha1sum="af2822363ab508c3668a1f87c0f8bc77c1ecaca2">https://download.jetbrains.com/python/pycharm-community-2020.2.3.tar.gz</Archive>
+        <Archive type="targz" sha1sum="0697cd41e13c5e72e7c1972d1b9390c83d4bb49a">https://download.jetbrains.com/python/pycharm-community-2021.1.1.tar.gz</Archive>
     </Source>
     <Package>
         <Name>pycharm-community</Name>
@@ -47,6 +47,13 @@
         </AdditionalFiles>
     </Package>
     <History> 
+          <Update release="9">
+            <Date>2021-06-01</Date>
+            <Version>2021.1.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>   
         <Update release="8">
             <Date>2020-11-01</Date>
             <Version>2020.2.3</Version>
