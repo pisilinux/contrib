@@ -11,7 +11,7 @@
         <License>Apache-2.0</License>
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-        <Archive sha1sum="4bf37693edc63d3f6f46efb88f46a5e35485cdef" type="targz">https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-linux.tar.gz</Archive>
+        <Archive sha1sum="276e5e191ce65feb633e8efb0f30d138340ae1ab" type="targz">https://dl.google.com/dl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-linux.tar.gz</Archive>
           <!-- 
         <BuildDependencies>          
             <Dependency>unzip</Dependency>
@@ -56,6 +56,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="7">
+            <Date>2021-07-16</Date>
+            <Version>202.7486908</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="6">
             <Date>2021-05-12</Date>
             <Version>202.7322048</Version>

@@ -12,12 +12,14 @@
         <IsA>app:gui</IsA>
         <Summary>Sophisticated text editor</Summary>
         <Description>Sublime Text is a sophisticated text editor for code, markup and prose.</Description>
-        <Archive sha1sum="b69c7d398f786691b8fda120a32446b29b36d4c1" type="tarxz">https://download.sublimetext.com/sublime_text_build_4107_x64.tar.xz</Archive>
+        <Archive sha1sum="8f77495f5750ef86cc0d29cb6ba155cd031ce604" type="tarxz">https://download.sublimetext.com/sublime_text_build_4113_x64.tar.xz</Archive>
     </Source>
 
     <Package>
         <Name>sublime-text</Name>
         <RuntimeDependencies>
+            <Dependency>libpng</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
         </RuntimeDependencies>
@@ -33,6 +35,13 @@
     </Package>
 
     <History>
+         <Update release="11">
+            <Date>2021-07-16</Date>
+            <Version>4113</Version>
+            <Comment>version dump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2021-05-27</Date>
             <Version>4107</Version>
