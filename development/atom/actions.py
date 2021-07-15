@@ -10,4 +10,4 @@ def setup():
     shelltools.system("tar xvf atom-amd64.tar.gz")
 
 def install():
-    pisitools.insinto("/opt/atom/", "atom-1.55.0-amd64/*")
+    pisitools.insinto("/opt/atom/", "atom-1.57.0-amd64/*")
