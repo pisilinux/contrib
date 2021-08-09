@@ -12,13 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>Pisi Linux Image Writer is a program for writing installation images to a flash disk.</Summary>
         <Description>Pisi Linux Image Writer is a fork based on the ROSA ImageWriter</Description>
-        <Archive sha1sum="0a47ec79ec656b3aebf02f2e3d0220ca60d92c32" type="targz">https://github.com/groni/Sources/raw/master/pisi-linux-imagewriter.tar.gz</Archive>
-        <BuildDependencies>
-            <Dependency>qt5-base-devel</Dependency>
-            <Dependency>eudev-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>mesa-glu-devel</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="6eb7dd6284ff36b5a76a25a3b063919e1d8e1184" type="tarxz">http://wiki.rosalab.ru/ru/images/7/7f/RosaImageWriter-2.6.2-lin-x86_64.tar.xz</Archive>
+       
     </Source>
 
     <Package>
@@ -39,6 +34,13 @@
     </Package>
 
     <History>
+         <Update release="2">
+            <Date>2021-08-08</Date>
+            <Version>2.6.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-06-14</Date>
             <Version>2.6.1.1</Version>

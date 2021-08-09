@@ -9,8 +9,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import qt5
 
 def setup():
-    shelltools.system("qmake-qt5  focuswriter.pro")
-    qt5.configure()
+    #shelltools.system("qmake-qt5  focuswriter.pro")
+    qt5.configure("focuswriter.pro")
 
 def build():
     qt5.make()
