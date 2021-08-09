@@ -11,7 +11,7 @@
         <Summary>WPS Office Suite</Summary>
         <Description>WPS Office Suite</Description>
         <License>http://wps-community.org/license.md</License>
-        <Archive sha1sum="1661c8dfad03e1521bb833bc258ad655e275b600" type="binary">https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb</Archive>
+        <Archive sha1sum="a378948de6a7da63da4a40883e8e4e96b7b537c0" type="binary">https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/10702/wps-office_11.1.0.10702.XA_amd64.deb</Archive>
       
         <BuildDependencies>
         
@@ -27,7 +27,22 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
         <RuntimeDependencies>
-            <!--Dependency>libpng12</Dependency-->
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>libtool</Dependency>
+            <Dependency>libsdl2</Dependency>
+          
+            <!--Dependency>libpng12</Dependency
             <Dependency>xz</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>zlib</Dependency>
@@ -40,18 +55,25 @@
             <Dependency>libXext</Dependency>
             <Dependency>libxml2</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency>mesa-glu</Dependency>
+            
             <Dependency>gstreamer</Dependency>
-            <Dependency>fontconfig</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libutil-linux</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>gst-plugins-base</Dependency>
+        -->
         </RuntimeDependencies>
     </Package>
 
     <History>
-    	  <Update release="5">
+        <Update release="6">
+            <Date>2021-08-09</Date>
+            <Version>11.1.0.10702</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    	<Update release="5">
             <Date>2020-11-02</Date>
             <Version>11.1.0.9719</Version>
             <Comment>Version bump</Comment>
