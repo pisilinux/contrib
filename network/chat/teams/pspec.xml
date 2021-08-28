@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>Teams</Name>
+        <Name>Microsoft Teams</Name>
         <Homepage>https://teams.microsoft.com</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
@@ -12,11 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>Microsoft Teams for Linux is your chat-centered workspace in Office 365</Summary>
         <Description>Microsoft Teams for Linux is your chat-centered workspace in Office 365</Description>
-        <Archive sha1sum="143708eabd38793601f96dace3a7fc9b790ed913" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.7556_amd64.deb</Archive>
+        <Archive sha1sum="3ccd9689312c6d88ab2c48a47356461ac30e819d" type="binary">https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb</Archive>
     </Source>
 
     <Package>
-        <Name>teams</Name>
+        <Name>Microsoft Teams</Name>
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>gtk3</Dependency>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+         <Update release="3">
+            <Date>2021-08-28</Date>
+            <Version>1.4.00.13653</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2021-05-09</Date>
             <Version>1.4.00.7556</Version>

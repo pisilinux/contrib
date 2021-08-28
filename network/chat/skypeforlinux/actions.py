@@ -11,7 +11,7 @@ NoStrip = ["/usr"]
 
 def setup():
     shelltools.system("ar xf skypeforlinux_%s_amd64.deb" % get.srcVERSION())
-    shelltools.system("tar xf data.tar.xz")
+    shelltools.system("tar xf data.tar.gz")
 
 
 def install():
