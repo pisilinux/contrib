@@ -21,13 +21,16 @@
     <Package>
         <Name>discord</Name>
         <RuntimeDependencies>
-            <Dependency>xdg-utils</Dependency>
-            <Dependency>alsa-lib</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>nss</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <!-- 
             <Dependency>mesa</Dependency>
+             -->
         </RuntimeDependencies>
         <Files>
         	<Path fileType="data">/opt/discord</Path>
@@ -39,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2021-10-01</Date>
+            <Version>0.0.16</Version>
+            <Comment>Fix.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="10">
             <Date>2021-09-23</Date>
             <Version>0.0.16</Version>
