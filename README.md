@@ -20,4 +20,4 @@ This Repository is specially for the Pisi Linux 2.0
 
 Any packages you're looking for can be found as Pisi Linux packages from here:
 
-[Pisi Linux Global on Sourceforge](https://sourceforge.net/projects/pisi-linux-global/)
+[Pisi Linux Contrib ](https://contrib.pisilinux.org/)
