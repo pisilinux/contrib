@@ -11,7 +11,7 @@
         <License>Proprietary</License>
         <Summary>PHPStorm - an IDE for the PHP Language</Summary>
         <Description>PHPStorm - an IDE for the PHP Language</Description>
-        <Archive sha1sum="01ae9a97d6faa62958ace51197ad5df6ed4c474e" type="targz">https://download.jetbrains.com/webide/PhpStorm-2021.1.4.tar.gz</Archive>
+        <Archive sha1sum="396aca98a8760d41cc4e8c863db298e35a97a064" type="targz">https://download.jetbrains.com/webide/PhpStorm-2021.2.3.tar.gz</Archive>
     </Source>
     <Package>
         <Name>phpstorm</Name>
@@ -47,6 +47,13 @@
     </Package>
     
     <History>
+        <Update release="4">
+            <Date>2021-11-08</Date>
+            <Version>2021.2.3</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2021-07-16</Date>
             <Version>2021.1.4</Version>
