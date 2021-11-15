@@ -13,8 +13,10 @@
         <PartOf>editor</PartOf>
         <Summary>A text editor for programmers</Summary>
         <Description> A text editor for programmers including the following features:Fully scriptable using a C-like scripting language. Unlimited undo levels.Complete Unicode support. Multiple files can be edited at the same time and blocks copied and pasted among them. Syntax highlighting for many popular languages / file formats: C, C++, Perl, Shell Scripts, Ruby, Php, Python, HTML and much more</Description>
-        <Archive sha1sum="f7fcc501c03568d65f0f6663e462cc77ab5aa5f0" type="targz">http://triptico.com/download/mp/mp-5.2.10.tar.gz</Archive>
+        <Archive sha1sum="33bf6abde7f3efa7630d5ebdea99cedd4fc349dc" type="targz">https://github.com/ttcdt/mp-5.x/archive/refs/tags/5.55.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <!-- 
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -22,6 +24,7 @@
             <Dependency>glib2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+             -->
         </BuildDependencies>
     </Source>
 
@@ -51,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2021-11-11</Date>
+            <Version>5.55</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-04-11</Date>
             <Version>5.2.10</Version>
@@ -60,3 +70,4 @@
         </Update>
     </History>
 </PISI>
+file:/media/yedekleme/github/pisilife-2/mp/pspec.xml
