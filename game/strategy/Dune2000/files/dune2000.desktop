@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Game;
+Comment=OpenRA is an open-source and cross-platform remake of Westwood Studios Red Alert, Tiberian Dawn and Dune 2000 games.
+Encoding=UTF-8
+Exec=Dune2000
+GenericName[tr_TR]=Dune2000 strateji oyunu
+GenericName=Dune 2000 strategy game
+Icon=dune2000
+Name[tr_TR]=Dune 2000
+Name=Dune 2000
+Terminal=false
+Type=Application
+Version=1.0

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Dune2000</Name>
+        <Homepage>https://www.openra.net/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Rebuilt for the Modern Era.</Summary>
+        <Description>Open Source real-time strategy game engine for early Westwood games such as Command-Conquer: Red Alert written in C# using SDL and OpenGL. Runs on Windows, Linux, *BSD and Mac OS X.</Description>
+        <License>gpl2</License>
+        <PartOf>Game</PartOf>
+        <Archive sha1sum="e0de2441e61780476fec90bade8388131abd7e46" type="binary">https://github.com/OpenRA/OpenRA/releases/download/release-20210321/OpenRA-Dune-2000-x86_64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>Dune2000</Name>
+        <RuntimeDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>libglvnd</Dependency>
+            <Dependency>lua51</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>zenity</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/dune2000.desktop">dune2000.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/dune2000.png">dune2000.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2021-11-15</Date>
+            <Version>20210321</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
