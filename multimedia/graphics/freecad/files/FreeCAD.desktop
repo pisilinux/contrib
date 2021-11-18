@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment=General purpose 3D CAD modeler
+Encoding=UTF-8
+Exec=FreeCAD
+GenericName[tr_TR]=General purpose 3D CAD modeler
+GenericName=General purpose 3D CAD modeler
+Icon=FreeCAD
+Name[tr_TR]=FreeCAD
+Name=FreeCAD
+Terminal=false
+Type=Application
+Version=1.0

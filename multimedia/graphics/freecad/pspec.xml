@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>FreeCAD</Name>
+        <Homepage>https://freecadweb.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>General purpose 3D CAD modeler</Summary>
+        <Description>General purpose 3D CAD modeler</Description>
+        <License>LGPL</License>
+        <PartOf>Game</PartOf>
+        <Archive sha1sum="6b23325ca566e5a7a5f743ca4dfee526ba2d3bbd" type="binary">https://github.com/FreeCAD/FreeCAD/releases/download/0.19.2/FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>FreeCAD</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>glew</Dependency> 
+            <Dependency>jsoncpp</Dependency> 
+            <Dependency>netcdf </Dependency>
+            <Dependency>opencascade </Dependency>
+            <Dependency>openmpi</Dependency>
+            <Dependency>qt5-svg </Dependency>
+            <Dependency>qt5-webkit </Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-xmlpatterns </Dependency>
+            <Dependency>xerces-c</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/FreeCAD.desktop">FreeCAD.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/FreeCAD.png">FreeCAD.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2021-11-18</Date>
+            <Version>0.19.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
