@@ -2,10 +2,10 @@
 Type=Application
 Name=AnyDesk
 GenericName=AnyDesk
-Exec=anydesk %u
-Icon=anydesk
+Exec=/usr/bin/anydesk %u
+Icon=anydesk.png
 Terminal=false
 TryExec=anydesk
-Categories=Network;
+Categories=Network;GTK;
 MimeType=x-scheme-handler/anydesk;
 Name[de_DE]=AnyDesk

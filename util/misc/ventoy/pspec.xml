@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ventoy</Name>
+        <Homepage>https://www.ventoy.net/en/index.html</Homepage>
+        <Packager>
+            <Name>Pisilinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPL3</License>
+        <Summary>A new multiboot USB solution</Summary>
+        <Description>A new multiboot USB solution</Description>
+        <Archive sha1sum="b36c25396487ee36f534583add99a951f0f91c22" type="targz">https://github.com/ventoy/Ventoy/releases/download/v1.0.61/ventoy-1.0.61-linux.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>ventoy</Name>
+        <RuntimeDependencies>
+            <Dependency>bash</Dependency> 
+            <Dependency>util-linux</Dependency> 
+            <Dependency>xz</Dependency> 
+            <Dependency>dosfstools</Dependency>           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>                
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/ventoy.desktop" owner="root">ventoy.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/ventoy.png">ventoy.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2021-11-18</Date>
+            <Version>1.0.61</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

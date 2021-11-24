@@ -8,7 +8,16 @@ GenericName[tr]=Visual Studio Code
 Comment=Visual Studio Code
 Comment[tr]=Visual Studio Code
 Icon=code
-Exec=/usr/share/VSCode-linux-x64/code
+Exec=/usr/share/VSCode-linux-x64/code  --no-sandbox --unity-launch %F
 Terminal=false
 StartupNotify=false
-Categories=TextEditor;Development;
+Categories=Development;
+MimeType=text/plain;inode/directory;application/x-visual-studio-code-workspace;
+Actions=new-empty-window;
+Keywords=vscode;
+
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/share/VSCode-linux-x64/code --no-sandbox --new-window %F
+Icon=code

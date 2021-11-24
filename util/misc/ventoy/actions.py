@@ -10,6 +10,6 @@ WorkDir = "."
 NoStrip = ["/"]
 
 def install():
-    pisitools.dodir ("/opt/anydesk")
-    pisitools.insinto("/opt/anydesk", "anydesk-6.1.1/*")
-    pisitools.dosym("/opt/anydesk/anydesk", "/usr/bin/anydesk")
+    pisitools.dodir ("/opt/Ventoy")
+    pisitools.insinto("/opt/Ventoy", "ventoy-1.0.61/*")
+    pisitools.dosym("/opt/Ventoy/VentoyGUI.x86_64", "/usr/bin/Ventoy")

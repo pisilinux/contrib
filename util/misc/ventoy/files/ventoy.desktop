@@ -1,0 +1,14 @@
+[Desktop Entry]
+Categories=System;
+Comment[tr_TR]=eni bir çoklu önyüklemeli USB çözümü.
+Comment=A new multiboot USB solution.
+Encoding=UTF-8
+Exec=/opt/Ventoy/VentoyGUI.x86_64
+GenericName[tr_TR]=Yeni bir çoklu önyüklemeli USB çözümü.
+GenericName=A new multiboot USB solution.
+Icon=ventoy
+Name[tr_TR]=Ventoy
+Name=Ventoy
+Terminal=false
+Type=Application
+Version=1.0

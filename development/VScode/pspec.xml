@@ -7,12 +7,12 @@
             <Email>sami.babat@gmail.com</Email>
         </Packager>
         <License>GPLv3</License>
-        <PartOf>editor</PartOf>
+        <PartOf>Development</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="bd3b4ee410997a1a8629b077b8bd7d34edbe1ec3">https://az764295.vo.msecnd.net/stable/c3f126316369cd610563c75b1b1725e0679adfb3/code-stable-x64-1626303100.tar.gz</Archive>
+        <Archive type="targz" sha1sum="94392a660ab4699a4e945af35aaa8185bad2ed82">https://update.code.visualstudio.com/1.62.3/linux-x64/stable</Archive>
     </Source>
     <Package>
         <Name>VSCode</Name>
@@ -28,6 +28,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+         <Update release="13">
+            <Date>2021-11-24</Date>
+            <Version>1.62.3</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2021-07-23</Date>
             <Version>1.58.2</Version>
