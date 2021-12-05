@@ -13,9 +13,7 @@
         <License>proprietary</License>
         <IsA>app:gui</IsA>
         <Archive sha1sum="8623d35c1ceb9fc8fd0bbb967c908eb86b1164aa" type="targz">https://dl.discordapp.net/apps/linux/0.0.16/discord-0.0.16.tar.gz</Archive>
-        <BuildDependencies>
-            <Dependency>curl</Dependency>
-        </BuildDependencies>
+       
     </Source>
 
     <Package>
@@ -28,20 +26,28 @@
             <Dependency>nss</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>xdg-utils</Dependency>
-            <!-- 
-            <Dependency>mesa</Dependency>
-             -->
         </RuntimeDependencies>
         <Files>
-        	<Path fileType="data">/opt/discord</Path>
+        	<Path fileType="executable">/opt/discord</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            
         </Files>
+         <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/discord.desktop" owner="root">discord.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/discord.png" owner="root">discord.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2021-10-01</Date>
+            <Version>0.0.16</Version>
+            <Comment>Fix.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="11">
             <Date>2021-10-01</Date>
             <Version>0.0.16</Version>
