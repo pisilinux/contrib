@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Network;
+Comment=Open source Slack-alternative in Golang and React.
+Encoding=UTF-8
+Exec=mattermost
+GenericName[tr_TR]=Mattermost
+GenericName=Mattermost
+Icon=Mattermost.png
+Name[tr_TR]=Mattermost
+Name=Mattermost
+Terminal=false
+Type=Application
+Version=1.0

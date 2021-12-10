@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Mattermost</Name>
+        <Homepage>https://mattermost.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Open source Slack-alternative in Golang and React</Summary>
+        <Description>Open source Slack-alternative in Golang and React</Description>
+        <License>AGPL, Apache</License>
+        <PartOf>Network</PartOf>
+        <Archive sha1sum="381770bec679fd1d12a1c81078cd937db9cf47b6" type="binary">https://releases.mattermost.com/desktop/5.0.2/mattermost-desktop-5.0.2-linux-x86_64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>Mattermost</Name>
+        <RuntimeDependencies>
+            <Dependency>glibc</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/mattermost.desktop">mattermost.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Mattermost.png">Mattermost.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2021-12-10</Date>
+            <Version>5.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

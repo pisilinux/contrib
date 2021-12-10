@@ -26,6 +26,7 @@
             <Dependency>nss</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>xdg-utils</Dependency>
+            <Dependency>noto-fonts</Dependency>
         </RuntimeDependencies>
         <Files>
         	<Path fileType="executable">/opt/discord</Path>
