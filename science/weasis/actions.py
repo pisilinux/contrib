@@ -10,9 +10,9 @@ NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
 def install():
+    pisitools.dodir("/opt/weasis/weasis")
     pisitools.dodir("/opt/weasis")
-    pisitools.dodir("/opt/weasis/bin")
-    shelltools.system("cp -r ../weasis/*  %s/opt/weasis" % get.installDIR())
+    shelltools.system("cp -r ../weasis/*  %s/opt/weasis/weasis" % get.installDIR())
     shelltools.system("cp -r ../viewer-linux.sh  %s/opt/weasis/" % get.installDIR())
     pisitools.dosym("/opt/weasis/viewer-linux.sh", "/usr/bin/weasis")
    
