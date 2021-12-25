@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>weasis</Name>
+        <Homepage>https://nroduit.github.io/en/</Homepage>
+        <Packager>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Packager>
+        <Summary>Weasis is a multipurpose standalone and web-based DICOM viewer</Summary>
+        <Summary xml:lang="tr">Weasis çok maksatlı web tabanlı DICOM görüntüleyici</Summary>
+        <Description>It is a very popular clinical viewer used in healthcare by hospitals, health networks, multicenter research trials, and patients.</Description>
+        <Description xml:lang="tr">Hastaneler, sağlık ağları, araştırma merkezleri ve hastalar tarafından kullanılan tanınmış bir klinik görüntüleyicidir.</Description>
+        <License>EPL-2.0</License>
+        <Icon>weasis</Icon>
+        <IsA>science:viewer</IsA>
+        <PartOf>science.misc</PartOf>
+        <Archive sha1sum="ded2b96a49898a3eae0bbcca78546c1fc4c97c83" type="zip">https://sourceforge.net/projects/dcm4che/files/Weasis/3.8.0/weasis-portable.zip/download</Archive>
+    </Source>
+
+    <Package>
+        <Name>weasis</Name>
+        <RuntimeDependencies>
+            <Dependency>jre8-openjdk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/weasis</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/weasis.desktop">Weasis.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/weasis.png">Weasis.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2021-12-24</Date>
+            <Version>3.8.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

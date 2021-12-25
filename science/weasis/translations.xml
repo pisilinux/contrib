@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>weasis</Name>
+        <Summary>Weasis is a multipurpose standalone and web-based DICOM viewer</Summary>
+        <Description>It is a very popular clinical viewer used in healthcare by hospitals, health networks, multicenter research trials, and patients.</Description>
+    </Source>
+
+    <Package>
+        <Name>mariadb-lib</Name>
+        <Summary>Weasis is a multipurpose standalone and web-based DICOM viewer</Summary>
+        <Summary xml:lang="tr">Weasis çok maksatlı web tabanlı DICOM görüntüleyici</Summary>
+    </Package>
+</PISI>
