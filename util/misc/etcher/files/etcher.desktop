@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=System;
+Comment[tr_TR]=İsolarınızı güvenli ve kolay bir şekilde SD kartlara ve USB sürücülere yükleyin.
+Comment=Flash OS images to SD cards & USB drives, safely and easily.
+Encoding=UTF-8
+Exec=etcher
+GenericName[tr_TR]=Etcher
+GenericName=Etcher
+Icon=etcher
+Name[tr_TR]=Etcher
+Name=Etcher
+Terminal=false
+Type=Application
+Version=1.0
+Categories=Utility;
