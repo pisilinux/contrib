@@ -11,6 +11,6 @@ IgnoreAutodep = True
 
 def install():
     pisitools.dodir ("/opt/FreeCAD")
-    pisitools.doexe("FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage", "/opt/FreeCAD")
-    pisitools.dosym("/opt/FreeCAD/FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage", "/usr/bin/FreeCAD")
+    pisitools.doexe("FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage", "/opt/FreeCAD")
+    pisitools.dosym("/opt/FreeCAD/FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage", "/usr/bin/FreeCAD")
    
