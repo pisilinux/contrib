@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Development;
+Comment=A 2D CAD drawing tool based on the community edition of QCad
+Encoding=UTF-8
+Exec=LibreCAD
+GenericName[tr_TR]=A 2D CAD drawing tool based on the community edition of QCad
+GenericName=A 2D CAD drawing tool based on the community edition of QCad
+Icon=librecad
+Name[tr_TR]=LibreCAD
+Name=LibreCAD
+Terminal=false
+Type=Application
+Version=1.0
