@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Network;
+Comment=A messaging browser that allows you to combine your favorite messaging services into one application
+Encoding=UTF-8
+Exec=Ferdi
+GenericName[tr_TR]=A messaging browser that allows you to combine your favorite messaging services into one application
+GenericName=A messaging browser that allows you to combine your favorite messaging services into one application
+Icon=ferdi.png
+Name[tr_TR]=Ferdi
+Name=Ferdi
+Terminal=false
+Type=Application
+Version=1.0

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Ferdi</Name>
+        <Homepage>https://getferdi.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>A messaging browser that allows you to combine your favorite messaging services into one application</Summary>
+        <Description>A messaging browser that allows you to combine your favorite messaging services into one application</Description>
+        <License>Apache</License>
+        <PartOf>Network</PartOf>
+        <Archive sha1sum="3f480afe3d28cb4894690f8ecc256cafaac956e4" type="binary">https://github.com/getferdi/ferdi/releases/download/v5.7.0/Ferdi-5.7.0.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>Ferdi</Name>
+        <RuntimeDependencies>
+           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/ferdi.desktop">ferdi.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/ferdi.png">ferdi.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2022-01-22</Date>
+            <Version>5.7.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
