@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>jervis</Name>
+        <Summary>Smart voice assistants like Alexa, Siri and Google assistants</Summary>
+        <Description>This project can be an audio assistant on your operating system and perform the tasks that you are considering for it.</Description>
+    </Source>
+</PISI>
