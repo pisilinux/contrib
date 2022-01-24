@@ -24,15 +24,6 @@
             <Dependency>python3-urllib3</Dependency>
             <Dependency>swig</Dependency>
             <Dependency>portaudio-devel</Dependency>
-            <Dependency>python3-aiml</Dependency>
-            <Dependency>python3-bs4</Dependency>
-            <Dependency>python3-gtts</Dependency>
-            <Dependency>python3-gtts-token</Dependency>
-            <Dependency>python3-pocketsphinx</Dependency>
-            <Dependency>python3-pyalsaaudio</Dependency>
-            <Dependency>python3-PyAudio</Dependency>
-            <Dependency>python3-pyttsx3</Dependency>
-            <Dependency>python3-SpeechRecognition</Dependency>
         </BuildDependencies>
         <Patches>
         </Patches>
@@ -53,6 +44,16 @@
             <Dependency>python3-chardet</Dependency>
             <Dependency>python3-idna</Dependency>
             <Dependency>python3-beautifulsoup4</Dependency>
+            <Dependency>portaudio</Dependency>
+            <Dependency>python3-aiml</Dependency>
+            <Dependency>python3-bs4</Dependency>
+            <Dependency>python3-gtts</Dependency>
+            <Dependency>python3-gtts-token</Dependency>
+            <Dependency>python3-sphinx</Dependency>
+            <Dependency>python3-pyalsaaudio</Dependency>
+            <Dependency>python3-PyAudio</Dependency>
+            <Dependency>python3-pyttsx3</Dependency>
+            <Dependency>python3-SpeechRecognition</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
