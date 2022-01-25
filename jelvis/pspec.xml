@@ -11,12 +11,13 @@
         <License>GPLv3</License>
         <Icon>jelvis</Icon>
         <IsA>app:gui</IsA>
-        <PartOf>game.arcade</PartOf>
+        <PartOf>accessibility</PartOf>
         <Summary>Smart voice assistants like Alexa, Siri and Google assistants</Summary>
         <Description>This project can be an audio assistant on your operating system and perform the tasks that you are considering for it.</Description>
         <Archive sha1sum="a9194db4e8cca29ea27f21a219c987a2ec57e606" type="zip">https://github.com/kiahamedi/JELVIS-git/archive/master.zip</Archive>
         <BuildDependencies>
             <Dependency>espeak-devel</Dependency>
+            <Dependency>espeak-ng-devel</Dependency>
             <Dependency>python3-devel</Dependency>
             <Dependency>python3-qt5-devel</Dependency>
             <Dependency>python3-requests</Dependency>
@@ -33,6 +34,7 @@
         <Name>jelvis</Name>
         <RuntimeDependencies>
             <Dependency>espeak</Dependency>
+            <Dependency>espeak-ng</Dependency>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt5</Dependency>
             <Dependency>qt5-svg</Dependency>
