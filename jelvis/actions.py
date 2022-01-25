@@ -18,5 +18,5 @@ def install():
     pisitools.insinto("/usr/share/icons", "./icons/jelvis_try.png")
     pisitools.insinto("/usr/share/applications", "./jelvis.desktop")
     pisitools.insinto("/opt/jelvis", "./*")
-    #shelltools.chmod("%s/opt/jelvis/*.xml" % get.installDIR(), mode=0755)
+    shelltools.chmod("%s/opt/jelvis/*" % get.installDIR(), mode=0755)
     #shelltools.chmod("%s/opt/jelvis/*.aiml" % get.installDIR(), mode=0755)
