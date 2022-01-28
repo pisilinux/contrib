@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Microsoft-Edge</Name>
+        <Homepage>https://microsoft.com</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>EULA</License>
+        <Icon>Microsoft-Edge</Icon>
+        <PartOf>network.web</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>The web browser from Microsoft</Summary>
+        <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+        <Archive sha1sum="d8909ad812aeea5776beb1f52ec48ac2f21a55c7" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_97.0.1072.69-1_amd64.deb</Archive>
+       
+    </Source>
+
+    <Package>
+        <Name>Microsoft-Edge</Name>
+        <RuntimeDependencies>
+            <Dependency>ca-certificates</Dependency>
+            <Dependency>liberation-fonts</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>libatomic_ops</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>cups</Dependency> 
+            <Dependency>curl</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>gnutls</Dependency>
+            <Dependency>libdrm</Dependency> 
+            <Dependency>expat</Dependency> 
+            <Dependency>mesa</Dependency> 
+            <Dependency>gcc</Dependency> 
+            <Dependency>glib2</Dependency> 
+            <Dependency>gtk3</Dependency> 
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>uuidd</Dependency> 
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency> 
+            <Dependency>libXcomposite</Dependency>             
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>wget</Dependency>       
+            <Dependency>xdg-utils</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="executable">/opt/microsoft/msedge/</Path>
+            <Path fileType="data">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="data">/usr/share/appdata/microsoft-edge.appdata.xml</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="data">/usr/share/menu/</Path>            
+        </Files>
+
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-01-25</Date>
+            <Version>97.0.1072.69</Version>
+            <Comment>First Release</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+
+    </History>
+</PISI>
