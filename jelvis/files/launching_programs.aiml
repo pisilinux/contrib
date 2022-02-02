@@ -1,0 +1,618 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Launching programs -->
+
+    <category>
+        <pattern>* SORT MY MOVIES</pattern>
+         <template>
+             <random><li>ok kia</li>
+            </random>
+            <system>bash ./sortFolder.sh</system>
+        </template>
+    </category>  
+
+    <category>
+        <pattern>CHECK MY MAIL</pattern>
+         <template>
+             <random><li>ok i checked</li>
+            </random>
+            <system>bash ./gmail.sh</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHECK EMAIL</pattern>
+         <template>
+             <random><li>ok i checked</li>
+            </random>
+            <system>bash ./gmail.sh</system>
+        </template>
+    </category>  
+
+
+
+    <category>
+        <pattern>CHECK GMAIL</pattern>
+         <template>
+             <random><li>ok i checked</li>
+            </random>
+            <system>bash ./gmail.sh</system>
+        </template>
+    </category>    
+ 
+
+    <category>
+        <pattern>CHECK MY WORKS</pattern>
+         <template>
+             <random><li>sir, you have</li>
+            </random>
+            <system>bash ./todo.sh</system>
+        </template>
+    </category>  
+
+    <category>
+        <pattern>SHUT UP *</pattern>
+         <template>
+             <random><li>I am so sorry sir</li>
+            </random>
+            <system>shutdown -h now</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>OPEN DOLPHIN</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> dolphin</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN DOLPHIN</pattern>
+         <template>
+            <srai>OPEN DOLPHIN</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CLOSE DOLPHUN</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> dolphin -q</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CLOSE DOLPHIN</pattern>
+         <template>
+            <srai>CLOSE DOLPHIN</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAKE ME HOME</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> dolphin ~</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAKE ME TO *</pattern>
+         <template>
+            <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> dolphin /<star/></system>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>OPEN AMAROK</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c " amarok &amp;> /dev/null &amp;" </system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN AMAROK *</pattern>
+        <template>
+             <srai>OPEN AMAROK</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN AMAROK *</pattern>
+        <template>
+             <srai>OPEN AMAROK</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN AMAROK</pattern>
+        <template>
+             <srai>OPEN AMAROK</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN CALCULATOR</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c " kcalc &amp;> /dev/null &amp;" </system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CALCULATOR *</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CALCULATOR *</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN CALCULATOR</pattern>
+        <template>
+             <srai>OPEN CALCULATOR</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN VLC</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c " vlc &amp;> /dev/null &amp;"</system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>* OPEN VLC *</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN VLC *</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN VLC</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>OPEN FIREFOX</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c "firefox &amp;> /dev/null &amp;"</system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>* OPEN FIREFOX *</pattern>
+        <template>
+             <srai>OPEN FIREFOX</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN FIREFOX *</pattern>
+        <template>
+             <srai>OPEN FIREFOX</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN FIREFOX</pattern>
+        <template>
+             <srai>OPEN FIREFOX</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN CHROME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> bash -c " google-chrome-stable 'www.google.com' &amp;> /dev/null &amp;"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN CHROME *</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN CHROME *</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN CHROME</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>OPEN BROWSER</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN BROWSER</pattern>
+        <template>
+             <srai>OPEN CHROME</srai>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>GOOGLE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> google-chrome-stable http://www.google.com/search?q=<star/></system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>YOUTUBE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> google-chrome-stable https://www.youtube.com/results?search_query=<star/></system>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>GOOGLE MAPS *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system> google-chrome-stable https://www.google.co.in/maps/search/<star/></system>
+        </template>
+    </category>
+
+     <category>
+        <pattern>SEARCH FOR * ON GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * IN GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>TURN ON MY ROOM</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TURN ON MY ROOM</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TURN ON MY ROOM *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>TURN OFF MY ROOM</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TURN OFF MY ROOM</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TURN OFF MY ROOM *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python 1.py</system>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>CREATE NEW PROJECT</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python folder.py</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>TURN OFF HOME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllightsoff.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TURN OFF HOME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllightsoff.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TURN OFF HOME *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllightsoff.py</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>TURN ON HOME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllights.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TURN ON HOME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllights.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TURN ON HOME *</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>python alllights.py</system>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern>SLEEP</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>bash killall jelvis-assistant</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>OPEN MY SITE</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>google-chrome-stable http://kiahamedi.ir</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN MY SITE</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>google-chrome-stable http://kiahamedi.ir</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* CLOSE CHROME</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>killall google-chrome-stable</system>
+        </template>
+    </category>   
+
+
+    <category>
+        <pattern>SEND EMAIL TO QUEEN WITH TEXT HI QUEEN</pattern>
+        <template>
+             <random>
+               <li>I've done, sir</li>
+            </random>
+            <system>bash ./sendmail.sh</system>
+        </template>
+    </category>   
+
+  
+
+
+
+</aiml>
