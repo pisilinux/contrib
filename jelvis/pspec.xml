@@ -64,12 +64,12 @@
             <Path fileType="doc">/opt/jelvis</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/launching_programs.aiml">launching_programs.aiml</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/music_controls.aiml">music_controls.aiml</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/basic_chat.aiml">basic_chat.aiml</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/search_internet.aiml">search_internet.aiml</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/volume_controls.aiml">volume_controls.aiml</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/opt/jelvis/gmail.sh">gmail.sh</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/launching_programs.aiml">launching_programs.aiml</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/music_controls.aiml">music_controls.aiml</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/basic_chat.aiml">basic_chat.aiml</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/search_internet.aiml">search_internet.aiml</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/volume_controls.aiml">volume_controls.aiml</AdditionalFile>
+            <AdditionalFile permission="0755" target="/opt/jelvis/gmail.sh">gmail.sh</AdditionalFile>
         </AdditionalFiles>
     </Package>
 

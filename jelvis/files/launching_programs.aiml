@@ -42,7 +42,7 @@
  
 
     <category>
-        <pattern>CHECK MY WORKS</pattern>
+        <pattern>CHECK MY JOBS</pattern>
          <template>
              <random><li>sir, you have</li>
             </random>
@@ -68,7 +68,7 @@
                <li>Right away, sir!</li>
                <li>On it!</li>
             </random>
-            <system> dolphin</system>
+            <system> bash -c " dolphin &amp;> /dev/null &amp;"</system>
         </template>
     </category>
 
@@ -80,7 +80,7 @@
     </category>
 
     <category>
-        <pattern>CLOSE DOLPHUN</pattern>
+        <pattern>CLOSE DOLPHiN</pattern>
          <template>
              <random>
                <li>Sure thing!</li>
@@ -133,7 +133,7 @@
                <li>Right away, sir!</li>
                <li>On it!</li>
             </random>
-            <system> bash -c " amarok &amp;> /dev/null &amp;" </system>
+            <system> bash -c " amarok" </system>
         </template>
     </category>
 
@@ -558,7 +558,7 @@
                <li>Right away, sir!</li>
                <li>On it!</li>
             </random>
-            <system>bash killall jelvis-assistant</system>
+            <system>app.quit</system>
         </template>
     </category>
 
@@ -602,7 +602,7 @@
 
 
     <category>
-        <pattern>SEND EMAIL TO QUEEN WITH TEXT HI QUEEN</pattern>
+        <pattern>SEND EMAIL</pattern>
         <template>
              <random>
                <li>I've done, sir</li>
