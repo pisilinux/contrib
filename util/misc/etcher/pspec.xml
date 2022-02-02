@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>etcher</Name>
+        <Homepage>https://www.balena.io/etcher/</Homepage>
+        <Packager>
+            <Name>Pisilinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPL2</License>
+        <Summary>Flash OS images to SD cards, USB drives, safely and easily.</Summary>
+        <Description>Flash OS images to SD cards, USB drives, safely and easily.</Description>
+        <Archive sha1sum="16603ed71c16b1ebeea54ba5f6984ab575e405cc" type="binary">https://github.com/balena-io/etcher/releases/download/v1.7.3/balenaEtcher-1.7.3-x64.AppImage</Archive>
+        <PartOf>system.utils</PartOf>
+    </Source>
+
+    <Package>
+        <Name>etcher</Name>
+        <RuntimeDependencies>
+          
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>                
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/etcher.desktop" owner="root">etcher.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/etcher.png">etcher.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-01-05</Date>
+            <Version>1.7.3</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

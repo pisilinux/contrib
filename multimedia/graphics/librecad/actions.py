@@ -10,7 +10,7 @@ NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
 def install():
-    pisitools.dodir ("/opt/FreeCAD")
-    pisitools.doexe("FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage", "/opt/FreeCAD")
-    pisitools.dosym("/opt/FreeCAD/FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage", "/usr/bin/FreeCAD")
+    pisitools.dodir ("/opt/LibreCAD")
+    pisitools.doexe("LibreCAD-2.2.0-rc3-21-g5d331c8b-x86_64.AppImage", "/opt/LibreCAD")
+    pisitools.dosym("/opt/LibreCAD/LibreCAD-2.2.0-rc3-21-g5d331c8b-x86_64.AppImage", "/usr/bin/LibreCAD")
    

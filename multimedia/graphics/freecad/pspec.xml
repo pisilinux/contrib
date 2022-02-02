@@ -11,8 +11,8 @@
         <Summary>General purpose 3D CAD modeler</Summary>
         <Description>General purpose 3D CAD modeler</Description>
         <License>LGPL</License>
-        <PartOf>Game</PartOf>
-        <Archive sha1sum="6b23325ca566e5a7a5f743ca4dfee526ba2d3bbd" type="binary">https://github.com/FreeCAD/FreeCAD/releases/download/0.19.2/FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage</Archive>        
+        <PartOf>Development</PartOf>
+        <Archive sha1sum="9c2d642826817fe1a956df850ad8854ff0bf9711" type="binary">https://github.com/FreeCAD/FreeCAD/releases/download/0.19.3/FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage</Archive>        
     </Source>
 
     <Package>
@@ -42,7 +42,14 @@
         </AdditionalFiles>
     </Package>
     
-    <History>       
+    <History>
+        <Update release="2">
+            <Date>2022-01-21</Date>
+            <Version>0.19.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>       
         <Update release="1">
             <Date>2021-11-18</Date>
             <Version>0.19.2</Version>

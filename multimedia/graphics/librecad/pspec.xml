@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>LibreCad</Name>
+        <Homepage>https://www.librecad.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>A 2D CAD drawing tool based on the community edition of QCad</Summary>
+        <Description>A 2D CAD drawing tool based on the community edition of QCad</Description>
+        <License>GPL</License>
+        <PartOf>Development</PartOf>
+        <Archive sha1sum="e0e908eddd4d37767cdfe2f796e08260aedb3ba1" type="binary">https://github.com/LibreCAD/LibreCAD/releases/download/latest/LibreCAD-2.2.0-rc3-21-g5d331c8b-x86_64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>LibreCad</Name>
+        <RuntimeDependencies>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-svg</Dependency> 
+            <Dependency>libxcb</Dependency> 
+            <Dependency>muparser</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/librecad.desktop">librecad.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/librecad.png">librecad.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2022-01-21</Date>
+            <Version>2.2.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
