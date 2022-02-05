@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pencil2d</Name>
+        <Homepage>https://mattermost.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Easy, intuitive tool to make 2D hand-drawn animations.</Summary>
+        <Description>Easy, intuitive tool to make 2D hand-drawn animations.</Description>
+        <License>GPL2</License>
+        <PartOf>Graphics</PartOf>
+        <Archive sha1sum="dbd85592528474b37137f2120af5894047fa7c1f" type="binary">https://github.com/pencil2d/pencil/releases/download/v0.6.6/pencil2d-linux-amd64-0.6.6.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>pencil2d</Name>
+        <RuntimeDependencies>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>qt5-svg</Dependency>
+            <Dependency>qt5-xmlpatterns</Dependency>           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/pencil2d.desktop">pencil2d.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/pencil2d.png">pencil2d.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2022-02-04</Date>
+            <Version>0.6.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

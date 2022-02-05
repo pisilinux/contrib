@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment=Easy, intuitive tool to make 2D hand-drawn animations.
+Encoding=UTF-8
+Exec=pencil2d
+GenericName[tr_TR]=pencil2d
+GenericName=pencil2d
+Icon=pencil2d.png
+Name[tr_TR]=pencil2d
+Name=pencil2d
+Terminal=false
+Type=Application
+Version=1.0
