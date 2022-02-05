@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>SynfigStudio</Name>
+        <Homepage>https://www.synfig.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Professional vector animation program</Summary>
+        <Description>Professional vector animation program</Description>
+        <License>GPL3</License>
+        <PartOf>Graphics</PartOf>
+        <Archive sha1sum="33267c1cb671c53c9c1df28585512d887ba8d0ed" type="binary">https://github.com/synfig/synfig/releases/download/v1.5.1/SynfigStudio-1.5.1-2021.10.21-linux64-2cb6c.appimage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>SynfigStudio</Name>
+        <RuntimeDependencies>
+            <Dependency>boost</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>imagemagick</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libmng</Dependency>
+            <Dependency>libxml++26</Dependency>
+            <Dependency>mlt</Dependency>
+            <Dependency>openexr</Dependency>
+            <Dependency>pango</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/SynfigStudio.desktop">SynfigStudio.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/SynfigStudio.png">SynfigStudio.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2022-02-05</Date>
+            <Version>1.5.1</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

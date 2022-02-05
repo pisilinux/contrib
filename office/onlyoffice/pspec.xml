@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>onlyoffice</Name>
+        <Homepage>https://www.onlyoffice.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>An office suite that combines text, spreadsheet and presentation editors</Summary>
+        <Description>An office suite that combines text, spreadsheet and presentation editors</Description>
+        <License>AGPL3</License>
+        <PartOf>Office</PartOf>
+        <Archive sha1sum="6ddaf9e0281ef02c9fd9958a8fe8c60c8eae4737" type="binary">https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v7.0.0/DesktopEditors-x86_64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>onlyoffice</Name>
+        <RuntimeDependencies>
+            <Dependency>curl</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>            
+            <Dependency>gtk3</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gst-plugins-ugly</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
+            <Dependency>liberation-fonts</Dependency>
+            <Dependency>desktop-file-utils</Dependency>                
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/onlyoffice.desktop">onlyoffice.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/onlyoffice.png">onlyoffice.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2022-02-05</Date>
+            <Version>7.0.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Graphics;
+Comment=Professional vector animation program (CLI renderer only)
+Encoding=UTF-8
+Exec=SynfigStudio
+GenericName[tr_TR]=SynfigStudio
+GenericName=SynfigStudio
+Icon=SynfigStudio.png
+Name[tr_TR]=SynfigStudio
+Name=SynfigStudio
+Terminal=false
+Type=Application
+Version=1.0
