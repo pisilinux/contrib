@@ -12,14 +12,14 @@
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
         <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
-        <Archive sha1sum="97debf48fbf6ac929f3f8d23aa3ac0ce151c8f3b" type="zip">https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-v5.0.2.zip</Archive>
+        <Archive sha1sum="2e3a6281a806d5f2fe225a7fd00e827d91d7b5d9" type="zip">https://sourceforge.net/projects/ar-iv/files/uyap-pardus-5-4-0-amd6420-12-20219-21-am.zip</Archive>
     </Source>
 
     <Package>
         <Name>uyap</Name>
         <RuntimeDependencies>
-            <Dependency>jre7-openjdk</Dependency>
-            <Dependency>jre7-openjdk-headless</Dependency>
+            <Dependency>jre8-openjdk</Dependency>
+            <Dependency>jre8-openjdk-headless</Dependency>
             <Dependency>pcsc-lite</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -32,6 +32,27 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2022-01-14</Date>
+            <Version>5.4.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="9">
+            <Date>2021-10-08</Date>
+            <Version>5.3.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+        <Update release="8">
+            <Date>2021-06-27</Date>
+            <Version>5.1.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2021-01-15</Date>
             <Version>5.0.2</Version>
