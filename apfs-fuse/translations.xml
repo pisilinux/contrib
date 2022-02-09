@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>apfs-fuse</Name>
+        <Summary>A read-only FUSE driver for Apple's APFS</Summary>
+        <Description>apfs-fuse is a read-only driver for the new Apple File System, APFS  also supports software encrypted volumes and fusion drives. Firmlinks are not supported yet.</Description>
+    </Source>
+</PISI>
