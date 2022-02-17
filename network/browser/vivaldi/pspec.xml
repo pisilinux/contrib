@@ -11,7 +11,7 @@
         <Summary>An advanced browser made with the power user in mind.</Summary>
         <Description>An advanced browser made with the power user in mind.</Description>
         <License>EULA</License>
-        <Archive sha1sum="83490f210e7d257cb81b6d0d489b2470c1c3cc7d" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_5.0.2497.32-1_amd64.deb</Archive>       
+        <Archive sha1sum="946601975bb567cc0372dad38ed942187a0d8c30" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_5.1.2567.46-1_amd64.deb</Archive>       
     </Source>
     <Package>
         <Name>vivaldi-browser</Name>
@@ -36,7 +36,14 @@
             <AdditionalFile target="/usr/share/icons/vivaldi-browser.png" owner="root">vivaldi-browser.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
-    <History>  
+    <History>
+         <Update release="4">
+            <Date>2022-02-16</Date>
+            <Version>5.1.2567.46</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>     
         <Update release="3">
             <Date>2021-12-24</Date>
             <Version>5.0.2497.32</Version>
