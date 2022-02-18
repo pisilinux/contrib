@@ -11,7 +11,7 @@
         <License>Mozilla Public License 2.0</License>
         <Summary>A web browser that stops ads and trackers by default</Summary>
         <Description>A web browser that stops ads and trackers by default</Description>
-        <Archive sha1sum="36b6618c302bd8b6bbe67a21d610e0c106cb6b64" type="binary">https://github.com/brave/brave-browser/releases/download/v1.36.46/brave-browser-nightly-1.36.46-linux-amd64.zip</Archive>
+        <Archive sha1sum="aa5505e23293525b5a7e0a24fd692d00efaea32c" type="binary">https://github.com/brave/brave-browser/releases/download/v1.37.33/brave-browser-nightly-1.37.33-linux-amd64.zip</Archive>
     </Source>
 
     <Package>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+         <Update release="8">
+            <Date>2022-02-08</Date>
+            <Version>1.37.33</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="7">
             <Date>2022-01-19</Date>
             <Version>1.36.46</Version>

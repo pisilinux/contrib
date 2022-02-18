@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="98c4d9726e77c88e3606dd5aedb1427953d30ee7" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="5ee6e101bbb5ec80d05ff4ab569b21b750efbb0d" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
        
     </Source>
 
@@ -76,6 +76,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="58">
+            <Date>2022-02-16</Date>
+            <Version>98.0.4758.102</Version>
+            <Comment>Version bump.</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="57">
             <Date>2021-12-24</Date>
             <Version>96.0.4664.110</Version>
