@@ -12,24 +12,20 @@
         <IsA>app:gui</IsA>
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="8ab5e641d721b463a684a16db63ba8d0cd19ccf0" type="binary">http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.80.699.gc3dac750_amd64.deb</Archive>
+        <Archive sha1sum="8ab5e641d721b463a684a16db63ba8d0cd19ccf0" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.80.699.gc3dac750_amd64.deb</Archive>
     </Source>
+
     <Package>
         <Name>spotify</Name>
         <RuntimeDependencies>
-            <Dependency>alsa-lib</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>at-spi2-atk</Dependency>
             <Dependency>at-spi2-core</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>gtk3</Dependency>
-            <Dependency>curl</Dependency>
-            <Dependency>libSM</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>openssl</Dependency>
+            <Dependency>curl</Dependency>
             <Dependency>dbus</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>zlib</Dependency>
             <Dependency>cairo</Dependency>
@@ -42,6 +38,8 @@
             <Dependency>libgcc</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXtst</Dependency>
+            <Dependency>openssl</Dependency>
+            <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXrandr</Dependency>
@@ -50,11 +48,9 @@
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
-            <!-- 
-            <Dependency>gtk2</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
             <Dependency>google-chrome</Dependency>
             <Dependency>gcc</Dependency>
-             -->
             <Dependency>libxcb</Dependency>
             <Dependency>libXcomposite</Dependency>
         </RuntimeDependencies>
@@ -71,18 +67,11 @@
             <AdditionalFile owner="root" permission="0755" target="/usr/share/icons/spotify-linux-256.png">spotify-linux-256.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
+
     <History>
-        <Update release="19">
-            <Date>2022-03-14</Date>
-            <Version>1.1.80.699</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        
-    	<Update release="18">
+        <Update release="18">
             <Date>2021-05-09</Date>
-            <Version>1.1.56.595</Version>
+            <Version>1.1.80.699</Version>
             <Comment>Version bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>

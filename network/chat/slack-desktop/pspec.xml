@@ -10,9 +10,10 @@
         <Summary>Slack Desktop</Summary>
         <Description>Slack Client for Linux</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="55163be2360eb8d8b0545441a5327c151d36b6f3" type="binary">https://downloads.slack-edge.com/releases/linux/4.23.0/prod/x64/slack-desktop-4.23.0-amd64.deb</Archive>
+        <Archive sha1sum="ee8010d26c8b748655ea411ef410d45c8cb7c979" type="binary">https://downloads.slack-edge.com/linux_releases/slack-desktop-4.19.2-amd64.deb</Archive>
         <BuildDependencies>
-          
+            <Dependency>tar</Dependency>
+            <Dependency>binutils</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -61,13 +62,6 @@
     </Package>
 
     <History>
-         <Update release="9">
-            <Date>2022-03-10</Date>
-            <Version>4.23.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
          <Update release="8">
             <Date>2021-09-23</Date>
             <Version>4.19.2</Version>
