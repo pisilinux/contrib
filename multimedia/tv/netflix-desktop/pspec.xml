@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>netflix-desktop</Name>
+        <Homepage>https://gitlab.com/netflix-desktop/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>app:gui</IsA>
+        <Summary>Unnofficial FoxtelGo desktop application</Summary>
+        <Description>Unnofficial FoxtelGo desktop application</Description>
+        <Archive sha1sum="99369701319b527aa489e390e5263dccf66fd389" type="targz">https://gitlab.com/netflix-desktop/binaries/1.0.3-3/-/raw/main/Netflix-linux-x64.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>netflix-desktop</Name>
+        <RuntimeDependencies>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/netflix-desktop</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="icon">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/netflix.desktop" owner="root">netflix.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/netflix.svg" owner="root">netflix.svg</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-03-24</Date>
+            <Version>1.0.3</Version>
+            <Comment>First release.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+ 
