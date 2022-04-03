@@ -10,29 +10,56 @@
         <Summary>AnyDesk is a remote desktop application</Summary>
         <Description>AnyDesk is a remote desktop application</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="88fad09bbf97996a7900dd7fbb8f69f1f80980b2" type="targz">https://download.anydesk.com/linux/anydesk-6.1.1-amd64.tar.gz</Archive>       
+        <Archive sha1sum="88fad09bbf97996a7900dd7fbb8f69f1f80980b2" type="targz">https://download.anydesk.com/linux/anydesk-6.1.1-amd64.tar.gz
+        </Archive>       
     </Source>
 
     <Package>
         <Name>anydesk</Name>
         <RuntimeDependencies>
-            <Dependency>gtkglext</Dependency>                    
+            <Dependency>minizip</Dependency>
+            <Dependency>shiboken2</Dependency>
+            <Dependency>libglvnd</Dependency>/usr/share/
+            <Dependency>gtk2</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>gcc</Dependency>
+            <Dependency>lsb-release</Dependency>
+            <Dependency>gtkglext</Dependency>
+            <Dependency>polkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/icons</Path>                
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>    
+            <Path fileType="data">/etc/init.d</Path>              
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/icons/anydesk.png">anydesk.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps//anydesk.png">anydesk.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
         <Update release="4">
-            <Date>2021-11-20</Date>
+            <Date>2022-04-03</Date>
             <Version>6.1.1</Version>
             <Comment>version bump</Comment>
             <Name>Erkan IŞIK</Name>
