@@ -12,20 +12,23 @@
         <IsA>gui</IsA>
         <Summary>The intuitive, fast, and beautiful cross-platform Git client.</Summary>
         <Description>GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-        <Archive sha1sum="71d961c9d0decff942775d7ac04a98f1728d030e" type="binary">https://release.gitkraken.com/linux/gitkraken-amd64.deb</Archive>
+        <Archive sha1sum="7409375e9d434493fbd1caca6a13bc1579504a7a" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>gitkraken</Name>
         <RuntimeDependencies>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libxkbfile</Dependency>
+
+            <!-- 
             <Dependency>atk</Dependency>
             <Dependency>curl</Dependency>
             <Dependency>libxcb</Dependency>
-            <Dependency>libxkbfile</Dependency>
-            <Dependency>nss</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>dbus</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>expat</Dependency>
@@ -51,13 +54,12 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libgnome-keyring</Dependency>
+             -->
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-           <Path fileType="icon">/usr/share/pixmaps</Path>
-           <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="executable">/opt/gitkraken</Path>
+            <Path fileType="data">/usr</Path>
+           
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gitkraken.png">gitkraken.png</AdditionalFile>
@@ -66,6 +68,13 @@
     </Package>
 
     <History>
+         <Update release="8">
+            <Date>2022-04-03</Date>
+            <Version>8.3.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2018-02-21</Date>
             <Version>3.3.4</Version>
