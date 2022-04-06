@@ -6,11 +6,13 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
-NoStrip = ["/opt", "/usr"]
-IgnoreAutodep = True
+WorkDir = "."
+NoStrip = ["/"]
 
 def install():
     pisitools.dodir ("/opt/Ferdi")
-    pisitools.doexe("Ferdi-5.7.0.AppImage", "/opt/Ferdi")
-    pisitools.dosym("/opt/Ferdi/Ferdi-5.7.0.AppImage", "/usr/bin/ferdi")
+    pisitools.insinto("/opt/Ferdi", "ferdi-5.8.1/*")
+    pisitools.dosym("/opt/Ferdi/ferdi", "/usr/bin/ferdi")
+
+    
    
