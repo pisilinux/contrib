@@ -53,7 +53,7 @@
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/icons/anydesk.png">anydesk.png</AdditionalFile>
-            <AdditionalFile target="/usr/share/pixmaps//anydesk.png">anydesk.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/anydesk.png">anydesk.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
