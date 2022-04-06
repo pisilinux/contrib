@@ -19,7 +19,7 @@
         <RuntimeDependencies>
             <Dependency>minizip</Dependency>
             <Dependency>shiboken2</Dependency>
-            <Dependency>libglvnd</Dependency>/usr/share/
+            <Dependency>libglvnd</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>glibc</Dependency>
             <Dependency>glib2</Dependency>
@@ -53,7 +53,7 @@
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/icons/anydesk.png">anydesk.png</AdditionalFile>
-            <AdditionalFile target="/usr/share/pixmaps//anydesk.png">anydesk.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/anydesk.png">anydesk.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
