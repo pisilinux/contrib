@@ -19,7 +19,7 @@
         <RuntimeDependencies>
             <Dependency>minizip</Dependency>
             <Dependency>shiboken2</Dependency>
-            <Dependency>libglvnd</Dependency>/usr/share/
+            <Dependency>libglvnd</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>glibc</Dependency>
             <Dependency>glib2</Dependency>
