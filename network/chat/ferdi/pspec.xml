@@ -12,7 +12,7 @@
         <Description>A messaging browser that allows you to combine your favorite messaging services into one application</Description>
         <License>Apache</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="3f480afe3d28cb4894690f8ecc256cafaac956e4" type="binary">https://github.com/getferdi/ferdi/releases/download/v5.7.0/Ferdi-5.7.0.AppImage</Archive>        
+        <Archive sha1sum="118a14f7c1a8bd7d04a675425d94fbe349bb0a36" type="targz">https://github.com/getferdi/ferdi/releases/download/v5.8.1/ferdi-5.8.1.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -32,7 +32,14 @@
         </AdditionalFiles>
     </Package>
     
-    <History>       
+    <History>
+        <Update release="2">
+            <Date>2022-01-22</Date>
+            <Version>5.8.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>       
         <Update release="1">
             <Date>2022-01-22</Date>
             <Version>5.7.0</Version>
