@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Figma-linux
+GenericName=Figma-linux
+Exec=figma-linux %u
+Icon=Figma-logo.svg
+Terminal=false
+TryExec=figma-linux
+Categories=Development;

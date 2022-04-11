@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>figma-linux</Name>
+        <Homepage>https://github.com/Figma-Linux/figma-linux</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary xml:lang="en">The collaborative interface design tool. Unofficial Figma desktop client for Linux</Summary>
+        <Summary xml:lang="tr">İşbirliğine dayalı arayüz tasarım aracı. Linux için resmi olmayan Figma masaüstü istemcisi</Summary>
+        <Description xml:lang="en" >The collaborative interface design tool. Unofficial Figma desktop client for Linux</Description>
+        <Description xml:lang="tr" >İşbirliğine dayalı arayüz tasarım aracı. Linux için resmi olmayan Figma masaüstü istemcisi</Description>
+        <License>GPL2</License>
+        <PartOf>programming.tools</PartOf>
+        <Archive sha1sum="cd41f3688967be45d99714eef5272bd90681c7d5" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.6/figma-linux_0.9.6_linux_amd64.zip
+        </Archive>       
+    </Source>
+
+    <Package>
+        <Name>figma-linux</Name>
+        <RuntimeDependencies>           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>                      
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/figma-linux.desktop" owner="root">figma-linux.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Figma-logo.svg">Figma-logo.svg</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/Figma-logo.svg">Figma-logo.svg</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-04-11</Date>
+            <Version>0.9.6</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
