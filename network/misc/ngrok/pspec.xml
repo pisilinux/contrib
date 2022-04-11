@@ -11,7 +11,7 @@
         <License>custom</License>
         <Summary>A tunneling, reverse proxy for developing and understanding networked, HTTP services</Summary>
         <Description>A tunneling, reverse proxy for developing and understanding networked, HTTP services</Description>
-        <Archive sha1sum="508d4455a72959d5594d5f138e48405fb7f1420d" type="binary">https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip</Archive>
+        <Archive sha1sum="71fe6ed02f1fcc59e2de45751c19766b1153b10c" type="binary">https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip</Archive>
     </Source>
 
     <Package>
@@ -26,6 +26,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2022-04-11</Date>
+            <Version>2.3.40</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2020-11-25</Date>
             <Version>2.3.35</Version>
