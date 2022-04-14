@@ -55,7 +55,9 @@
 	        <Dependency>gsettings-desktop-schemas</Dependency>	
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="executable">/usr</Path>
+        <!-- 
             <Path fileType="library">/usr/lib/opera</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -63,7 +65,11 @@
             <Path fileType="data">/usr/share/mime</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
+        -->
         </Files>
+         <AdditionalFiles>
+            <AdditionalFile target="/opt/opera/libffmpeg.so" owner="root">libffmpeg.so</AdditionalFile>             
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="27">
