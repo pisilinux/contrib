@@ -6,13 +6,10 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
-NoStrip = ["/usr"]
-
-
 def setup():
-    shelltools.system("ar xf skypeforlinux_%s_amd64.deb" % get.srcVERSION())
-    shelltools.system("tar xf data.tar.gz")
+    shelltools.system("ar xf Webex.deb")
+    shelltools.system("tar xf data.tar.xz")
 
 
 def install():
-    pisitools.insinto("/", "usr")
+    pisitools.insinto("/opt/Webex", "opt/Webex/*")   

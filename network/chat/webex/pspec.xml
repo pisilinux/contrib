@@ -12,72 +12,50 @@
         <Summary>One platform, with all the ways to connect.</Summary>
         <Description>One platform, with all the ways to connect.</Description>
         <License>custom</License>
-        <Archive sha1sum="2c94c75eb123de622567039c3fe34d6d98eee821" type="binary">https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb</Archive>
-        <BuildDependencies></BuildDependencies>
+        <PartOf>Network</PartOf>
+        <Archive sha1sum="2c94c75eb123de622567039c3fe34d6d98eee821" type="binary">https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb</Archive>        
     </Source>
-
     <Package>
         <Name>webex</Name>
         <Icon>webex</Icon>
         <RuntimeDependencies>
-            , , libgl1-mesa-glx, libnss3, libnspr4, libcups2, upower, libnotify4, libsecret-1-0, libwayland-client0, libatk1.0-0, libatk-bridge2.0-0, libgbm1, libpango-1.0-0, libpangocairo-1.0-0, libatspi2.0-0, libgssapi-krb5-2, libasound2, libudev1, libpulse0, libxcb-randr0, libxcb-xfixes0, libxcb-xinerama0, libxcb-render-util0, libxcb-keysyms1, libxcb-image0, libxcb-icccm4, libxkbcommon-x11-0
-            <Dependency>binutils</Dependency>
-            <Dependency>xdg-utils</Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-            <Dependency></Dependency>
-
-            
-            <Dependency>gconf</Dependency>
-            <Dependency>atk</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>expat</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
-            <Dependency>freetype</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>libgnome-keyring</Dependency>
-            <Dependency>libxkbfile</Dependency>
-            <Dependency>gtk3</Dependency>
-            <Dependency>libxcb</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>binutils</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libsecret</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libxcrypt</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>wayland</Dependency>
+            <Dependency>xcb-util-image </Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>xcb-util-renderutil </Dependency>
+            <Dependency>xcb-util-wm</Dependency>
+            <Dependency>xdg-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
-            <Path fileType="data">/usr/share/skypeforlinux</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>           
         </Files>
+         <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/webex.desktop">webex.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/sparklogosmall.png">sparklogosmall.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
-
     <History>
         <Update release="1">
             <Date>2022-04-06</Date>
