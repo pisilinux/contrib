@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Scratch Desktop
+Comment=Scratch 3.0 as a self-contained desktop application
+GenericName=Scratch Desktop
+Exec=scratch-desktop %U
+Icon=scratch-desktop
+Type=Application
+StartupNotify=true
+Categories=Education;
+
