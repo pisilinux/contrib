@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>insync</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>An unofficial Google Drive and OneDrive client that runs on Linux, with support for various desktops</Summary>
+        <Description>Sync all your Google Drive - OneDrive accounts to your local filesystem Insync integrates with your file manager so you can use our Google Drive or OneDrive files locally while getting the benefits of the cloud. Sync any local folder, sync multiple accounts and sync across Linux, Windows and Mac. Refine your setup with docs conversion, ignore rules, symlink support and much more.</Description>
+        <License>custom</License>
+        <Archive sha1sum="10c3b04c92a2f679db216bf53b66582ffd0bca89" type="binary">http://s.insynchq.com/builds/insync_3.7.5.50350-impish_amd64.deb</Archive>        
+    </Source>
+    <Package>
+        <Name>insync</Name>
+        <Icon>insync</Icon>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>libglvnd</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>xdg-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr</Path>
+            
+        </Files>
+    </Package>
+
+    <History>
+    	<Update release="1">
+            <Date>2022-04-25</Date>
+            <Version>3.7.5.50350</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

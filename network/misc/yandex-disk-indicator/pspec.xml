@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>yandex-disk-indicator</Name>
+        <Homepage>https://github.com/slytomcat/yandex-disk-indicator/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Panel indicator (GUI) for YandexDisk CLI client for Linux.</Summary>
+        <Description>Yandex.Disk indicator for desktop panel. The application indicator is displayed within the indicator login. It uses Yandex.Disk CLI synchronization utility and shows current status and notifications when status changes.</Description>
+        <License>GPL3</License>
+        <Archive sha1sum="9af0f25f066984ba10298798b59600fe1c710513" type="targz">hhttps://github.com/slytomcat/yandex-disk-indicator/archive/refs/tags/1.11.0.tar.gz</Archive>
+        <BuildDependencies>
+            python3-pyinotify, python3-gi, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-appindicator3-0.1, gir1.2-gdkpixbuf-2.0, gir1.2-notify-0.7, xclip, 
+
+            <Dependency>python3-devel</Dependency>
+            <Dependency>zenity</Dependency>
+            <Dependency>zlib</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>yandex-disk-indicator</Name>
+        <Icon>Yandex Disk</Icon>
+        <RuntimeDependencies>
+            <Dependency>gcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>zlib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	 
+        <Update release="1">
+            <Date>2022-04-23</Date>
+            <Version>1.11.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
