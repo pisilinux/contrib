@@ -26,7 +26,7 @@
     </Source>
     <Package>
         <Name>master-pdf-editor</Name>
-        <Icon>masterpdfeditor5</Icon>
+        <Icon>masterpdfeditor</Icon>
         <RuntimeDependencies>
             <Dependency>qt5-base</Dependency>
             <Dependency>libglvnd</Dependency>
