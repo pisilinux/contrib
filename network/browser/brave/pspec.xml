@@ -11,16 +11,21 @@
         <License>Mozilla Public License 2.0</License>
         <Summary>A web browser that stops ads and trackers by default</Summary>
         <Description>A web browser that stops ads and trackers by default</Description>
-        <Archive sha1sum="673628cdae7b36e00e023f0cf92ecfe44c12d7ba" type="binary">https://github.com/brave/brave-browser/releases/download/v1.39.42/brave-browser-nightly-1.39.42-linux-amd64.zip</Archive>
+        <Archive sha1sum="76eac2933b27b2257905812ce54efa7fe454862d" type="binary">https://github.com/brave/brave-browser/releases/download/v1.42.56/brave-browser-nightly-1.42.56-linux-amd64.zip</Archive>
     </Source>
 
     <Package>
         <Name>brave-browser</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
             <Dependency>nss</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>libva</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/brave-browser</Path>
@@ -35,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2022-07-05</Date>
+            <Version>1.42.56</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="10">
             <Date>2022-04-10</Date>
             <Version>1.39.42</Version>

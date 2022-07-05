@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Google Chrome for Linux</Summary>
         <Description>Google Chrome is another web browser which runs web pages and applications with lightning speed due to its superior JavaScript rendering engine.</Description>
-        <Archive sha1sum="a43c066f78f66fc8be5a7cdc0ddade193551ec92" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
+        <Archive sha1sum="bf18fc4f2d709dee83d7b9739b233bea9d1ccc8a" type="binary">https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</Archive>
        
     </Source>
 
@@ -61,6 +61,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>libutil-linux</Dependency>
+            <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/</Path>
@@ -75,7 +76,15 @@
             <Path fileType="data">/usr/share/appdata/google-chrome.appdata.xml</Path>
         </Files>
     </Package>
+
     <History>
+        <Update release="61">
+            <Date>2022-07-05</Date>
+            <Version>103.0.5060.114</Version>
+            <Comment>Version bump</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="60">
             <Date>2022-04-23</Date>
             <Version>100.0.4896.127</Version>
