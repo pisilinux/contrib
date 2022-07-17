@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Music Player</Summary>
         <Description>Listen to music using Spotify</Description>
-        <Archive sha1sum="8ab5e641d721b463a684a16db63ba8d0cd19ccf0" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.80.699.gc3dac750_amd64.deb</Archive>
+        <Archive sha1sum="987258467c50076490400b2539688f0808b86ebb" type="binary">https://repository-origin.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.84.716.gc5f8b819_amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -69,6 +69,13 @@
     </Package>
 
     <History>
+         <Update release="19">
+            <Date>2022-07-17</Date>
+            <Version>1.1.84.716</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="18">
             <Date>2021-05-09</Date>
             <Version>1.1.80.699</Version>
