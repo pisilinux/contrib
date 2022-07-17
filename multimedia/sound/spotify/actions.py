@@ -17,4 +17,4 @@ def setup():
 
 def install():
     pisitools.insinto("/", "usr")
-    pisitools.dosym("/usr/lib/libcurl.so", "/usr/lib/libcurl-gnutls.so.4") 
+    pisitools.dosym("/usr/lib/libcurl.so.4.8.0", "/usr/lib/libcurl-gnutls.so.4") 
