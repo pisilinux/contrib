@@ -6,12 +6,13 @@
         <Homepage>https://vivaldi.com/</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
-            <Email>erkaniisk@pisilinux.org</Email>
+            <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <Summary>An advanced browser made with the power user in mind.</Summary>
         <Description>An advanced browser made with the power user in mind.</Description>
         <License>EULA</License>
-        <Archive sha1sum="b209a6958824001d81f7e4abe6526135383e38bd" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_5.2.2623.26-1_amd64.deb</Archive>       
+        <Icon>vivaldi</Icon>
+        <Archive sha1sum="3c8f130be1135af1718f5772fefd9c6bf8d9f4a7" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_5.3.2679.70-1_amd64.deb</Archive>
     </Source>
     <Package>
         <Name>vivaldi-browser</Name>
@@ -25,6 +26,10 @@
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>fontconfig</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/vivaldi</Path>
@@ -36,7 +41,15 @@
             <AdditionalFile target="/usr/share/icons/vivaldi-browser.png" owner="root">vivaldi-browser.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
+
     <History>
+        <Update release="6">
+            <Date>2022-07-23</Date>
+            <Version>5.3.2679.70</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="5">
             <Date>2022-04-10</Date>
             <Version>5.2.2623.26</Version>
