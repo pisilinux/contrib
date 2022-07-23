@@ -54,6 +54,7 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXcomposite</Dependency>
+            <Dependency>wayland-client</Dependency>
 	        <Dependency>gsettings-desktop-schemas</Dependency>	
         </RuntimeDependencies>
         <Files>
