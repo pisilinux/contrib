@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The web browser from Microsoft</Summary>
         <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="88e4b494ea41596bc9e7f0baab62a0f02f1fa959" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_100.0.1185.29-1_amd64.deb</Archive>
+        <Archive sha1sum="bdfef9deeec2c7bf2b7f699ffcfeabae330f2657" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_103.0.1264.71-1_amd64.deb</Archive>
        
     </Source>
 
@@ -30,7 +30,6 @@
             <Dependency>cairo</Dependency>
             <Dependency>cups</Dependency> 
             <Dependency>curl</Dependency>
-            <Dependency>nss</Dependency>
             <Dependency>gnutls</Dependency>
             <Dependency>libdrm</Dependency> 
             <Dependency>expat</Dependency> 
@@ -51,7 +50,11 @@
             <Dependency>libxkbcommon</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>wget</Dependency>       
-            <Dependency>xdg-utils</Dependency> 
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>libutil-linux</Dependency>
+            <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/</Path>
@@ -67,7 +70,15 @@
         </Files>
 
     </Package>
+
     <History>
+        <Update release="4">
+            <Date>2022-07-23</Date>
+            <Version>103.0.1264.71</Version>
+            <Comment>Version Bump</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2022-04-10</Date>
             <Version>100.0.1185.29</Version>
