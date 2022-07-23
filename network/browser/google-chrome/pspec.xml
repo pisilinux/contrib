@@ -60,7 +60,6 @@
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libvpx</Dependency>
-            <Dependency>libutil-linux</Dependency>
             <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
