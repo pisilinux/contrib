@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>koodo-reader</Name>
+        <IsA>application</IsA>
+        <Summary>A cross-platform ebook reader</Summary>
+        <Summary xml:lang="tr">Platformlar arası bir e-kitap okuyucu</Summary>
+    </Source>
+
+    <Package>
+        <Name>koodo-reader</Name>
+        <Summary>A cross-platform ebook reader</Summary>
+        <Summary xml:lang="tr">Platformlar arası bir e-kitap okuyucu</Summary>
+    </Package>
+</PISI>
