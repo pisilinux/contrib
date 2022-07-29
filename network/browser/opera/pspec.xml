@@ -11,11 +11,13 @@
         <Summary>Opera Web Browser</Summary>
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
-        <Archive sha1sum="c49b1df08c2ec80a6606f8c6702bddf600dbb184" type="binary">https://get.opera.com/pub/opera/desktop/85.0.4341.60/linux/Opera_85.0.4341.60_amd64.deb</Archive>
+        <Icon>opera</Icon>
+        <Archive sha1sum="d70fb3ae11f163510a55af98ef0274de9bcde62b" type="binary">https://get.opera.com/pub/opera/desktop/89.0.4447.51/linux/opera-stable_89.0.4447.51_amd64.deb</Archive>
         <BuildDependencies>
             
         </BuildDependencies>
     </Source>
+
     <Package>
         <Name>opera-stable</Name>
         <RuntimeDependencies>
@@ -52,6 +54,7 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXcomposite</Dependency>
+            <Dependency>wayland-client</Dependency>
 	        <Dependency>gsettings-desktop-schemas</Dependency>	
         </RuntimeDependencies>
         <Files>
@@ -71,7 +74,15 @@
             <AdditionalFile target="/opt/opera/libffmpeg.so" owner="root">libffmpeg.so</AdditionalFile>             
         </AdditionalFiles>
     </Package>
+
     <History>
+        <Update release="28">
+            <Date>2022-04-11</Date>
+            <Version>89.0.4447.51</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@gmail.com</Email>
+        </Update>
         <Update release="27">
             <Date>2022-04-11</Date>
             <Version>85.0.4341.60</Version>
