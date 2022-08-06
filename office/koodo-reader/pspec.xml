@@ -15,8 +15,8 @@
         <Summary>A cross-platform ebook reader</Summary>
         <Summary xml:lang="tr">Platformlar arası bir e-kitap okuyucu</Summary>
         <Description>A cross-platform ebook reader</Description>
-        <Archive sha1sum="c8eefff6b751007da48c3ba3d7810520d6453cf6" type="binary">https://github.com/troyeguo/koodo-reader/releases/download/v1.4.5/Koodo.Reader-1.4.5.deb</Archive>
-        <BuildDependencies>
+        <Archive sha1sum="a9171563ab17934b466e0c9ad5672a772134f2ef" type="binary">https://github.com/troyeguo/koodo-reader/releases/download/v1.4.5/Koodo-Reader-1.4.5.AppImage</Archive>
+        <!-- BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>nss-devel</Dependency>
@@ -29,7 +29,7 @@
             <Dependency>util-linux</Dependency>
             <Dependency>libappindicator-gtk2-devel</Dependency>
             <Dependency>libsecret-devel</Dependency>
-        </BuildDependencies>
+        </BuildDependencies -->
         <Patches>
         </Patches>
     </Source>
@@ -54,10 +54,14 @@
             <Path fileType="library">/opt</Path>
             <Path fileType="library">/usr/bin</Path>
             <Path fileType="doc">/usr/share/applications</Path>
-            <Path fileType="doc">/usr/share/icons/hicolor/</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="doc">/usr/share/mime/packages</Path>
+            <Path fileType="doc">/usr/share/icons/</Path>
+            <!-- Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/mime/packages</Path -->
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/koodo-reader.desktop">koodo-reader.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/koodo-reader.png">koodo-reader.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
