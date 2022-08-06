@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Zoom, Video Conferencing and Web Conferencing Service</Summary>
         <Description>Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
-        <Archive sha1sum="80fa76e7712476f1cef1c71dacbe97e3c53762bb" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
+        <Archive sha1sum="3d2af70541c54c68f3fdf914f1d23ed7ccd2c1e2" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,7 @@
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>nss</Dependency>
+            <Dependency>cups</Dependency>
             <Dependency>dbus</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>mesa</Dependency>
@@ -40,12 +41,15 @@
             <Dependency>libdrm</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
+            <Dependency>libgomp</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXtst</Dependency>
+            <Dependency>wayland</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>qt5-base</Dependency>
+            <Dependency>libglvnd</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -53,12 +57,18 @@
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
             <Dependency>qt5-gamepad</Dependency>
             <Dependency>libxkbcommon</Dependency>
             <Dependency>libxshmfence</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>qt5-location</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>libutil-linux</Dependency>
             <Dependency>qt5-webengine</Dependency>
+            <Dependency>wayland-client</Dependency>
+            <Dependency>wayland-cursor</Dependency>
+            <Dependency>wayland-server</Dependency>
             <Dependency>qt5-multimedia</Dependency>
             <Dependency>xcb-util-image</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
@@ -76,6 +86,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2022-08-06</Date>
+            <Version>5.11.3.3882</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="11">
             <Date>2022-06-05</Date>
             <Version>5.10.7</Version>
