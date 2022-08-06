@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>zoom</Name>
-        <Summary xml:lang="tr">Zoom, Video Conferencing and Web Conferencing Service</Summary>
-        <Description xml:lang="tr">Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
+        <Summary xml:lang="tr">Zoom, Video Konferans ve Web Konferans Hizmeti</Summary>
+        <Description xml:lang="tr">Bulut toplantı şirketi Zoom, bulut video konferansını, basit çevrimiçi toplantıları ve grup mesajlaşmasını kullanımı kolay tek bir platformda birleştirir. Çözümümüz, Zoom Rooms, Windows, Mac, Linux, iOS, Android ve H.323/SIP oda sistemlerinde en iyi video, ses ve ekran paylaşımı deneyimini sunar.</Description>
     </Source>
 </PISI>
