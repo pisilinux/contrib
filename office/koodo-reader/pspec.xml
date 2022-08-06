@@ -37,18 +37,19 @@
     <Package>
         <Name>koodo-reader</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
-            <Dependency>libnotify</Dependency>
             <Dependency>nss</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>zlib</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libxcb</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>xdg-utils</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libnotify</Dependency>
             <Dependency>at-spi2-atk</Dependency>
             <Dependency>libappindicator-gtk2</Dependency>
-            <Dependency>libsecret</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/opt</Path>
