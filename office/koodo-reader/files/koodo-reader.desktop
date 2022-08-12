@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Office;
+Comment=A cross-platform ebook reader
+Encoding=UTF-8
+Exec=koodo-reader
+GenericName[tr_TR]=koodo-reader bir e-kitap görünüleyicidir.
+GenericName=koodo-reader is a ebook viewer
+Icon=koodo-reader
+Name[tr_TR]=koodo-reader
+Name=koodo-reader
+Terminal=false
+Type=Application
+Version=1.0
