@@ -1,3 +1,4 @@
+<!-- https://update.code.visualstudio.com/1.70.2/linux-x64/stable -->
 <PISI>
     <Source>
         <Name>VSCode</Name>
@@ -12,7 +13,7 @@
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="4d66334b5b85100e816140f7ac90dbf0227155a4">https://az764295.vo.msecnd.net/stable/8dfae7a5cd50421d10cd99cb873990460525a898/code-stable-x64-1649258098.tar.gz</Archive>
+        <Archive type="targz" sha1sum="3f67e503ba82da2f2344857f0e3883b6fc365e38">https://az764295.vo.msecnd.net/stable/e4503b30fc78200f846c62cf8091b76ff5547662/code-stable-x64-1660629670.tar.gz</Archive>
     </Source>
     <Package>
         <Name>VSCode</Name>
@@ -28,6 +29,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+        <Update release="18">
+            <Date>2022-08-20</Date>
+            <Version>1.70.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="17">
             <Date>2022-04-11</Date>
             <Version>1.66.1</Version>
