@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>openboardview</Name>
+        <Summary xml:lang="tr">*.brd dosyalarını görüntülemek için Linux SDL yazılımı</Summary>
+        <Description xml:lang="tr">*.brd dosyalarını görüntülemek için Linux SDL yazılımı</Description>
+    </Source>
+</PISI>

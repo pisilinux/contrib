@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>openboardview</Name>
+        <Homepage>https://openboardview.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>app:gui</IsA>
+        <Summary>Linux SDL/ImGui edition software for viewing .brd files</Summary>
+        <Description>Linux SDL/ImGui edition software for viewing .brd files</Description>
+        <Archive sha1sum="a0df54ce2fb3fec8aef595d0ac32d4f5f58e7222" type="binary">https://github.com/OpenBoardView/OpenBoardView/releases/download/9.0.3/openboardview_9.0.3-1_amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>openboardview</Name>
+        <RuntimeDependencies>            
+        	<Dependency>sdl2-image</Dependency>
+        	<Dependency>sqlite</Dependency>
+        	<Dependency>zlib</Dependency>
+        	<Dependency>fontconfig</Dependency>
+        	<Dependency>gtk3</Dependency>
+        	<Dependency>libpng</Dependency>        	  
+        </RuntimeDependencies>
+        <Files>
+        	
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/</Path>            
+        </Files>
+         
+        
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-09-13</Date>
+            <Version>9.0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+ 
