@@ -11,5 +11,5 @@ NoStrip = ["/"]
 
 def install():
     pisitools.dodir ("/opt/Ventoy")
-    pisitools.insinto("/opt/Ventoy", "ventoy-1.0.61/*")
+    pisitools.insinto("/opt/Ventoy", "ventoy-1.0.79/*")
     pisitools.dosym("/opt/Ventoy/VentoyGUI.x86_64", "/usr/bin/Ventoy")
