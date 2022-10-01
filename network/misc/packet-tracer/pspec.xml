@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>packet-tracer</Name>
+        <Homepage>http://www.uyap.gov.tr</Homepage>
+        <Packager>
+            <Name>Pisilinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>IBC</License>
+        <IsA>app:gui</IsA>
+        <Summary>Packet Tracer, provides a network simulation to practice simple and complex networks.</Summary>
+        <Description>Packet Tracer, provides a network simulation to practice simple and complex networks.</Description>
+        <Archive sha1sum="64e785b863f51a43c193757c905cf94b568e3239" type="binary">https://sourceforge.net/projects/pisilinux/files/source/CiscoPacketTracer_820_Ubuntu_64bit.deb/download</Archive>
+    </Source>
+
+    <Package>
+        <Name>packet-tracer</Name>
+        <RuntimeDependencies>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libxml2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/opt/pt</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-09-30</Date>
+            <Version>8.20</Version>
+            <Comment>First Release</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
