@@ -18,9 +18,9 @@
     <Package>
         <Name>VSCode</Name>
         <Files>
+            <Path fileType="data">/opt/</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" target="/usr/share/applications/Visual-Studio-Code.desktop" group="root" permission="0744">Visual-Studio-Code.desktop</AdditionalFile>
