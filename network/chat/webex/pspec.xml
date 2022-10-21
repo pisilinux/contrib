@@ -60,14 +60,14 @@
         <Update release="3">
             <Date>2022-10-21</Date>
             <Version>42.10.0.24000</Version>
-            <Comment>First Release</Comment>
+            <Comment>Version Bump</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
         <Update release="2">
             <Date>2022-09-15</Date>
             <Version>42.7.0.22904</Version>
-            <Comment>First Release</Comment>
+            <Comment>Version Bump</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
