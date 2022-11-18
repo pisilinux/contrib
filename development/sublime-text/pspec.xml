@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Sophisticated text editor</Summary>
         <Description>Sublime Text is a sophisticated text editor for code, markup and prose.</Description>
-        <Archive sha1sum="63d46dce8afa2d23b82f23926636b674184f9e27" type="tarxz">https://download.sublimetext.com/sublime_text_build_4121_x64.tar.xz</Archive>
+        <Archive sha1sum="facb6921755e50b7d2b6e0f8d42389676ba0bd31" type="tarxz">https://download.sublimetext.com/sublime_text_build_4143_x64.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2022-11-18</Date>
+            <Version>4143</Version>
+            <Comment>version dump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="12">
             <Date>2021-11-04</Date>
             <Version>4121</Version>
