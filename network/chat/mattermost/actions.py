@@ -6,11 +6,10 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
+WorkDir = "."
 NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
 def install():
-    pisitools.dodir ("/opt/Mattermost")
-    pisitools.doexe("mattermost-desktop-5.0.2-linux-x86_64.AppImage", "/opt/Mattermost")
-    pisitools.dosym("/opt/Mattermost/mattermost-desktop-5.0.2-linux-x86_64.AppImage", "/usr/bin/mattermost")
-   
+    pisitools.insinto("/opt/mattermost/", "mattermost-desktop-5.2.2-linux-x64/*")
+    pisitools.dosym('/opt/mattermost/mattermost-desktop', '/usr/bin/mattermost-desktop')
