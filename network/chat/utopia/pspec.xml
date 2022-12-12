@@ -11,7 +11,7 @@
         <Summary>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
         <Description>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="2efdb040bceb1a009fe63300bf0002beafd89aa0" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
+        <Archive sha1sum="3a4405ed9191cdfd56ca89f881a7dd6629813584" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
     </Source>
 
     <Package>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+         <Update release="6">
+            <Date>2022-12-12</Date>
+            <Version>1.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="5">
             <Date>2021-09-23</Date>
             <Version>1.1</Version>

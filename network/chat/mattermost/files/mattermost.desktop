@@ -2,7 +2,7 @@
 Categories=Network;
 Comment=Open source Slack-alternative in Golang and React.
 Encoding=UTF-8
-Exec=mattermost
+Exec=mattermost-desktop
 GenericName[tr_TR]=Mattermost
 GenericName=Mattermost
 Icon=Mattermost.png

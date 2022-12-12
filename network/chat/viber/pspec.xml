@@ -11,10 +11,8 @@
         <Icon>viber</Icon>
         <Summary>Proprietary cross-platform IM and VoIP softwareı</Summary>
         <Description>Free calls, text and picture sharing with anyone, anywhere!</Description>
-        <Archive sha1sum="aad5e6759e4fc7ac1abd89576ae694846bc49189" type="binary">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
-        <BuildDependencies>
-            <Dependency>binutils</Dependency>
-        </BuildDependencies>
+        <Archive sha1sum="34a69b54f0621e845545b0a17b9e795a74e37638" type="binary">http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb</Archive>
+       
     </Source>
 
     <Package>
@@ -54,6 +52,13 @@
     </Package>
 
     <History>
+         <Update release="4">
+            <Date>2022-12-12</Date>
+            <Version>18.2.0.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="3">
             <Date>2020-11-01</Date>
             <Version>13.3.1.22</Version>
