@@ -12,12 +12,8 @@
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="d70fb3ae11f163510a55af98ef0274de9bcde62b" type="binary">https://get.opera.com/pub/opera/desktop/89.0.4447.51/linux/opera-stable_89.0.4447.51_amd64.deb</Archive>
-        <BuildDependencies>
-            
-        </BuildDependencies>
+        <Archive sha1sum="0681ff476367c36c5b59effde06d2937c2751aee" type="binary">https://get.opera.com/pub/opera/desktop/93.0.4585.37/linux/Opera_93.0.4585.37_amd64.deb</Archive>
     </Source>
-
     <Package>
         <Name>opera-stable</Name>
         <RuntimeDependencies>
@@ -76,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="29">
+            <Date>2022-12-13</Date>
+            <Version>93.0.4585.37</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@gmail.com</Email>
+        </Update>
         <Update release="28">
             <Date>2022-04-11</Date>
             <Version>89.0.4447.51</Version>

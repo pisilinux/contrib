@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Zoom, Video Conferencing and Web Conferencing Service</Summary>
         <Description>Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
-        <Archive sha1sum="3d2af70541c54c68f3fdf914f1d23ed7ccd2c1e2" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
+        <Archive sha1sum="2bd7a8bee6412c3b60b3a347eaf143d5e584e67f" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -86,6 +86,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2022-12-13</Date>
+            <Version>5.12.9.367</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2022-08-06</Date>
             <Version>5.11.3.3882</Version>
