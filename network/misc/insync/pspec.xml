@@ -10,7 +10,7 @@
         <Summary>An unofficial Google Drive and OneDrive client that runs on Linux, with support for various desktops</Summary>
         <Description>Sync all your Google Drive - OneDrive accounts to your local filesystem Insync integrates with your file manager so you can use our Google Drive or OneDrive files locally while getting the benefits of the cloud. Sync any local folder, sync multiple accounts and sync across Linux, Windows and Mac. Refine your setup with docs conversion, ignore rules, symlink support and much more.</Description>
         <License>custom</License>
-        <Archive sha1sum="10c3b04c92a2f679db216bf53b66582ffd0bca89" type="binary">http://s.insynchq.com/builds/insync_3.7.5.50350-impish_amd64.deb</Archive>        
+        <Archive sha1sum="2719c3b68ea45db819fada834a85e0b6b51f4b56" type="binary">https://cdn.insynchq.com/builds/linux/insync_3.8.3.50473-kinetic_amd64.deb</Archive>        
     </Source>
     <Package>
         <Name>insync</Name>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2022-12-13</Date>
+            <Version>3.8.3.50473</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	<Update release="1">
             <Date>2022-04-25</Date>
             <Version>3.7.5.50350</Version>

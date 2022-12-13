@@ -7,7 +7,8 @@
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "%s/.dropbox-dist" % get.ARCH()
+#WorkDir = "%s/.dropbox-dist/dropbox-lnx.x86_64-162.4.5419" % get.ARCH()
+WorkDir = "/.dropbox-dist/dropbox-lnx.x86_64-162.4.5419"
 NoStrip = "/opt/dropbox/library.zip"
 
 def install():
