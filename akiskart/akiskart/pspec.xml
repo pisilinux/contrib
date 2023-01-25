@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>akiskart</Name>
-        <Homepage>http://www.akiskart.com.tr/</Homepage>
+        <Homepage>https://akiskart.bilgem.tubitak.gov.tr</Homepage>
         <Packager>
             <Name>PisiLinux Community</Name>
             <Email>admins@pisilinux.org</Email>
@@ -11,7 +11,7 @@
         <License>custom</License>
         <Summary>View and modify files,folders and objects in an AKIS smartcard</Summary>
         <Description>View and modify files,folders and objects in an AKIS smartcard</Description>
-        <Archive sha1sum="dd5f2950478f2650aa3465a457bef67619a981e1" type="binary">http://www.akiskart.com.tr/dosyalar/akis_1.6_amd64.deb</Archive>
+        <Archive sha1sum="021c25bdf194b9aa5e782e8ae2c9547506a74fe8" type="binary">https://akiskart.bilgem.tubitak.gov.tr/wp-content/uploads/sites/33/2022/10/Akia_linux_6_4_1_deb.zip</Archive>
     </Source>
 
     <Package>
@@ -20,12 +20,13 @@
             <Dependency>ccid</Dependency>
             <Dependency>pcsc-lite</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>jre7-openjdk-headless</Dependency>
+            <Dependency>jre8-openjdk-headless</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/akis</Path>
+           <Path fileType="data">/opt/Akia</Path>
+           <Path fileType="data">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/akia">akia</AdditionalFile>
@@ -33,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2022-12-13</Date>
+            <Version>6.4.1</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2019-05-20</Date>
             <Version>1.6</Version>

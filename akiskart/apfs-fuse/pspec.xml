@@ -13,7 +13,7 @@
         <Summary>A read-only FUSE driver for Apple's APFS</Summary>
         <Description>apfs-fuse is a read-only driver for the new Apple File System, APFS  also supports software encrypted volumes and fusion drives. Firmlinks are not supported yet.</Description>
         <Archive sha1sum="7072df718a24ad34ad1853158f26b9f517677dc4" type="zip">https://github.com/sgan81/apfs-fuse/archive/refs/heads/master.zip</Archive>
-         <Archive sha1sum="40f156053e34e8725f052d2d1590b6abd318f899" type="targz">https://github.com/lzfse/lzfse/archive/lzfse-1.0.tar.gz</Archive>
+        <Archive sha1sum="40f156053e34e8725f052d2d1590b6abd318f899" type="targz">https://github.com/lzfse/lzfse/archive/lzfse-1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fuse3-devel</Dependency>
             <Dependency>bzip2</Dependency>
