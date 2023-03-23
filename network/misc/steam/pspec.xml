@@ -13,7 +13,7 @@
         <IsA>app</IsA>
         <Summary>Steam for linux</Summary>
         <Description>Steam Digital Platform Runner</Description>
-        <Archive sha1sum="73eac39170beb44591979e860b8a347134d0cc98" type="targz">https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.74.tar.gz</Archive>
+        <Archive sha1sum="d2d5bdd5b9a9b7537260b29c9afb6a855aa0f041" type="targz">https://repo.steampowered.com/steam/pool/steam/s/steam/steam_1.0.0.75.tar.gz</Archive>
         <Patches>
            <!-- 
             <Patch level="1">alsa_sdl_audiodriver.patch</Patch>             
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2022-12-19</Date>
+            <Version>1.0.0.75</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Mustafa Cinasal</Name>
+            <Email>muscnsl@gmail.com</Email>
+        </Update>
          <Update release="14">
             <Date>2022-03-29</Date>
             <Version>1.0.0.74</Version>
