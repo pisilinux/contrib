@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Front-Panel-Design</Name>
+        <Homepage>https://www.frontpanelexpress.com/front-panel-designer</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Our free, specialized software for designing front panels, enclosures, and milled parts.</Summary>
+        <Description>Our free, specialized software for designing front panels, enclosures, and milled parts.</Description>
+        <License>LGPL</License>
+        <PartOf>Development</PartOf>
+        <Archive sha1sum="80142d6d8e5af41ecc8565dc77e2811e5c5619f9" type="binary">https://assets.frontpanelexpress.com/fpd/Version-6.3.6/FrontDesign-US-6.3.6-amd64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>Front-Panel-Design</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency> 
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt/Front-Panel-Design</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/Front-Panel-Design.desktop">Front-Panel-Design.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Front-Panel-Design.png">Front-Panel-Design.png</AdditionalFile>
+            <AdditionalFile target="/opt/Front-Panel-Design/runfpd.sh">runfdp.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+       <Update release="1">
+            <Date>2023-03-25</Date>
+            <Version>6.3.6</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
