@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Development;
+Comment=specialized software for designing front panels
+Encoding=UTF-8
+Exec=Front-Panel-Design
+GenericName[tr_TR]=Ön panelleri tasarlamak için özel yazılım.
+GenericName=specialized software for designing front fpd
+Icon=Front-Panel-Design
+Name[tr_TR]=Front Panel Design
+Name=Front Panel Design
+Terminal=false
+Type=Application
+Version=1.0
