@@ -25,9 +25,11 @@
             <Dependency>xdg-utils</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr</Path>
-            
+            <Path fileType="executable">/usr</Path>            
         </Files>
+        <AdditionalFiles>            
+            <AdditionalFile target="/usr/share/dbus-1/services/insync.service" permission="0644" owner="root">insync.service</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>

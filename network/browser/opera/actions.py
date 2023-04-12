@@ -12,7 +12,7 @@ from pisi.actionsapi import shelltools
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf Opera_%s_amd64.deb" % get.srcVERSION())
+    shelltools.system("ar xf opera-stable_%s_amd64.deb" % get.srcVERSION())
     shelltools.system("tar xvf data.tar.xz")
 
 def install():
