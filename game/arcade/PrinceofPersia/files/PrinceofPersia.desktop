@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Prince of Persia
+GenericName=Retro Platform Game
+Icon=PrinceofPersia.png
+Exec=/opt/SDLPoP-1.23/prince
+Terminal=false
+Categories=Game
+Keywords=platform,retro
