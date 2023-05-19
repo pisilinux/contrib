@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>freedownloadmanager</Name>
+        <Homepage>https://www.freedownloadmanager.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>FDM, güçlü bir modern indirme hızlandırıcısı ve düzenleyicisidir</Summary>
+        <Description>FDM, Windows, Mac, Linux ve Android için güçlü bir modern çapraz platform indirme hızlandırıcısı ve düzenleyicisidir.</Description>
+        <License>Freeware</License>
+        <Archive sha1sum="31d28bb125ac1c77cfb969cc773fd1b6b3b94e4d" type="binary">https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb</Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>
+            <Dependency>openssl</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>ffmpeg</Dependency>
+        </RuntimeDependencies>
+        <Name>freedownloadmanager</Name>
+        <Icon>fdm</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/opt</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	 <Update release="1">
+            <Date>2023-05-07</Date>
+            <Version>6.19.0</Version>
+            <Comment>First release</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

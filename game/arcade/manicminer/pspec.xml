@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>manicminer</Name>
+        <Homepage>https://github.com/muckypaws/Manic-Miner-Engine</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Retro Platform Game</Summary>
+        <Description>Retro Platform Game</Description>
+        <License>gpl2</License>
+        <PartOf>Game</PartOf>
+        <Archive sha1sum="f02dac7b7ead2ec401b46c026d7ef9a30b61ea89" type="binary">https://github.com/muckypaws/Manic-Miner-Engine/raw/master/Linux/ManicMinerV17aLinux.zip</Archive>        
+    </Source>
+
+    <Package>
+        <Name>manicminer</Name>
+        <RuntimeDependencies>
+           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/manicminer.desktop">manicminer.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Manic_Miner.png">Manic_Miner.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2023-04-19</Date>
+            <Version>1.7a</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

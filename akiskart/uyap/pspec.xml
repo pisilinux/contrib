@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
         <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
-        <Archive sha1sum="e2bb6a7ef163385af799f7c219cb2c613177a3fb" type="zip">https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-5-4-6-amd6401-11-202210-04-am.zip</Archive>
+        <Archive sha1sum="e2bb6a7ef163385af799f7c219cb2c613177a3fb" type="binary">https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-5-4-6-amd6401-11-202210-04-am.zip</Archive>
     </Source>
 
     <Package>

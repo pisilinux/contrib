@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PISI>
+    <Source>
+        <Name>freedownloadmanager</Name>
+        <Summary xml:lang="tr">FDM, güçlü bir modern indirme hızlandırıcısı ve düzenleyicisidir.</Summary>
+        <Summary xml:lang="en">FDM is a powerful modern download accelerator and organizer.</Summary>
+        <Description xml:lang="tr">FDM, Windows, Mac, Linux ve Android için güçlü bir modern çapraz platform indirme hızlandırıcısı ve düzenleyicisidir.</Description>
+        <Description xml:lang="en">FDM is a powerful modern download accelerator and organizer. It is a powerful modern cross-platform download accelerator and organizer for Windows, Mac, Linux, Android.</Description>
+    </Source>
+</PISI>
