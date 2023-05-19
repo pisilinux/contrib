@@ -10,12 +10,12 @@ from pisi.actionsapi import get
 # NoStrip = "/"
 
 def setup():
-    shelltools.system("unzip Akia_linux_6_4_1_deb.zip")
-    shelltools.system("ar xf Akia_linux_6_4_1.deb")
+    shelltools.system("unzip Akia_linux_6_5_2.deb_.zip")
+    shelltools.system("ar xf Akia_linux_6_5_2.deb")
     shelltools.system("tar xvf %s/data.tar.gz --exclude=usr/share/gnome-control-center --exclude=usr/bin " %get.workDIR())
 
 def build():
     pass
 
 def install():
-    pisitools.insinto("/usr/share/akia", "opt/Akia/akia.jar")
+    pisitools.insinto("/usr/share/akia", "opt/Akia/akia-6.5.2.jar")

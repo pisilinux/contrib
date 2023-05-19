@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Game;
+Type=Application
+Name=Manic Miner
+GenericName=Retro Platform Game
+Icon=Manic_Miner.png
+Exec=ManicMiner
+Terminal=false
+Categories=Game
+Keywords=platform,retro

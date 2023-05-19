@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+	<Source> 
+		<Name>acs-unified-driver</Name>
+		<Homepage>https://www.acs.com.hk/</Homepage>
+		<Packager>
+			<Name>PisiLinux Community</Name>
+			<Email>admins@pisilinux.org</Email>
+		</Packager>
+		<License>LGPL2.1</License>
+		<IsA>app:gui</IsA>
+		<PartOf>driver</PartOf>
+		<Summary>PC/SC driver that supports ACS CCID smart card readers.</Summary>
+		<Description>PC/SC driver that supports ACS CCID smart card readers.</Description>
+		<Archive sha1sum="998addb29e45622e7d1144bd771e66bba5be98e5" type="binary">https://source.pisilinux.org/1.0/ACS-Unified-PKG-Lnx-118-P.zip</Archive>
+		
+	</Source>
+
+	<Package>
+		<Name>acs-unified-driver</Name>
+		<RuntimeDependencies>
+			<Dependency>pcsc-lite</Dependency>
+			<Dependency>python3</Dependency>
+		</RuntimeDependencies>
+		<Files>
+			<Path fileType="data">/usr</Path>
+			<Path fileType="data">/lib</Path>
+		</Files>
+	</Package>
+
+	<History>
+		<Update release="1">
+			<Date>2023-05-04</Date>
+			<Version>1.1.8</Version>
+			<Comment>First Beta build.</Comment>
+			<Name>Erkan IŞIK</Name>
+			<Email>erkanisik@pisilinux.org</Email>
+		</Update>
+	</History>
+</PISI>
+
