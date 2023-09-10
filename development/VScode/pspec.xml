@@ -28,7 +28,7 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
-	<Update release="27">
+	<Update release="28">
             <Date>2023-09-10</Date>
             <Version>1.82.0</Version>
             <Comment>Version Bump</Comment>
