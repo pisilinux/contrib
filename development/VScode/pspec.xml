@@ -12,7 +12,7 @@
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="08fd2127b90005d7acb822fc069460da4536a9bf">https://update.code.visualstudio.com/1.80.0/linux-x64/stable</Archive>
+        <Archive type="targz" sha1sum="4d24bc001705f7eaaf6f9ff3ff73c4b38ae0d887">https://update.code.visualstudio.com/1.82.0/linux-x64/stable</Archive>
     </Source>
     <Package>
         <Name>VSCode</Name>
@@ -28,6 +28,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+	<Update release="27">
+            <Date>2023-09-10</Date>
+            <Version>1.82.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="27">
             <Date>2023-07-07</Date>
             <Version>1.80.0</Version>
