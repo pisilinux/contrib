@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>chat-gpt</Name>
+        <Homepage>https://github.com/lencx/ChatGPT</Homepage>
+        <Packager>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicengizkurt@gmail.com</Email>
+        </Packager>
+        <Summary>ChatGpt</Summary>
+        <Description>ChatGPT Desktop Application (Mac, Windows and Linux)</Description>
+        <License>gpl2</License>
+        <PartOf>Game</PartOf>
+        <Archive sha1sum="e56b93e95023d30d5a89bf2e2c0c57281097ece0" type="binary">https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_linux_x86_64.AppImage.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>libthai-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>chat-gpt</Name>
+        <RuntimeDependencies>
+            <Dependency>libthai</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/chat-gpt.desktop">chat-gpt.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/cht-gpt.png">chat-gpt.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2023-08-17</Date>
+            <Version>1.1.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Ali Cengiz Kurt</Name>
+            <Email>alicerkanisik@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

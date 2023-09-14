@@ -17,29 +17,34 @@
     <Package>
         <Name>anydesk</Name>
         <RuntimeDependencies>
-            <Dependency>minizip</Dependency>
-            <Dependency>shiboken2</Dependency>
-            <Dependency>libglvnd</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gcc</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>glibc</Dependency>
             <Dependency>glib2</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libxcb</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
             <Dependency>libXi</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>libXrandr</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>libxcb</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
+            <Dependency>minizip</Dependency>
+            <Dependency>gtkglext</Dependency>
+            <Dependency>libglvnd</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>mesa-glu</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>shiboken2</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libxkbfile</Dependency>
-            <Dependency>gcc</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXrender</Dependency>
             <Dependency>lsb-release</Dependency>
-            <Dependency>gtkglext</Dependency>
-            <Dependency>polkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt</Path>
@@ -54,11 +59,17 @@
             <AdditionalFile target="/usr/share/applications/anydesk.desktop" owner="root">anydesk.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/icons/anydesk.png">anydesk.png</AdditionalFile>
             <AdditionalFile target="/usr/share/pixmaps/anydesk.png">anydesk.png</AdditionalFile>
-            
         </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2023-07-03</Date>
+            <Version>6.2.1</Version>
+            <Comment>Release bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2022-12-13</Date>
             <Version>6.2.1</Version>
