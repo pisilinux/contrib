@@ -13,40 +13,21 @@
         <IsA>app:gui</IsA>
         <Summary>Wordpress Desktop a Control Panel for all your Wordpress Sites</Summary>
         <Description>A desktop app that gives WordPress a permanent home in your dock.You'll need a WordPress.com login.</Description>
-        <Archive sha1sum="bf907f29e32f8b89547e576d2a3ef77c75b27be8" type="targz">https://github.com/Automattic/wp-desktop/releases/download/v4.6.0/WordPressDesktop-4.6.0.tar.gz</Archive>
+        <Archive sha1sum="9ea7004441c8a734594dc7b82a38c7494311690c" type="targz">https://github.com/Automattic/wp-desktop/releases/download/v8.0.2/wordpress.com-linux-x64-8.0.2.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>wordpress-desktop</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>expat</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
-            <Dependency>freetype</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>libxcb</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>libgpg-error</Dependency>
+            <Dependency>libsecret</Dependency>
             <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libXtst</Dependency>            
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -62,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2023-09-19</Date>
+            <Version>8.0.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	 <Update release="4">
             <Date>2019-12-05</Date>
             <Version>4.6.0</Version>

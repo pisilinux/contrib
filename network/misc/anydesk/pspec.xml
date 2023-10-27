@@ -10,8 +10,7 @@
         <Summary>AnyDesk is a remote desktop application</Summary>
         <Description>AnyDesk is a remote desktop application</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="2426d60b3e688ff687ca4fa66f6dbf3067440361" type="targz">https://download.anydesk.com/linux/anydesk-6.2.1-amd64.tar.gz
-        </Archive>       
+        <Archive sha1sum="ebe302745c6873c729e9789e0f052a0d855763c9" type="targz">https://download.anydesk.com/linux/anydesk-latest-amd64.tar.gz</Archive>       
     </Source>
 
     <Package>
@@ -63,6 +62,13 @@
     </Package>
 
     <History>
+         <Update release="8">
+            <Date>2023-09-27</Date>
+            <Version>6.3.0</Version>
+            <Comment>Release bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2023-07-03</Date>
             <Version>6.2.1</Version>
