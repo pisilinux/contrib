@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Zoom, Video Conferencing and Web Conferencing Service</Summary>
         <Description>Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
-        <Archive sha1sum="2bd7a8bee6412c3b60b3a347eaf143d5e584e67f" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
+        <Archive sha1sum="818fefbe268468403925ac7cd66bb0ed7679e318" type="tarxz">https://zoom.us/client/latest/zoom_x86_64.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -58,8 +58,10 @@
             <Dependency>libXdamage</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>at-spi2-atk</Dependency>
+            <Dependency>xcb-util-wm</Dependency>
             <Dependency>qt5-gamepad</Dependency>
             <Dependency>libxkbcommon</Dependency>
+            <Dependency>mit-kerberos</Dependency>
             <Dependency>libxshmfence</Dependency>
             <Dependency>at-spi2-core</Dependency>
             <Dependency>qt5-location</Dependency>
@@ -76,6 +78,7 @@
             <Dependency>qt5-xmlpatterns</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
             <Dependency>qt5-quickcontrols2</Dependency>
+            <Dependency>xcb-util-renderutil</Dependency>
         </RuntimeDependencies>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/Zoom.desktop">Zoom.desktop</AdditionalFile>
@@ -86,6 +89,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2023-10-28</Date>
+            <Version>5.16.5.303</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="13">
             <Date>2022-12-13</Date>
             <Version>5.12.9.367</Version>
