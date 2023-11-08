@@ -10,8 +10,8 @@
         </Packager>
         <Summary>A free messaging app that combines chat and messaging services into one application</Summary>
         <Description>Franz is a free messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts, GroupMe, Skype and many more.</Description>
-        <License>Custom</License>
-        <Archive sha1sum="ead00d270acc998e9cbc4a28c7e442332627eb30" type="binary">https://github.com/meetfranz/franz/releases/download/v5.9.2/franz_5.9.2_amd64.deb</Archive>       
+        <License>Apache-2.0</License>
+        <Archive sha1sum="cd5fcaad7d008677f3201c81314189ae0c39b642" type="binary">https://github.com/meetfranz/franz/releases/download/v5.10.0/franz_5.10.0_amd64.deb</Archive>       
     </Source>
 
     <Package>
@@ -56,6 +56,13 @@
     </Package>
     
     <History>
+        <Update release="6">
+            <Date>2023-11-08</Date>
+            <Version>5.10.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2022-12-12</Date>
             <Version>5.9.2</Version>
