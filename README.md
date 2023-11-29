@@ -3,7 +3,7 @@ This is the third-party Repository for Pisi Linux 2.x
 
 You can add this Repository to your Pisi Linux 2.x system, type:
 
-```sudo pisi ar contrib https://github.com/pisilinux/contrib/raw/master/pisi-index.xml.xz```
+```sudo pisi ar contrib_github https://github.com/pisilinux/contrib/raw/master/pisi-index.xml.xz```
 
 after then
 Type: 
