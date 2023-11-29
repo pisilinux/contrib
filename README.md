@@ -1,9 +1,9 @@
-# pisilife-2
-This is the third-party Repository for Pisi Linux 2.0 
+# contrib
+This is the third-party Repository for Pisi Linux 2.x 
 
-You can add this Repository to your Pisi Linux 2.0 system, type:
+You can add this Repository to your Pisi Linux 2.x system, type:
 
-```sudo pisi ar pisilife-2 https://github.com/pisilinux/pisilife-2/raw/master/pisi-index.xml.xz```
+```sudo pisi ar contrib https://github.com/pisilinux/contrib/raw/master/pisi-index.xml.xz```
 
 after then
 Type: 
