@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ferdium</Name>
+        <Homepage>https://ferdium.org/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>A messaging browser that allows you to combine your favorite messaging services into one application </Summary>
+        <Description>A messaging browser that allows you to combine your favorite messaging services into one application</Description>
+        <License>Apache</License>
+        <PartOf>Network</PartOf>
+        <Archive sha1sum="c86c4cf5249f71be4ffbc376efd1943f2b220b0b" type="targz">https://github.com/ferdium/ferdium-app/releases/download/v6.6.0/Ferdium-linux-6.6.0.tar.gz</Archive>        
+    </Source>
+
+    <Package>
+        <Name>ferdium</Name>
+        <RuntimeDependencies>
+           
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/ferdium.desktop">ferdium.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/ferdium.png">ferdium.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2023-11-09</Date>
+            <Version>6.6.0</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
