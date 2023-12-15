@@ -30,7 +30,14 @@
     </Package>
 
     <History>
-    	 <Update release="1">
+        <Update release="2">
+            <Date>2023-12-15</Date>
+            <Version>6.19.1.5263</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Sami BABAT</Name>
+            <Email>samibabat@gmail.com</Email>
+        </Update>
+    	<Update release="1">
             <Date>2023-05-07</Date>
             <Version>6.19.0</Version>
             <Comment>First release</Comment>

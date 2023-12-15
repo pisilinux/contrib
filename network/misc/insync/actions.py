@@ -13,7 +13,7 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf insync_"+Version+"-kinetic_amd64.deb")
+    shelltools.system("ar xf insync_"+Version+"-mantic_amd64.deb")
     shelltools.system("tar xf data.tar.gz")
 
 def install():

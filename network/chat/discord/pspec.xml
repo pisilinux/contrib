@@ -13,7 +13,7 @@
         <Description>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.</Description>
         <License>proprietary</License>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="8a781c2b7452ddb693eb52f669e4a7cf0db2a9e7" type="targz">https://dl.discordapp.net/apps/linux/0.0.28/discord-0.0.28.tar.gz</Archive>
+        <Archive sha1sum="3d5d014029f41f18a214a33be8ba92c54471d661" type="targz">https://dl.discordapp.net/apps/linux/0.0.38/discord-0.0.38.tar.gz</Archive>
        
     </Source>
 
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2023-23-15</Date>
+            <Version>0.0.38</Version>
+            <Comment>Versin Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>  
         <Update release="20">
             <Date>2023-08-07</Date>
             <Version>0.0.28</Version>

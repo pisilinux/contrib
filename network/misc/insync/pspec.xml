@@ -3,6 +3,7 @@
 <PISI>
     <Source>
         <Name>insync</Name>
+        <Homepage>https://www.insynchq.com/</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
@@ -10,7 +11,7 @@
         <Summary>An unofficial Google Drive and OneDrive client that runs on Linux, with support for various desktops</Summary>
         <Description>Sync all your Google Drive - OneDrive accounts to your local filesystem Insync integrates with your file manager so you can use our Google Drive or OneDrive files locally while getting the benefits of the cloud. Sync any local folder, sync multiple accounts and sync across Linux, Windows and Mac. Refine your setup with docs conversion, ignore rules, symlink support and much more.</Description>
         <License>custom</License>
-        <Archive sha1sum="2719c3b68ea45db819fada834a85e0b6b51f4b56" type="binary">https://cdn.insynchq.com/builds/linux/insync_3.8.3.50473-kinetic_amd64.deb</Archive>        
+        <Archive sha1sum="08cc167e66bed6869b689ae74b8bdfe7a188c922" type="binary">https://cdn.insynchq.com/builds/linux/insync_3.8.6.50504-mantic_amd64.deb</Archive>        
     </Source>
     <Package>
         <Name>insync</Name>
@@ -33,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2023-12-15</Date>
+            <Version>3.8.6.50504</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2022-12-13</Date>
             <Version>3.8.3.50473</Version>

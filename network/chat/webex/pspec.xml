@@ -13,7 +13,7 @@
         <Description>One platform, with all the ways to connect.</Description>
         <License>custom</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="fea3b5f94614b95c55763dfb26caddfc36e5d309" type="binary">https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb</Archive>        
+        <Archive sha1sum="23030f3ef6e835dad2f7f8972a01ed48caec6012" type="binary">https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb</Archive>        
     </Source>
     <Package>
         <Name>webex</Name>
@@ -57,6 +57,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="4">
+            <Date>2023-12-15</Date>
+            <Version>43.11.0.27795</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2022-10-21</Date>
             <Version>42.10.0.24000</Version>

@@ -10,7 +10,7 @@
         <Summary>Skype keeps the world talking, for free.</Summary>
         <Description>Skype keeps you together. Call, message and share with others.</Description>
         <License>Copyright (c) 2016 Skype and/or Microsoft</License>
-        <Archive sha1sum="870d700e27821a04285b1f49aa70e4899ddbdd0e" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.92.76.301_amd64.deb</Archive>
+        <Archive sha1sum="7c9eb254fe30ba627cb7f8e57667b5d31c740c9b" type="binary">https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.110.76.107_amd64.deb</Archive>
       
     </Source>
 
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2023-12-15</Date>
+            <Version>8.110.76.107</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan Işık</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="19">
             <Date>2022-12-12</Date>
             <Version>8.92.76.301</Version>
