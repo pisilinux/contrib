@@ -8,7 +8,7 @@ from pisi.actionsapi import get, pisitools, shelltools
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("unzip ngrok-stable-linux-amd64.zip")
+    shelltools.system("tar xvzf ngrok-v3-stable-linux-amd64.tgz")
    
 def install():
     pisitools.insinto("/opt/ngrok", "ngrok")

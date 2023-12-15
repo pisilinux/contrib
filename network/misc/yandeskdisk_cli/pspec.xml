@@ -10,7 +10,7 @@
         <Summary>Yandex.Disk keeps your files with you at all times.</Summary>
         <Description>Yandex.Disk keeps your files with you at all times. console</Description>
         <License>custom</License>
-        <Archive sha1sum="9af0f25f066984ba10298798b59600fe1c710513" type="binary">http://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.5.1039_amd64.deb</Archive>
+        <Archive sha1sum="37c2d43d1da92e9b8fef97c24a05ea27bea64624" type="binary">https://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.6.1080_amd64.deb</Archive>
         <BuildDependencies>
             <Dependency>gcc</Dependency>
             <Dependency>glibc</Dependency>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2023-12-15</Date>
+            <Version>0.1.6.1080</Version>
+            <Comment>name fix</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	 <Update release="2">
             <Date>2020-01-06</Date>
             <Version>0.1.5.1039</Version>
