@@ -14,8 +14,8 @@
         <IsA>app:gui</IsA>
         <Summary>The web browser from Microsoft</Summary>
         <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="6882fc99af2e7f92e88b3e2eee0d109723fb90a8" type="binary">
-        https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_120.0.2210.77-1_amd64.deb</Archive>
+        <Archive sha1sum="7e501e797ca947171f06f2f24bddbb05da2bba69" type="binary">
+        https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_120.0.2210.91-1_amd64.deb</Archive>
        
     </Source>
 
@@ -57,6 +57,7 @@
             <Dependency>libutil-linux</Dependency>
             <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
+
         <Files>
             <Path fileType="config">/etc/</Path>
             <Path fileType="executable">/opt/microsoft/msedge/</Path>
@@ -69,10 +70,21 @@
             <Path fileType="man">/usr/share/man/</Path>
             <Path fileType="data">/usr/share/menu/</Path>            
         </Files>
+    
+        <AdditionalFiles>
+            <AdditionalFile target="/etc/machine-id" owner="root">machine-id</AdditionalFile>           
+        </AdditionalFiles>
 
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2023-12-31</Date>
+            <Version>120.0.2210.91</Version>
+            <Comment>Version Bump</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2023-12-15</Date>
             <Version>120.0.2210.77</Version>
