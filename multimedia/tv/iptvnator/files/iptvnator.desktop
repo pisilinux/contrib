@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=IPTVnator
+Exec=/opt/IPTVnator/iptvnator %U
+Terminal=false
+Type=Application
+Icon=iptvnator
+StartupWMClass=IPTVnator
+Comment=IPTV player application.
+Categories=AudioVideo;
