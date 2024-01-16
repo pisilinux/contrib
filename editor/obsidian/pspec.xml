@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>obsidian</Name>
+        <Homepage>https://obsidian.md</Homepage>    
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary >A powerful knowledge base that works on top of a local folder of plain text Markdown files
+</Summary>
+        <Description>A powerful knowledge base that works on top of a local folder of plain text Markdown files
+</Description>
+        <License>custom</License>
+        <Archive sha1sum="645acf9f9cba333ed89e72653ea930c4ae5b6c7f" type="binary">https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.3_amd64.deb</Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies> 
+            <Dependency>gtk3</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>at-spi2-core</Dependency>
+            <Dependency>libutil-linux </Dependency>
+            <Dependency>libsecret</Dependency>           
+        </RuntimeDependencies>
+        <Name>obsidian</Name>
+        <Icon>obsidian</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/opt</Path>
+        </Files>
+    </Package>
+
+    <History>
+    	 <Update release="1">
+            <Date>2023-01-15</Date>
+            <Version>1.5.3</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>obsidian</Name>
+        <Summary xml:lang="tr">Obsidian, düşünme şeklinize uyum sağlayan özel ve esnek bir yazma uygulamasıdır.</Summary>
+        <Description xml:lang="tr">Obsidian, düşünme şeklinize uyum sağlayan özel ve esnek bir yazma uygulamasıdır.</Description>
+    </Source>
+</PISI>
