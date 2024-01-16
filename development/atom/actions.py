@@ -3,11 +3,13 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
-
+NoStrip = ["/usr"]
+IgnoreAutodep = True
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("tar xvf atom-amd64.tar.gz")
+    shelltools.system("ar xf atom-amd64.deb")
+    shelltools.system("tar xf data.tar.xz")
 
 def install():
-    pisitools.insinto("/opt/atom/", "atom-1.57.0-amd64/*")
+    pisitools.insinto("/", "usr")

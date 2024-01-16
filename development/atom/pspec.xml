@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>atom</Name>
@@ -13,55 +13,42 @@
         <PartOf>applications.development</PartOf>
         <Summary>A hackable text editor.</Summary>
         <Description>Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.</Description>
-        <Archive sha1sum="81e358f8874abc40a6c6e054e33f3156e6ba8a18" type="binary">https://github.com/atom/atom/releases/download/v1.57.0/atom-amd64.tar.gz</Archive>
+        <Archive sha1sum="5c79f3615a9cab68b232618a5ed753c9efbe5426" type="binary">https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.deb</Archive>
     </Source>
     <Package>
         <Name>atom</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
-            <Dependency>nss</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>expat</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
-            <Dependency>alsa-lib</Dependency>
-            <Dependency>freetype</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXrandr</Dependency>
+            <Dependency>git</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>gtk4</Dependency>
             <Dependency>libnotify</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>glibc</Dependency>
-            <Dependency>libpng</Dependency>
-            <Dependency>google-chrome</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>kde-cli-tools</Dependency>
+            <Dependency>xdg-utils</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>curl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/opt/atom</Path>
-            <Path fileType="icon">/usr/share/pixmaps</Path>
-            <Path fileType="application">/usr/share/applications</Path>
+            <Path fileType="all">/usr</Path>         
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/atom.png">atom.png</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/atom.desktop">atom.desktop</AdditionalFile>
-        </AdditionalFiles>
+     
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2024-01-16</Date>
+            <Version>1.60.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
           <Update release="6">
             <Date>2021-07-16</Date>
             <Version>1.57.0</Version>
