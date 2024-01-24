@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ventoy
+Icon=ventoy.png
+Exec=/opt/ventoy/VentoyGUI.x86_64
+Comment=A new bootable USB solution
+Categories=System
+Terminal=false
+
