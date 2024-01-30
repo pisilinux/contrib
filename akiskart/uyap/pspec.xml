@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
         <Description>Udf dosya uzantısı açmaya yarayan program.</Description>
-        <Archive sha1sum="fc4302c73b687f5a5db3a6e3f44b20b1a01af43e" type="binary">https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-5-4-7-amd6404-07-20239-20-am.zip</Archive>
+        <Archive sha1sum="e884195f1220e62f2b2e580d17abbdc8583f0b0e" type="binary">https://rayp.adalet.gov.tr/resimler/2/dosya/uyap-pardus-5-4-11-amd6411-12-202310-13-am.zip</Archive>
     </Source>
 
     <Package>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2024-01-29</Date>
+            <Version>5.4.11</Version>
+            <Comment>V.bump</Comment>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Update>
         <Update release="13">
             <Date>2023-10-17</Date>
             <Version>5.4.7</Version>
