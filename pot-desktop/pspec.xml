@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Pot-Desktop</Name>
+        <Homepage>https://pot-app.com/en/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Your last translation software</Summary>
+        <Description>Your last translation software</Description>
+        <License>GPL-3.0</License>
+        <PartOf>utility</PartOf>
+        <Archive sha1sum="64e3d4b90061ebd232184bb0228f098ac917e932" type="binary">https://github.com/pot-app/pot-desktop/releases/download/2.7.4/pot_2.7.4_amd64.AppImage</Archive>        
+    </Source>
+
+    <Package>
+        <Name>Pot-Desktop</Name>
+       
+      
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/Pot-Desktop.desktop">Pot-Desktop.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/Pot-Desktop.png">Pot-Desktop.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>       
+        <Update release="1">
+            <Date>2024-01-31</Date>
+            <Version>2.7.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
