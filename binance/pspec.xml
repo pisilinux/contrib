@@ -10,7 +10,7 @@
         <Summary>Binance kripto alım satım Masaüstü uygulaması</Summary>
         <Description>Binance kripto alım satım Masaüstü uygulaması</Description>
         <License>custom</License>
-        <Archive sha1sum="30ace480d5ae0a54ef0c9608ffad2961a816c722" type="binary">https://ftp.binance.com/electron-desktop/linux/production/binance-amd64-linux.deb</Archive>
+        <Archive sha1sum="b285667d20181cbbed7d1fa3ec53812256a1715c" type="binary">https://ftp.binance.com/electron-desktop/linux/production/binance-amd64-linux.deb</Archive>
     </Source>
 
     <Package>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2024-01-30</Date>
+            <Version>1.47.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	 <Update release="1">
             <Date>2021-05-18</Date>
             <Version>1.16.2</Version>

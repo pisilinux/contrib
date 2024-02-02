@@ -11,40 +11,17 @@
         <License>Apache-2.0</License>
         <Summary xml:lang="en">Android development environment based on IntelliJ IDEA.</Summary>
         <Description xml:lang="en">Android development environment based on IntelliJ IDEA.</Description>
-        <Archive sha1sum="276e5e191ce65feb633e8efb0f30d138340ae1ab" type="targz">https://dl.google.com/dl/android/studio/ide-zips/4.2.2.0/android-studio-ide-202.7486908-linux.tar.gz</Archive>
-          <!-- 
-        <BuildDependencies>          
-            <Dependency>unzip</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency>mesa-glu-devel</Dependency>
-            <Dependency>libXi-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>libXtst-devel</Dependency>
-            <Dependency>alsa-lib-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>zlib-devel</Dependency>
-        </BuildDependencies>
-         -->
+        <Archive sha1sum="ae18a293c84855e0b5928362a7d139412d4f5116" type="targz">https://dl.google.com/dl/android/studio/ide-zips/2023.1.1.28/android-studio-2023.1.1.28-linux.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>android-studio</Name>
         <RuntimeDependencies>
-            <Dependency>zlib</Dependency>
-            <Dependency>klibc</Dependency>
-            <Dependency>unzip</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libXrender</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>which</Dependency>          
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt/android-studio</Path>
@@ -56,6 +33,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="8">
+            <Date>2024-01-31</Date>
+            <Version>2023.1.1.28</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2021-07-16</Date>
             <Version>202.7486908</Version>

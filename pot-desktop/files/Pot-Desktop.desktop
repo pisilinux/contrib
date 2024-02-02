@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Development;
+Comment=Your last translation software.
+GenericName[tr]=Son çeviri yazılımınız
+Encoding=UTF-8
+Exec=Pot-Desktop
+Icon=Pot-Desktop
+Name=Pot-Desktop
+Terminal=false
+Type=Application
+Version=1.0

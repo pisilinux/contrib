@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>bitcoin</Name>
@@ -12,7 +14,7 @@
         <Summary>Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
         <Description>Bitcoin eşler arası teknolojiyi kullanarak merkez otorite veya banka olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır; tasarımı halka açıktır, kimse Bitcoin'e sahip değildir ve onu kontrol edemez, herkes katılabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</Description>
         <Icon>bitcoin</Icon>
-        <Archive sha1sum="156b897c6c7d1f12587d72ea92ccaf28dccedd55" type="targz">https://bitcoin.org/bin/bitcoin-core-0.12.1/bitcoin-0.12.1-linux64.tar.gz</Archive>
+        <Archive sha1sum="82245008a243950dd2cb87afb798264d9830fcc3" type="targz">https://bitcoin.org/bin/bitcoin-core-25.0/bitcoin-25.0-x86_64-linux-gnu.tar.gz</Archive>
     </Source>
     <Package>
         <Name>bitcoin</Name>
@@ -28,6 +30,12 @@
         <Summary>Bitcoin, yaratıcı bir ödeme ağı ve yeni bir para birimidir.</Summary>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2024-01-30</Date>
+            <Version>25.0</Version>            
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2016-07-18</Date>
             <Version>0.12.1</Version>
