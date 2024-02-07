@@ -12,13 +12,27 @@
         <Description>A messaging browser that allows you to combine your favorite messaging services into one application</Description>
         <License>Apache</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="c86c4cf5249f71be4ffbc376efd1943f2b220b0b" type="targz">https://github.com/ferdium/ferdium-app/releases/download/v6.6.0/Ferdium-linux-6.6.0.tar.gz</Archive>        
+        <Archive sha1sum="6e54cc12f85ca03d9bd54fd0c0d5ad66ed6adffa" type="targz">https://github.com/ferdium/ferdium-app/releases/download/v6.7.0/Ferdium-linux-6.7.0.tar.gz</Archive>        
     </Source>
-
     <Package>
         <Name>ferdium</Name>
         <RuntimeDependencies>
-           
+            <Dependency>nss</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>cups</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>c-ares</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libevent</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>minizip</Dependency>
+            <Dependency>re2</Dependency>
+            <Dependency>snappy</Dependency>           
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/opt</Path>
@@ -33,6 +47,13 @@
     </Package>
     
     <History>
+        <Update release="2">
+            <Date>2024-02-08</Date>
+            <Version>6.7.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2023-11-09</Date>
             <Version>6.6.0</Version>

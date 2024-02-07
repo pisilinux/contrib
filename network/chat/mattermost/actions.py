@@ -11,5 +11,5 @@ NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
 def install():
-    pisitools.insinto("/opt/mattermost/", "mattermost-desktop-5.2.2-linux-x64/*")
+    pisitools.insinto("/opt/mattermost/", "mattermost-desktop-5.6.0-linux-x64/*")
     pisitools.dosym('/opt/mattermost/mattermost-desktop', '/usr/bin/mattermost-desktop')

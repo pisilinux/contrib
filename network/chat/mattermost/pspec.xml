@@ -12,7 +12,7 @@
         <Description>Open source Slack-alternative in Golang and React</Description>
         <License>AGPL, Apache</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="169d50ac306179ce98fae3e91b3873488df232e3" type="targz">https://github.com/mattermost/desktop/releases/download/v5.2.2/mattermost-desktop-5.2.2-linux-x64.tar.gz</Archive>        
+        <Archive sha1sum="9a9e94c70f9ed9e598ea707777b2164b42fa6541" type="targz">https://github.com/mattermost/desktop/releases/download/v5.6.0/mattermost-desktop-5.6.0-linux-x64.tar.gz</Archive>        
     </Source>
 
     <Package>
@@ -32,7 +32,14 @@
         </AdditionalFiles>
     </Package>
     
-    <History>     
+    <History>    
+        <Update release="3">
+            <Date>2022-02-08</Date>
+            <Version>5.6.0</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>   
          <Update release="2">
             <Date>2022-12-12</Date>
             <Version>5.2.2</Version>
