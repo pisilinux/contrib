@@ -17,7 +17,9 @@
 
     <Package>
         <Name>Pot-Desktop</Name>
-       
+        <RuntimeDependencies>
+            <Dependency>libthai</Dependency>
+        </RuntimeDependencies>
       
         <Files>
             <Path fileType="data">/opt</Path>

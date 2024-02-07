@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Summary>
         <Description>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.</Description>
-        <Archive sha1sum="c920f29c0c0d941dfa5df39556fd083c22c15156" type="binary">https://github.com/shiftkey/desktop/releases/download/release-3.2.7-linux2/GitHubDesktop-linux-amd64-3.2.7-linux2.deb</Archive>
+        <Archive sha1sum="d5b0775bd8e259d853330d1784590b7af6222f90" type="binary">https://github.com/shiftkey/desktop/releases/download/release-3.3.8-linux2/GitHubDesktop-linux-amd64-3.3.8-linux2.deb</Archive>
     </Source>
 
     <Package>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2024-02-08</Date>
+            <Version>3.3.8</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2023-12-15</Date>
             <Version>3.2.7</Version>

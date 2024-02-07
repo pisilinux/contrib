@@ -11,7 +11,7 @@ NoStrip = ["/"]
 
 def install():
     pisitools.dodir ("/opt/Ferdium")
-    pisitools.insinto("/opt/Ferdium", "Ferdium-linux-6.6.0/*")
+    pisitools.insinto("/opt/Ferdium", "Ferdium-linux-6.7.0/*")
     pisitools.dosym("/opt/Ferdium/ferdium", "/usr/bin/ferdium")
 
     
