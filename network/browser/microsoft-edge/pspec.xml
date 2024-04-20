@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The web browser from Microsoft</Summary>
         <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="5307e1fd7c35a4e6568f073ef7d96230a44c1662" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_121.0.2277.98-1_amd64.deb</Archive>
+        <Archive sha1sum="e5831db0ce2c5b3d75c887b448a61ebee600910e" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_124.0.2478.51-1_amd64.deb</Archive>
        
     </Source>
 
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2024-04-20</Date>
+            <Version>124.0.2478.51</Version>
+            <Comment>Version Bump</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="14">
             <Date>2024-02-07</Date>
             <Version>121.0.2277.98</Version>

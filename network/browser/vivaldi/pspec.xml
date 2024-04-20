@@ -12,7 +12,7 @@
         <Description>An advanced browser made with the power user in mind.</Description>
         <License>EULA</License>
         <Icon>vivaldi</Icon>
-        <Archive sha1sum="61f6b0e91e424287e1d836e9d5ac7cd8abcd1839" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_6.5.3206.61-1_amd64.deb</Archive>
+        <Archive sha1sum="dff05b8f72faf4c4ea27be41eb13206e8746c556" type="binary">https://downloads.vivaldi.com/stable/vivaldi-stable_6.6.3271.61-1_amd64.deb</Archive>
     </Source>
     <Package>
         <Name>vivaldi-browser</Name>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2024-04-20</Date>
+            <Version>6.6.3271.61</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2024-02-07</Date>
             <Version>6.5.3206.61</Version>
@@ -63,69 +70,6 @@
             <Comment>Version Bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="9">
-            <Date>2023-06-09</Date>
-            <Version>6.1.3035.51</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="8">
-            <Date>2023-04-12</Date>
-            <Version>5.7.2921.65</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="7">
-            <Date>2022-12-13</Date>
-            <Version>5.6.2867.40</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="6">
-            <Date>2022-07-23</Date>
-            <Version>5.3.2679.70</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="5">
-            <Date>2022-04-10</Date>
-            <Version>5.2.2623.26</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>     
-         <Update release="4">
-            <Date>2022-02-16</Date>
-            <Version>5.1.2567.46</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>     
-        <Update release="3">
-            <Date>2021-12-24</Date>
-            <Version>5.0.2497.32</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>     
-        <Update release="2">
-            <Date>2021-09-23</Date>
-            <Version>4.2.2406.48</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>      
-        <Update release="1">
-            <Date>2021-05-10</Date>
-            <Version>3.8.2259.40</Version>
-            <Comment>First Release.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
+        </Update>        
     </History>
 </PISI>

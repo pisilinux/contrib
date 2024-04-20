@@ -12,7 +12,7 @@
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="de25424ab24b1739d39d2ba1217ddc135e7eb270" type="binary">https://get.opera.com/pub/opera/desktop/106.0.4998.70/linux/opera-stable_106.0.4998.70_amd64.deb</Archive>
+        <Archive sha1sum="99fc865f627bb678a393616c117399c7bbe0fa31" type="binary">https://get.opera.com/pub/opera/desktop/109.0.5097.45/linux/opera-stable_109.0.5097.45_amd64.deb</Archive>
     </Source>
     <Package>
         <Name>opera-stable</Name>
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="35">
+            <Date>2024-04-20</Date>
+            <Version>109.0.5097.45</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
          <Update release="34">
             <Date>2024-02-07</Date>
             <Version>106.0.4998.70</Version>
@@ -83,237 +90,6 @@
             <Comment>Opera version bump.</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="31">
-            <Date>2023-06-09</Date>
-            <Version>99.0.4788.65</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="30">
-            <Date>2023-04-12</Date>
-            <Version>97.0.4719.63</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="29">
-            <Date>2022-12-13</Date>
-            <Version>93.0.4585.37</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="28">
-            <Date>2022-04-11</Date>
-            <Version>89.0.4447.51</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="27">
-            <Date>2022-04-11</Date>
-            <Version>85.0.4341.60</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="26">
-            <Date>2022-02-16</Date>
-            <Version>83.0.4254.62</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="25">
-            <Date>2021-12-24</Date>
-            <Version>82.0.4227.43</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="24">
-            <Date>2021-09-23</Date>
-            <Version>79.0.4143.50</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="23">
-            <Date>2021-05-09</Date>
-            <Version>76.0.4017.107</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="22">
-            <Date>2021-03-25</Date>
-            <Version>75.0.3969.93</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-		<Update release="21">
-            <Date>2020-10-21</Date>
-            <Version>71.0.3770.271</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>idriskalp@gmail.com</Email>
-        </Update>
-		<Update release="20">
-            <Date>2020-04-14</Date>
-            <Version>67.0.3575.137</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>idriskalp@gmail.com</Email>
-        </Update>
-		<Update release="19">
-            <Date>2020-01-16</Date>
-            <Version>66.0.3515.36</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>idriskalp@gmail.com</Email>
-        </Update>
-        <Update release="18">
-            <Date>2019-07-04</Date>
-            <Version>64.0.3417.83</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>idriskalp@gmail.com</Email>
-        </Update>
-        <Update release="17">
-            <Date>2019-07-04</Date>
-            <Version>62.0.3331.43</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>idriskalp@gmail.com</Email>
-        </Update>
-        <Update release="16">
-            <Date>2019-05-15</Date>
-            <Version>60.0.3255.83</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="15">
-            <Date>2019-04-09</Date>
-            <Version>60.0.3255.27</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="14">
-            <Date>2018-08-01</Date>
-            <Version>54.0.2952.64</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="13">
-            <Date>2018-07-25</Date>
-            <Version>54.0.2952.60</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="12">
-            <Date>2018-07-03</Date>
-            <Version>54.0.2952.41</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="11">
-            <Date>2018-06-13</Date>
-            <Version>53.0.2907.99</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="10">
-            <Date>2018-05-27</Date>
-            <Version>53.0.2907.68</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="10">
-            <Date>2018-05-11</Date>
-            <Version>53.0.2907.37</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="9">
-            <Date>2018-05-02</Date>
-            <Version>52.0.2871.99</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="8">
-            <Date>2018-04-18</Date>
-            <Version>52.0.2871.64</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="7">
-            <Date>2018-04-08</Date>
-            <Version>52.0.2871.40</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="6">
-            <Date>2018-02-17</Date>
-            <Version>51.0.2830.34</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Stefan Gronewold (groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="6">
-            <Date>2017-09-28</Date>
-            <Version>48.0.2685.32</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
-            <Email>prdsmehmetstc@pisilinux.org</Email>
-        </Update>
-        <Update release="5">
-            <Date>2017-02-21</Date>
-            <Version>43.0.2442.991</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Mehmet SÜTCÜ (prdsmehmetstc)</Name>
-            <Email>prdsmehmetstc@pisilinux.org</Email>
-        </Update>
-        <Update release="4">
-            <Date>2016-12-19</Date>
-            <Version>42.0.2393</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="3">
-            <Date>2016-10-27</Date>
-            <Version>41.0.2353.46</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2016-09-11</Date>
-            <Version>39.0.2256.71</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Stefan Gronewold</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-07-17</Date>
-            <Version>38.0.2220.41</Version>
-            <Comment>First Release.</Comment>
-            <Name>Stefan Gronewold</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
+        </Update>      
     </History>
 </PISI>
