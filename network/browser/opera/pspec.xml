@@ -12,7 +12,7 @@
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="99fc865f627bb678a393616c117399c7bbe0fa31" type="binary">https://get.opera.com/pub/opera/desktop/109.0.5097.45/linux/opera-stable_109.0.5097.45_amd64.deb</Archive>
+        <Archive sha1sum="7adde92b36016e3966cecb4977dd6abb40807de3" type="binary">https://get.opera.com/pub/opera/desktop/111.0.5168.25/linux/opera-stable_111.0.5168.25_amd64.deb</Archive>
     </Source>
     <Package>
         <Name>opera-stable</Name>
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="36">
+            <Date>2024-06-15</Date>
+            <Version>111.0.5168.25</Version>
+            <Comment>Opera version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="35">
             <Date>2024-04-20</Date>
             <Version>109.0.5097.45</Version>
@@ -77,19 +84,6 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="33">
-            <Date>2023-12-15</Date>
-            <Version>105.0.4970.48</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="32">
-            <Date>2023-09-18</Date>
-            <Version>102.0.4880.56</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>      
+      
     </History>
 </PISI>

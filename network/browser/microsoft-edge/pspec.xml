@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>The web browser from Microsoft</Summary>
         <Description>Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="e5831db0ce2c5b3d75c887b448a61ebee600910e" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_124.0.2478.51-1_amd64.deb</Archive>
+        <Archive sha1sum="b11b76970519dbc10223ed614ab449f64a0ab6d5" type="binary">https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_126.0.2592.56-1_amd64.deb</Archive>
        
     </Source>
 
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2024-06-15</Date>
+            <Version>126.0.2592.56</Version>
+            <Comment>Version Bump</Comment>
+             <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="15">
             <Date>2024-04-20</Date>
             <Version>124.0.2478.51</Version>
@@ -91,97 +98,5 @@
              <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="13">
-            <Date>2023-12-31</Date>
-            <Version>120.0.2210.91</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="12">
-            <Date>2023-12-15</Date>
-            <Version>120.0.2210.77</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="11">
-            <Date>2023-10-27</Date>
-            <Version>118.0.2088.69</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="10">
-            <Date>2023-09-18</Date>
-            <Version>117.0.2045.31</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="9">
-            <Date>2023-07-02</Date>
-            <Version>115.0.1901.188</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="8">
-            <Date>2023-06-09</Date>
-            <Version>114.0.1823.43</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="7">
-            <Date>2023-04-12</Date>
-            <Version>112.0.1722.39</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="6">
-            <Date>2023-03-24</Date>
-            <Version>111.0.1661.51</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="5">
-            <Date>2022-12-13</Date>
-            <Version>108.0.1462.46</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="4">
-            <Date>2022-07-23</Date>
-            <Version>103.0.1264.71</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="3">
-            <Date>2022-04-10</Date>
-            <Version>100.0.1185.29</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2022-02-16</Date>
-            <Version>98.0.1108.55</Version>
-            <Comment>Version Bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2022-01-25</Date>
-            <Version>97.0.1072.69</Version>
-            <Comment>First Release</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-
     </History>
 </PISI>
