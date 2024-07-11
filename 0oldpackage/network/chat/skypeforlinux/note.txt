@@ -1,0 +1,3 @@
+
+https://search.apps.ubuntu.com/api/v1/package/skype ile gelen xml içinden linki alıp unsquefs ile açıp ayıklamak gerek
+
