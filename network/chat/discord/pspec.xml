@@ -13,7 +13,7 @@
         <Description>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.</Description>
         <License>proprietary</License>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="43a9179af28cce9954fce8c2a6247d57eb61637b" type="targz">https://dl.discordapp.net/apps/linux/0.0.71/discord-0.0.71.tar.gz</Archive>
+        <Archive sha1sum="b8bde4c3671fdea5cd78f8b0c024097ecc3cee5e" type="targz">https://dl.discordapp.net/apps/linux/0.0.78/discord-0.0.78.tar.gz</Archive>
        
     </Source>
 
@@ -43,8 +43,15 @@
     </Package>
 
     <History>
+        <Update release="27">
+            <Date>2024-12-31</Date>
+            <Version>0.0.78</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Bedirhan Kurt</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
         <Update release="26">
-            <Date>2024-20-21</Date>
+            <Date>2024-10-21</Date>
             <Version>0.0.71</Version>
             <Comment>Version Bump.</Comment>
             <Name>Bedirhan Kurt</Name>
