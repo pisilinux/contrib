@@ -9,7 +9,7 @@ Version = get.srcVERSION()
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf GitHubDesktop-linux-amd64-"+Version+"-linux2.deb")
+    shelltools.system("ar xf GitHubDesktop-linux-amd64-"+Version+"-linux1.deb")
     shelltools.system("tar xf data.tar.xz")
     
 

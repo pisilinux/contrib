@@ -13,7 +13,7 @@ IgnoreAutodep = True
 Version = get.srcVERSION()
 
 def setup():
-   # shelltools.system("pwd")
+    shelltools.system("pwd")
     shelltools.system("ar xf vivaldi-stable_%s-1_amd64.deb" % get.srcVERSION())
     shelltools.system("tar xvf data.tar.xz")
 

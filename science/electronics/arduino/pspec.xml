@@ -10,7 +10,7 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
         <Description>Arduino IDE kod editörü ve derleyici olarak görev yapan, aynı zamanda derlenen programı karta yükleme işlemini de yapabilen, her platformda çalışabilen Java programlama dilinde yazılmış bir uygulamadır.</Description>
         <Icon>arduino</Icon>
-        <Archive sha1sum="ea59af84cab39dcd40da2e41075b8951ed4c04a3" type="binary">https://downloads.arduino.cc/arduino-ide/arduino-ide_2.2.1_Linux_64bit.zip</Archive>
+        <Archive sha1sum="418d7e8b5cec34961741b8d87c65926523b03a14" type="binary">https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.3_Linux_64bit.zip</Archive>
     </Source>
     <Package>
         <Name>arduino</Name>
@@ -27,6 +27,13 @@
         <Summary>Arduino IDE, yazılım geliştirme ortamı</Summary>
     </Package>
     <History>
+        <Update release="8">
+            <Date>2024-11-11</Date>
+            <Version>2.3.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2023-12-17</Date>
             <Version>2.2.1</Version>
