@@ -6,13 +6,24 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
-WorkDir = "."
-NoStrip = ["/"]
+#WorkDir = "."
+#NoStrip = ["/"]
+  
+NoStrip = ["/usr"]
+IgnoreAutodep = True
+
+Version = get.srcVERSION()
+
+def setup():
+    shelltools.system("pwd")
+    
+    shelltools.system("ar xf Ferdium-linux-%s-amd64.deb" % get.srcVERSION())
+    shelltools.system("tar xvf data.tar.xz")
 
 def install():
-    pisitools.dodir ("/opt/Ferdium")
-    pisitools.insinto("/opt/Ferdium", "Ferdium-linux-6.7.5/*")
-    pisitools.dosym("/opt/Ferdium/ferdium", "/usr/bin/ferdium")
+    pisitools.insinto("/opt/", "opt/Ferdium")
+    #pisitools.dosym("/opt/vivaldi/vivaldi", "/usr/bin/vivaldi")
 
-    
-   
+    #pisitools.dodir ("/opt/Ferdium")
+    #pisitools.insinto("/opt/Ferdium", "Ferdium-linux-6.7.5/*")
+    pisitools.dosym("/opt/Ferdium/ferdium", "/usr/bin/ferdium")

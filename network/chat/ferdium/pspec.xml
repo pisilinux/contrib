@@ -12,7 +12,9 @@
         <Description>A messaging browser that allows you to combine your favorite messaging services into one application</Description>
         <License>Apache</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="d04cad7500318acf2921eece494f83ca5e457a86" type="targz">https://github.com/ferdium/ferdium-app/releases/download/v6.7.5/Ferdium-linux-6.7.5.tar.gz</Archive>        
+        <Archive sha1sum="d3bf125492e132cd74de5ae2a737b96aa586231d" type="binary">
+            https://github.com/ferdium/ferdium-app/releases/download/v7.0.0/Ferdium-linux-7.0.0-amd64.deb
+        </Archive>        
     </Source>
     <Package>
         <Name>ferdium</Name>
@@ -35,8 +37,9 @@
             <Dependency>snappy</Dependency>           
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/opt</Path>
-            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path> 
+            <path fileType="data">/usr/share/doc</path> 
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/icons</Path>         
         </Files>
@@ -47,6 +50,13 @@
     </Package>
     
     <History>
+        <Update release="4">
+            <Date>2024-12-05"</Date>
+            <Version>7.0.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2024-07-11</Date>
             <Version>6.7.5</Version>
