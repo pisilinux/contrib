@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>atari800</Name>
+        <Summary xml:lang="tr">Atari800 emülatörü</Summary>
+        <Description xml:lang="tr">Atari 800/800XL/130XE/5200 emülatörü</Description>
+    </Source>
+</PISI>
