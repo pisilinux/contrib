@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>brother-dcpt510w</Name>
+        <Homepage>https://support.brother.com</Homepage>    
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary>Brother Inkjet Printer (LPR/CUPS) Driver</Summary>
+        <Description>Brother Inkjet Printer (LPR/CUPS) Driver</Description>
+        <License>custom</License>
+        <Archive sha1sum="565cc4f06130c035b6e8f23827cdb68dea8eacd5" type="binary">
+            https://download.brother.com/welcome/dlf103620/dcpt510wpdrv-1.0.1-0.i386.deb
+        </Archive>
+               
+    </Source>
+    <Package>
+        <RuntimeDependencies> 
+            <Dependency>cups</Dependency>           
+        </RuntimeDependencies>
+        <Name>brother-dcpt510w</Name>        
+        <Files>
+            <Path fileType="executable">/opt</Path>
+            <Path fileType="data">/usr</Path>            
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/opt/brother/Printers/dcpt510w/inf/setupPrintcapij">setupPrintcapij</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+    	 <Update release="1">
+            <Date>2025-01-14</Date>
+            <Version>1.0.1</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
