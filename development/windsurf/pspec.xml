@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>windsurf</Name>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+       <Summary xml:lang="en">Built to keep you in flow state</Summary>
+        <Description xml:lang="en">Tomorrow&apos;s Editor, Today. Built to keep you in flow state with instant, invaluable AI developer assistance.</Description>
+        <Description xml:lang="tr">Sizi akış halinde tutmak için tasarlanmış, anlık ve paha biçilmez yapay zeka geliştirici desteği sunan, geleceğin editörü bugün karşınızda.</Description>
+        <PartOf>development</PartOf>
+        <License>custom</License>
+        <Archive sha1sum="4c209fe31cb6ab4156f811e4b9bfe817345621ca" type="targz">
+            https://windsurf-stable.codeiumdata.com/linux-x64/stable/be4251dfb74e60e80fa973d61f3505da1ac9032e/Windsurf-linux-x64-1.2.2.tar.gz
+        </Archive>
+    </Source>
+
+    <Package>
+        <RuntimeDependencies>    
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>expat</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libxkbcommon</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>xdg-utils</Dependency>           
+        </RuntimeDependencies>
+        <Name>windsurf</Name>
+        <Icon>windsurf</Icon>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>           
+        </Files>
+         <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/windsurf.desktop">windsurf.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/windsurf.png">windsurf.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2025-01-29</Date>
+            <Version>1.2.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    	 <Update release="1">
+            <Date>2024-12-25</Date>
+            <Version>1.1.2</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
