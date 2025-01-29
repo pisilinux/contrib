@@ -12,8 +12,8 @@
         <Description>An advanced browser made with the power user in mind.</Description>
         <License>EULA</License>
         <Icon>vivaldi</Icon>
-        <Archive sha1sum="28f1e3fe2785fed50a4a312784fb9e998826341a" type="binary">
-            https://downloads.vivaldi.com/stable/vivaldi-stable_7.0.3495.23-1_amd64.deb
+        <Archive sha1sum="ab6114b93f6167487f506937b2c5b90249b27892" type="binary">
+            https://downloads.vivaldi.com/stable/vivaldi-stable_7.1.3570.39-1_amd64.deb
         </Archive>
     </Source>
     <Package>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2025-01-29</Date>
+            <Version>7.1.3570.39</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name> 
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="18">
             <Date>2024-12-05</Date>
             <Version>7.0.3495.23</Version>
