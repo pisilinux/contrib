@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar /opt/Akia/akia.jar
+/usr/lib/jvm/java-8-openjdk/jre/bin/java -jar /opt/Akia/akia.jar
