@@ -11,7 +11,7 @@
         <License>custom</License>
         <Summary>View and modify files,folders and objects in an AKIS smartcard</Summary>
         <Description>View and modify files,folders and objects in an AKIS smartcard</Description>
-        <Archive sha1sum="b1e846c66aba0525a883e9b1cf78bcab72840540" type="binary">https://akiskart.bilgem.tubitak.gov.tr/wp-content/uploads/sites/33/2023/04/Akia_linux_6_5_2.deb_.zip</Archive>
+        <Archive sha1sum="d9c3a55ad4c841cd10874707e2b43ca10910d26e" type="binary">https://akiskart.bilgem.tubitak.gov.tr/wp-content/uploads/sites/33/2025/01/Akia_linux_6_7_6.deb_.zip</Archive>
     </Source>
 
     <Package>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2025-02-05</Date>
+            <Version>6.7.6</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
         <Update release="3">
             <Date>2023-05-06</Date>
             <Version>6.5.2</Version>
