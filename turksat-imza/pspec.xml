@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>turksat-imza</Name>
+        <Homepage>https://www.belgenet.com.tr/</Homepage>
+        <Packager>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Packager>
+        <Summary>Proprietary signature service for digital signatures by Turksat Belgenet.</Summary>
+        <Description>Belgenet is a certified Electronic Document Management Service product developed by Turksat that serves more than 400k users in government organizations, complies to the TSE 13298 standards, and manages every kind of document from creation to final touches by protecting such documents' contents, formatting and relational properties.</Description>
+        <License>EULA</License>
+        <Archive type="zip" sha1sum="5367a4a22a736e78b3d5c693473faf782cf026e3">https://github.com/kurtbahartr/turksat-imza-pisi/releases/download/v1.0.58/signNativeOsService_Linux_1.0.58.zip</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>wget</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>turksat-imza</Name>
+        <RuntimeDependencies>
+            <Dependency>jdk8-openjdk</Dependency>
+        </RuntimeDependencies>
+
+        <Files>
+            <Path fileType="data">/usr/share/ca-certificates/turksat.crt</Path>
+            <Path fileType="data">/usr/share/signNativeOsService</Path>
+            <Path fileType="executable">/usr/share/signNativeOsService/bin/systemctl/</Path>
+        </Files>
+
+        <AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/signNativeOsService/bin/systemctl/start_comar.sh" group="root" permission="0755">start_comar.sh</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-02-05</Date>
+            <Version>1.0.58</Version>
+            <Comment>Initial Packaging for PISI</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
