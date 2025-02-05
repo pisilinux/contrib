@@ -5,16 +5,15 @@
         <Name>discord</Name>
         <Homepage>https://discord.com</Homepage>
         <Packager>
-            <Name>Sami BABAT</Name>
-            <Email>samibabat@gmail.com</Email>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
         </Packager>
         <Icon>discord</Icon>
         <Summary>All-in-one voice and text chat for gamers</Summary>
         <Description>All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.</Description>
         <License>proprietary</License>
         <IsA>app:gui</IsA>
-        <Archive sha1sum="b8bde4c3671fdea5cd78f8b0c024097ecc3cee5e" type="targz">https://dl.discordapp.net/apps/linux/0.0.78/discord-0.0.78.tar.gz</Archive>
-       
+        <Archive sha1sum="cecd8bdcf9dafa1004852a03821de03ee5598f61" type="targz">https://dl.discordapp.net/apps/linux/0.0.84/discord-0.0.84.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -34,7 +33,6 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            
         </Files>
          <AdditionalFiles>
             <AdditionalFile target="/usr/share/applications/discord.desktop" owner="root">discord.desktop</AdditionalFile>
@@ -43,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2025-02-06</Date>
+            <Version>0.0.84</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Bedirhan Kurt</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
         <Update release="27">
             <Date>2024-12-31</Date>
             <Version>0.0.78</Version>
