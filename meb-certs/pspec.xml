@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>meb-certs</Name>
+        <Homepage>https://sertifika.meb.gov.tr</Homepage>
+        <Packager>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Packager>
+        <Summary>Certificate authority by the Turkish Ministry of Education.</Summary>
+        <Description>Certificate authority by the Turkish Ministry of Education for use with their networks in schools, usually called Fatih or f@tih.</Description>
+        <License>EULA</License>
+        <Archive type="zip" sha1sum="12b6c16cddf4f0c23bd8b1428b874c5a3974691a">https://github.com/kurtbahartr/meb-certs-pisi/releases/download/v1.0/MEB_SERTIFIKASI.zip</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>sed</Dependency>
+            <Dependency>wget</Dependency>
+            <Dependency>openssl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>meb-certs</Name>
+        <Dependencies>
+            <Dependency>ca-certificates</Dependency>
+        </Dependencies>
+        <Files>
+            <Path fileType="data">/usr/share/ca-certificates/MEB_SERTIFIKASI.crt</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-02-05</Date>
+            <Version>1.0</Version>
+            <Comment>Initial Packaging for PISI</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
