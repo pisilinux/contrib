@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Akia
+Exec=/bin/sh "/usr/bin/akia" %U
+StartupWMClass=install4j-controller-Main
+Icon=/usr/share/icons/Akia.png
+Categories=Utility;
