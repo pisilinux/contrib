@@ -21,6 +21,9 @@
             <Dependency>ccid</Dependency>
             <Dependency>libusb-compat</Dependency>
             <Dependency>pcsc-lite</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-connectivity</Dependency>
+            <Dependency>qt5-websockets</Dependency>
         </Dependencies>
         <Files>
             <Path fileType="data">/etc/init.d/arksignerd</Path>

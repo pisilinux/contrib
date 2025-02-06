@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.system("ar xf arksigner-pub-2.3.11.deb")
-    shelltools.system("tar xvf %s/data.tar.xz" %get.workDIR())
+    shelltools.system("tar xvf %s/data.tar.xz --exclude=./usr/bin/arksigner/libs/libQt5*" %get.workDIR())
 
 def build():
     pass
