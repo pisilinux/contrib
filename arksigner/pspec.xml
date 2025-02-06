@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>arksigner</Name>
+        <Homepage>https://www.arksigner.com/</Homepage>
+        <Packager>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Packager>
+        <Summary>Buy, activate, sign.</Summary>
+        <Description>Complete every task within the digital environment with the comfort of digital! Also compatible with AKISKarts!</Description>
+        <License>EULA</License>
+        <Archive type="binary" sha1sum="cd807f70d470a07fb4d7c5d2f293f57d748ccd38">https://downloads.arksigner.com/files/arksigner-pub-2.3.11.deb</Archive>
+    </Source>
+
+    <Package>
+        <Name>arksigner</Name>
+        <Dependencies>
+            <Dependency>libgcc</Dependency>
+            <Dependency>ccid</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>pcsc-lite</Dependency>
+        </Dependencies>
+        <Files>
+            <Path fileType="data">/etc/init.d/arksignerd</Path>
+            <Path fileType="data">/usr/bin/arksigner</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-02-05</Date>
+            <Version>2.3.11</Version>
+            <Comment>Initial Packaging for PISI</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
