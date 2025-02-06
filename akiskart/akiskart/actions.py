@@ -19,3 +19,4 @@ def build():
 
 def install():
     pisitools.insinto("/usr/share/akia", "opt/Akia/akia-6.7.6.jar")
+    pisitools.insinto("/usr/lib", "opt/Akia/libakisp11.so")
