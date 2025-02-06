@@ -1,8 +1,8 @@
-<?xml version="1.0" ?>
+?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>turksat-imza</Name>
+        <Name>belgenet</Name>
         <Homepage>https://www.belgenet.com.tr/</Homepage>
         <Packager>
             <Name>Bedirhan KURT</Name>
@@ -11,7 +11,7 @@
         <Summary>Proprietary signature service for digital signatures by Turksat Belgenet.</Summary>
         <Description>Belgenet is a certified Electronic Document Management Service product developed by Turksat that serves more than 400k users in government organizations, complies to the TSE 13298 standards, and manages every kind of document from creation to final touches by protecting such documents' contents, formatting and relational properties.</Description>
         <License>EULA</License>
-        <Archive type="zip" sha1sum="5367a4a22a736e78b3d5c693473faf782cf026e3">https://github.com/kurtbahartr/turksat-imza-pisi/releases/download/v1.0.58/signNativeOsService_Linux_1.0.58.zip</Archive>
+        <Archive type="zip" sha1sum="5367a4a22a736e78b3d5c693473faf782cf026e3">https://github.com/kurtbahartr/belgenet-pisi/releases/download/v1.0.58/signNativeOsService_Linux_1.0.58.zip</Archive>
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>gconf</Dependency>
@@ -21,7 +21,7 @@
     </Source>
 
     <Package>
-        <Name>turksat-imza</Name>
+        <Name>belgenet</Name>
         <RuntimeDependencies>
             <Dependency>akiskart</Dependency>
             <Dependency>jdk8-openjdk</Dependency>

@@ -7,7 +7,7 @@ serviceDesc = _({"en": "TurksatImza Service",
                  "tr": "TurksatImza Servisi"})
 serviceDefault = "off"
 
-PIDFILE="/run/turksat-imza/turksat-imza.pid"
+PIDFILE="/run/belgenet/belgenet.pid"
 
 @synchronized
 def start():
