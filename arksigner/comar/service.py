@@ -3,18 +3,18 @@ from comar.service import *
 import os
 
 serviceType = "local"
-serviceDesc = _({"en": "TurksatImza Service",
-                 "tr": "TurksatImza Servisi"})
-serviceDefault = "off"
+serviceDesc = _({"en": "Arksigner Daemon",
+                 "tr": "Arksigner Daemon"})
+serviceDefault = "on"
 
-PIDFILE="/run/turksat-imza/turksat-imza.pid"
+PIDFILE="/run/arksignerd.pid"
 
 @synchronized
 def start():
     # path to executable
     # creates a pid file, sets the working directory and calls the jar file
-    startService(command="/usr/share/signNativeOsService/bin/systemctl/start_comar.sh",
-                 args="",
+    startService(command="/etc/init.d/arksignerd",
+                 args="start",
                  donotify=True)
 
 @synchronized
