@@ -7,7 +7,7 @@
         <Packager> 
             <Name>Pisilinux Community</Name>
             <Email>admins@pisilinux.org</Email>
-        </Packager>
+        </Packager> 
         <License>IBC</License>
         <IsA>app:gui</IsA>
         <Summary>Udf dosya uzantısı açmaya yarayan program.</Summary>
