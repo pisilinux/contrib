@@ -2,7 +2,7 @@
 Name=Windsurf
 Comment=Tomorrow's Editor, Today
 Exec=/opt/windsurf/windsurf
-Icon=/opt/windsurf/windsurf/resources/app/resources/linux/code.png
+Icon=windsurf
 Terminal=false
 Type=Application
 Categories=Development;IDE;

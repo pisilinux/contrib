@@ -3,6 +3,7 @@
 <PISI>
     <Source>
         <Name>windsurf</Name>
+        <Homepage>https://codeium.com/windsurf</Homepage>
         <Packager>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
@@ -12,8 +13,8 @@
         <Description xml:lang="tr">Sizi akış halinde tutmak için tasarlanmış, anlık ve paha biçilmez yapay zeka geliştirici desteği sunan, geleceğin editörü bugün karşınızda.</Description>
         <PartOf>development</PartOf>
         <License>custom</License>
-        <Archive sha1sum="4c209fe31cb6ab4156f811e4b9bfe817345621ca" type="targz">
-            https://windsurf-stable.codeiumdata.com/linux-x64/stable/be4251dfb74e60e80fa973d61f3505da1ac9032e/Windsurf-linux-x64-1.2.2.tar.gz
+        <Archive sha1sum="2f04ce08fb3d961203fa3a73501c6bc7e417939e" type="targz">
+            https://windsurf-stable.codeiumdata.com/linux-x64/stable/43976ecab7354ba352849517e15779fe8a4eff88/Windsurf-linux-x64-1.3.9.tar.gz
         </Archive>
     </Source>
 
@@ -54,6 +55,28 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2025-02-26</Date>
+            <Version>1.3.9</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+
+         <Update release="4">
+            <Date>2025-02-21</Date>
+            <Version>1.3.4</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2025-02-11</Date>
+            <Version>1.2.6</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2025-01-29</Date>
             <Version>1.2.2</Version>
