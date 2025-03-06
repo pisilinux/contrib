@@ -38,6 +38,9 @@
             <AdditionalFile target="/usr/share/applications/discord.desktop" owner="root">discord.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/icons/discord.png" owner="root">discord.png</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
