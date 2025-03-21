@@ -13,8 +13,8 @@
         <Description xml:lang="tr">Sizi akış halinde tutmak için tasarlanmış, anlık ve paha biçilmez yapay zeka geliştirici desteği sunan, geleceğin editörü bugün karşınızda.</Description>
         <PartOf>development</PartOf>
         <License>custom</License>
-        <Archive sha1sum="2f04ce08fb3d961203fa3a73501c6bc7e417939e" type="targz">
-            https://windsurf-stable.codeiumdata.com/linux-x64/stable/43976ecab7354ba352849517e15779fe8a4eff88/Windsurf-linux-x64-1.3.9.tar.gz
+        <Archive sha1sum="0a1ad128ea50c66664dc7e6c85772e1a78119f6d" type="targz">
+            https://windsurf-stable.codeiumdata.com/linux-x64/stable/164066c0badcfdea724847b1a24fd88eb96f9510/Windsurf-linux-x64-1.5.6.tar.gz        
         </Archive>
     </Source>
 
@@ -55,6 +55,27 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2025-03-21</Date>
+            <Version>1.5.6</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="7">
+            <Date>2025-03-12</Date>
+            <Version>1.4.6</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="6">
+            <Date>2025-02-26</Date>
+            <Version>1.3.10</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2025-02-26</Date>
             <Version>1.3.9</Version>
