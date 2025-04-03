@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Cursor</Name>
+        <Homepage>https://cursor.com/</Homepage>
+        <Packager>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Packager>
+        <Summary xml:lang="en">The AI Code Editor</Summary>
+        <Summary xml:lang="tr">Yapay Zeka Destekli Kod Düzenleyicisi</Summary>
+        <Description xml:lang="en">Built to make you extraordinarily productive, Cursor is the best way to code with AI.</Description>
+        <Description xml:lang="tr">Sizi olağanüstü derecede üretken kılmak için oluşturulmuş olan Cursor, yapay zeka ile kod yazmanın en iyi yoludur.</Description>
+        <License>custom</License>
+        <PartOf>Development</PartOf>
+        <Archive sha1sum="854dc1f82472d04b7ea12b3623ef7fba014fb8cf" type="binary">
+            https://downloads.cursor.com/production/1d623c4cc1d3bb6e0fe4f1d5434b47b958b05876/linux/x64/Cursor-0.48.7-x86_64.AppImage
+        </Archive>        
+    </Source>
+
+    <Package>
+        <Name>Cursor</Name>
+        <RuntimeDependencies>
+            <Dependency>fuse3</Dependency>
+            <Dependency>gtk3</Dependency>            
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>  
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>         
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/applications/cursor.desktop">cursor.desktop</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/cursor.png">cursor.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>    
+        <Update release="2">
+            <Date>2025-04-04</Date>
+            <Version>0.48.7</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>  
+        <Update release="1">
+            <Date>2024-12-25</Date>
+            <Version>0.44.8</Version>
+            <Comment>First Release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
