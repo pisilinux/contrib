@@ -9,8 +9,9 @@ from pisi.actionsapi import get, pisitools, shelltools
 NoStrip = ["/opt", "/usr"]
 IgnoreAutodep = True
 
+
 def install():
     pisitools.dodir ("/opt/Cursor")
-    pisitools.doexe("Cursor-0.48.7-x86_64.AppImage", "/opt/Cursor")
-    pisitools.dosym("/opt/Cursor-0.48.7-x86_64.AppImage", "/usr/bin/Cursor")
+    pisitools.doexe("Cursor-0.48.8-x86_64.AppImage", "/opt/Cursor")
+    pisitools.dosym("/opt/Cursor/Cursor-0.48.8-x86_64.AppImage", "/usr/bin/Cursor")
    
