@@ -7,7 +7,7 @@
         <Packager>
             <Name>PisiLinux Community</Name>
             <Email>admins@pisilinux.org</Email>
-        </Packager>
+        </Packager> 
         <License>custom</License>
         <Summary>View and modify files,folders and objects in an AKIS smartcard</Summary>
         <Description>View and modify files,folders and objects in an AKIS smartcard</Description>
