@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+         <Update release="17">
+            <Date>2025-05-01</Date>
+            <Version>4192</Version>
+            <Comment>version fix.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="16">
             <Date>2025-01-29</Date>
             <Version>4192</Version>
