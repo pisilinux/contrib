@@ -8,8 +8,8 @@
             <Name>Bedirhan KURT</Name>
             <Email>bedirhan.kurt@outlook.com</Email>
         </Packager>
-        <Summary>Buy, activate, sign.</Summary>
-        <Description>Complete every task within the digital environment with the comfort of digital! Also compatible with AKISKarts!</Description>
+        <Summary>ArkSigner e-signature application</Summary>
+        <Description>E-signature app that's digital and practical with everything it has</Description>
         <License>EULA</License>
         <Archive type="binary" sha1sum="cd807f70d470a07fb4d7c5d2f293f57d748ccd38">https://downloads.arksigner.com/files/arksigner-pub-2.3.11.deb</Archive>
     </Source>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2025-05-13</Date>
+            <Version>2.3.11</Version>
+            <Comment>Update package meta</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
         <Update release="1">
             <Date>2025-02-05</Date>
             <Version>2.3.11</Version>

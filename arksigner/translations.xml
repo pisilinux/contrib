@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>arksigner</Name>
+        <Summary>ArkSigner e-imza uygulaması</Summary>
+        <Description>Her şeyiyle dijital, her şeyiyle pratik e-imza uygulaması</Description>
+    </Source>
+</PISI>
