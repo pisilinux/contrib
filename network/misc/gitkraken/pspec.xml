@@ -12,7 +12,7 @@
         <IsA>gui</IsA>
         <Summary>The intuitive, fast, and beautiful cross-platform Git client.</Summary>
         <Description>GitKraken makes Git commands and processes easy, fast, and intuitive. .</Description>
-        <Archive sha1sum="f7e95db3d28955bea7e93775e6dba266cf75911d" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
+        <Archive sha1sum="706176456ac9d309699be6128d1acd64e8ae4071" type="targz">https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -23,38 +23,6 @@
             <Dependency>libsecret</Dependency>
             <Dependency>libxkbfile</Dependency>
 
-            <!-- 
-            <Dependency>atk</Dependency>
-            <Dependency>curl</Dependency>
-            <Dependency>libxcb</Dependency>
-            <Dependency>cups</Dependency>
-            <Dependency>dbus</Dependency>
-            <Dependency>nspr</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>expat</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>libgcc</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXtst</Dependency>
-            <Dependency>alsa-lib</Dependency>
-            <Dependency>freetype</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>libnotify</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>libXdamage</Dependency>
-            <Dependency>libXrender</Dependency>
-            <Dependency>libgpg-error</Dependency>
-            <Dependency>libXcomposite</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
-            <Dependency>libgnome-keyring</Dependency>
-             -->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/gitkraken</Path>
@@ -68,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2025-05-13</Date>
+            <Version>11.1.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2024-02-08</Date>
             <Version>27.1.3</Version>
