@@ -15,7 +15,7 @@
         <Summary>Google Chrome for Linux</Summary>
         <Description>The web browser from Google
  Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="335fc43c484c66e4e3ceb11288eeea781d598c8b" type="binary">
+        <Archive sha1sum="2236a37b91675ed16cc7fbd200603fa91286a304" type="binary">
             https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         </Archive>       
     </Source>
@@ -80,6 +80,13 @@
     
 
     <History>
+        <Update release="85">
+            <Date>2025-05-26</Date>
+            <Version>136.0.7103.113</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="84">
             <Date>2025-03-21</Date>
             <Version>134.0.6998.117</Version>
