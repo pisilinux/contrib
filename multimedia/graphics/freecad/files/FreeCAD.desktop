@@ -1,13 +1,10 @@
 [Desktop Entry]
-Categories=Development;
-Comment=General purpose 3D CAD modeler
+Name=FreeCAD
+Comment[en]=FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size.
+Comment[tr]= FreeCAD, öncelikle her boyuttaki gerçek nesneleri tasarlamak için geliştirilmiş, açık kaynaklı, parametrik bir 3B modelleme aracıdır.
 Encoding=UTF-8
 Exec=FreeCAD
-GenericName[tr_TR]=General purpose 3D CAD modeler
-GenericName=General purpose 3D CAD modeler
 Icon=FreeCAD
-Name[tr_TR]=FreeCAD
-Name=FreeCAD
 Terminal=false
 Type=Application
-Version=1.0
+Categories=Development;

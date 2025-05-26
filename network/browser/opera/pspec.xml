@@ -12,8 +12,8 @@
         <Description>Opera Web Browser</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="10616711ca1c791122753c694b6b0fe70dc36953" type="binary">
-            https://download3.operacdn.com/ftp/pub/opera/desktop/117.0.5408.142/linux/opera-stable_117.0.5408.142_amd64.deb
+        <Archive sha1sum="d3f1e7f625d4cf4ba08167f1628eedb5ae65ef70" type="binary">
+            https://download3.operacdn.com/ftp/pub/opera/desktop/119.0.5497.40/linux/opera-stable_119.0.5497.40_amd64.deb
         </Archive>
     </Source>
     <Package>
@@ -65,6 +65,13 @@
     </Package>
 
     <History>
+        <Update release="45">
+            <Date>2025-05-26</Date>
+            <Version>119.0.5497.40</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="43">
             <Date>2025-03-21</Date>
             <Version>117.0.5408.142</Version>

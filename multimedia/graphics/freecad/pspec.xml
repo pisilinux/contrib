@@ -8,11 +8,27 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
-        <Summary>General purpose 3D CAD modeler</Summary>
-        <Description>General purpose 3D CAD modeler</Description>
+        
+        <Summary xml:lang="en">
+            FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size.
+        </Summary>
+        
+        <Description xml:lang="en">
+            FreeCAD is an open-source parametric 3D modeler made primarily to design real-life objects of any size. Parametric modeling allows you to easily modify your design by going back into your model history and changing its parameters.
+        </Description>
+        
+        <Summary xml:lang="tr">
+            FreeCAD, öncelikle her boyuttaki gerçek nesneleri tasarlamak için geliştirilmiş, açık kaynaklı, parametrik bir 3B modelleme aracıdır.
+        </Summary>
+        <Description xml:lang="tr">
+            FreeCAD, öncelikle her boyuttaki gerçek nesneleri tasarlamak için geliştirilmiş, açık kaynaklı, parametrik bir 3B modelleme aracıdır. Parametresel modelleme, model geçmişinize geri dönüp parametrelerini değiştirerek tasarımınızı kolayca değiştirmenize olanak tanır.
+        </Description>
+        
         <License>LGPL</License>
         <PartOf>Development</PartOf>
-        <Archive sha1sum="9c2d642826817fe1a956df850ad8854ff0bf9711" type="binary">https://github.com/FreeCAD/FreeCAD/releases/download/0.19.3/FreeCAD_0.19.3-Linux-Conda_glibc2.12-x86_64.AppImage</Archive>        
+        <Archive sha1sum="9ba74237aed8041cf0c731e426f08a66e8d25286" type="binary">
+            https://github.com/FreeCAD/FreeCAD/releases/download/1.0.1/FreeCAD_1.0.1-conda-Linux-x86_64-py311.AppImage
+        </Archive>        
     </Source>
 
     <Package>
@@ -43,6 +59,13 @@
     </Package>
     
     <History>
+        <Update release="3">
+            <Date>2025-05-26</Date>
+            <Version>1.0.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2022-01-21</Date>
             <Version>0.19.3</Version>

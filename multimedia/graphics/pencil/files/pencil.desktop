@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=Pencil
-Comment=Pencil Project
-Version=3.1.0.ga
+Comment[en]=Sketching and GUI prototyping tool
+Comment[tr]=Cizim ve GUI prototip aracı
 Type=Application
-Categories=Graphics
-MimeType=text/plain;
-Exec=/opt/pencil-3.1.0.ga/pencil
+Categories=Graphics;2DGraphics;Development
+MimeType=application/x-evolus-pencil;
+Exec=/opt/pencil/pencil %u
 Terminal=false
 StartupNotify=true
-Icon=/usr/share/applications/pencil.png
+Icon=pencil

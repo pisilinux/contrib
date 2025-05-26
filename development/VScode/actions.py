@@ -11,3 +11,4 @@ from pisi.actionsapi import shelltools
 
 def install():
     pisitools.insinto("/opt/VSCode-linux-x64", "./*")
+    pisitools.dosym("/opt/VSCode-linux-x64/bin/code", "/usr/bin/code")
