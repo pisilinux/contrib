@@ -7,12 +7,7 @@ from pisi.actionsapi import get, pisitools, shelltools
 
 Version = get.srcVERSION()
 
-def setup():
-    shelltools.system("pwd")
-    shelltools.system("ar xf pencil_"+Version+".ga_amd64.deb")
-    shelltools.system("tar xf data.tar.gz")
-    
 
 def install():
-    pisitools.insinto("/opt/pencil-3.1.0.ga/", "opt/pencil-3.1.0.ga/*")
-    pisitools.dosym("/opt/pencil-3.1.0.ga/pencil", "/usr/bin/pencil")
+    pisitools.insinto("/opt/pencil/", "*")
+    pisitools.dosym("/opt/pencil/pencil", "/usr/bin/pencil")
