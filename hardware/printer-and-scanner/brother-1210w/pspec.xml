@@ -1,10 +1,9 @@
-
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>brother-1210w</Name>
-        <Homepage></Homepage>
+	<Homepage>https://support.brother.com/</Homepage>
         <Packager>
             <Name>Ayhan Yalçınsoy</Name>
             <Email>ayhanyalcinsoy@pisilinux.org</Email>
