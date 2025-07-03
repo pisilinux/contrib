@@ -14,5 +14,5 @@ Version = get.srcVERSION()
 def install():
     pisitools.dodir ("/opt/Cursor")
     pisitools.doexe("Cursor-%s-x86_64.AppImage" % Version, "/opt/Cursor")
-    pisitools.dosym("/opt/Cursor/Cursor-%s-x86_64.AppImage" % Version, "/usr/bin/Cursor")
+    pisitools.dosym("/opt/Cursor/Cursor-%s-x86_64.AppImage" % Version, "/usr/bin/cursor")
    
