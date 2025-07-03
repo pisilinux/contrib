@@ -14,8 +14,8 @@
         <Description xml:lang="tr">Sizi olağanüstü derecede üretken kılmak için oluşturulmuş olan Cursor, yapay zeka ile kod yazmanın en iyi yoludur.</Description>
         <License>custom</License>
         <PartOf>development</PartOf>
-        <Archive sha1sum="23e3da562c6792b5a5ee454852cfc87050939149" type="binary">
-            https://downloads.cursor.com/production/5b19bac7a947f54e4caa3eb7e4c5fbf832389853/linux/x64/Cursor-1.1.6-x86_64.AppImage
+        <Archive sha1sum="e822738427743a152e13976e63c47d6753a9aea7" type="binary">
+            https://downloads.cursor.com/production/7111807980fa9c93aedd455ffa44b682c0dc1356/linux/x64/Cursor-1.1.7-x86_64.AppImage
         </Archive>        
     </Source>
 
@@ -38,6 +38,13 @@
     </Package>
     
     <History>   
+        <Update release="11">
+            <Date>2025-07-03</Date>
+            <Version>1.1.7</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2025-06-25</Date>
             <Version>1.1.6</Version>
