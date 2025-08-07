@@ -8,12 +8,17 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
+        <Icon>webex</Icon>
         <IsA>app:gui</IsA>
-        <Summary>One platform, with all the ways to connect.</Summary>
-        <Description>One platform, with all the ways to connect.</Description>
+        <Summary xml:lang="en">Webex for Linux</Summary>
+        <Summary xml:lang="tr">Linux için Webex</Summary>
+        <Description xml:lang="en">Video communication and virtual meeting platform</Description>
+        <Description xml:lang="tr">Video iletişim ve sanal toplantı platformu</Description>
         <License>custom</License>
         <PartOf>Network</PartOf>
-        <Archive sha1sum="7ad6f012fa854a312a5db2533da3961859992dc6" type="binary">https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb</Archive>        
+        <Archive sha1sum="2cc86f8222904cd6f243ea2ba36866bda58daac2" type="binary">
+            https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/Webex.deb
+        </Archive>        
     </Source>
     <Package>
         <Name>webex</Name>
@@ -57,6 +62,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+         <Update release="7">
+            <Date>2025-07-10</Date>
+            <Version>45.6.1.32593</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+         </Update>
          <Update release="6">
             <Date>2024-12-05</Date>
             <Version>44.10.2.31237</Version>
@@ -64,40 +76,5 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>      
-        <Update release="5">
-            <Date>2024-07-11</Date>
-            <Version>44.5.0.29672</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>       
-        <Update release="4">
-            <Date>2023-12-15</Date>
-            <Version>43.11.0.27795</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="3">
-            <Date>2022-10-21</Date>
-            <Version>42.10.0.24000</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2022-09-15</Date>
-            <Version>42.7.0.22904</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2022-04-06</Date>
-            <Version>42.4.0.21893</Version>
-            <Comment>First Release</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
     </History>
 </PISI>

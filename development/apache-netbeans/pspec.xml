@@ -11,7 +11,9 @@
         <Summary>NetBeans, Oracle tarafından geliştirilen bir Java geliştirme ortamıdır.</Summary>
         <Description>NetBeans, Oracle tarafından geliştirilen bir Java geliştirme ortamıdır. Özellikle kullanıcı arayüzü tasarımında sağladığı kolaylıklardan dolayı tercih edilmektedir.</Description>
         <License>custom</License>
-        <Archive sha1sum="eb6c8286be8c556821381f83a2ff5027dae47915" type="zip">https://www-eu.apache.org/dist/netbeans/netbeans/12.3/netbeans-12.3-bin.zip</Archive>
+        <Archive sha1sum="0dd6ba97bbd9766a257526d39c5670a298b4905f" type="zip">
+           https://www.apache.org/dyn/closer.lua/netbeans/netbeans/26/netbeans-26-bin.zip
+        </Archive>
     </Source>
 
     <Package>
@@ -31,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2025-08-07</Date>
+            <Version>26</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
     	 <Update release="1">
             <Date>2021-05-18</Date>
             <Version>12.3</Version>

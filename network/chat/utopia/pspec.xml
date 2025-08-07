@@ -8,10 +8,14 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
-        <Summary>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
-        <Description>Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Description>
+        <Summary xml:lang="en">Utopia is your all-in-one kit for secure instant messaging, encrypted e-mail communication, anonymous payments and private web browsing.</Summary>
+        <Summary xml:lang="tr">Utopia, güvenli anlık mesajlaşma, şifreli e-posta iletişim, anonim ödeme ve özel web tarayıcısı için tümleşik bir araç.</Summary>
+        <Description xml:lang="en">Client for Utopia, an "Anti Orwellian Ecosystem"</Description>
+        <Description xml:lang="tr">Utopia, "Orwellian Ecosystem"'in tersi bir ekosistemi.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="c26f2c74bf585eaf8f6565fce3529d114d038bb2" type="binary">https://update.u.is/downloads/linux/utopia-latest.amd64.deb</Archive>
+        <Archive sha1sum="62ec72af7aaaaefa6e876243a4376453b6bd4db9" type="binary">
+            https://update.u.is/downloads/linux/utopia-latest.amd64.deb
+        </Archive>
     </Source>
 
     <Package>
@@ -30,52 +34,17 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2025-07-10</Date>
+            <Version>1.3.860</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2024-02-08</Date>
             <Version>1.3</Version>
             <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="6">
-            <Date>2022-12-12</Date>
-            <Version>1.2</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="5">
-            <Date>2021-09-23</Date>
-            <Version>1.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="4">
-            <Date>2021-05-09</Date>
-            <Version>1.0.7366</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-    	 <Update release="3">
-            <Date>2020-07-06</Date>
-            <Version>1.0-7366</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2020-03-17</Date>
-            <Version>1.0.5763</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-    	<Update release="1">
-            <Date>2020-02-15</Date>
-            <Version>1.0.5672</Version>
-            <Comment>First release</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>

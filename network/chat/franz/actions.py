@@ -6,16 +6,9 @@
 
 from pisi.actionsapi import get, pisitools, shelltools
 
-NoStrip = ["/opt", "/usr"]
-IgnoreAutodep = True
-
-def setup():
-    shelltools.system("pwd")
-    shelltools.system("ar xf franz_%s_amd64.deb" % get.srcVERSION())
-    shelltools.system("tar xf data.tar.xz")
+WorkDir = "."
+NoStrip = ["/"]
 
 def install():
-    pisitools.insinto("/", "usr")
-    pisitools.insinto("/", "opt")
-    pisitools.dosym("/opt/Franz/franz", "/usr/bin/franz")
-    pisitools.dosym("/usr/share/icons/hicolor/1024x1024/apps/franz.png", "/usr/share/icons/hicolor/scalable/apps/franz.png")
+    pisitools.insinto("/opt/franz/", "franz-5.11.0/*")
+    pisitools.dosym('/opt/franz/franz', '/usr/bin/franz')

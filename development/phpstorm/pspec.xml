@@ -1,8 +1,9 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>phpstorm</Name>
+        <Homepage>https://www.jetbrains.com/phpstorm/</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
@@ -11,7 +12,9 @@
         <License>Proprietary</License>
         <Summary>PHPStorm - an IDE for the PHP Language</Summary>
         <Description>PHPStorm - an IDE for the PHP Language</Description>
-        <Archive sha1sum="396aca98a8760d41cc4e8c863db298e35a97a064" type="targz">https://download.jetbrains.com/webide/PhpStorm-2021.2.3.tar.gz</Archive>
+        <Archive sha1sum="185c84f7cb1fd112a2729abe52cfe77b6ecbe578" type="targz">
+           https://download-cdn.jetbrains.com/webide/PhpStorm-2025.2.tar.gz
+        </Archive>
     </Source>
     <Package>
         <Name>phpstorm</Name>
@@ -47,6 +50,13 @@
     </Package>
     
     <History>
+        <Update release="5">
+            <Date>2025-08-07</Date>
+            <Version>2025.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2021-11-08</Date>
             <Version>2021.2.3</Version>
@@ -54,26 +64,6 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="3">
-            <Date>2021-07-16</Date>
-            <Version>2021.1.4</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="2">
-            <Date>2020-11-02</Date>
-            <Version>2020.2.3</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2016-10-27</Date>
-            <Version>2016.2.2</Version>
-            <Comment>First Release</Comment>
-            <Name>Stefan Gronewold</Name>
-            <Email>groni@pisilinux.org</Email>
-        </Update>
+        
     </History>
 </PISI>

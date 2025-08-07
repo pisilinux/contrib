@@ -4,16 +4,20 @@
     <Source>
         <Name>brave-browser</Name>
         <Homepage>https://brave.com/</Homepage>
+        <PartOf>network.web</PartOf>
+        <IsA>app:gui</IsA>  
+        <Icon>brave-browser</Icon>
+        <Summary xml:lang="en">A web browser that stops ads and trackers by default</Summary>
+        <Description xml:lang="en">A web browser that stops ads and trackers by default</Description>
+        <Summary xml:lang="tr">Varsayılan olarak reklamları ve takip kodlarını engelleyen bir web tarayıcısı</Summary>
+        <Description xml:lang="tr">Varsayılan olarak reklamları ve takip kodlarını engelleyen bir web tarayıcısı</Description>
         <Packager>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <License>Mozilla Public License 2.0</License>
-        <Icon>brave-browser</Icon>
-        <Summary>A web browser that stops ads and trackers by default</Summary>
-        <Description>A web browser that stops ads and trackers by default</Description>
-        <Archive sha1sum="c54e95ce0bc705474a846e0a6432419991737614" type="binary">
-           https://github.com/brave/brave-browser/releases/download/v1.78.102/brave-browser-1.78.102-linux-amd64.zip
+        <Archive sha1sum="e0de2739e70ba9a8953e71c86fb915a9bd4f121d" type="binary">
+           https://github.com/brave/brave-browser/releases/download/v1.81.131/brave-browser-1.81.131-linux-amd64.zip
         </Archive>
     </Source>
 
@@ -43,100 +47,23 @@
     </Package>
 
     <History>
-         <Update release="35">
+        <Update release="37">
+            <Date>2025-08-07</Date>
+            <Version>1.81.131</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="36">
+            <Date>2025-07-10</Date>
+            <Version>1.82.69</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="35">
             <Date>2025-05-18</Date>
             <Version>1.78.102</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="34">
-            <Date>2025-03-21</Date>
-            <Version>1.76.80</Version>
-            <Comment>First Release</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="33">
-            <Date>2025-02-26</Date>
-            <Version>1.75.180</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="32">
-            <Date>2025-01-29</Date>
-            <Version>1.74.50</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="31">
-            <Date>2024-12-05</Date>
-            <Version>1.73.97</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="30">
-            <Date>2024-10-11</Date>
-            <Version>1.70.126</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="29">
-            <Date>2024-08-20</Date>
-            <Version>1.68.141</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="28">
-            <Date>2024-07-11</Date>
-            <Version>1.67.123</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="27">
-            <Date>2024-06-15</Date>
-            <Version>1.67.116</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-       <Update release="26">
-            <Date>2024-04-20</Date>
-            <Version>1.65.116</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="25">
-            <Date>2024-04-04</Date>
-            <Version>1.64.116</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="24">
-            <Date>2024-02-07</Date>
-            <Version>1.62.162</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="23">
-            <Date>2023-12-15</Date>
-            <Version>1.61.104</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="22">
-            <Date>2023-10-27</Date>
-            <Version>1.59.124</Version>
             <Comment>Version Bump</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>

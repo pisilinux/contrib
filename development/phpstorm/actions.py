@@ -6,5 +6,5 @@ WorkDir = "."
 NoStrip = ["/"]
 
 def install():
-    pisitools.insinto("/opt/phpstorm", "PhpStorm-212.5457.49/*")
+    pisitools.insinto("/opt/phpstorm", "PhpStorm-252.23892.419/*")
     pisitools.dosym("/opt/phpstorm/bin/phpstorm.sh", "/usr/bin/phpstorm")

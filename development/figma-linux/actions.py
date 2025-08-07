@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools, shelltools, get
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("unzip figma-linux_0.9.6_linux_amd64.zip")
+    shelltools.system("unzip figma-linux_%s_linux_amd64.zip" % get.srcVERSION())
 
 def install():
     #pisitools.dodir ("/opt/figma-linux")

@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>VSCode</Name>
@@ -12,8 +14,8 @@
         <Summary>Visual Studio Code</Summary>
         <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="4e35f5773cc5f0a4c31cd3acdf9514406563a8e8">
-            https://vscode.download.prss.microsoft.com/dbazure/download/stable/2901c5ac6db8a986a5666c3af51ff804d05af0d4/code-stable-x64-1750797851.tar.gz       
+        <Archive type="targz" sha1sum="d56b9b3bff96b6c5c1a1f62cd6ebe635d8e73873">
+            https://vscode.download.prss.microsoft.com/dbazure/download/stable/488a1f239235055e34e673291fb8d8c810886f81/code-stable-x64-1753759483.tar.gz       
         </Archive>
     </Source>
     <Package>
@@ -31,6 +33,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+        <Update release="38">
+            <Date>2025-08-07</Date>
+            <Version>1.102.3</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="37">
             <Date>2025-06-30</Date>
             <Version>1.101.2</Version>
@@ -38,55 +47,7 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="36">
-            <Date>2025-06-19</Date>
-            <Version>1.101</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="35">
-            <Date>2025-05-26</Date>
-            <Version>1.100.2</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="34">
-            <Date>2024-07-11</Date>
-            <Version>1.91.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="33">
-            <Date>2024-06-15</Date>
-            <Version>1.90.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="32">
-            <Date>2023-12-18</Date>
-            <Version>1.85.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="31">
-            <Date>2023-11-20</Date>
-            <Version>1.84.2</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="30">
-            <Date>2023-11-01</Date>
-            <Version>1.83.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
+      
        
     </History>
 </PISI>
