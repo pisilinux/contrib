@@ -8,12 +8,14 @@
             <Name>Stefan Gronewold(groni)</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <Summary>Opera Web Browser</Summary>
-        <Description>Opera Web Browser</Description>
+        <Summary xml:lang="en">Opera Web Browser</Summary>
+        <Summary xml:lang="tr">Opera Web Tarayıcısı</Summary>
+        <Description xml:lang="en">A fast and secure web browser</Description>
+        <Description xml:lang="tr">Hızlı ve güvenli bir web tarayıcısı</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="d3f1e7f625d4cf4ba08167f1628eedb5ae65ef70" type="binary">
-            https://download3.operacdn.com/ftp/pub/opera/desktop/119.0.5497.40/linux/opera-stable_119.0.5497.40_amd64.deb
+        <Archive sha1sum="00c1763f4b20c7f19555cf4ccd09ee8db23e7184" type="binary">
+            https://download5.operacdn.com/ftp/pub/opera/desktop/120.0.5543.161/linux/opera-stable_120.0.5543.161_amd64.deb
         </Archive>
     </Source>
     <Package>
@@ -65,6 +67,20 @@
     </Package>
 
     <History>
+        <Update release="47">
+            <Date>2025-08-07</Date>
+            <Version>120.0.5543.161</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="46">
+            <Date>2025-07-10</Date>
+            <Version>120.0.5543.61</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="45">
             <Date>2025-05-26</Date>
             <Version>119.0.5497.40</Version>
@@ -72,76 +88,6 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="43">
-            <Date>2025-03-21</Date>
-            <Version>117.0.5408.142</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="42">
-            <Date>2025-02-26</Date>
-            <Version>117.0.5408.39</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="41">
-            <Date>2025-01-29</Date>
-            <Version>116.0.5366.71</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="40">
-            <Date>2024-12-05</Date>
-            <Version>115.0.5322.77</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="39">
-            <Date>2024-10-11</Date>
-            <Version>114.0.5282.86</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="38">
-            <Date>2024-08-20</Date>
-            <Version>112.0.5197.53</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="37">
-            <Date>2024-07-11</Date>
-            <Version>111.0.5168.61</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="36">
-            <Date>2024-06-15</Date>
-            <Version>111.0.5168.25</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="35">
-            <Date>2024-04-20</Date>
-            <Version>109.0.5097.45</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-         <Update release="34">
-            <Date>2024-02-07</Date>
-            <Version>106.0.4998.70</Version>
-            <Comment>Opera version bump.</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-      
+        
     </History>
 </PISI>

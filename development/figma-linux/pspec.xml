@@ -14,7 +14,8 @@
         <Description xml:lang="tr" >İşbirliğine dayalı arayüz tasarım aracı. Linux için resmi olmayan Figma masaüstü istemcisi</Description>
         <License>GPL2</License>
         <PartOf>programming.tools</PartOf>
-        <Archive sha1sum="cd41f3688967be45d99714eef5272bd90681c7d5" type="binary">https://github.com/Figma-Linux/figma-linux/releases/download/v0.9.6/figma-linux_0.9.6_linux_amd64.zip
+        <Archive sha1sum="8c2f373cec0725cf0ff69b9afe8af576fd74b20b" type="binary">
+            https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.5/figma-linux_0.11.5_linux_amd64.zip
         </Archive>       
     </Source>
 
@@ -37,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2025-08-07</Date>
+            <Version>0.11.5</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2022-04-11</Date>
             <Version>0.9.6</Version>

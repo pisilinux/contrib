@@ -12,17 +12,17 @@
         <Icon>google-chrome</Icon>
         <PartOf>network.web</PartOf>
         <IsA>app:gui</IsA>
-        <Summary>Google Chrome for Linux</Summary>
-        <Description>The web browser from Google
- Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Archive sha1sum="2236a37b91675ed16cc7fbd200603fa91286a304" type="binary">
+        <Summary xml:lang="en">Google Chrome for Linux</Summary>
+        <Description xml:lang="en">Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+        <Summary xml:lang="tr">Linux için Google Chrome</Summary>
+        <Description xml:lang="tr">Google Chrome, web sayfalarını daha hızlı, güvenli ve kolay bir şekilde kullanmanıza yardımcı olacak minimal bir tasarım ile karmaşık teknolojiyi birleştirir.</Description>
+        <Archive sha1sum="006436f06b241fdd428d868446ac3e231c764200" type="binary">
             https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         </Archive>       
     </Source>
     <Package>
         <Name>google-chrome</Name>
         <RuntimeDependencies>
-            <Dependency>libutil-linux</Dependency>
             <Dependency>libutil-linux</Dependency>
             <Dependency>at-spi2-core</Dependency>
             <Dependency>nspr</Dependency>
@@ -80,6 +80,20 @@
     
 
     <History>
+        <Update release="87">
+            <Date>2025-08-07</Date>
+            <Version>139.0.7258.66</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="86">
+            <Date>2025-07-10</Date>
+            <Version>138.0.7204.100</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="85">
             <Date>2025-05-26</Date>
             <Version>136.0.7103.113</Version>
@@ -87,76 +101,7 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Update>
-        <Update release="84">
-            <Date>2025-03-21</Date>
-            <Version>134.0.6998.117</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="83">
-            <Date>2025-02-26</Date>
-            <Version>133.0.6943.141</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="82">
-            <Date>2025-01-29</Date>
-            <Version>132.0.6834.159</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="81">
-            <Date>2024-12-05</Date>
-            <Version>131.0.6778.108</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="80">
-            <Date>2024-10-11</Date>
-            <Version>129.0.6668.100</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="79">
-            <Date>2024-08-20</Date>
-            <Version>127.0.6533.119</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="78">
-            <Date>2024-07-11</Date>
-            <Version>126.0.6478.126</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="77">
-            <Date>2024-06-15</Date>
-            <Version>126.0.6478.61</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="76">
-            <Date>2024-04-20</Date>
-            <Version>124.0.6367.60</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
-        <Update release="75">
-            <Date>2024-02-07</Date>
-            <Version>121.0.6167.160</Version>
-            <Comment>Version bump</Comment>
-             <Name>Erkan IŞIK</Name>
-            <Email>erkanisik@pisilinux.org</Email>
-        </Update>
+       
     </History>
         
         

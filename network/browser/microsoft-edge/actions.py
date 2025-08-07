@@ -15,6 +15,7 @@ Version = get.srcVERSION()
 def setup():
     shelltools.system("ar xf microsoft-edge-stable_%s-1_amd64.deb" % get.srcVERSION())
     shelltools.system("tar xvf data.tar.xz")
+    shelltools.system("rm -rf microsoft-edge-stable_%s-1_amd64.deb" % get.srcVERSION())
 
 def install():
     pisitools.insinto("/opt/microsoft", "opt/microsoft/msedge*")
