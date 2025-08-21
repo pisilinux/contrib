@@ -16,8 +16,8 @@
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <License>Mozilla Public License 2.0</License>
-        <Archive sha1sum="e0de2739e70ba9a8953e71c86fb915a9bd4f121d" type="binary">
-           https://github.com/brave/brave-browser/releases/download/v1.81.131/brave-browser-1.81.131-linux-amd64.zip
+        <Archive sha1sum="69547f524bb5b0d5e3a3d986487332a054f26056" type="binary">
+           https://github.com/brave/brave-browser/releases/download/v1.83.65/brave-browser-nightly-1.83.65-linux-amd64.zip
         </Archive>
     </Source>
 
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="38">
+            <Date>2025-08-21</Date>
+            <Version>1.83.65</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="37">
             <Date>2025-08-07</Date>
             <Version>1.81.131</Version>

@@ -9,3 +9,8 @@ StartupWMClass=cursor
 X-AppImage-Version=@@PKGVERSION@@
 MimeType=x-scheme-handler/cursor;
 Categories=Utility;TextEditor;Development;IDE
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/usr/bin/cursor --no-sandbox --new-window %F
+Icon=cursor
