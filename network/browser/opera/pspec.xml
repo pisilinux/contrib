@@ -65,6 +65,7 @@
             <AdditionalFile target="/opt/opera/libffmpeg.so" owner="root">libffmpeg.so</AdditionalFile>             
         </AdditionalFiles>
     </Package>
+    <!-- https://download5.operacdn.com/ftp/pub/opera/desktop/ -->
 
     <History>
         <Update release="47">

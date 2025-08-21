@@ -1,8 +1,17 @@
 [Desktop Entry]
 Name=Windsurf
 Comment=Tomorrow's Editor, Today
-Exec=/opt/windsurf/windsurf
+Exec=/opt/windsurf/windsurf %U
 Icon=windsurf
 Terminal=false
 Type=Application
 Categories=Development;IDE;
+MimeType=text/plain;inode/directory;application/x-windsurf-workspace;
+Actions=new-empty-window;
+Keywords=windsurf;
+
+
+[Desktop Action new-empty-window]
+Name=New Empty Window
+Exec=/opt/windsurf/windsurf --new-window %F
+Icon=windsurf
