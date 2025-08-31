@@ -1,0 +1,46 @@
+?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>tailscale-static</Name>
+        <Homepage>https://tailscale.com/</Homepage>
+        <Packager>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Packager>
+        <Summary xml:lang="en">A mesh VPN that makes it easy to connect your devices, wherever they are. (Repackaged from static builds)</Summary>
+        <Description xml:lang="en">A mesh VPN that makes it easy to connect your devices, wherever they are. (Repackaged from static builds)</Description>
+        <Summary xml:lang="tr">Nerede olursa olsunlar, cihazlarınıza bağlanmayı kolaylaştıran bir ağ VPN'i. (Statik derlemelerden yeniden paketlenmiş)</Summary>
+        <Description xml:lang="tr">Nerede olursa olsunlar, cihazlarınıza bağlanmayı kolaylaştıran bir ağ VPN'i. (Statik derlemelerden yeniden paketlenmiş)</Description>
+        <License>MIT</License>
+        <Archive type="targz" sha1sum="c32f674a3687e5fb6c05cbed2d8f65310d153e34">https://pkgs.tailscale.com/stable/tailscale_1.86.2_amd64.tgz</Archive>
+    </Source>
+
+    <Package>
+        <Name>tailscale-static</Name>
+        <Dependencies>
+            <Dependency>glibc</Dependency>
+            <Dependency>openssh</Dependency>
+        </Dependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" group="root" permission="0755" target="/usr/bin/tailscaled-comar-compat.sh">tailscaled-comar-compat.sh</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-08-30</Date>
+            <Version>1.86.2</Version>
+            <Comment>Initial Packaging for PISI</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
