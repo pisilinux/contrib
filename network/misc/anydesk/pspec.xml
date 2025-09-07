@@ -3,14 +3,21 @@
 <PISI>
     <Source>
         <Name>anydesk</Name>
+        <Homepage>https://anydesk.com</Homepage>
         <Packager>
             <Name>Kamil Atlı</Name>
             <Email>suvari@pisilinux.org</Email>
         </Packager>
-        <Summary>AnyDesk is a remote desktop application</Summary>
-        <Description>AnyDesk is a remote desktop application</Description>
+        <Icon>anydesk</Icon>
+        <IsA>app:gui</IsA>
+        <Summary xml:lang="tr"> Hızlı Uzaktan Masaüstü Uygulaması</Summary>
+        <Summary xml:lang="en">The Fast Remote Desktop Application</Summary>
+        <Description xml:lang="tr"> İster ofisin diğer ucundan, ister dünyanın öbür ucundan bilgisayarınıza kolayca bağlanın. AnyDesk, hem BT profesyonelleri hem de hareket halindeki kullanıcılar için hızlı, güvenli ve güvenilir uzak masaüstü deneyimi sunar.</Description>
+        <Description xml:lang="en">Connect to a computer remotely, be it from the other end of the office or halfway around the world. AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="9b2763e08d93bd0eb3d7a695adb62330e431b353" type="targz">https://download.anydesk.com/linux/anydesk-latest-amd64.tar.gz</Archive>       
+        <Archive sha1sum="1bb7b4c7fb93f2fb9e430f2d7242c22f392a3e55" type="targz">
+            https://download.anydesk.com/linux/anydesk-7.0.2-amd64.tar.gz
+        </Archive>       
     </Source>
 
     <Package>
@@ -62,6 +69,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2025-09-07</Date>
+            <Version>7.0.2</Version>
+            <Comment>Release bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2024-12-05</Date>
             <Version>6.4.0</Version>
