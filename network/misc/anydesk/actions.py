@@ -8,10 +8,11 @@ from pisi.actionsapi import pisitools, shelltools, get
 
 WorkDir = "."
 NoStrip = ["/"]
+Version = get.srcVERSION()
 
 def install():
     pisitools.dodir ("/opt/anydesk")
-    pisitools.insinto("/opt/anydesk", "anydesk-6.4.0/*")
-    pisitools.insinto("/usr/share/polkit-1/actions", "anydesk-6.4.0/polkit-1/com.anydesk.anydesk.policy")
-    pisitools.insinto("/etc/init.d", "anydesk-6.4.0/init/anydesk")
+    pisitools.insinto("/opt/anydesk", "anydesk-"+Version+"/*")
+    pisitools.insinto("/usr/share/polkit-1/actions", "anydesk-"+Version+"/polkit-1/com.anydesk.anydesk.policy")
+    pisitools.insinto("/etc/init.d", "anydesk-"+Version+"/init/anydesk")
     pisitools.dosym("/opt/anydesk/anydesk", "/usr/bin/anydesk")
