@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>odin4-cli</Name>
+        <Homepage>https://forum.xda-developers.com/t/official-samsung-odin-v4-1-2-1-dc05e3ea-for-linux.4453423/</Homepage>
+        <Packager>
+            <Name>Bedirhan Kurt</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Packager>
+        <License>EULA</License>
+        <Summary xml:lang="en">A tool for flashing Samsung firmware</Summary>
+        <Description xml:lang="en">A tool for flashing Samsung firmware</Description>
+        <Summary xml:lang="tr">Samsung yazılımı yüklemek için bir araç</Summary>
+        <Description xml:lang="tr">Samsung yazılımı yüklemek için bir araç</Description>
+        <!-- The original URL from XDA doesn't comply to the filtering method PISI uses to automatically determine the file name. -->
+        <!--Archive sha1sum="7337f0212002d4fd054d6829504f31c443364f16" type="binary">https://web.archive.org/web/20230225072710if_/https://forum.xda-developers.com/attachments/odin-zip.5629297/</Archive-->
+        <Archive sha1sum="7337f0212002d4fd054d6829504f31c443364f16" type="binary">https://github.com/Adrilaw/OdinV4/releases/download/v1.0/odin.zip</Archive>
+        <BuildDependencies>
+            <Dependency>unzip</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>odin4-cli</Name>
+        <RuntimeDependencies>
+            <Dependency>android-udev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-09-09</Date>
+            <Version>1.2.1</Version>
+            <Comment>Initial release.</Comment>
+            <Name>Bedirhan Kurt</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
+
