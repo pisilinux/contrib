@@ -17,8 +17,8 @@
         <IsA>app:gui</IsA>
 
 
-        <Archive sha1sum="205983c4531deb56dc571765d456d407980cc553" type="targz">
-            https://dl.discordapp.net/apps/linux/0.0.108/discord-0.0.108.tar.gz
+        <Archive sha1sum="05374203718b1a29d164d5d4331e55f7a48db19b" type="targz">
+            https://dl.discordapp.net/apps/linux/0.0.109/discord-0.0.109.tar.gz
         </Archive>
      </Source>
 
@@ -50,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="36">
+            <Date>2025-09-09</Date>
+            <Version>0.0.109</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Bedirhan KURT</Name>
+            <Email>bedirhan.kurt@outlook.com</Email>
+        </Update>
         <Update release="35">
             <Date>2025-09-04</Date>
             <Version>0.0.108</Version>
