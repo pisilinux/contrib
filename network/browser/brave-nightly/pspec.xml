@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>brave-browser</Name>
+        <Name>brave-browser-nightly</Name>
         <Homepage>https://brave.com/</Homepage>
         <PartOf>network.web</PartOf>
         <IsA>app:gui</IsA>  
@@ -16,13 +16,13 @@
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <License>Mozilla Public License 2.0</License>
-        <Archive sha1sum="69547f524bb5b0d5e3a3d986487332a054f26056" type="binary">
-           https://github.com/brave/brave-browser/releases/download/v1.83.65/brave-browser-nightly-1.83.65-linux-amd64.zip
+        <Archive sha1sum="eb6e627ad69dcca555eb5c7be4458e3b6a1f60fd" type="binary">
+           https://github.com/brave/brave-browser/releases/download/v1.85.15/brave-browser-nightly-1.85.15-linux-amd64.zip
         </Archive>
     </Source>
 
     <Package>
-        <Name>brave-browser</Name>
+        <Name>brave-browser-nightly</Name>
         <RuntimeDependencies>
             <Dependency>nss</Dependency>
             <Dependency>gtk3</Dependency>
@@ -35,7 +35,7 @@
             <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/opt/brave-browser</Path>
+            <Path fileType="executable">/opt/brave-browser-nightly</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="data">/usr/share/icons</Path>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="39">
+            <Date>2025-10-01</Date>
+            <Version>1.85.15</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="38">
             <Date>2025-08-21</Date>
             <Version>1.83.65</Version>

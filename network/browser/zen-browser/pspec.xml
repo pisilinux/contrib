@@ -15,8 +15,8 @@
         <Description xml:lang="en">Experience tranquillity while browsing the web without people tracking you</Description>
         <Description xml:lang="tr">İnternette sizi kimse takip etmeden huzurla gezinin!</Description>
        
-        <Archive sha1sum="b4d2dca749e5dd3de90bf7e47ebb1e74d9e6b127" type="tarxz">
-            https://github.com/zen-browser/desktop/releases/download/1.14.11b/zen.linux-x86_64.tar.xz  
+        <Archive sha1sum="f9bece5dbe6765b34f9a4bf9a27bea33396ca008" type="binary">
+            https://github.com/zen-browser/desktop/releases/download/1.16.2b/zen-x86_64.AppImage  
         </Archive>
     </Source>
     <!-- https://github.com/zen-browser/desktop/releases -->
@@ -45,6 +45,13 @@
     </Package>
 
     <History>   
+        <Update release="6">
+            <Date>2025-10-01</Date>
+            <Version>1.16.2b</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2025-08-21</Date>
             <Version>1.14.11b</Version>
