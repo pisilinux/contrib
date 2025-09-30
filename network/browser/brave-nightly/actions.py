@@ -14,5 +14,5 @@ def setup():
 
 
 def install():
-    pisitools.insinto("/opt/brave-browser/", "*")
-    pisitools.dosym("/opt/brave-browser/brave","/usr/bin/brave-browser")
+    pisitools.insinto("/opt/brave-browser-nightly/", "*")
+    pisitools.dosym("/opt/brave-browser-nightly/brave","/usr/bin/brave-browser-nightly")

@@ -8,8 +8,8 @@ from pisi.actionsapi import pisitools, shelltools, get
 
 WorkDir="."
 def setup():
-    shelltools.system("unzip uyap-pardus-5-4-11-amd6411-12-202310-13-am.zip")
-    shelltools.system("ar xvf uyap_pardus_5_4_11_amd64/uyapeditor_5.4.11_amd64.deb")
+    shelltools.system("unzip uyap-pardus-5-4-14-amd6403-06-20251-41-pm.zip")
+    shelltools.system("ar xvf uyap_pardus_5_4_14_amd64/uyapeditor_5.4.14_amd64.deb")
     shelltools.system("tar xvf data.tar.xz")
 
 def install():

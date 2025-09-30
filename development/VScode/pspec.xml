@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>VSCode</Name>
@@ -11,11 +11,11 @@
         <License>GPLv3</License>
         <PartOf>Development</PartOf>
         <IsA>app:gui</IsA>
-        <Summary>Visual Studio Code</Summary>
-        <Description>Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
+        <Summary xml:lang="tr">Visual Studio Code</Summary>
+        <Description xml:lang="tr"> Microsoft tarafından geliştirilen gelişmiş bir metin editörü</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="a8bf600e763370d98a1b4765094b20941f653173">
-            https://vscode.download.prss.microsoft.com/dbazure/download/stable/6f17636121051a53c88d3e605c491d22af2ba755/code-stable-x64-1755709710.tar.gz
+        <Archive type="targz" sha1sum="89c6a27cad23e7cb474657164b4b177582a92063">
+            https://vscode.download.prss.microsoft.com/dbazure/download/stable/e3a5acfb517a443235981655413d566533107e92/code-stable-x64-1758714233.tar.gz
         </Archive>
     </Source>
     <Package>
@@ -33,6 +33,13 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
+        <Update release="41">
+            <Date>2025-09-30</Date>
+            <Version>1.104.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="40">
             <Date>2025-09-02</Date>
             <Version>1.103.2</Version>
