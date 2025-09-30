@@ -13,7 +13,7 @@
         <Description xml:lang="en">Client for Utopia, an "Anti Orwellian Ecosystem"</Description>
         <Description xml:lang="tr">Utopia, "Orwellian Ecosystem"'in tersi bir ekosistemi.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="62ec72af7aaaaefa6e876243a4376453b6bd4db9" type="binary">
+        <Archive sha1sum="3f082a3242b44f71dd54ac7be2f9beafb4b13322" type="binary">
             https://update.u.is/downloads/linux/utopia-latest.amd64.deb
         </Archive>
     </Source>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2025-09-30</Date>
+            <Version>1.3.984</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2025-07-10</Date>
             <Version>1.3.860</Version>
