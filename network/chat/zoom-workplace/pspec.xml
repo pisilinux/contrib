@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>zoom-workplace</Name>
+        <Homepage>https://zoom.us/</Homepage>
+        <Packager>
+            <Name>Safa Arıman</Name>
+            <Email>safaariman@pisilinux.org</Email>
+        </Packager>
+        <License>Proprietary</License>
+        <IsA>app:gui</IsA>
+        <Summary xml:lang="en">Zoom, Video Conferencing and Web Conferencing Service</Summary>
+        <Summary xml:lang="tr">Zoom, Video Konferansı ve Web Konferansı Hizmeti</Summary>
+        <Description xml:lang="en">Zoom, the cloud meeting company, unifies cloud video conferencing, simple online meetings, and group messaging into one easy-to-use platform. Our solution offers the best video, audio, and screen-sharing experience across Zoom Rooms, Windows, Mac, Linux, iOS, Android, and H.323/SIP room systems.</Description>
+        <Description xml:lang="tr">Zoom, bulut toplantı şirketi, bulut video konferansı, basit çevrimiçi toplantılar ve grup mesajlaşmasını tek kolay kullanıma sunan bir platforma birleştiriyor. Çözümümüz, Zoom Odaları, Windows, Mac, Linux, iOS, Android ve H.323/SIP odaları sistemlerinde en iyi video, ses ve ekran paylaşım deneyimi sunar.</Description>
+        <Archive sha1sum="b979ae687ae9685111ac8883288001cbc4bc6d4e" type="binary">
+           https://github.com/probonopd/Zoom.AppImage/releases/download/stable/Zoom_Workplace-6.4.3.827.glibc2.27-x86_64.AppImage
+        </Archive>
+    </Source>
+
+    <Package>
+        <Name>zoom-workplace</Name>
+        <Files>
+            <Path fileType="data">/opt</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <RuntimeDependencies>    
+            <Dependency>fontconfig</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libxcb</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libxkbcommon-x11</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libxshmfence</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>xcb-util-image</Dependency>
+            <Dependency>xcb-util-keysyms</Dependency>
+            <Dependency>xcb-util-cursor</Dependency>
+            <Dependency>dbus</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>qt5-webengine</Dependency>
+            <Dependency>qt5-remoteobjects</Dependency>
+        </RuntimeDependencies>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/Zoom.desktop">Zoom.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/Zoom.png">Zoom.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/application-x-zoom.png">application-x-zoom.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/zoom.xml">zoom.xml</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2025-09-30</Date>
+            <Version>6.6.0.466</Version>
+            <Comment>First release</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
