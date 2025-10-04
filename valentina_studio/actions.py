@@ -12,7 +12,7 @@ IgnoreAutodep = True
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf vstudio_x64_lin-deb")
+    shelltools.system("ar xf vstudio_x64_lin_deb?format=raw")
     shelltools.system("tar xvf data.tar.xz")
 def install():
     pisitools.insinto("/", "opt")

@@ -37,9 +37,16 @@
     </Package>
 
     <History>
-        <Update release="15">
+        <Update release="16">
             <Date>2025-10-01</Date>
             <Version>5.4.14</Version>
+            <Comment>V.bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="15">
+            <Date>2025-06-01</Date>
+            <Version>5.4.12</Version>
             <Comment>V.bump</Comment>
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
