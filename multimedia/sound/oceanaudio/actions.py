@@ -10,7 +10,7 @@ from pisi.actionsapi import shelltools
 
 def setup():
     shelltools.system("pwd")
-    shelltools.system("ar xf ocenaudio_debian64.deb")
+    shelltools.system("ar xf ocenaudio_debian13.deb")
     shelltools.system("tar xf data.tar.xz")
 
 def install():

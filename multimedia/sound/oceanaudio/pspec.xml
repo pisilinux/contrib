@@ -1,16 +1,22 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<!DOCTYPE PISI SYSTEM "https://pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>ocenaudio</Name>
+        <Homepage>https://www.ocenaudio.com/</Homepage>
         <Packager>
             <Name>Stefan Gronewold</Name>
             <Email>groni@pisilinux.org</Email>
         </Packager>
-        <Summary>Ocenaudio is a fast, cross-platform audio editor.</Summary>
-        <Description>Ocenaudio is a fast, cross-platform audio editor.</Description>
+        <Summary xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Summary>
+        <Summary xml:lang="tr">Ocenaudio, hızlı, platformlar arası bir ses düzenleyicidir.</Summary>
+        <Description xml:lang="en">Ocenaudio is a fast, cross-platform audio editor.</Description>
+        <Description xml:lang="tr">Ocenaudio, hızlı, platformlar arası bir ses düzenleyicidir.</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="287a838980b8d55222b1c58cfbb97c6a4e080664" type="binary">https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian64.deb</Archive>       
+        <Icon>ocenaudio</Icon>
+        <Archive sha1sum="b486a7f5d21d4a8a213cd4cd07b79a0397cd946d" type="binary">
+            https://www.ocenaudio.com/downloads/index.php/ocenaudio_debian13.deb
+        </Archive>       
     </Source>
 
     <Package>
@@ -29,7 +35,6 @@
             <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
         <Name>ocenaudio</Name>
-        <Icon>ocenaudio</Icon>
         <Files>
             <Path fileType="executable">/opt/ocenaudio</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -39,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2026-05-11</Date>
+            <Version>3.18.2</Version>
+            <Comment>Update to latest version.</Comment>
+            <Name>Erkan Isik</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2023-12-15</Date>
             <Version>3.13.2</Version>
@@ -61,7 +73,7 @@
             <Email>groni@pisilinux.org</Email>
         </Update>
         <Update release="1">
-            <Date>2016.09.11</Date>
+            <Date>2016-09-11</Date>
             <Version>3.1.8</Version>
             <Comment>First Release</Comment>
             <Name>Stefan Gronewold (groni)</Name>
