@@ -15,8 +15,8 @@
 Alternatif kısa çeviri: Belgeleri oluşturma, görüntüleme ve düzenleme imkanı sunan; metin, tablo ve sunum editörlerini bir arada bulunduran ofis paketi.</Description>
         <License>AGPL3</License>
         <PartOf>Office</PartOf>
-        <Archive sha1sum="34e6305dd2c9863224c4d4307bf7e0e8f9ff9ee8" type="tarxz">
-            https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.2.1/onlyoffice-desktopeditors-x64.tar.xz
+        <Archive sha1sum="9de81ac6772d1fdf6ece9207c1541ef39bf1da53" type="tarxz">
+            https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.3.1/onlyoffice-desktopeditors-x64.tar.xz
         </Archive> 
         <!-- https://github.com/ONLYOFFICE/DesktopEditors/ -->
     </Source>
@@ -48,6 +48,13 @@ Alternatif kısa çeviri: Belgeleri oluşturma, görüntüleme ve düzenleme imk
     </Package>
     
     <History>    
+        <Update release="3">
+            <Date>2026-04-18</Date>
+            <Version>9.3.1</Version>
+            <Comment>Version Bump to 9.3.1</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="2">
             <Date>2026-01-13</Date>
             <Version>9.2.1</Version>

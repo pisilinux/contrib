@@ -8,10 +8,10 @@
             <Name>Erkan IŞIK</Name>
             <Email>erkanisik@pisilinux.org</Email>
         </Packager>
-        <Summary xml:lang="en">An advanced browser made with the power user in mind.</Summary>
-        <Summary xml:lang="tr">Güçlü bir kullanıcı için tasarlanmış bir web tarayıcısı.</Summary>
-        <Description xml:lang="en">With all the features and tools you need built-in and unmatched levels of customization.</Description>
-        <Description xml:lang="tr">İhtiyacınız olan tüm özellikler ve araçlar yerleşik olarak gelir ve benzersiz özelleştirme seviyeleri sunar.</Description>
+        <Summary xml:lang="en">Advanced web browser with extensive customization options and power-user features</Summary>
+        <Summary xml:lang="tr">Gelişmiş özelleştirme seçenekleri ve güçlü kullanıcı özelliklerine sahip web tarayıcısı</Summary>
+        <Description xml:lang="en">Vivaldi is an advanced web browser designed for power users with extensive customization options, built-in ad blocker, tracker protection, tab management, notes, and unique features like tab tiling and vertical tabs. Based on Chromium with enhanced privacy and productivity features.</Description>
+        <Description xml:lang="tr">Vivaldi, güçlü kullanıcılar için tasarlanmış gelişmiş bir web tarayıcısıdır. Geniş özelleştirme seçenekleri, yerleşik reklam engelleyici, takipçi koruması, sekme yönetimi, notlar ve sekme döşeme, dikey sekmeler gibi benzersiz özellikler sunar. Chromium tabanlı olup gelişmiş gizlilik ve verimlilik özelliklerine sahiptir.</Description>
         <License>EULA</License>
         <Icon>vivaldi</Icon>
         <Archive sha1sum="d8749cee5e28dfe5285a1e455b1b46d1776d70c4" type="binary">

@@ -5,17 +5,17 @@
         <Name>opera</Name>
         <Homepage>https://www.opera.com/</Homepage>
         <Packager>
-            <Name>Stefan Gronewold(groni)</Name>
-            <Email>groni@pisilinux.org</Email>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
         </Packager>
-        <Summary xml:lang="en">Opera Web Browser</Summary>
-        <Summary xml:lang="tr">Opera Web Tarayıcısı</Summary>
-        <Description xml:lang="en">A fast and secure web browser</Description>
-        <Description xml:lang="tr">Hızlı ve güvenli bir web tarayıcısı</Description>
+        <Summary xml:lang="en">Fast, secure and feature-rich web browser with built-in VPN and ad blocker</Summary>
+        <Summary xml:lang="tr">Hızlı, güvenli ve özellik zengini web tarayıcısı, yerleşik VPN ve reklam engelleme ile</Summary>
+        <Description xml:lang="en">Opera is a fast, secure, and feature-rich web browser with built-in VPN, ad blocker, battery saver, and integrated social media messengers. Features include workspaces, flow synchronization, crypto wallet, and AI-powered browsing assistance.</Description>
+        <Description xml:lang="tr">Opera, yerleşik VPN, reklam engelleyici, pil tasarrufu ve entegre sosyal medya mesajlaşma özelliklerine sahip hızlı, güvenli ve özellik zengini bir web tarayıcısıdır. Çalışma alanları, Flow senkronizasyonu, kripto cüzdanı ve AI destekli gezinme yardımı özelliklerini içerir.</Description>
         <License>EULA</License>
         <Icon>opera</Icon>
-        <Archive sha1sum="4a54b0ed02127f25c526dda810e86ba0860bfd38" type="binary">
-            https://download5.operacdn.com/ftp/pub/opera/desktop/129.0.5823.44/linux/opera-stable_129.0.5823.44_amd64.deb
+        <Archive sha1sum="46bc55e1634bb5769450419814c368d2b9af2e48" type="binary">
+            https://download5.operacdn.com/ftp/pub/opera/desktop/130.0.5847.41/linux/opera-stable_130.0.5847.41_amd64.deb
         </Archive>
         <!-- https://download5.operacdn.com/ftp/pub/opera/desktop/ -->
     </Source>
@@ -36,7 +36,7 @@
             <Dependency>zlib</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>expat</Dependency>
-            <Dependency>gconf</Dependency>
+            <Dependency>dconf</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
@@ -67,6 +67,13 @@
         </AdditionalFiles>
     </Package>
     <History>
+        <Update release="52">
+            <Date>2026-04-18</Date>
+            <Version>130.0.5847.41</Version>
+            <Comment>Version bump to 130.0.5847.41</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="51">
             <Date>2026-04-05</Date>
             <Version>129.0.5823.44</Version>

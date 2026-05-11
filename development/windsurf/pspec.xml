@@ -15,8 +15,8 @@
         <PartOf>development</PartOf>
         <License>custom</License>
         <Icon>windsurf</Icon>
-        <Archive sha1sum="a027f4c531f9bb646d9c806ba8e5ad1c6a1c7e13" type="targz">
-            https://windsurf-stable.codeiumdata.com/linux-x64/stable/745a6c1ac471cc11f782a05d2c3ceacbc1de308f/Windsurf-linux-x64-1.9577.43.tar.gz
+        <Archive sha1sum="9af43e7538bd3aeb50304600ab527ab8522f3fc5" type="targz">
+            https://windsurf-stable.codeiumdata.com/linux-x64/stable/a65d6c4e1fd335336d7a0b601099811667e184ca/Windsurf-linux-x64-2.2.17.tar.gz
         </Archive>
     </Source>
 
@@ -57,6 +57,27 @@
     </Package>
 
     <History>    
+        <Update release="33">
+            <Date>2026-05-07</Date>
+            <Version>2.2.17</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="32">
+            <Date>2026-04-23</Date>
+            <Version>2.0.67</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+        <Update release="31">
+            <Date>2026-04-18</Date>
+            <Version>2.0.61</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>    
         <Update release="30">
             <Date>2026-04-05</Date>
             <Version>1.9577.43</Version>

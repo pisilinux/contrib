@@ -17,8 +17,8 @@
         <Description xml:lang="en">Code editing. Redefined. Visual Studio Code is a new choice of tool that combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</Description>
         <Description xml:lang="tr">Kod düzenleme. Yeniden tanımlandı. Visual Studio Code, kod düzenleyicisinin basitliğini ve geliştiricilerin temel düzenleme-derleme-hata ayıklama döngüsü için ihtiyaç duyduğu özellikleri birleştiren yeni bir araç seçimidir.</Description>
         <Icon>code</Icon>
-        <Archive type="targz" sha1sum="31d2481f76ffb05ad93a65d932e8ab27611bfb49">
-            https://vscode.download.prss.microsoft.com/dbazure/download/stable/e7fb5e96c0730b9deb70b33781f98e2f35975036/code-stable-x64-1775036184.tar.gz
+        <Archive type="targz" sha1sum="85ec5729351e269969a60940a86413cd90db20a6">
+            https://vscode.download.prss.microsoft.com/dbazure/download/stable/560a9dba96f961efea7b1612916f89e5d5d4d679/code-stable-x64-1776214075.tar.gz
         </Archive>
     </Source>
     <Package>
@@ -37,7 +37,14 @@
         <Summary>Visual Studio Code</Summary>
     </Package>
     <History>
-     
+        <Update release="45">
+            <Date>2026-04-18</Date>
+            <Version>1.116.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
+
         <Update release="44">
             <Date>2026-04-05</Date>
             <Version>1.114.0</Version>

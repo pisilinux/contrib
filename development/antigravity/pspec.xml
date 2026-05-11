@@ -14,9 +14,9 @@
         <Description xml:lang="tr" >Google'dan bir agentic geliştirme platformu, IDE'yi agent-first era'ye evrimini getiriyor.</Description>
         <License>LicenseRef-Google-Antigravity</License>
         <PartOf>programming.tools</PartOf>
-        <Icon>antigravity.png</Icon>
-        <Archive sha1sum="96899f1b13694bfcbd6124f420c682441f0d361a" type="targz">
-            https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.16.5-6703236727046144/linux-x64/Antigravity.tar.gz
+        <Icon>antigravity</Icon>
+        <Archive sha1sum="2ef29c885440601b6e5f232204a8b2a5123264e6" type="targz">
+            https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.23.2-4781536860569600/linux-x64/Antigravity.tar.gz
         </Archive>  
        </Source>
 
@@ -66,7 +66,15 @@
     </Package>
 
     <History>
+    
         
+        <Update release="4">
+            <Date>2026-10-18</Date>
+            <Version>1.23.2</Version>
+            <Comment>Update to 1.23.2</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2026-02-08</Date>
             <Version>1.16.5</Version>

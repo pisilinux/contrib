@@ -3,21 +3,21 @@
 <PISI>
     <Source>
         <Name>Microsoft-Edge</Name>
-        <Homepage>https://microsoft.com</Homepage>
+        <Homepage>https://www.microsoft.com/edge</Homepage>
         <Packager>
-            <Name>PisiLinux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <License>EULA</License>
         <Icon>Microsoft-Edge</Icon>
         <PartOf>network.web</PartOf>
         <IsA>app:gui</IsA>
-        <Summary xml:lang="en">The web browser from Microsoft</Summary>
-        <Summary xml:lang="tr">Microsoft'un web tarayıcısı</Summary>
-        <Description xml:lang="en">Microsoft Edge is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Description xml:lang="tr">Microsoft Edge, web sayfalarını daha hızlı, güvenli ve kolay bir şekilde kullanmanıza yardımcı olacak minimal bir tasarım ile karmaşık teknolojiyi birleştirir.</Description>
-        <Archive sha1sum="e2c4abda5f6aa494d9f623476d59f92028072b9a" type="binary">        
-           https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_146.0.3856.97-1_amd64.deb
+        <Summary xml:lang="en">Fast, secure and modern web browser with AI-powered features and deep Microsoft integration</Summary>
+        <Summary xml:lang="tr">Hızlı, güvenli ve modern web tarayıcısı, AI özellikleri ve Microsoft entegrasyonuyla</Summary>
+        <Description xml:lang="en">Microsoft Edge is a fast, secure, and modern web browser built on Chromium with AI-powered features, deep Microsoft 365 integration, vertical tabs, collections, and enterprise-grade security. Features include tracking prevention, password monitor, built-in PDF reader, and seamless sync across devices.</Description>
+        <Description xml:lang="tr">Microsoft Edge, Chromium tabanlı hızlı, güvenli ve modern bir web tarayıcısıdır. AI özellikleri, Microsoft 365 entegrasyonu, dikey sekmeler, koleksiyonlar ve kurumsal düzeyde güvenlik sunar. Takip önleme, parola izleyici, yerleşik PDF okuyucu ve cihazlar arası sorunsuz senkronizasyon özelliklerini içerir.</Description>
+        <Archive sha1sum="2c85c6be884973918f05430ade3337137001b3cc" type="binary">        
+           https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_147.0.3912.72-1_amd64.deb
         </Archive>     
         <!-- https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/ -->  
     </Source>
@@ -61,7 +61,7 @@
         </RuntimeDependencies>
 
         <Files>
-            <Path fileType="config">/etc/</Path>
+            <Path fileType="config">/etc</Path>
             <Path fileType="executable">/opt/microsoft/msedge/</Path>
             <Path fileType="data">/usr/bin/</Path>
             <Path fileType="data">/usr/share/</Path>
@@ -80,6 +80,13 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2026-04-18</Date>
+            <Version>147.0.3912.72</Version>
+            <Comment>Version bump to 147.0.3912.72</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="31">
             <Date>2026-04-05</Date>
             <Version>146.0.3856.97</Version>

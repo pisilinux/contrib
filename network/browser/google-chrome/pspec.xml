@@ -3,20 +3,20 @@
 <PISI>
     <Source>
         <Name>google-chrome</Name>
-        <Homepage>http://chrome.google.com/</Homepage>
+        <Homepage>https://chrome.google.com/</Homepage>
         <Packager>
-            <Name>PisiLinux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
         </Packager>
         <License>EULA</License>
         <Icon>google-chrome</Icon>
         <PartOf>network.web</PartOf>
         <IsA>app:gui</IsA>
-        <Summary xml:lang="en">Google Chrome for Linux</Summary>
-        <Description xml:lang="en">Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
-        <Summary xml:lang="tr">Linux için Google Chrome</Summary>
-        <Description xml:lang="tr">Google Chrome, web sayfalarını daha hızlı, güvenli ve kolay bir şekilde kullanmanıza yardımcı olacak minimal bir tasarım ile karmaşık teknolojiyi birleştirir.</Description>
-        <Archive sha1sum="3343cefae58868d9981b1eeb0998ac22cf4d7660" type="binary">
+        <Summary xml:lang="en">Fast, secure and modern web browser with built-in privacy features</Summary>
+        <Description xml:lang="en">Google Chrome is a fast, secure, and modern web browser that combines minimal design with sophisticated technology. Features include built-in privacy protection, automatic updates, cross-platform synchronization, extensive extension support, and advanced developer tools.</Description>
+        <Summary xml:lang="tr">Hızlı, güvenli ve modern web tarayıcısı, yerleşik gizlilik özellikleriyle</Summary>
+        <Description xml:lang="tr">Google Chrome, minimal tasarımı gelişmiş teknolojiyle birleştiren hızlı, güvenli ve modern bir web tarayıcısıdır. Özellikler arasında yerleşik gizlilik koruması, otomatik güncellemeler, çapraz platform senkronizasyonu, geniş eklenti desteği ve gelişmiş geliştirici araçları bulunur.</Description>
+        <Archive sha1sum="76e35324141b31443672dc256126af7b7a9af623" type="binary">
             https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         </Archive>       
     </Source>
@@ -42,7 +42,7 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
-            <Dependency>gconf</Dependency>
+            <Dependency>dconf</Dependency>
             <Dependency>libevent</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libXdamage</Dependency>
@@ -65,7 +65,7 @@
             <Dependency>wayland-client</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/</Path>
+            <Path fileType="config">/etc/opt/google/chrome/</Path>
             <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="library">/usr/lib/</Path>
             <Path fileType="man">/usr/share/man/</Path>
@@ -80,6 +80,13 @@
     
     <History>
         
+        <Update release="93">
+            <Date>2026-04-18</Date>
+            <Version>147.0.7727.101</Version>
+            <Comment>Version bump to 147.0.7727.101</Comment>
+            <Name>Erkan IŞIK</Name>
+            <Email>erkanisik@pisilinux.org</Email>
+        </Update>
         <Update release="92">
             <Date>2026-04-05</Date>
             <Version>146.0.7680.177</Version>
