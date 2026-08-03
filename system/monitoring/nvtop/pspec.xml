@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>nvtop</Name>
+        <Homepage>https://github.com/Syllo/nvtop</Homepage>
+        <Packager>
+            <Name>Atilla BALCI</Name>
+            <Email>atilla.balci@tarimorman.gov.tr</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:console</IsA>
+        <PartOf>system.monitoring</PartOf>
+        <Summary>GPU and accelerator process monitor for AMD, Intel, NVIDIA and others</Summary>
+        <Description>NVTOP stands for Neat Videocard TOP, a (h)top like task monitor for GPUs and accelerators. It can handle multiple GPUs and print information about them in a htop familiar way. Supports AMD (amdgpu), Intel (i915/xe), NVIDIA, Qualcomm Adreno, Broadcom VideoCore, Rockchip and more.</Description>
+        <Archive sha1sum="1e4ffb4cb83823b6917671f01a227e83b9b06e24" type="targz">https://github.com/Syllo/nvtop/archive/refs/tags/3.3.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cmake</Dependency>
+            <Dependency>ncurses-devel</Dependency>
+            <Dependency>libdrm-devel</Dependency>
+            <Dependency>eudev-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>nvtop</Name>
+        <RuntimeDependencies>
+            <Dependency>ncurses</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>eudev</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/metainfo</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2026-04-23</Date>
+            <Version>3.3.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Atilla BALCI</Name>
+            <Email>atilla.balci@tarimorman.gov.tr</Email>
+        </Update>
+    </History>
+</PISI>

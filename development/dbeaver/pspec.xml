@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dbeaver-ce</Name>
+        <Homepage>https://dbeaver.io/</Homepage>
+        <Packager>
+            <Name>Atilla BALCI</Name>
+            <Email>atilla.balci@tarimorman.gov.tr</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>app:gui</IsA>
+        <PartOf>development</PartOf>
+        <Summary>Universal Database Manager and SQL Client</Summary>
+        <Description>DBeaver Community is a free universal database manager and SQL client that supports MySQL, PostgreSQL, Oracle, SQLite and many more databases.</Description>
+        <Archive sha1sum="57236ce23ea411886f0c35f8882eea2c48ac492d" type="binary">https://dbeaver.io/files/dbeaver-ce-latest-linux-x86_64.deb</Archive>
+    </Source>
+    <Package>
+        <Name>dbeaver-ce</Name>
+	<RuntimeDependencies>
+    		<Dependency>jre-openjdk</Dependency>
+	</RuntimeDependencies>	
+	<Files>
+    		<Path fileType="executable">/usr/bin</Path>
+    		<Path fileType="executable">/usr/share/dbeaver-ce</Path>
+    		<Path fileType="data">/usr/share/applications</Path>
+    		<Path fileType="data">/usr/share/metainfo</Path>
+	</Files>
+
+
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-04-22</Date>
+            <Version>26.0.3</Version>
+            <Comment>First release</Comment>
+            <Name>Atilla BALCI</Name>
+            <Email>atilla.balci@tarimorman.gov.tr</Email>
+        </Update>
+    </History>
+</PISI>
